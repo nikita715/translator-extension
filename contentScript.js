@@ -3,9 +3,13 @@ document.body.addEventListener('dblclick', function(e) {
   chrome.runtime.sendMessage({
     text: text
   }, function(response) {
-    let translation = JSON.parse(response).text[0];
-    if (!isBlank(translation)) {
-      createTranslationElement(e, translation);
+    let translations = JSON.parse(response).text;
+    if (translations) {
+      console.log(translations);
+      let translation = translations[0];
+      if (!isBlank(translation)) {
+        createTranslationElement(e, translation);
+      }
     }
   });
 });
@@ -20,8 +24,6 @@ document.body.addEventListener('click', function(e) {
 function createTranslationElement(event, translation) {
   var x = event.clientX;
   var y = event.clientY + event.target.offsetHeight;
-  console.log(x);
-  console.log(y);
   var element = document.createElement("p");
   element.style = "top:" + y + "px;left:" + x + "px;";
   element.id = "chrome-extension-translation";
