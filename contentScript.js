@@ -1,15 +1,18 @@
 document.body.addEventListener('dblclick', function(e) {
   let text = window.getSelection().toString();
+
   chrome.runtime.sendMessage({
+    type: "findTab",
     text: text
   }, function(response) {
-    let translations = JSON.parse(response).text;
-    if (translations) {
-      console.log(translations);
-      let translation = translations[0];
-      if (!isBlank(translation)) {
-        createTranslationElement(e, translation);
-      }
+    console.log(response);
+    if (!response) {
+      chrome.runtime.sendMessage({
+        type: "createTab",
+        text: text
+      }, function(response) {
+        console.log(response);
+      });
     }
   });
 });

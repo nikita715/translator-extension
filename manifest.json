@@ -14,7 +14,9 @@
   }],
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs",
+    "contextMenus"
   ],
   "browser_action": {
     "default_popup": "popup.html",
