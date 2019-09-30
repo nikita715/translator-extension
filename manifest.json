@@ -1,7 +1,7 @@
 {
-  "name": "Translate Extension",
+  "name": "Translator Extension",
   "version": "1.0",
-  "description": "An extension that can translate any word from English to Russian by double-clicking it",
+  "description": "Translate any word by double-click or right-click",
   "manifest_version": 2,
   "background": {
     "scripts": ["background.js"],
