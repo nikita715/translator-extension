@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   chrome.storage.sync.get("translator_doubleClickEnabled", function (item) {
     let element = document.getElementById("translator-double-click-enabled");
     let value = item["translator_doubleClickEnabled"];
-    if (value) {
+    if (value != undefined) {
       element.checked = value;
     } else {
       chrome.storage.sync.set({
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   chrome.storage.sync.get("translator_useNewTab", function (item) {
     let element = document.getElementById("translator-use-open-tab");
     let value = item["translator_useNewTab"];
-    if (value) {
+    if (value != undefined) {
       element.checked = value;
     } else {
       chrome.storage.sync.set({
