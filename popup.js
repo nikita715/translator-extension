@@ -1,10 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById("set-yandex-token").addEventListener('click', function(e) {
-    let inputElement = document.getElementById("input-yandex-token");
-    yandexToken = inputElement.value;
+document.addEventListener('DOMContentLoaded', function () {
+  chrome.storage.local.get("translator_useNewTab", function (item) {
+    document.getElementById("translator-use-open-tab").checked = item["translator_useNewTab"];
+  });
+  chrome.storage.local.get("translator_language", function (item) {
+    document.getElementById("translator-select-language").value = item["translator_language"];
+  });
+  document.getElementById("translator-use-open-tab").addEventListener('change', function (e) {
     chrome.storage.local.set({
-      yandexToken: yandexToken
+      "translator_useNewTab": this.checked
     });
-    inputElement.value = "";
+  });
+  document.getElementById("translator-select-language").addEventListener('change', function (e) {
+    chrome.storage.local.set({
+      "translator_language": this.value
+    });
   });
 });
