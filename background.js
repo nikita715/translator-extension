@@ -15,9 +15,23 @@ chrome.runtime.onMessage.addListener(
     if (request.type == "translate") {
       sendResponse(translate(request.text, request.action, false));
       return true;
+    } else if (request.type == "changeAction") {
+      chrome.storage.sync.set({
+        "translator_translateInputAction": request.value
+      });
+      chrome.browserAction.setBadgeText({
+        text: request.value.charAt(0).toUpperCase()
+      });
     }
   }
 );
+
+chrome.storage.sync.get("translator_translateInputAction", function(item) {
+  let translateInputAction = item["translator_translateInputAction"];
+  chrome.browserAction.setBadgeText({
+    text: translateInputAction.charAt(0).toUpperCase()
+  });
+});
 
 function translate(text, action, force) {
   chrome.storage.sync.get("translator_translateInputAction", function(item) {
