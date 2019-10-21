@@ -58,13 +58,15 @@ document.addEventListener('DOMContentLoaded', function() {
     setButtonActivity(this, this.checked);
   });
   document.getElementById("translator-source-language").addEventListener('change', function(e) {
-    chrome.storage.sync.set({
-      "translator_source_language": this.value
+    chrome.runtime.sendMessage({
+      type: "changeLanguage",
+      sourceLanguage: this.value
     });
   });
   document.getElementById("translator-target-language").addEventListener('change', function(e) {
-    chrome.storage.sync.set({
-      "translator_language": this.value
+    chrome.runtime.sendMessage({
+      type: "changeLanguage",
+      targetLanguage: this.value
     });
   });
 
@@ -144,18 +146,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   var translateActionTypes = document.getElementsByClassName("translate-input-type");
-
   for (let i = 0; i < translateActionTypes.length; i++) {
-    translateActionTypes[i].addEventListener("click", function() {
+    translateActionTypes[i].addEventListener("click", function(e) {
       for (let j = 0; j < translateActionTypes.length; j++) {
         translateActionTypes[j].parentNode.classList.remove("active");
       }
       this.parentNode.classList.add("active");
-      chrome.storage.sync.set({
-        "translator_translateInputAction": this.value
+      chrome.runtime.sendMessage({
+        type: "changeAction",
+        value: e.target.value
       });
     });
   }
+
 });
 
 function setButtonActivity(element, bool) {

@@ -22,9 +22,44 @@ chrome.runtime.onMessage.addListener(
       chrome.browserAction.setBadgeText({
         text: request.value.charAt(0).toUpperCase()
       });
+    } else if (request.type == "changeLanguage") {
+      if (request.sourceLanguage) {
+        chrome.storage.sync.set({
+          "translator_source_language": request.sourceLanguage
+        });
+        changeLanguageOnPage(request.sourceLanguage, null);
+      } else if (request.targetLanguage) {
+        chrome.storage.sync.set({
+          "translator_language": request.targetLanguage
+        });
+        changeLanguageOnPage(null, request.targetLanguage);
+      }
     }
   }
 );
+
+function changeLanguageOnPage(source, target) {
+  let slRegexp = new RegExp("^.+sl=([a-z]+).*$");
+  let tlRegexp = new RegExp("^.+tl=([a-z]+).*$");
+  let textRegexp = new RegExp("^.+text=(.+)$");
+  chrome.tabs.query({
+    currentWindow: true,
+    active: true,
+    url: 'https://translate.google.ru/*'
+  }, function(tabs) {
+    let translateTab = tabs[0];
+    if (translateTab) {
+      let currentUrl = translateTab.url;
+      let sourceLanguage = source ? source : currentUrl.match(slRegexp)[1];
+      let targetLanguage = target ? target : currentUrl.match(tlRegexp)[1];
+      let text = decodeURIComponent(currentUrl.match(textRegexp)[1]);
+      let newUrl = buildUrl(text, sourceLanguage, targetLanguage);
+      chrome.tabs.update(translateTab.id, {
+        'url': newUrl
+      });
+    }
+  });
+}
 
 chrome.storage.sync.get("translator_translateInputAction", function(item) {
   let translateInputAction = item["translator_translateInputAction"];
@@ -78,5 +113,8 @@ function createTranslatorTab(url) {
 }
 
 function buildUrl(text, sourceLanguage, targetLanguage) {
-  return `https://translate.google.ru/#view=home&op=translate&sl=${sourceLanguage}&tl=${targetLanguage}&text=${text}`;
+  let sourceLanguageProperty = sourceLanguage ? `&sl=${sourceLanguage}` : "";
+  let targetLanguageProperty = targetLanguage ? `&tl=${targetLanguage}` : "";
+  let textProperty = text ? `&text=${encodeURIComponent(text)}` : "";
+  return `https://translate.google.ru/#view=home&op=translate${sourceLanguageProperty}${targetLanguageProperty}${textProperty}`;
 }

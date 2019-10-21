@@ -24,15 +24,6 @@ function isBlank(str) {
   return (!str || /^\s*$/.test(str));
 }
 
-function changeActiveAction(value) {
-  var translateActionTypes = document.getElementsByClassName("translate-input-type");
-  for (let j = 0; j < translateActionTypes.length; j++) {
-    translateActionTypes[j].parentNode.classList.remove("active");
-  }
-  let element = document.getElementById("translate-input-type-" + value);
-  element.parentNode.classList.add("active");
-}
-
 document.onkeyup = function(e) {
   if (e.altKey) {
     if (e.which == 49) {
