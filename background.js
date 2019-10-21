@@ -6,14 +6,14 @@ chrome.contextMenus.create({
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
   if (info.menuItemId == "translate-selection") {
-    translate(info.selectionText, null, true);
+    translate(info.selectionText, null, false, true);
   }
 });
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.type == "translate") {
-      sendResponse(translate(request.text, request.action, false));
+      sendResponse(translate(request.text, request.action, request.altActive, false));
       return true;
     } else if (request.type == "changeAction") {
       chrome.storage.sync.set({
@@ -68,37 +68,42 @@ chrome.storage.sync.get("translator_translateInputAction", function(item) {
   });
 });
 
-function translate(text, action, force) {
-  chrome.storage.sync.get("translator_translateInputAction", function(item) {
-    let translateInputAction = item["translator_translateInputAction"];
-    if (translateInputAction == action || force) {
-      chrome.storage.sync.get("translator_source_language", function(item) {
-        let sourceLanguageTag = item["translator_source_language"];
-        chrome.storage.sync.get("translator_language", function(item) {
-          let languageTag = item["translator_language"];
-          let newUrl = buildUrl(text, sourceLanguageTag, languageTag);
-          chrome.storage.sync.get("translator_useNewTab", function(item) {
-            let useNewTab = item["translator_useNewTab"];
-            if (useNewTab) {
-              chrome.tabs.query({
-                currentWindow: true,
-                url: 'https://translate.google.ru/*'
-              }, async function(tabs) {
-                let translateTab = tabs[0];
-                if (translateTab) {
-                  chrome.tabs.update(translateTab.id, {
-                    'url': newUrl,
-                    'active': true
+function translate(text, action, altActive, force) {
+  chrome.storage.sync.get("translator_holdAltToTranslate", function(item) {
+    let holdAltToTranslate = item["translator_holdAltToTranslate"];
+    if (!holdAltToTranslate || altActive || force) {
+      chrome.storage.sync.get("translator_translateInputAction", function(item) {
+        let translateInputAction = item["translator_translateInputAction"];
+        if (translateInputAction == action || force) {
+          chrome.storage.sync.get("translator_source_language", function(item) {
+            let sourceLanguageTag = item["translator_source_language"];
+            chrome.storage.sync.get("translator_language", function(item) {
+              let languageTag = item["translator_language"];
+              let newUrl = buildUrl(text, sourceLanguageTag, languageTag);
+              chrome.storage.sync.get("translator_useNewTab", function(item) {
+                let useNewTab = item["translator_useNewTab"];
+                if (useNewTab) {
+                  chrome.tabs.query({
+                    currentWindow: true,
+                    url: 'https://translate.google.ru/*'
+                  }, async function(tabs) {
+                    let translateTab = tabs[0];
+                    if (translateTab) {
+                      chrome.tabs.update(translateTab.id, {
+                        'url': newUrl,
+                        'active': true
+                      });
+                    } else {
+                      createTranslatorTab(newUrl);
+                    }
                   });
                 } else {
                   createTranslatorTab(newUrl);
                 }
               });
-            } else {
-              createTranslatorTab(newUrl);
-            }
+            });
           });
-        });
+        }
       });
     }
   });
@@ -115,6 +120,6 @@ function createTranslatorTab(url) {
 function buildUrl(text, sourceLanguage, targetLanguage) {
   let sourceLanguageProperty = sourceLanguage ? `&sl=${sourceLanguage}` : "";
   let targetLanguageProperty = targetLanguage ? `&tl=${targetLanguage}` : "";
-  let textProperty = text ? `&text=${encodeURIComponent(text)}` : "";
+  let textProperty = text ? `&text=${text}` : "";
   return `https://translate.google.ru/#view=home&op=translate${sourceLanguageProperty}${targetLanguageProperty}${textProperty}`;
 }

@@ -15,6 +15,7 @@ function sendToTranslate(e, action, text) {
     chrome.runtime.sendMessage({
       action: action,
       type: "translate",
+      altActive: e.altKey,
       text
     });
   }

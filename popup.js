@@ -25,6 +25,20 @@ document.addEventListener('DOMContentLoaded', function() {
       setButtonActive(element);
     }
   });
+  chrome.storage.sync.get("translator_holdAltToTranslate", function(item) {
+    let element = document.getElementById("translator-hold-alt-to-translate");
+    let value = item["translator_holdAltToTranslate"];
+    if (value != undefined) {
+      element.checked = value;
+      setButtonActivity(element, element.checked);
+    } else {
+      chrome.storage.sync.set({
+        "translator_holdAltToTranslate": false
+      });
+      element.checked = false;
+      setButtonNotActive(element);
+    }
+  });
   chrome.storage.sync.get("translator_source_language", function(item) {
     let element = document.getElementById("translator-source-language");
     let value = item["translator_source_language"];
@@ -50,10 +64,15 @@ document.addEventListener('DOMContentLoaded', function() {
       element.value = "English";
     }
   });
-
   document.getElementById("translator-use-open-tab").addEventListener('change', function(e) {
     chrome.storage.sync.set({
       "translator_useNewTab": this.checked
+    });
+    setButtonActivity(this, this.checked);
+  });
+  document.getElementById("translator-hold-alt-to-translate").addEventListener('change', function(e) {
+    chrome.storage.sync.set({
+      "translator_holdAltToTranslate": this.checked
     });
     setButtonActivity(this, this.checked);
   });
