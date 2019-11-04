@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   chrome.storage.sync.get("translator_translateInputAction", function(item) {
     let value = item["translator_translateInputAction"];
-    if (value != undefined) {
+    if (value) {
       let element = document.getElementById("translate-input-type-" + value);
       element.parentNode.classList.add("active");
     } else {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   chrome.storage.sync.get("translator_useNewTab", function(item) {
     let element = document.getElementById("translator-use-open-tab");
     let value = item["translator_useNewTab"];
-    if (value != undefined) {
+    if (value) {
       element.checked = value;
       setButtonActivity(element, element.checked);
     } else {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
   chrome.storage.sync.get("translator_holdAltToTranslate", function(item) {
     let element = document.getElementById("translator-hold-alt-to-translate");
     let value = item["translator_holdAltToTranslate"];
-    if (value != undefined) {
+    if (value) {
       element.checked = value;
       setButtonActivity(element, element.checked);
     } else {
@@ -42,26 +42,26 @@ document.addEventListener('DOMContentLoaded', function() {
   chrome.storage.sync.get("translator_source_language", function(item) {
     let element = document.getElementById("translator-source-language");
     let value = item["translator_source_language"];
-    if (value != undefined) {
+    if (value) {
       element.value = value;
     } else {
       chrome.storage.sync.set({
         "translator_source_language": "auto"
       });
-      element.value = "Auto";
+      element.value = "auto";
     }
   });
 
   chrome.storage.sync.get("translator_language", function(item) {
     let element = document.getElementById("translator-target-language");
     let value = item["translator_language"];
-    if (value != undefined) {
+    if (value) {
       element.value = value;
     } else {
       chrome.storage.sync.set({
         "translator_language": "en"
       });
-      element.value = "English";
+      element.value = "en";
     }
   });
   document.getElementById("translator-use-open-tab").addEventListener('change', function(e) {
