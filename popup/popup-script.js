@@ -89,6 +89,11 @@ document.addEventListener('DOMContentLoaded', function() {
       targetLanguage: this.value
     });
   });
+  document.getElementById("translator-key").addEventListener('change', function(e) {
+    chrome.storage.sync.set({
+      "translator_translateKey": this.value
+    });
+  });
 
   let sourceLanguageElement = document.getElementById("translator-source-language");
   let targetLanguageElement = document.getElementById("translator-target-language");

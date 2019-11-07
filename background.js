@@ -33,7 +33,7 @@ chrome.storage.sync.get(Object.keys(defaultPropertyValues), function(items) {
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.type == "translate") {
-      sendResponse(translate(request.text, request.action, request.altActive, false));
+      sendResponse(translate(request.text, request.action, request.activeKey, false));
       return true;
     } else if (request.type == "changeAction") {
       chrome.storage.sync.set({
@@ -88,37 +88,39 @@ chrome.storage.sync.get("translator_translateInputAction", function(item) {
   });
 });
 
-function translate(text, action, altActive, force) {
+function translate(text, action, activeKey, force) {
   chrome.storage.sync.get([
     "translator_holdAltToTranslate",
+    "translator_translateKey",
     "translator_translateInputAction",
     "translator_sourceLanguage",
     "translator_targetLanguage",
     "translator_useOpenTab"
   ], function(item) {
-    let holdAltToTranslate = item["translator_holdAltToTranslate"];
-    if (!holdAltToTranslate || altActive || force) {
-      let translateInputAction = item["translator_translateInputAction"];
-      if (translateInputAction == action || force) {
-        let newUrl = buildUrl(text,
-          item["translator_sourceLanguage"],
-          item["translator_targetLanguage"]);
-        let useOpenTab = item["translator_useOpenTab"];
-        if (useOpenTab) {
-          chrome.tabs.query({
-            currentWindow: true,
-            url: 'https://translate.google.ru/*'
-          }, function(tabs) {
-            let translateTab = tabs[0];
-            if (translateTab) {
-              updateTranslatorTab(translateTab.id, newUrl);
-            } else {
-              createTranslatorTab(newUrl);
-            }
-          });
-        } else {
-          createTranslatorTab(newUrl);
-        }
+    let rightTranslateAction = item["translator_translateInputAction"] == action;
+    let translateKey = item["translator_translateKey"];
+    console.log(activeKey);
+    console.log(translateKey);
+    let rightTranslateKey = translateKey == undefined || translateKey == activeKey;
+    if (rightTranslateAction && rightTranslateKey || force) {
+      let newUrl = buildUrl(text,
+        item["translator_sourceLanguage"],
+        item["translator_targetLanguage"]);
+      let useOpenTab = item["translator_useOpenTab"];
+      if (useOpenTab) {
+        chrome.tabs.query({
+          currentWindow: true,
+          url: 'https://translate.google.ru/*'
+        }, function(tabs) {
+          let translateTab = tabs[0];
+          if (translateTab) {
+            updateTranslatorTab(translateTab.id, newUrl);
+          } else {
+            createTranslatorTab(newUrl);
+          }
+        });
+      } else {
+        createTranslatorTab(newUrl);
       }
     }
   });
