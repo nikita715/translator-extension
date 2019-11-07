@@ -11,15 +11,16 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById("translate-input-type-dbclick").parentNode.classList.add("active");
     }
   });
-  chrome.storage.sync.get("translator_useNewTab", function(item) {
+  chrome.storage.sync.get("translator_useOpenTab", function(item) {
     let element = document.getElementById("translator-use-open-tab");
-    let value = item["translator_useNewTab"];
-    if (value) {
+    let value = item["translator_useOpenTab"];
+    console.log(value);
+    if (value != undefined) {
       element.checked = value;
-      setButtonActivity(element, element.checked);
+      setButtonActivity(element, value);
     } else {
       chrome.storage.sync.set({
-        "translator_useNewTab": true
+        "translator_useOpenTab": true
       });
       element.checked = true;
       setButtonActive(element);
@@ -28,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
   chrome.storage.sync.get("translator_holdAltToTranslate", function(item) {
     let element = document.getElementById("translator-hold-alt-to-translate");
     let value = item["translator_holdAltToTranslate"];
-    if (value) {
+    if (value != undefined) {
       element.checked = value;
-      setButtonActivity(element, element.checked);
+      setButtonActivity(element, value);
     } else {
       chrome.storage.sync.set({
         "translator_holdAltToTranslate": false
@@ -39,34 +40,34 @@ document.addEventListener('DOMContentLoaded', function() {
       setButtonNotActive(element);
     }
   });
-  chrome.storage.sync.get("translator_source_language", function(item) {
+  chrome.storage.sync.get("translator_sourceLanguage", function(item) {
     let element = document.getElementById("translator-source-language");
-    let value = item["translator_source_language"];
+    let value = item["translator_sourceLanguage"];
     if (value) {
       element.value = value;
     } else {
       chrome.storage.sync.set({
-        "translator_source_language": "auto"
+        "translator_sourceLanguage": "auto"
       });
       element.value = "auto";
     }
   });
 
-  chrome.storage.sync.get("translator_language", function(item) {
+  chrome.storage.sync.get("translator_targetLanguage", function(item) {
     let element = document.getElementById("translator-target-language");
-    let value = item["translator_language"];
+    let value = item["translator_targetLanguage"];
     if (value) {
       element.value = value;
     } else {
       chrome.storage.sync.set({
-        "translator_language": "en"
+        "translator_targetLanguage": "en"
       });
       element.value = "en";
     }
   });
   document.getElementById("translator-use-open-tab").addEventListener('change', function(e) {
     chrome.storage.sync.set({
-      "translator_useNewTab": this.checked
+      "translator_useOpenTab": this.checked
     });
     setButtonActivity(this, this.checked);
   });
