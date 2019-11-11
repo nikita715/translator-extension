@@ -1,5 +1,6 @@
 {
   "name": "Translator Extension",
+  "short_name": "Translator",
   "version": "1.0",
   "description": "Translator Extension for Chrome. Translates any text by Google Translate with a mouse click",
   "manifest_version": 2,
