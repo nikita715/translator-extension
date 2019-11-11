@@ -82,7 +82,7 @@ function changeLanguageOnPage(source, target) {
   chrome.tabs.query({
     currentWindow: true,
     active: true,
-    url: 'https://translate.google.ru/*'
+    url: 'https://translate.google.com/*'
   }, function(tabs) {
     let translateTab = tabs[0];
     if (translateTab) {
@@ -123,7 +123,7 @@ function translate(text, action, altActive, force) {
         if (useOpenTab) {
           chrome.tabs.query({
             currentWindow: true,
-            url: 'https://translate.google.ru/*'
+            url: 'https://translate.google.com/*'
           }, function(tabs) {
             let translateTab = tabs[0];
             if (translateTab) {
@@ -157,5 +157,5 @@ function buildUrl(text, sourceLanguage, targetLanguage) {
   let sourceLanguageProperty = sourceLanguage ? `&sl=${sourceLanguage}` : "";
   let targetLanguageProperty = targetLanguage ? `&tl=${targetLanguage}` : "";
   let textProperty = text ? `&text=${text}` : "";
-  return `https://translate.google.ru/#view=home&op=translate${sourceLanguageProperty}${targetLanguageProperty}${textProperty}`;
+  return `https://translate.google.com/#view=home&op=translate${sourceLanguageProperty}${targetLanguageProperty}${textProperty}`;
 }
