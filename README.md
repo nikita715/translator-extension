@@ -1,3 +1,6 @@
+[![Chrome Web Store](https://img.shields.io/badge/-Chrome_Extension-yellow)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/users/fcjlkibbonolijaeaepgpikjifgonijc)](https://chrome.google.com/webstore/detail/translator-extension/fcjlkibbonolijaeaepgpikjifgonijc)
+
 # translator-extension
 
 This Chrome extension can instantly translate text on Chrome page by Google Translate.
