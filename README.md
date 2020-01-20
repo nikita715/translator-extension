@@ -1,5 +1,5 @@
-[![Chrome Web Store](https://img.shields.io/badge/-Chrome_Extension-yellow)
-![Chrome Web Store](https://img.shields.io/chrome-web-store/users/fcjlkibbonolijaeaepgpikjifgonijc)](https://chrome.google.com/webstore/detail/translator-extension/fcjlkibbonolijaeaepgpikjifgonijc)
+[![Chrome Web Store](https://img.shields.io/badge/-Chrome_Extension-yellow)](https://chrome.google.com/webstore/detail/translator-extension/fcjlkibbonolijaeaepgpikjifgonijc)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/users/fcjlkibbonolijaeaepgpikjifgonijc)](https://chrome.google.com/webstore/detail/translator-extension/fcjlkibbonolijaeaepgpikjifgonijc)
 
 # translator-extension
 
