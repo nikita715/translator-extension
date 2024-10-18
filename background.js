@@ -1,5 +1,5 @@
 /*
-   Copyright 2019 Nikita Stepochkin
+   Copyright 2019 - 2024 Nikita Stepochkin
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -55,7 +55,7 @@ chrome.runtime.onMessage.addListener(
       chrome.storage.sync.set({
         "translator_translateInputAction": request.value
       });
-      chrome.browserAction.setBadgeText({
+      chrome.action.setBadgeText({
         text: request.value.charAt(0).toUpperCase()
       });
     } else if (request.type == "changeLanguage") {
@@ -99,7 +99,7 @@ function changeLanguageOnPage(source, target) {
 chrome.storage.sync.get("translator_translateInputAction", function(item) {
   let translateInputAction = item["translator_translateInputAction"];
   let text = translateInputAction ? translateInputAction.charAt(0).toUpperCase() : "D";
-  chrome.browserAction.setBadgeText({
+  chrome.action.setBadgeText({
     text
   });
 });

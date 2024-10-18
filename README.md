@@ -17,5 +17,3 @@ By clicking on extension icon you can set these configurations:
 - Translate text by clicks only when `alt` is clicked
 
 You can change mode of translation by `alt+1`, `+2`, `+3`. The active mode is labeled on the extension's icon.
-
-[This page](https://developer.chrome.com/extensions/getstarted#manifest) says how to install a Chrome extension in developer mode
