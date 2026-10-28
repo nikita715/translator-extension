@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Chrome の組み込み翻訳機能、オフラインで動作"
   },
+  "engineLabel": {
+    "message": "モデル"
+  },
+  "engineCaptionBergamot": {
+    "message": "Firefox の翻訳モデル、ダウンロード後はオフラインで動作、1 言語あたり約 20〜60 MB"
+  },
   "statusUnsupported": {
     "message": "$PAIR$：ページ上で翻訳できないため、Google 翻訳が開きます",
     "placeholders": {

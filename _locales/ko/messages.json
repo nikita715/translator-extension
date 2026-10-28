@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Chrome 내장 번역기, 오프라인으로 작동"
   },
+  "engineLabel": {
+    "message": "모델"
+  },
+  "engineCaptionBergamot": {
+    "message": "Firefox 번역 모델, 다운로드 후 오프라인 사용, 언어당 약 20–60MB"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: 페이지에서 번역할 수 없어 Google 번역이 열립니다",
     "placeholders": {

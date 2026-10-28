@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Ingebouwde vertaler van Chrome, werkt offline"
   },
+  "engineLabel": {
+    "message": "Model"
+  },
+  "engineCaptionBergamot": {
+    "message": "Vertaalmodellen van Firefox, offline na downloaden, ~20–60 MB per taal"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: kan niet op de pagina worden vertaald, Google Translate wordt geopend",
     "placeholders": {

@@ -31,18 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
     createLanguageOpt(targetLanguageElement, language.name, language.code);
   });
 
-  loadBuiltInSupportedLanguages();
+  let engineElement = document.getElementById("translator-engine");
   [sourceLanguageElement, targetLanguageElement].forEach(function(select) {
     // Both come before the list opens, keydown covers opening it from the keyboard
     ["mousedown", "keydown"].forEach(function(type) {
       select.addEventListener(type, function() {
         let useBuiltIn = document.querySelector('input[name="display"]:checked').value == "page";
-        setLanguageMarks(select, useBuiltIn);
+        setLanguageMarks(select, useBuiltIn ? engineElement.value : null);
       });
     });
     ["change", "blur"].forEach(function(type) {
       select.addEventListener(type, function() {
-        setLanguageMarks(select, false);
+        setLanguageMarks(select, null);
       });
     });
   });
@@ -66,12 +66,19 @@ document.addEventListener('DOMContentLoaded', function() {
     "translator_targetLanguage",
     "translator_translateInputAction",
     "translator_useBuiltIn",
+    "translator_engine",
     ...Object.keys(switchSettings)
   ], function(items) {
     let display = items["translator_useBuiltIn"] == false ? "google" : "page";
     displayElements.forEach(function(element) {
       element.checked = element.value == display;
     });
+    engineElement.value = items["translator_engine"] || "chrome";
+    // A saved engine this version doesn't have leaves nothing selected
+    if (!engineElement.value) {
+      engineElement.value = "chrome";
+    }
+    loadSupportedLanguages(engineElement.value);
     sourceLanguageElement.value = items["translator_sourceLanguage"] || "auto";
     targetLanguageElement.value = items["translator_targetLanguage"] || "en";
     let action = items["translator_translateInputAction"] || "dbclick";
@@ -124,6 +131,26 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       updateDependentControls();
     });
+  });
+
+  let selectedEngine = null;
+  engineElement.addEventListener('focus', function() {
+    selectedEngine = this.value;
+  });
+  engineElement.addEventListener('change', async function() {
+    let engine = this.value;
+    // Bergamot models come from a CDN without CORS headers, the extension needs access to it.
+    // An optional permission doesn't disable the extension on update until users accept it
+    if (engine == "bergamot" && !await chrome.permissions.request({ origins: [bergamotModelsOrigin] })) {
+      this.value = selectedEngine || "chrome";
+      return;
+    }
+    selectedEngine = engine;
+    chrome.storage.sync.set({
+      "translator_engine": engine
+    });
+    loadSupportedLanguages(engine);
+    updateDependentControls();
   });
 
   displayElements.forEach(function(element) {
@@ -195,7 +222,8 @@ async function updatePageTranslationStatus(sourceLanguageElement, targetLanguage
   let arrow = document.documentElement.dir == "rtl" ? "←" : "→";
   let pair = `${sourceLanguageElement.selectedOptions[0].dataset.name} ${arrow} ${targetLanguageElement.selectedOptions[0].dataset.name}`;
   let googleFallback = document.getElementById("translator-google-fallback").checked;
-  let status = await getPageTranslationStatus(sourceLanguageElement.value, targetLanguageElement.value, pair, googleFallback);
+  let engine = document.getElementById("translator-engine").value;
+  let status = await getPageTranslationStatus(engine, sourceLanguageElement.value, targetLanguageElement.value, pair, googleFallback);
   // Languages may have changed while availability was being checked
   if (request != pageTranslationStatusRequest) {
     return;
@@ -209,27 +237,44 @@ async function updatePageTranslationStatus(sourceLanguageElement, targetLanguage
   element.appendChild(text);
 }
 
-async function getPageTranslationStatus(sourceLanguage, targetLanguage, pair, googleFallback) {
-  if (!("Translator" in self)) {
+async function getPageTranslationStatus(engine, sourceLanguage, targetLanguage, pair, googleFallback) {
+  if (engine == "chrome" && !("Translator" in self)) {
     return { ok: false, message: chrome.i18n.getMessage(googleFallback ? "statusNoBuiltIn" : "statusNoBuiltInNoFallback") };
   }
   if (sourceLanguage == targetLanguage) {
     return { ok: false, message: chrome.i18n.getMessage("statusSameLanguage") };
   }
-  let target = toBuiltInLanguageCode(targetLanguage);
   // With auto-detection the source is only known after translation starts, so check just the target language
-  let source = sourceLanguage == "auto" ?
-    (target == "en" ? "es" : "en") :
-    toBuiltInLanguageCode(sourceLanguage);
-  let availability;
-  try {
-    availability = await Translator.availability({ sourceLanguage: source, targetLanguage: target });
-  } catch (e) {
-    availability = "unavailable";
+  if (sourceLanguage == "auto") {
+    sourceLanguage = targetLanguage == "en" ? "es" : "en";
   }
-  return availability == "unavailable" ?
-    { ok: false, message: chrome.i18n.getMessage(googleFallback ? "statusUnsupported" : "statusUnsupportedNoFallback", [pair]) } :
-    { ok: true, message: chrome.i18n.getMessage("onPageCaption") };
+  return await isPairSupported(engine, sourceLanguage, targetLanguage) ?
+    { ok: true, message: chrome.i18n.getMessage(engineCaptions[engine]) } :
+    { ok: false, message: chrome.i18n.getMessage(googleFallback ? "statusUnsupported" : "statusUnsupportedNoFallback", [pair]) };
+}
+
+let engineCaptions = {
+  chrome: "onPageCaption",
+  bergamot: "engineCaptionBergamot"
+};
+
+// When support can't be checked, e.g. the Bergamot model list doesn't load offline, the answer is supportedIfUnknown
+async function isPairSupported(engine, source, target, supportedIfUnknown = true) {
+  if (engine == "chrome") {
+    try {
+      return await Translator.availability({
+        sourceLanguage: toBuiltInLanguageCode(source),
+        targetLanguage: toBuiltInLanguageCode(target)
+      }) != "unavailable";
+    } catch (e) {
+      return false;
+    }
+  }
+  try {
+    return await isEnginePairSupported(engine, source, target);
+  } catch (e) {
+    return supportedIfUnknown;
+  }
 }
 
 function warningIcon() {
@@ -286,37 +331,31 @@ function createLanguageOpt(parent, key, value) {
   parent.appendChild(option);
 }
 
-// Codes of the languages Chrome's built-in translator supports, filled once when the popup opens
-let builtInSupportedLanguages = new Set();
+// Engine -> codes of the languages it can translate on the page, filled when the engine is first selected
+let supportedLanguages = new Map();
 
-function loadBuiltInSupportedLanguages() {
+function loadSupportedLanguages(engine) {
+  if (supportedLanguages.has(engine) || (engine == "chrome" && !("Translator" in self))) {
+    return;
+  }
+  supportedLanguages.set(engine, new Set());
   let codes = Array.from(languages.values());
-  Promise.all(codes.map(isBuiltInSupported)).then(function(results) {
-    builtInSupportedLanguages = new Set(codes.filter(function(code, i) {
+  Promise.all(codes.map(function(code) {
+    // Support is checked per pair, so pair the language with English (or English with Spanish)
+    return isPairSupported(engine, code == "en" ? "es" : "en", code, false);
+  })).then(function(results) {
+    supportedLanguages.set(engine, new Set(codes.filter(function(code, i) {
       return results[i];
-    }));
+    })));
   });
 }
 
-async function isBuiltInSupported(code) {
-  if (!("Translator" in self)) {
-    return false;
-  }
-  let target = toBuiltInLanguageCode(code);
-  // Availability is checked per pair, so pair the language with English (or English with Spanish)
-  let source = target == "en" ? "es" : "en";
-  try {
-    return await Translator.availability({ sourceLanguage: source, targetLanguage: target }) != "unavailable";
-  } catch (e) {
-    return false;
-  }
-}
-
 // Marks are shown only while a list is open: a closed list is too narrow for "Japanese · on page"
-function setLanguageMarks(select, show) {
+function setLanguageMarks(select, engine) {
   let mark = chrome.i18n.getMessage("onPageMark");
+  let supported = (engine && supportedLanguages.get(engine)) || new Set();
   Array.from(select.options).forEach(function(option) {
-    option.textContent = show && builtInSupportedLanguages.has(option.value) ?
+    option.textContent = supported.has(option.value) ?
       `${option.dataset.name} · ${mark}` :
       option.dataset.name;
   });

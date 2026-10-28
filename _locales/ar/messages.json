@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "مترجم Chrome المدمج، يعمل بلا إنترنت"
   },
+  "engineLabel": {
+    "message": "النموذج"
+  },
+  "engineCaptionBergamot": {
+    "message": "نماذج ترجمة Firefox، تعمل بلا إنترنت بعد التنزيل، ~20–60 ميغابايت لكل لغة"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: لا يمكن الترجمة في الصفحة، سيتم فتح ترجمة Google",
     "placeholders": {

@@ -76,7 +76,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.type == "translateBuiltIn") {
     let segments = request.replaceText ? getReplaceableSegments() : null;
     if (segments) {
-      replaceWithTranslation(segments, request.sourceLanguage, request.targetLanguage).then(function() {
+      replaceWithTranslation(segments, request.sourceLanguage, request.targetLanguage, request.engine).then(function() {
         sendResponse({ success: true });
       }).catch(function(error) {
         logBuiltInFallback(error, request.googleFallback);
@@ -88,7 +88,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       return true;
     }
     let popup = showTranslationPopup(chrome.i18n.getMessage("translating"));
-    translateBuiltIn([request.text], request.sourceLanguage, request.targetLanguage, function(progress) {
+    translateOnPage([request.text], request.sourceLanguage, request.targetLanguage, request.engine, function(progress) {
       popup.setText(chrome.i18n.getMessage("downloadingModel", [String(Math.round(progress * 100))]));
     }).then(function([translation]) {
       popup.setText(translation);
@@ -103,6 +103,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       sendResponse({ success: false });
     });
     return true;
+  } else if (request.type == "engineProgress") {
+    let onProgress = engineProgressListeners.get(request.requestId);
+    if (onProgress) {
+      onProgress(request.progress);
+    }
   }
 });
 
@@ -114,6 +119,54 @@ function logBuiltInFallback(error, googleFallback) {
   } else {
     console.debug(`Translator: built-in translation failed${next}`, error);
   }
+}
+
+// Bergamot runs in the extension's offscreen document, Chrome's translator runs in the page
+async function translateOnPage(texts, sourceLanguage, targetLanguage, engine, onDownloadProgress) {
+  if (!engine || engine == "chrome") {
+    return translateBuiltIn(texts, sourceLanguage, targetLanguage, onDownloadProgress);
+  }
+  if (sourceLanguage == "auto") {
+    sourceLanguage = fromDetectedLanguage(await detectLanguage(texts.join(" ")));
+  }
+  if (isSameLanguage(sourceLanguage, targetLanguage)) {
+    return texts;
+  }
+  let requestId = String(Math.random());
+  engineProgressListeners.set(requestId, onDownloadProgress);
+  try {
+    let response = await chrome.runtime.sendMessage({
+      type: "translateWithEngine",
+      engine,
+      texts,
+      sourceLanguage,
+      targetLanguage,
+      requestId
+    });
+    if (!response || response.error) {
+      let error = response ? response.error : { name: "Error", message: "No response from the translation engine" };
+      throw new DOMException(error.message, error.name);
+    }
+    return response.translations;
+  } finally {
+    engineProgressListeners.delete(requestId);
+  }
+}
+
+let engineProgressListeners = new Map();
+
+// Language Detector returns BCP 47 tags, the engines take Google Translate codes
+let detectedLanguageCodes = {
+  "fil": "tl",
+  "he": "iw",
+  "jv": "jw",
+  "nb": "no",
+  "zh": "zh-CN",
+  "zh-Hant": "zh-TW"
+};
+
+function fromDetectedLanguage(code) {
+  return detectedLanguageCodes[code] || code;
 }
 
 let translators = new Map();
@@ -203,12 +256,12 @@ function getReplaceableSegments() {
   return segments.length ? segments : null;
 }
 
-async function replaceWithTranslation(segments, sourceLanguage, targetLanguage) {
+async function replaceWithTranslation(segments, sourceLanguage, targetLanguage, engine) {
   let popup = null;
   try {
-    let translations = await translateBuiltIn(segments.map(function(node) {
+    let translations = await translateOnPage(segments.map(function(node) {
       return node.data.trim();
-    }), sourceLanguage, targetLanguage, function(progress) {
+    }), sourceLanguage, targetLanguage, engine, function(progress) {
       popup = popup || showTranslationPopup("");
       popup.setText(chrome.i18n.getMessage("downloadingModel", [String(Math.round(progress * 100))]));
     });
@@ -379,7 +432,7 @@ let languageDetector = null;
 
 async function detectLanguage(text) {
   if (!("LanguageDetector" in self)) {
-    throw new Error("Language Detector API is not supported");
+    throw new DOMException("Language Detector API is not supported", "NotSupportedError");
   }
   if (!languageDetector) {
     languageDetector = LanguageDetector.create();
@@ -393,7 +446,7 @@ async function detectLanguage(text) {
   }
   let language = results.length ? results[0].detectedLanguage : "und";
   if (language == "und") {
-    throw new Error("Unable to detect language");
+    throw new DOMException("Unable to detect language", "NotSupportedError");
   }
   return language;
 }

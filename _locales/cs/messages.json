@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Vestavěný překladač Chrome, funguje offline"
   },
+  "engineLabel": {
+    "message": "Model"
+  },
+  "engineCaptionBergamot": {
+    "message": "Překladové modely Firefoxu, po stažení offline, ~20–60 MB na jazyk"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: na stránce nelze přeložit, otevře se Překladač Google",
     "placeholders": {

@@ -55,6 +55,13 @@
         <label><input type="radio" name="display" value="google"><span data-i18n="displayGoogle"></span></label>
       </div>
       <div id="translator-page-options">
+        <label class="option engine">
+          <span data-i18n="engineLabel"></span>
+          <select id="translator-engine">
+            <option value="chrome">Chrome</option>
+            <option value="bergamot">Bergamot</option>
+          </select>
+        </label>
         <p id="translator-page-status" class="mode-caption status" aria-live="polite"></p>
         <label class="option">
           <span><span data-i18n="replaceText"></span><small data-i18n="replaceTextCaption"></small></span>
@@ -75,6 +82,7 @@
     </section>
   </main>
   <script src="../builtInLanguages.js" type="text/javascript"></script>
+  <script src="../engines/languages.js" type="text/javascript"></script>
   <script src="popup-script.js" type="text/javascript"></script>
 </body>
 

@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Traducteur intégré de Chrome, hors ligne"
   },
+  "engineLabel": {
+    "message": "Modèle"
+  },
+  "engineCaptionBergamot": {
+    "message": "Modèles de traduction de Firefox, hors ligne après téléchargement, ~20–60 Mo par langue"
+  },
   "statusUnsupported": {
     "message": "$PAIR$ : traduction impossible sur la page, Google Traduction s'ouvrira",
     "placeholders": {

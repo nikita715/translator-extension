@@ -242,6 +242,15 @@ section > .option:last-child {
   padding-bottom: 0;
 }
 
+.option.engine select {
+  flex: none;
+  width: 130px;
+}
+
+.engine + .status {
+  margin-top: 2px;
+}
+
 .option small {
   display: block;
   color: var(--muted);

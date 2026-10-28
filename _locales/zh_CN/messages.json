@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Chrome 内置翻译器，可离线使用"
   },
+  "engineLabel": {
+    "message": "模型"
+  },
+  "engineCaptionBergamot": {
+    "message": "Firefox 翻译模型，下载后可离线使用，每种语言约 20–60 MB"
+  },
   "statusUnsupported": {
     "message": "$PAIR$：无法在页面上翻译，将打开 Google 翻译",
     "placeholders": {

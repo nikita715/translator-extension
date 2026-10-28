@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Wbudowany tłumacz Chrome, działa offline"
   },
+  "engineLabel": {
+    "message": "Model"
+  },
+  "engineCaptionBergamot": {
+    "message": "Modele tłumaczenia Firefoksa, offline po pobraniu, ~20–60 MB na język"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: nie można przetłumaczyć na stronie, otworzy się Tłumacz Google",
     "placeholders": {

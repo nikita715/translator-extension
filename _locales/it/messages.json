@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Traduttore integrato di Chrome, funziona offline"
   },
+  "engineLabel": {
+    "message": "Modello"
+  },
+  "engineCaptionBergamot": {
+    "message": "Modelli di traduzione di Firefox, offline dopo il download, ~20–60 MB per lingua"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: impossibile tradurre nella pagina, verrà aperto Google Traduttore",
     "placeholders": {

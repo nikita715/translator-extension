@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Penerjemah bawaan Chrome, berfungsi offline"
   },
+  "engineLabel": {
+    "message": "Model"
+  },
+  "engineCaptionBergamot": {
+    "message": "Model terjemahan Firefox, offline setelah diunduh, ~20–60 MB per bahasa"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: tidak dapat diterjemahkan di halaman, Google Terjemahan akan dibuka",
     "placeholders": {

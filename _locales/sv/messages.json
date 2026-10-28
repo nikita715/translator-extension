@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Chromes inbyggda översättare, fungerar offline"
   },
+  "engineLabel": {
+    "message": "Modell"
+  },
+  "engineCaptionBergamot": {
+    "message": "Firefox översättningsmodeller, offline efter nedladdning, ~20–60 MB per språk"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: kan inte översättas på sidan, Google Översätt öppnas i stället",
     "placeholders": {

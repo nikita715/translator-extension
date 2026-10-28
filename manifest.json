@@ -15,7 +15,8 @@
   "permissions": [
     "activeTab",
     "storage",
-    "contextMenus"
+    "contextMenus",
+    "offscreen"
   ],
   "action": {
     "default_popup": "popup/popup.html",
@@ -24,6 +25,12 @@
   "host_permissions": [
     "https://translate.google.com/"
   ],
+  "optional_host_permissions": [
+    "https://storage.googleapis.com/moz-fx-translations-data--303e-prod-translations-data/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
   "icons": {
     "128": "icons/icon-128.png",
     "48": "icons/icon-48.png",

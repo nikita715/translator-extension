@@ -40,7 +40,8 @@ let defaultPropertyValues = {
   "translator_useOpenTab": true,
   "translator_useBuiltIn": true,
   "translator_replaceText": false,
-  "translator_googleFallback": true
+  "translator_googleFallback": true,
+  "translator_engine": "chrome"
 }
 
 chrome.storage.sync.get(Object.keys(defaultPropertyValues), function(items) {
@@ -65,6 +66,15 @@ chrome.runtime.onMessage.addListener(
       chrome.action.setBadgeText({
         text: request.value.charAt(0).toUpperCase()
       });
+    } else if (request.type == "translateWithEngine") {
+      forwardToOffscreen(request, sender.tab ? sender.tab.id : null).then(sendResponse);
+      return true;
+    } else if (request.type == "engineProgress") {
+      if (request.tabId != null) {
+        chrome.tabs.sendMessage(request.tabId, request).catch(function() {});
+      }
+    } else if (request.type == "offscreenIdle") {
+      chrome.offscreen.closeDocument().catch(function() {});
     } else if (request.type == "changeLanguage") {
       let languages = {};
       if (request.sourceLanguage) {
@@ -78,6 +88,37 @@ chrome.runtime.onMessage.addListener(
     }
   }
 );
+
+// Bergamot runs in an offscreen document: the service worker can't start workers
+let offscreenDocumentPromise = null;
+
+async function ensureOffscreenDocument() {
+  if (await chrome.offscreen.hasDocument()) {
+    return;
+  }
+  if (!offscreenDocumentPromise) {
+    offscreenDocumentPromise = chrome.offscreen.createDocument({
+      url: "engines/offscreen.html",
+      reasons: ["WORKERS"],
+      justification: "Runs offline translation models"
+    }).finally(function() {
+      offscreenDocumentPromise = null;
+    });
+  }
+  await offscreenDocumentPromise;
+}
+
+async function forwardToOffscreen(request, tabId) {
+  try {
+    await ensureOffscreenDocument();
+    return await chrome.runtime.sendMessage({ ...request, target: "offscreen", tabId });
+  } catch (error) {
+    return { error: { name: "Error", message: String(error) } };
+  }
+}
+
+// A saved engine this version doesn't have falls back to Chrome
+let engines = ["chrome", "bergamot"];
 
 let slRegexp = new RegExp("^.+sl=([a-z]+).*$");
 let tlRegexp = new RegExp("^.+tl=([a-z]+).*$");
@@ -118,7 +159,8 @@ function translate(text, action, altActive, force, tabId) {
     "translator_useOpenTab",
     "translator_useBuiltIn",
     "translator_replaceText",
-    "translator_googleFallback"
+    "translator_googleFallback",
+    "translator_engine"
   ], function(item) {
     let holdAltToTranslate = item["translator_holdAltToTranslate"];
     if (!holdAltToTranslate || altActive || force) {
@@ -143,6 +185,7 @@ function translate(text, action, altActive, force, tabId) {
             sourceLanguage,
             targetLanguage,
             replaceText: item["translator_replaceText"],
+            engine: engines.includes(item["translator_engine"]) ? item["translator_engine"] : "chrome",
             googleFallback
           }, function(response) {
             let failed = chrome.runtime.lastError || !response || !response.success;

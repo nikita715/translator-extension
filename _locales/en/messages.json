@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Chrome built-in translator, works offline"
   },
+  "engineLabel": {
+    "message": "Model"
+  },
+  "engineCaptionBergamot": {
+    "message": "Firefox translation models, offline after download, ~20–60 MB per language"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: can't be translated on the page, Google Translate will open instead",
     "placeholders": {

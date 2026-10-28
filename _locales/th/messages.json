@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "ตัวแปลในตัวของ Chrome ใช้งานออฟไลน์ได้"
   },
+  "engineLabel": {
+    "message": "โมเดล"
+  },
+  "engineCaptionBergamot": {
+    "message": "โมเดลแปลของ Firefox ใช้ออฟไลน์ได้หลังดาวน์โหลด ประมาณ 20–60 MB ต่อภาษา"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: แปลบนหน้าเว็บไม่ได้ จะเปิด Google แปลภาษาแทน",
     "placeholders": {

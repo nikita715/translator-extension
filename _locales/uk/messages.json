@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Вбудований перекладач Chrome, працює офлайн"
   },
+  "engineLabel": {
+    "message": "Модель"
+  },
+  "engineCaptionBergamot": {
+    "message": "Моделі перекладу Firefox, офлайн після завантаження, ~20–60 МБ на мову"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: не можна перекласти на сторінці, відкриється Google Перекладач",
     "placeholders": {

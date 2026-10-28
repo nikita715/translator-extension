@@ -6,7 +6,7 @@ chrome="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 build=$(mktemp -d)
 trap 'rm -rf "$build"' EXIT
 
-cp -R ../_locales ../icons ../builtInLanguages.js src/* "$build"/
+cp -R ../_locales ../icons ../engines ../builtInLanguages.js src/* "$build"/
 mkdir "$build/popup"
 cp ../popup/* "$build/popup"/
 # Load the API stub before the popup scripts

@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Traducătorul integrat Chrome, funcționează offline"
   },
+  "engineLabel": {
+    "message": "Model"
+  },
+  "engineCaptionBergamot": {
+    "message": "Modele de traducere Firefox, offline după descărcare, ~20–60 MB per limbă"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: nu se poate traduce pe pagină, se va deschide Google Traducere",
     "placeholders": {

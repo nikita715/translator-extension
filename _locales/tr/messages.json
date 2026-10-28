@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Chrome'un yerleşik çevirmeni, çevrimdışı çalışır"
   },
+  "engineLabel": {
+    "message": "Model"
+  },
+  "engineCaptionBergamot": {
+    "message": "Firefox çeviri modelleri, indirdikten sonra çevrimdışı, dil başına ~20–60 MB"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: sayfada çevrilemiyor, Google Çeviri açılacak",
     "placeholders": {

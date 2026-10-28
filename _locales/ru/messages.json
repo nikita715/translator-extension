@@ -98,6 +98,12 @@
   "onPageCaption": {
     "message": "Встроенный переводчик Chrome, офлайн"
   },
+  "engineLabel": {
+    "message": "Модель"
+  },
+  "engineCaptionBergamot": {
+    "message": "Модели перевода Firefox, офлайн после скачивания, ~20–60 МБ на язык"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: не переводится на странице, откроется Google Переводчик",
     "placeholders": {
