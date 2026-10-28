@@ -24,7 +24,7 @@ chrome.contextMenus.create({
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
   if (info.menuItemId == translateMenuItemId) {
-    translate(info.selectionText, null, false, true);
+    translate(info.selectionText, null, false, true, tab ? tab.id : null);
   }
 });
 
@@ -33,7 +33,9 @@ let defaultPropertyValues = {
   "translator_translateInputAction": "dbclick",
   "translator_sourceLanguage": "auto",
   "translator_targetLanguage": "en",
-  "translator_useOpenTab": true
+  "translator_useOpenTab": true,
+  "translator_useBuiltIn": true,
+  "translator_replaceText": false
 }
 
 chrome.storage.sync.get(Object.keys(defaultPropertyValues), function(items) {
@@ -49,7 +51,7 @@ chrome.storage.sync.get(Object.keys(defaultPropertyValues), function(items) {
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.type == "translate") {
-      sendResponse(translate(request.text, request.action, request.altActive, false));
+      sendResponse(translate(request.text, request.action, request.altActive, false, sender.tab ? sender.tab.id : null));
       return true;
     } else if (request.type == "changeAction") {
       chrome.storage.sync.set({
@@ -59,17 +61,15 @@ chrome.runtime.onMessage.addListener(
         text: request.value.charAt(0).toUpperCase()
       });
     } else if (request.type == "changeLanguage") {
+      let languages = {};
       if (request.sourceLanguage) {
-        chrome.storage.sync.set({
-          "translator_sourceLanguage": request.sourceLanguage
-        });
-        changeLanguageOnPage(request.sourceLanguage, null);
-      } else if (request.targetLanguage) {
-        chrome.storage.sync.set({
-          "translator_targetLanguage": request.targetLanguage
-        });
-        changeLanguageOnPage(null, request.targetLanguage);
+        languages["translator_sourceLanguage"] = request.sourceLanguage;
       }
+      if (request.targetLanguage) {
+        languages["translator_targetLanguage"] = request.targetLanguage;
+      }
+      chrome.storage.sync.set(languages);
+      changeLanguageOnPage(request.sourceLanguage, request.targetLanguage);
     }
   }
 );
@@ -104,40 +104,61 @@ chrome.storage.sync.get("translator_translateInputAction", function(item) {
   });
 });
 
-function translate(text, action, altActive, force) {
+function translate(text, action, altActive, force, tabId) {
   chrome.storage.sync.get([
     "translator_holdAltToTranslate",
     "translator_translateInputAction",
     "translator_sourceLanguage",
     "translator_targetLanguage",
-    "translator_useOpenTab"
+    "translator_useOpenTab",
+    "translator_useBuiltIn",
+    "translator_replaceText"
   ], function(item) {
     let holdAltToTranslate = item["translator_holdAltToTranslate"];
     if (!holdAltToTranslate || altActive || force) {
       let translateInputAction = item["translator_translateInputAction"];
       if (translateInputAction == action || force) {
-        let newUrl = buildUrl(text,
-          item["translator_sourceLanguage"],
-          item["translator_targetLanguage"]);
+        let sourceLanguage = item["translator_sourceLanguage"];
+        let targetLanguage = item["translator_targetLanguage"];
         let useOpenTab = item["translator_useOpenTab"];
-        if (useOpenTab) {
-          chrome.tabs.query({
-            currentWindow: true,
-            url: 'https://translate.google.com/*'
-          }, function(tabs) {
-            let translateTab = tabs[0];
-            if (translateTab) {
-              updateTranslatorTab(translateTab.id, newUrl);
-            } else {
-              createTranslatorTab(newUrl);
+        if (item["translator_useBuiltIn"] && tabId != null) {
+          // Chrome Translator API is not exposed to service workers, so translate in the page
+          chrome.tabs.sendMessage(tabId, {
+            type: "translateBuiltIn",
+            text,
+            sourceLanguage,
+            targetLanguage,
+            replaceText: item["translator_replaceText"]
+          }, function(response) {
+            if (chrome.runtime.lastError || !response || !response.success) {
+              openTranslatorTab(text, sourceLanguage, targetLanguage, useOpenTab);
             }
           });
         } else {
-          createTranslatorTab(newUrl);
+          openTranslatorTab(text, sourceLanguage, targetLanguage, useOpenTab);
         }
       }
     }
   });
+}
+
+function openTranslatorTab(text, sourceLanguage, targetLanguage, useOpenTab) {
+  let newUrl = buildUrl(text, sourceLanguage, targetLanguage);
+  if (useOpenTab) {
+    chrome.tabs.query({
+      currentWindow: true,
+      url: 'https://translate.google.com/*'
+    }, function(tabs) {
+      let translateTab = tabs[0];
+      if (translateTab) {
+        updateTranslatorTab(translateTab.id, newUrl);
+      } else {
+        createTranslatorTab(newUrl);
+      }
+    });
+  } else {
+    createTranslatorTab(newUrl);
+  }
 }
 
 function createTranslatorTab(url) {

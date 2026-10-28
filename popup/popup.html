@@ -18,62 +18,58 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="popup-style.css">
-  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container mb-3 mt-3 translator-popup">
-    <div class="row">
-      <div class="col">
-        <select class="form-control" id="translator-source-language">
-          <option disabled>Source language</option>
-        </select>
+  <main class="popup loading">
+    <section class="languages">
+      <select id="translator-source-language" aria-label="Source language"></select>
+      <button id="translator-swap-languages" class="swap" type="button" title="Swap languages" aria-label="Swap languages">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 5h11M10 2l3 3-3 3M14 11H3M6 8l-3 3 3 3" />
+        </svg>
+      </button>
+      <select id="translator-target-language" aria-label="Target language"></select>
+    </section>
+
+    <section>
+      <h2>Controls</h2>
+      <div class="segmented" role="radiogroup" aria-label="Controls">
+        <label><input type="radio" name="trigger" value="none"><span>Off</span></label>
+        <label><input type="radio" name="trigger" value="dbclick"><span>Double click</span></label>
+        <label><input type="radio" name="trigger" value="tpclick"><span>Triple click</span></label>
       </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col">
-        <select class="form-control" id="translator-target-language">
-          <option disabled>Target language</option>
-        </select>
+      <div id="translator-trigger-hint" class="hint" aria-live="polite"></div>
+      <label class="option" id="translator-hold-alt-option">
+        <span>Only while holding <span class="alt-key-name">Alt</span></span>
+        <input id="translator-hold-alt-to-translate" class="switch" type="checkbox">
+      </label>
+    </section>
+
+    <section>
+      <h2>Show translation</h2>
+      <div class="segmented" role="radiogroup" aria-label="Show translation">
+        <label><input type="radio" name="display" value="page"><span>On page</span></label>
+        <label><input type="radio" name="display" value="google"><span>Google Translate</span></label>
       </div>
-    </div>
-    <div class="row">
-      <div class="col m-2">
-        <div class="row">
-          <div class="btn-group btn-group-toggle m-2 w-100" data-toggle="buttons">
-            <label class="btn btn-secondary">
-              <input id="translate-input-type-none" class="translate-input-type" type="radio" value="none" autocomplete="off">None
-            </label>
-            <label class="btn btn-secondary">
-              <input id="translate-input-type-dbclick" class="translate-input-type" type="radio" value="dbclick" autocomplete="off">Double
-            </label>
-            <label class="btn btn-secondary">
-              <input id="translate-input-type-tpclick" class="translate-input-type" type="radio" value="tpclick" autocomplete="off">Triple
-            </label>
-          </div>
-        </div>
+      <div id="translator-page-options">
+        <p class="mode-caption">Chrome built-in translator, works offline</p>
+        <label class="option">
+          <span>Replace selected text</span>
+          <input id="translator-replace-text" class="switch" type="checkbox">
+        </label>
       </div>
-    </div>
-    <div class="row">
-      <div class="col ml-3 mr-3">
-        <div class="row">
-          <div class="btn-group-toggle w-100" data-toggle="buttons">
-            <label class="btn btn-light w-100">
-              <input id="translator-use-open-tab" type="checkbox" autocomplete="off">Use open tab
-            </label>
-          </div>
-        </div>
-        <div class="row mt-2">
-          <div class="btn-group-toggle w-100" data-toggle="buttons">
-            <label class="btn btn-light w-100">
-              <input id="translator-hold-alt-to-translate" type="checkbox" autocomplete="off">Hold alt to translate
-            </label>
-          </div>
-        </div>
+      <div id="translator-google-options">
+        <p class="mode-caption">Opens translate.google.com</p>
+        <label class="option">
+          <span>Reuse open tab</span>
+          <input id="translator-use-open-tab" class="switch" type="checkbox">
+        </label>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
   <script src="popup-script.js" type="text/javascript"></script>
 </body>
 

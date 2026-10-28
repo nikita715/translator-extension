@@ -14,6 +14,320 @@
    limitations under the License.
 */
 
-.translator-popup {
-  width: 240px !important;
+:root {
+  --bg: #fff;
+  --text: #1f1f1f;
+  --muted: #6b6b6b;
+  --border: #dadada;
+  --control: #f2f2f2;
+  --control-hover: #e8e8e8;
+  --accent: #1a73e8;
+  --on-accent: #fff;
+  --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%236b6b6b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #202124;
+    --text: #e8eaed;
+    --muted: #9aa0a6;
+    --border: #3c4043;
+    --control: #2d2e31;
+    --control-hover: #36373a;
+    --accent: #8ab4f8;
+    --on-accent: #202124;
+    --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%239aa0a6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.popup {
+  width: 300px;
+  padding: 12px;
+}
+
+section + section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+h2 {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Languages */
+
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+select {
+  flex: 1;
+  min-width: 0;
+  height: 32px;
+  padding: 0 28px 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg) var(--chevron) no-repeat right 10px center;
+  color: var(--text);
+  font: inherit;
+  text-overflow: ellipsis;
+  appearance: none;
+  cursor: pointer;
+}
+
+.swap {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.swap:hover:not(:disabled) {
+  background: var(--control);
+  color: var(--text);
+}
+
+.swap:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* Trigger */
+
+.segmented {
+  display: flex;
+  padding: 2px;
+  border-radius: 8px;
+  background: var(--control);
+}
+
+.segmented label {
+  flex: 1;
+}
+
+.segmented input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.segmented span {
+  display: block;
+  padding: 5px 4px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.segmented input:checked + span {
+  background: var(--bg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+}
+
+.segmented input:focus-visible + span {
+  outline: 2px solid var(--accent);
+}
+
+/* Trigger hint */
+
+.hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.combo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+}
+
+.key {
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: var(--control);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.plus {
+  color: var(--muted);
+}
+
+.mouse {
+  color: var(--text);
+}
+
+.mouse .pressed {
+  fill: var(--accent);
+}
+
+.count {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.hint-caption {
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Options */
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  cursor: pointer;
+}
+
+.segmented + .option {
+  margin-top: 4px;
+}
+
+.option small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.mode-caption {
+  margin: 8px 0 2px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.option.disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.switch {
+  flex: none;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  margin: 0;
+  border-radius: 9px;
+  background: var(--border);
+  appearance: none;
+  cursor: inherit;
+  transition: background 0.15s;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.15s;
+}
+
+.switch:checked {
+  background: var(--accent);
+}
+
+.switch:checked::after {
+  background: var(--on-accent);
+  transform: translateX(12px);
+}
+
+/* Don't animate switches into their saved state when the popup opens */
+.loading .switch,
+.loading .switch::after {
+  transition: none;
+}
+
+.switch:disabled {
+  background: var(--border);
+}
+
+.switch:disabled::after {
+  background: #fff;
+}
+
+.switch:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Mode switching shortcut inside the hint */
+
+.shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  align-self: stretch;
+  margin-top: 2px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.shortcut .keys {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.shortcut .key {
+  color: var(--text);
+  text-align: center;
+}
+
+.shortcut .key:last-child {
+  width: 26px;
+  padding: 3px 0;
 }
