@@ -113,9 +113,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
             popup.setText(chrome.i18n.getMessage("downloadingModel", [String(Math.round(progress * 100))]));
           }
         },
-        onDetected(languages) {
-          popup.setLanguages(languages, translate);
+        onDetected(languages, selected) {
+          popup.setLanguages(languages, selected, translate);
         },
+        // The translation shows up at once, other languages may need a download
+        preferDownloaded: true,
         confirmDownload: request.askBeforeDownload ? function(message) {
           respond({ success: true });
           return popup.confirm(message, chrome.i18n.getMessage("download"));
@@ -1140,15 +1142,15 @@ function showTranslationPopup(text) {
         content.appendChild(button);
       });
     },
-    // Language choices for "auto" (Google Translate codes), the first one is selected; onPick translates again
-    setLanguages(codes, onPick) {
+    // Language choices for "auto" (Google Translate codes) with the selected one; onPick translates again
+    setLanguages(codes, selected, onPick) {
       let label = document.createElement("span");
       label.textContent = chrome.i18n.getMessage("sourceLanguageLabel");
-      let buttons = codes.map(function(code, i) {
+      let buttons = codes.map(function(code) {
         let button = document.createElement("button");
         button.type = "button";
         button.textContent = getLanguageName(code);
-        button.setAttribute("aria-pressed", String(i == 0));
+        button.setAttribute("aria-pressed", String(code == selected));
         button.addEventListener("click", function() {
           if (button.getAttribute("aria-pressed") == "true") {
             return;
