@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Hiển thị bản dịch thay cho văn bản gốc"
   },
+  "restoreOriginal": {
+    "message": "Khôi phục bản gốc"
+  },
+  "googleFallback": {
+    "message": "Dùng Google Dịch khi cần"
+  },
+  "googleFallbackCaption": {
+    "message": "Mở Google Dịch nếu không dịch được trên trang"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: không thể dịch trên trang",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "Trình duyệt này không có trình dịch tích hợp"
+  },
+  "translationFailed": {
+    "message": "Không thể dịch trên trang"
+  },
   "googleCaption": {
     "message": "Mở translate.google.com"
   },

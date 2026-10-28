@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "以譯文取代原文顯示"
   },
+  "restoreOriginal": {
+    "message": "還原原文"
+  },
+  "googleFallback": {
+    "message": "備用 Google 翻譯"
+  },
+  "googleFallbackCaption": {
+    "message": "無法在網頁上翻譯時開啟 Google 翻譯"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$：無法在網頁上翻譯",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "此瀏覽器沒有內建翻譯器"
+  },
+  "translationFailed": {
+    "message": "無法在網頁上翻譯"
+  },
   "googleCaption": {
     "message": "開啟 translate.google.com"
   },

@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "原文の代わりに翻訳を表示"
   },
+  "restoreOriginal": {
+    "message": "原文に戻す"
+  },
+  "googleFallback": {
+    "message": "Google 翻訳で代替"
+  },
+  "googleFallbackCaption": {
+    "message": "ページ上で翻訳できないときに Google 翻訳を開く"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$：ページ上で翻訳できません",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "このブラウザには組み込み翻訳機能がありません"
+  },
+  "translationFailed": {
+    "message": "ページ上で翻訳できませんでした"
+  },
   "googleCaption": {
     "message": "translate.google.com を開きます"
   },

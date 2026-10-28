@@ -26,8 +26,13 @@ document.body.addEventListener('click', function(e) {
   }
 });
 
+// After the extension is reloaded or updated, scripts left in already open tabs lose the connection to it
+function isExtensionConnected() {
+  return Boolean(chrome.runtime && chrome.runtime.id);
+}
+
 function sendToTranslate(e, action, text) {
-  if (!isBlank(text) && notInputTag(e.target)) {
+  if (!isBlank(text) && notInputTag(e.target) && isExtensionConnected()) {
     chrome.runtime.sendMessage({
       action: action,
       type: "translate",
@@ -42,7 +47,7 @@ function isBlank(str) {
 }
 
 document.onkeyup = function(e) {
-  if (e.altKey) {
+  if (e.altKey && isExtensionConnected()) {
     if (e.which == 49) {
       chrome.runtime.sendMessage({
         type: "changeAction",
@@ -74,7 +79,10 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       replaceWithTranslation(segments, request.sourceLanguage, request.targetLanguage).then(function() {
         sendResponse({ success: true });
       }).catch(function(error) {
-        logBuiltInFallback(error);
+        logBuiltInFallback(error, request.googleFallback);
+        if (!request.googleFallback) {
+          showTranslationPopup(chrome.i18n.getMessage("translationFailed"));
+        }
         sendResponse({ success: false });
       });
       return true;
@@ -86,8 +94,12 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       popup.setText(translation);
       sendResponse({ success: true });
     }).catch(function(error) {
-      logBuiltInFallback(error);
-      popup.close();
+      logBuiltInFallback(error, request.googleFallback);
+      if (request.googleFallback) {
+        popup.close();
+      } else {
+        popup.setText(chrome.i18n.getMessage("translationFailed"));
+      }
       sendResponse({ success: false });
     });
     return true;
@@ -95,11 +107,12 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 
 // An unsupported language pair is an expected case, not an error
-function logBuiltInFallback(error) {
+function logBuiltInFallback(error, googleFallback) {
+  let next = googleFallback ? ", opening Google Translate" : "";
   if (error.name == "NotSupportedError") {
-    console.debug("Translator: language pair isn't supported on the page, opening Google Translate");
+    console.debug(`Translator: language pair isn't supported on the page${next}`);
   } else {
-    console.debug("Translator: built-in translation failed, falling back to Google Translate", error);
+    console.debug(`Translator: built-in translation failed${next}`, error);
   }
 }
 
@@ -199,12 +212,20 @@ async function replaceWithTranslation(segments, sourceLanguage, targetLanguage) 
       popup = popup || showTranslationPopup("");
       popup.setText(chrome.i18n.getMessage("downloadingModel", [String(Math.round(progress * 100))]));
     });
+    let group = String(++replacedGroupCount);
     segments.forEach(function(node, i) {
+      // Translating a translation again still restores the very first original
+      if (!originalTexts.has(node)) {
+        originalTexts.set(node, node.data);
+      }
       // Keep surrounding whitespace so words don't stick to neighbouring nodes
       let leading = node.data.match(/^\s*/)[0];
       let trailing = node.data.match(/\s*$/)[0];
       node.data = leading + translations[i] + trailing;
+      markReplaced(node, group);
     });
+    updateGroupEdges(group);
+    placeRestoreButton(group);
     window.getSelection().removeAllRanges();
   } finally {
     if (popup) {
@@ -212,6 +233,131 @@ async function replaceWithTranslation(segments, sourceLanguage, targetLanguage) 
     }
   }
 }
+
+// Replaced text is framed and followed by a button that restores the original
+let replacedGroupCount = 0;
+let originalTexts = new WeakMap();
+let replacedTag = "translator-replaced";
+
+function markReplaced(node, group) {
+  let mark = node.parentElement;
+  if (!mark || mark.localName != replacedTag) {
+    addReplacedStyle();
+    mark = document.createElement(replacedTag);
+    node.replaceWith(mark);
+    mark.appendChild(node);
+  }
+  let previousGroup = mark.dataset.group;
+  mark.dataset.group = group;
+  if (previousGroup) {
+    updateGroupEdges(previousGroup);
+    placeRestoreButton(previousGroup);
+  }
+}
+
+// Text nodes are framed one by one, so only the outer sides of the first and last get a border
+// and the fragment looks like a single frame
+function updateGroupEdges(group) {
+  let marks = getReplacedGroup(group);
+  marks.forEach(function(mark, i) {
+    mark.toggleAttribute("data-first", i == 0);
+    mark.toggleAttribute("data-last", i == marks.length - 1);
+  });
+}
+
+function addReplacedStyle() {
+  if (document.getElementById("translator-replaced-style")) {
+    return;
+  }
+  let style = document.createElement("style");
+  style.id = "translator-replaced-style";
+  style.textContent = `
+    ${replacedTag} {
+      display: inline;
+      border-block: 1px dashed rgba(26, 115, 232, 0.7);
+    }
+    ${replacedTag}[data-first] {
+      margin-inline-start: -2px;
+      padding-inline-start: 1px;
+      border-inline-start: 1px dashed rgba(26, 115, 232, 0.7);
+      border-start-start-radius: 3px;
+      border-end-start-radius: 3px;
+    }
+    ${replacedTag}[data-last] {
+      margin-inline-end: -2px;
+      padding-inline-end: 1px;
+      border-inline-end: 1px dashed rgba(26, 115, 232, 0.7);
+      border-start-end-radius: 3px;
+      border-end-end-radius: 3px;
+    }`;
+  (document.head || document.documentElement).appendChild(style);
+}
+
+function getReplacedGroup(group) {
+  return Array.from(document.querySelectorAll(`${replacedTag}[data-group="${group}"]`));
+}
+
+function restoreOriginal(group) {
+  getReplacedGroup(group).forEach(function(mark) {
+    mark.childNodes.forEach(function(node) {
+      if (originalTexts.has(node)) {
+        node.data = originalTexts.get(node);
+        originalTexts.delete(node);
+      }
+    });
+    mark.replaceWith(...mark.childNodes);
+  });
+  placeRestoreButton(group);
+}
+
+let restoreTag = "translator-restore";
+
+// The restore button sits in the text flow right after the fragment, so it never covers any text
+function placeRestoreButton(group) {
+  document.querySelectorAll(`${restoreTag}[data-group="${group}"]`).forEach(function(button) {
+    button.remove();
+  });
+  let marks = getReplacedGroup(group);
+  if (!marks.length) {
+    return;
+  }
+  let host = document.createElement(restoreTag);
+  host.dataset.group = group;
+  host.style.cssText = "display: inline-block; margin-inline-start: 4px; vertical-align: baseline;";
+  let shadow = host.attachShadow({ mode: "closed" });
+  shadow.innerHTML = `
+    <style>
+      button {
+        display: block;
+        width: 18px;
+        height: 18px;
+        padding: 0;
+        border: 1px solid rgba(26, 115, 232, 0.5);
+        border-radius: 50%;
+        background: #fff;
+        color: #1a73e8;
+        font: 600 12px/16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        text-align: center;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #e8f0fe;
+      }
+    </style>
+    <button type="button">↺</button>`;
+  let button = shadow.querySelector("button");
+  let label = chrome.i18n.getMessage("restoreOriginal");
+  button.title = label;
+  button.setAttribute("aria-label", label);
+  button.addEventListener("click", function(e) {
+    // The fragment may be inside a link
+    e.preventDefault();
+    e.stopPropagation();
+    restoreOriginal(group);
+  });
+  marks[marks.length - 1].after(host);
+}
+
 
 async function createTranslator(sourceLanguage, targetLanguage, onDownloadProgress) {
   let availability = await Translator.availability({ sourceLanguage, targetLanguage });

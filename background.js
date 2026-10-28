@@ -39,7 +39,8 @@ let defaultPropertyValues = {
   "translator_targetLanguage": "en",
   "translator_useOpenTab": true,
   "translator_useBuiltIn": true,
-  "translator_replaceText": false
+  "translator_replaceText": false,
+  "translator_googleFallback": true
 }
 
 chrome.storage.sync.get(Object.keys(defaultPropertyValues), function(items) {
@@ -116,7 +117,8 @@ function translate(text, action, altActive, force, tabId) {
     "translator_targetLanguage",
     "translator_useOpenTab",
     "translator_useBuiltIn",
-    "translator_replaceText"
+    "translator_replaceText",
+    "translator_googleFallback"
   ], function(item) {
     let holdAltToTranslate = item["translator_holdAltToTranslate"];
     if (!holdAltToTranslate || altActive || force) {
@@ -125,16 +127,26 @@ function translate(text, action, altActive, force, tabId) {
         let sourceLanguage = item["translator_sourceLanguage"];
         let targetLanguage = item["translator_targetLanguage"];
         let useOpenTab = item["translator_useOpenTab"];
-        if (item["translator_useBuiltIn"] && tabId != null) {
+        // Older installs have no value saved, they keep falling back to Google Translate
+        let googleFallback = item["translator_googleFallback"] != false;
+        if (item["translator_useBuiltIn"]) {
+          if (tabId == null) {
+            if (googleFallback) {
+              openTranslatorTab(text, sourceLanguage, targetLanguage, useOpenTab);
+            }
+            return;
+          }
           // Chrome Translator API is not exposed to service workers, so translate in the page
           chrome.tabs.sendMessage(tabId, {
             type: "translateBuiltIn",
             text,
             sourceLanguage,
             targetLanguage,
-            replaceText: item["translator_replaceText"]
+            replaceText: item["translator_replaceText"],
+            googleFallback
           }, function(response) {
-            if (chrome.runtime.lastError || !response || !response.success) {
+            let failed = chrome.runtime.lastError || !response || !response.success;
+            if (failed && googleFallback) {
               openTranslatorTab(text, sourceLanguage, targetLanguage, useOpenTab);
             }
           });

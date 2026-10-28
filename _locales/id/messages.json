@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Tampilkan terjemahan di tempat teks asli"
   },
+  "restoreOriginal": {
+    "message": "Kembalikan teks asli"
+  },
+  "googleFallback": {
+    "message": "Cadangan Google Terjemahan"
+  },
+  "googleFallbackCaption": {
+    "message": "Buka jika tidak dapat diterjemahkan di halaman"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: tidak dapat diterjemahkan di halaman",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "Browser ini tidak memiliki penerjemah bawaan"
+  },
+  "translationFailed": {
+    "message": "Tidak dapat menerjemahkan di halaman"
+  },
   "googleCaption": {
     "message": "Membuka translate.google.com"
   },

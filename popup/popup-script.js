@@ -148,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 let switchSettings = {
   "translator_holdAltToTranslate": { id: "translator-hold-alt-to-translate", defaultValue: false },
   "translator_replaceText": { id: "translator-replace-text", defaultValue: false },
+  "translator_googleFallback": { id: "translator-google-fallback", defaultValue: true },
   "translator_useOpenTab": { id: "translator-use-open-tab", defaultValue: true }
 };
 
@@ -193,7 +194,8 @@ async function updatePageTranslationStatus(sourceLanguageElement, targetLanguage
   let request = ++pageTranslationStatusRequest;
   let arrow = document.documentElement.dir == "rtl" ? "←" : "→";
   let pair = `${sourceLanguageElement.selectedOptions[0].dataset.name} ${arrow} ${targetLanguageElement.selectedOptions[0].dataset.name}`;
-  let status = await getPageTranslationStatus(sourceLanguageElement.value, targetLanguageElement.value, pair);
+  let googleFallback = document.getElementById("translator-google-fallback").checked;
+  let status = await getPageTranslationStatus(sourceLanguageElement.value, targetLanguageElement.value, pair, googleFallback);
   // Languages may have changed while availability was being checked
   if (request != pageTranslationStatusRequest) {
     return;
@@ -207,9 +209,9 @@ async function updatePageTranslationStatus(sourceLanguageElement, targetLanguage
   element.appendChild(text);
 }
 
-async function getPageTranslationStatus(sourceLanguage, targetLanguage, pair) {
+async function getPageTranslationStatus(sourceLanguage, targetLanguage, pair, googleFallback) {
   if (!("Translator" in self)) {
-    return { ok: false, message: chrome.i18n.getMessage("statusNoBuiltIn") };
+    return { ok: false, message: chrome.i18n.getMessage(googleFallback ? "statusNoBuiltIn" : "statusNoBuiltInNoFallback") };
   }
   if (sourceLanguage == targetLanguage) {
     return { ok: false, message: chrome.i18n.getMessage("statusSameLanguage") };
@@ -226,7 +228,7 @@ async function getPageTranslationStatus(sourceLanguage, targetLanguage, pair) {
     availability = "unavailable";
   }
   return availability == "unavailable" ?
-    { ok: false, message: chrome.i18n.getMessage("statusUnsupported", [pair]) } :
+    { ok: false, message: chrome.i18n.getMessage(googleFallback ? "statusUnsupported" : "statusUnsupportedNoFallback", [pair]) } :
     { ok: true, message: chrome.i18n.getMessage("onPageCaption") };
 }
 

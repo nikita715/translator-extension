@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Çeviriyi orijinal metnin yerine göster"
   },
+  "restoreOriginal": {
+    "message": "Orijinali geri yükle"
+  },
+  "googleFallback": {
+    "message": "Yedek olarak Google Çeviri"
+  },
+  "googleFallbackCaption": {
+    "message": "Sayfada çevrilemezse Google Çeviri'yi aç"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: sayfada çevrilemiyor",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "Bu tarayıcıda yerleşik çevirmen yok"
+  },
+  "translationFailed": {
+    "message": "Sayfada çevrilemedi"
+  },
   "googleCaption": {
     "message": "translate.google.com'u açar"
   },

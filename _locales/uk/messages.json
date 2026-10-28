@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Показувати переклад замість оригіналу"
   },
+  "restoreOriginal": {
+    "message": "Повернути оригінал"
+  },
+  "googleFallback": {
+    "message": "Резервний Google Перекладач"
+  },
+  "googleFallbackCaption": {
+    "message": "Відкривати його, якщо не вдалося перекласти на сторінці"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: не можна перекласти на сторінці",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "У цьому браузері немає вбудованого перекладача"
+  },
+  "translationFailed": {
+    "message": "Не вдалося перекласти на сторінці"
+  },
   "googleCaption": {
     "message": "Відкриває translate.google.com"
   },

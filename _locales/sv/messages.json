@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Visa översättningen i stället för originalet"
   },
+  "restoreOriginal": {
+    "message": "Återställ original"
+  },
+  "googleFallback": {
+    "message": "Google Översätt som reserv"
+  },
+  "googleFallbackCaption": {
+    "message": "Öppna det när sidan inte kan översättas här"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: kan inte översättas på sidan",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "Den här webbläsaren har ingen inbyggd översättare"
+  },
+  "translationFailed": {
+    "message": "Det gick inte att översätta på sidan"
+  },
   "googleCaption": {
     "message": "Öppnar translate.google.com"
   },

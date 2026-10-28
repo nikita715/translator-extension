@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Zobrazit překlad místo originálu"
   },
+  "restoreOriginal": {
+    "message": "Obnovit originál"
+  },
+  "googleFallback": {
+    "message": "Překladač Google jako záloha"
+  },
+  "googleFallbackCaption": {
+    "message": "Otevřít, když nelze přeložit na stránce"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: na stránce nelze přeložit",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "Tento prohlížeč nemá vestavěný překladač"
+  },
+  "translationFailed": {
+    "message": "Na stránce se nepodařilo přeložit"
+  },
   "googleCaption": {
     "message": "Otevře translate.google.com"
   },

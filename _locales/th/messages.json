@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "แสดงคำแปลแทนข้อความต้นฉบับ"
   },
+  "restoreOriginal": {
+    "message": "คืนค่าต้นฉบับ"
+  },
+  "googleFallback": {
+    "message": "ใช้ Google แปลภาษาสำรอง"
+  },
+  "googleFallbackCaption": {
+    "message": "เปิดเมื่อแปลบนหน้าเว็บไม่ได้"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: แปลบนหน้าเว็บไม่ได้",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "เบราว์เซอร์นี้ไม่มีตัวแปลในตัว"
+  },
+  "translationFailed": {
+    "message": "แปลบนหน้าเว็บไม่สำเร็จ"
+  },
   "googleCaption": {
     "message": "เปิด translate.google.com"
   },

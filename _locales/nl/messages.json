@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Vertaling tonen in plaats van het origineel"
   },
+  "restoreOriginal": {
+    "message": "Origineel herstellen"
+  },
+  "googleFallback": {
+    "message": "Google Translate als reserve"
+  },
+  "googleFallbackCaption": {
+    "message": "Openen als vertalen op de pagina niet lukt"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: kan niet op de pagina worden vertaald",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "Deze browser heeft geen ingebouwde vertaler"
+  },
+  "translationFailed": {
+    "message": "Vertalen op de pagina is mislukt"
+  },
   "googleCaption": {
     "message": "Opent translate.google.com"
   },

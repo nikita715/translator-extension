@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Mostra la traduzione al posto dell'originale"
   },
+  "restoreOriginal": {
+    "message": "Ripristina originale"
+  },
+  "googleFallback": {
+    "message": "Google Traduttore come riserva"
+  },
+  "googleFallbackCaption": {
+    "message": "Aprirlo se non si riesce a tradurre nella pagina"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: impossibile tradurre nella pagina",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "Questo browser non ha un traduttore integrato"
+  },
+  "translationFailed": {
+    "message": "Impossibile tradurre nella pagina"
+  },
   "googleCaption": {
     "message": "Apre translate.google.com"
   },

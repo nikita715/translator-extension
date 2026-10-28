@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Перевод появится на месте оригинала"
   },
+  "restoreOriginal": {
+    "message": "Вернуть оригинал"
+  },
+  "googleFallback": {
+    "message": "Запасной Google Переводчик"
+  },
+  "googleFallbackCaption": {
+    "message": "Открывать его, если перевести на странице не получилось"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: нельзя перевести на странице",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "В этом браузере нет встроенного переводчика"
+  },
+  "translationFailed": {
+    "message": "Не удалось перевести на странице"
+  },
   "googleCaption": {
     "message": "Открывает translate.google.com"
   },

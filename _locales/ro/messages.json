@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "Afișați traducerea în locul originalului"
   },
+  "restoreOriginal": {
+    "message": "Restabiliți originalul"
+  },
+  "googleFallback": {
+    "message": "Google Traducere ca rezervă"
+  },
+  "googleFallbackCaption": {
+    "message": "Deschideți-l când nu se poate traduce pe pagină"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$: nu se poate traduce pe pagină",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "Acest browser nu are traducător integrat"
+  },
+  "translationFailed": {
+    "message": "Traducerea pe pagină a eșuat"
+  },
   "googleCaption": {
     "message": "Deschide translate.google.com"
   },

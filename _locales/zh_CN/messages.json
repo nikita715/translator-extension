@@ -119,6 +119,30 @@
   "replaceTextCaption": {
     "message": "用译文替换原文显示"
   },
+  "restoreOriginal": {
+    "message": "恢复原文"
+  },
+  "googleFallback": {
+    "message": "备用 Google 翻译"
+  },
+  "googleFallbackCaption": {
+    "message": "无法在页面上翻译时打开 Google 翻译"
+  },
+  "statusUnsupportedNoFallback": {
+    "message": "$PAIR$：无法在页面上翻译",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltInNoFallback": {
+    "message": "此浏览器没有内置翻译器"
+  },
+  "translationFailed": {
+    "message": "无法在页面上翻译"
+  },
   "googleCaption": {
     "message": "打开 translate.google.com"
   },
