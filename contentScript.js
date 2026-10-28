@@ -162,6 +162,10 @@ function getReplaceableSegments() {
         if (parentTag == "SCRIPT" || parentTag == "STYLE" || parentTag == "NOSCRIPT") {
           return NodeFilter.FILTER_REJECT;
         }
+        // A selection can span hidden text, e.g. the other language version of a paragraph
+        if (node.parentElement && !node.parentElement.checkVisibility()) {
+          return NodeFilter.FILTER_REJECT;
+        }
         return range.intersectsNode(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
       }
     });
