@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "允許"
   },
+  "cancel": {
+    "message": "取消"
+  },
   "statusUnsupported": {
     "message": "$PAIR$：無法在網頁上翻譯，將開啟 Google 翻譯",
     "placeholders": {

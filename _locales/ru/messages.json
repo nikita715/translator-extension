@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Разрешить"
   },
+  "cancel": {
+    "message": "Отмена"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: не переводится на странице, откроется Google Переводчик",
     "placeholders": {

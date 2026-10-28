@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Permitir"
   },
+  "cancel": {
+    "message": "Cancelar"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: no se puede traducir en la página, se abrirá Google Traductor",
     "placeholders": {

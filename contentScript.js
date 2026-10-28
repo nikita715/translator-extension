@@ -84,10 +84,13 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     };
     let segments = request.replaceText ? getReplaceableSegments() : null;
     if (segments) {
-      let onConfirmDownload = request.askBeforeDownload ? function() {
-        respond({ success: true });
-      } : null;
-      replaceWithTranslation(segments, request.sourceLanguage, request.targetLanguage, request.engine, onConfirmDownload).then(function() {
+      let downloads = {
+        ask: request.askBeforeDownload,
+        onConfirm() {
+          respond({ success: true });
+        }
+      };
+      replaceWithTranslation(segments, request.sourceLanguage, request.targetLanguage, request.engine, downloads).then(function() {
         respond({ success: true });
       }).catch(function(error) {
         let fallback = request.googleFallback && !responded;
@@ -118,10 +121,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         },
         // The translation shows up at once, other languages may need a download
         preferDownloaded: true,
-        confirmDownload: request.askBeforeDownload ? function(message) {
+        askBeforeDownload: request.askBeforeDownload,
+        confirmDownload(message, accessEngine) {
           respond({ success: true });
-          return popup.confirm(message, chrome.i18n.getMessage("download"));
-        } : null
+          return popup.confirm(message, chrome.i18n.getMessage("download"), accessEngine);
+        }
       }).then(function([translation]) {
         if (current == attempt) {
           popup.setText(translation);
@@ -192,16 +196,20 @@ function logBuiltInFallback(error, googleFallback) {
 // - onDetected(languages, selected) for "auto": Google Translate codes of the likely languages an engine
 //   can translate and the one that is used, the first one unless preferDownloaded;
 // - preferDownloaded: for "auto" use the most likely language whose model is downloaded already;
-// - confirmDownload(message) returns a promise that resolves when the user allows downloading a model
+// - confirmDownload(message, accessEngine) returns a promise that resolves when the user allows downloading a model,
+//   with accessEngine the engine's access to its models is requested on that click;
+// - askBeforeDownload: whether confirmDownload is asked before downloads. Bergamot without access to its models
+//   always asks: the access is requested when the user agrees
 async function translateOnPage(texts, sourceLanguage, targetLanguage, defaultEngine, options = {}) {
-  let { onDownloadProgress, onDetected, preferDownloaded, confirmDownload } = options;
-  let engines = await getEngineOrder(defaultEngine || "chrome");
+  let { onDownloadProgress, onDetected, preferDownloaded, confirmDownload, askBeforeDownload = true } = options;
+  let ask = Boolean(confirmDownload && askBeforeDownload);
+  let { engines, missingAccess } = await getEngineOrder(defaultEngine || "chrome");
   if (!engines.length) {
     throw userError("NotSupportedError", "Translator API is not supported", chrome.i18n.getMessage("builtInUnavailable"));
   }
   let engine;
   if (sourceLanguage == "auto") {
-    if (confirmDownload && await getDetectorAvailability() == "downloadable") {
+    if (ask && await getDetectorAvailability() == "downloadable") {
       await confirmDownload(chrome.i18n.getMessage("detectorDownloadNeeded"));
     }
     let detected = await detectLanguages(texts.join(" "), targetLanguage);
@@ -233,7 +241,8 @@ async function translateOnPage(texts, sourceLanguage, targetLanguage, defaultEng
     sourceLanguage = languages[0];
     if (preferDownloaded) {
       for (let language of languages) {
-        if (await isDownloaded(engineFor(language), language, targetLanguage)) {
+        let languageEngine = engineFor(language);
+        if (!missingAccess.includes(languageEngine) && await isDownloaded(languageEngine, language, targetLanguage)) {
           sourceLanguage = language;
           break;
         }
@@ -251,7 +260,16 @@ async function translateOnPage(texts, sourceLanguage, targetLanguage, defaultEng
   if (!engine) {
     throw unsupportedError(`Language pair ${sourceLanguage} -> ${targetLanguage} is unavailable`);
   }
-  if (confirmDownload) {
+  if (missingAccess.includes(engine)) {
+    if (!confirmDownload) {
+      throw noAccessError();
+    }
+    // The size isn't known before access to the model registry
+    await confirmDownload(chrome.i18n.getMessage("downloadNeeded", [getPairName(sourceLanguage, targetLanguage)]), engine);
+    if ((await getEngineOrder(engine)).missingAccess.includes(engine)) {
+      throw noAccessError();
+    }
+  } else if (ask) {
     let message = await getDownloadMessage(engine, sourceLanguage, targetLanguage);
     if (message) {
       await confirmDownload(message);
@@ -267,16 +285,23 @@ async function translateOnPage(texts, sourceLanguage, targetLanguage, defaultEng
   }
 }
 
-// The default engine and then the others this page can use: Chrome's needs the Translator API,
-// Bergamot needs access to Mozilla's model storage
+// The default engine and then the others this page can use, Chrome's needs the Translator API.
+// missingAccess lists the engines that can't download models yet: Bergamot needs access to Mozilla's model storage
 async function getEngineOrder(defaultEngine) {
   let response = await chrome.runtime.sendMessage({ type: "getEngineOrder", engine: defaultEngine }).catch(function() {
     return null;
   });
   let engines = response ? response.engines : [defaultEngine];
-  return engines.filter(function(engine) {
-    return engine != "chrome" || "Translator" in self;
-  });
+  return {
+    engines: engines.filter(function(engine) {
+      return engine != "chrome" || "Translator" in self;
+    }),
+    missingAccess: response ? response.missingAccess : []
+  };
+}
+
+function noAccessError() {
+  return userError("NotAllowedError", "No access to the Bergamot models", chrome.i18n.getMessage("statusBergamotAccess"));
 }
 
 // Whether the pair translates without downloading a model
@@ -362,6 +387,9 @@ async function getDownloadMessage(engine, sourceLanguage, targetLanguage) {
     sourceLanguage,
     targetLanguage
   });
+  if (response && response.error) {
+    throw new DOMException(response.error.message, response.error.name);
+  }
   if (!response || !response.size) {
     return null;
   }
@@ -510,13 +538,14 @@ function getReplaceableSegments() {
   return segments.length ? segments : null;
 }
 
-// onConfirmDownload is called when a download is asked about, without it models download without asking
-async function replaceWithTranslation(segments, sourceLanguage, targetLanguage, engine, onConfirmDownload) {
+// downloads: { ask, onConfirm() }, ask is whether to ask before downloading models,
+// onConfirm is called when the popup asks about a download
+async function replaceWithTranslation(segments, sourceLanguage, targetLanguage, engine, downloads) {
   let detectedLanguages = [];
   let usedLanguage = null;
   let translations = await translateInPlace(segments.map(function(node) {
     return node.data.trim();
-  }), sourceLanguage, targetLanguage, engine, onConfirmDownload, function(languages, selected) {
+  }), sourceLanguage, targetLanguage, engine, downloads, function(languages, selected) {
     detectedLanguages = languages;
     usedLanguage = selected;
   });
@@ -552,7 +581,7 @@ async function replaceWithTranslation(segments, sourceLanguage, targetLanguage, 
         choices.selected = language;
         choices.pending = false;
         placeRestoreButton(group);
-        retranslateGroup(group, language, targetLanguage, engine, onConfirmDownload, isCurrent, function() {
+        retranslateGroup(group, language, targetLanguage, engine, downloads, isCurrent, function() {
           choices.pending = true;
           setGroupTexts(group, null);
           placeRestoreButton(group);
@@ -601,7 +630,7 @@ function keepWhitespace(text, translation) {
 
 // translateOnPage for replacing text: the popup shows up only for download progress and confirmation.
 // For "auto" a language with a downloaded model is preferred. onDownload() is called once a model has to be downloaded
-async function translateInPlace(texts, sourceLanguage, targetLanguage, engine, onConfirmDownload, onDetected, onDownload) {
+async function translateInPlace(texts, sourceLanguage, targetLanguage, engine, downloads, onDetected, onDownload) {
   let downloading = false;
   let notifyDownload = function() {
     if (!downloading && onDownload) {
@@ -623,11 +652,12 @@ async function translateInPlace(texts, sourceLanguage, targetLanguage, engine, o
       onDetected,
       // Replaced text has no language buttons next to it until it's translated, so don't wait for a download
       preferDownloaded: true,
-      confirmDownload: onConfirmDownload ? function(message) {
-        onConfirmDownload();
+      askBeforeDownload: downloads.ask,
+      confirmDownload(message, accessEngine) {
+        downloads.onConfirm();
         notifyDownload();
-        return getPopup().confirm(message, chrome.i18n.getMessage("download"));
-      } : null
+        return getPopup().confirm(message, chrome.i18n.getMessage("download"), accessEngine);
+      }
     });
   } finally {
     if (popup) {
@@ -638,7 +668,7 @@ async function translateInPlace(texts, sourceLanguage, targetLanguage, engine, o
 
 // Translates the originals of a replaced fragment from another source language, resolves with the translations
 // or null when it failed. isCurrent() is false when another language was picked meanwhile
-async function retranslateGroup(group, sourceLanguage, targetLanguage, engine, onConfirmDownload, isCurrent, onDownload) {
+async function retranslateGroup(group, sourceLanguage, targetLanguage, engine, downloads, isCurrent, onDownload) {
   let nodes = getGroupNodes(group);
   let originals = nodes.map(function(node) {
     return originalTexts.get(node);
@@ -652,7 +682,7 @@ async function retranslateGroup(group, sourceLanguage, targetLanguage, engine, o
   try {
     return await translateInPlace(originals.map(function(text) {
       return text.trim();
-    }), sourceLanguage, targetLanguage, engine, onConfirmDownload, null, function() {
+    }), sourceLanguage, targetLanguage, engine, downloads, null, function() {
       if (isCurrent()) {
         onDownload();
       }
@@ -1119,19 +1149,35 @@ function showTranslationPopup(text) {
     setText(value) {
       content.textContent = value;
     },
-    // Shows the message with a button, resolves when it's clicked
-    confirm(message, buttonLabel) {
+    // Shows the message with a button, resolves when it's clicked. With accessEngine the click also requests
+    // the engine's access to its models and the promise resolves once the request is answered
+    confirm(message, buttonLabel, accessEngine) {
       return new Promise(function(resolve) {
-        let button = document.createElement("button");
-        button.type = "button";
-        button.className = "action";
-        button.textContent = buttonLabel;
-        button.addEventListener("click", function() {
+        let done = function() {
           content.textContent = chrome.i18n.getMessage("translating");
           resolve();
-        });
+        };
+        // Pages can't request permissions: a window of the extension asks, it takes one more click
+        let addButton = function() {
+          let button = document.createElement("button");
+          button.type = "button";
+          button.className = "action";
+          button.textContent = buttonLabel;
+          button.addEventListener("click", function() {
+            if (accessEngine) {
+              chrome.runtime.sendMessage({ type: "requestEngineAccess", engine: accessEngine }).finally(done);
+            } else {
+              done();
+            }
+          });
+          content.appendChild(button);
+        };
         content.textContent = message;
-        content.appendChild(button);
+        if (accessEngine) {
+          content.appendChild(createAccessButton(done, addButton));
+        } else {
+          addButton();
+        }
       });
     },
     // Language choices for "auto" (Google Translate codes) with the selected one; onPick translates again
@@ -1162,6 +1208,39 @@ function showTranslationPopup(text) {
       }
     }
   };
+}
+
+// "Download" button on an extension page in a frame: a click there can request access to the models right away.
+// onAnswered is called when the request is answered, onFailed when the page blocks the frame
+function createAccessButton(onAnswered, onFailed) {
+  let id = String(Math.random()).slice(2);
+  let origin = new URL(chrome.runtime.getURL("")).origin;
+  let frame = document.createElement("iframe");
+  frame.src = chrome.runtime.getURL(`popup/access-button.html#${id}`);
+  frame.title = chrome.i18n.getMessage("download");
+  frame.style.cssText = "display: block; width: 0; height: 0; margin-top: 6px; border: 0; color-scheme: light;";
+  let fail = function() {
+    window.removeEventListener("message", onMessage);
+    frame.remove();
+    onFailed();
+  };
+  // The frame says it's ready with the button's size
+  let timer = setTimeout(fail, 2000);
+  let onMessage = function(e) {
+    if (e.origin != origin || !e.data || e.data.id != id) {
+      return;
+    }
+    if (e.data.type == "ready") {
+      clearTimeout(timer);
+      frame.style.width = `${e.data.width}px`;
+      frame.style.height = `${e.data.height}px`;
+    } else if (e.data.type == "answered") {
+      window.removeEventListener("message", onMessage);
+      onAnswered();
+    }
+  };
+  window.addEventListener("message", onMessage);
+  return frame;
 }
 
 function closeTranslationPopup() {

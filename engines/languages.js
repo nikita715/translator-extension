@@ -38,6 +38,9 @@ let bergamotReleaseStatuses = ["Release", "Release Desktop"];
 // Serbo-Croatian model translates each of these languages to English
 let bergamotSerboCroatian = ["sr", "hr", "bs"];
 let bergamotModelsPromise = null;
+// Firefox's settings service lists the same models and, unlike the storage, can be read without access to it
+let bergamotRemoteSettingsUrl = "https://firefox.settings.services.mozilla.com/v1/buckets/main/collections/translations-models/records?_fields=fromLang,toLang";
+let bergamotRemotePairsPromise = null;
 
 // "from-to" (Firefox codes) -> { from, to, files } of the release model, files are
 // { model, lex, vocab } or { model, lex, srcvocab, trgvocab }, each { url, size, sha256 } of the unpacked file
@@ -93,23 +96,56 @@ function loadBergamotModels() {
   return bergamotModelsPromise;
 }
 
-async function getBergamotRoute(source, target) {
-  let models = await loadBergamotModels();
+// "from-to" pairs Bergamot translates. Without access to the storage they come from the settings service
+async function loadBergamotPairs() {
+  try {
+    return new Set((await loadBergamotModels()).keys());
+  } catch (error) {
+    if (!bergamotRemotePairsPromise) {
+      bergamotRemotePairsPromise = fetch(bergamotRemoteSettingsUrl, { credentials: "omit" }).then(function(response) {
+        if (!response.ok) {
+          throw new DOMException(`Loading Bergamot pairs failed: HTTP ${response.status}`, "NetworkError");
+        }
+        return response.json();
+      }).then(function(json) {
+        let pairs = new Set(json.data.map(function(record) {
+          return `${record.fromLang}-${record.toLang}`;
+        }));
+        if (pairs.has("hbs-en")) {
+          bergamotSerboCroatian.forEach(function(language) {
+            pairs.add(`${language}-en`);
+          });
+        }
+        return pairs;
+      }).catch(function(remoteError) {
+        bergamotRemotePairsPromise = null;
+        throw remoteError;
+      });
+    }
+    return bergamotRemotePairsPromise;
+  }
+}
+
+function findBergamotRoute(pairs, source, target) {
   let from = toBergamotLanguageCode(source);
   let to = toBergamotLanguageCode(target);
-  if (models.has(`${from}-${to}`)) {
+  if (pairs.has(`${from}-${to}`)) {
     return [{ from, to }];
   }
-  if (from != "en" && to != "en" && models.has(`${from}-en`) && models.has(`en-${to}`)) {
+  if (from != "en" && to != "en" && pairs.has(`${from}-en`) && pairs.has(`en-${to}`)) {
     return [{ from, to: "en" }, { from: "en", to }];
   }
   return null;
 }
 
+async function getBergamotRoute(source, target) {
+  return findBergamotRoute(new Set((await loadBergamotModels()).keys()), source, target);
+}
+
 // Whether the engine can translate source -> target
 async function isEnginePairSupported(engine, source, target) {
   if (engine == "bergamot") {
-    return Boolean(await getBergamotRoute(source, target));
+    return Boolean(findBergamotRoute(await loadBergamotPairs(), source, target));
   }
   return false;
 }

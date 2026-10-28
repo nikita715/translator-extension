@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Tillåt"
   },
+  "cancel": {
+    "message": "Avbryt"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: kan inte översättas på sidan, Google Översätt öppnas i stället",
     "placeholders": {

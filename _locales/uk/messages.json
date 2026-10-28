@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Дозволити"
   },
+  "cancel": {
+    "message": "Скасувати"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: не можна перекласти на сторінці, відкриється Google Перекладач",
     "placeholders": {

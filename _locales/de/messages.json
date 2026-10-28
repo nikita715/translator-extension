@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Zulassen"
   },
+  "cancel": {
+    "message": "Abbrechen"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: auf der Seite nicht übersetzbar, Google Übersetzer wird geöffnet",
     "placeholders": {

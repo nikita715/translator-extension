@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "İzin ver"
   },
+  "cancel": {
+    "message": "İptal"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: sayfada çevrilemiyor, Google Çeviri açılacak",
     "placeholders": {

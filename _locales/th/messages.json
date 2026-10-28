@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "อนุญาต"
   },
+  "cancel": {
+    "message": "ยกเลิก"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: แปลบนหน้าเว็บไม่ได้ จะเปิด Google แปลภาษาแทน",
     "placeholders": {

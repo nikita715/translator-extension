@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Cho phép"
   },
+  "cancel": {
+    "message": "Hủy"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: không thể dịch trên trang, Google Dịch sẽ được mở",
     "placeholders": {

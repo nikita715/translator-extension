@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "允许"
   },
+  "cancel": {
+    "message": "取消"
+  },
   "statusUnsupported": {
     "message": "$PAIR$：无法在页面上翻译，将打开 Google 翻译",
     "placeholders": {

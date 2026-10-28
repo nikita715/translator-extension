@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "سماح"
   },
+  "cancel": {
+    "message": "إلغاء"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: لا يمكن الترجمة في الصفحة، سيتم فتح ترجمة Google",
     "placeholders": {

@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 let switchSettings = {
-  "translator_holdAltToTranslate": { id: "translator-hold-alt-to-translate", defaultValue: false },
+  "translator_holdAltToTranslate": { id: "translator-hold-alt-to-translate", defaultValue: true },
   "translator_replaceText": { id: "translator-replace-text", defaultValue: false },
   "translator_googleFallback": { id: "translator-google-fallback", defaultValue: false },
   "translator_askBeforeDownload": { id: "translator-ask-download", defaultValue: true },

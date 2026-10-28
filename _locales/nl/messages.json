@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Toestaan"
   },
+  "cancel": {
+    "message": "Annuleren"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: kan niet op de pagina worden vertaald, Google Translate wordt geopend",
     "placeholders": {

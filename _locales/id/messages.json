@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Izinkan"
   },
+  "cancel": {
+    "message": "Batal"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: tidak dapat diterjemahkan di halaman, Google Terjemahan akan dibuka",
     "placeholders": {

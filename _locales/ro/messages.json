@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Permite"
   },
+  "cancel": {
+    "message": "Anulează"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: nu se poate traduce pe pagină, se va deschide Google Traducere",
     "placeholders": {

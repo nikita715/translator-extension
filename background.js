@@ -36,7 +36,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 });
 
 let defaultPropertyValues = {
-  "translator_holdAltToTranslate": false,
+  "translator_holdAltToTranslate": true,
   "translator_translateInputAction": "dbclick",
   "translator_sourceLanguage": "auto",
   "translator_targetLanguage": "en",
@@ -81,8 +81,11 @@ chrome.runtime.onMessage.addListener(
         chrome.tabs.sendMessage(request.tabId, request).catch(function() {});
       }
     } else if (request.type == "getEngineOrder") {
-      getEngineOrder(request.engine).then(function(order) {
-        sendResponse({ engines: order });
+      getEngineOrder(request.engine).then(sendResponse);
+      return true;
+    } else if (request.type == "requestEngineAccess") {
+      requestEngineAccess(request.engine).then(function(granted) {
+        sendResponse({ granted });
       });
       return true;
     } else if (request.type == "offscreenIdle") {
@@ -105,15 +108,41 @@ async function hasEngineAccess(engine) {
   return engine != "bergamot" || chrome.permissions.contains({ origins: [bergamotModelsOrigin] });
 }
 
-// The default engine goes first; the others follow when they can be used, Bergamot only with access to the models
+// The default engine goes first. missingAccess lists the engines that need access before downloading models
 async function getEngineOrder(defaultEngine) {
-  let others = engines.filter(function(engine) {
+  let order = [defaultEngine].concat(engines.filter(function(engine) {
     return engine != defaultEngine;
-  });
-  let access = await Promise.all(others.map(hasEngineAccess));
-  return [defaultEngine].concat(others.filter(function(engine, i) {
-    return access[i];
   }));
+  let access = await Promise.all(order.map(hasEngineAccess));
+  return {
+    engines: order,
+    missingAccess: order.filter(function(engine, i) {
+      return !access[i];
+    })
+  };
+}
+
+// Permissions can be requested only on extension pages during a click, so a small window asks for the access.
+// Resolves when the window is closed: with or without the access
+async function requestEngineAccess(engine) {
+  if (await hasEngineAccess(engine)) {
+    return true;
+  }
+  let accessWindow = await chrome.windows.create({
+    url: chrome.runtime.getURL("popup/access.html"),
+    type: "popup",
+    width: 420,
+    height: 220
+  });
+  return new Promise(function(resolve) {
+    let onRemoved = function(windowId) {
+      if (windowId == accessWindow.id) {
+        chrome.windows.onRemoved.removeListener(onRemoved);
+        hasEngineAccess(engine).then(resolve);
+      }
+    };
+    chrome.windows.onRemoved.addListener(onRemoved);
+  });
 }
 
 // Bergamot runs in an offscreen document: the service worker can't start workers

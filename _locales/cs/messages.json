@@ -119,6 +119,9 @@
   "allowAccess": {
     "message": "Povolit"
   },
+  "cancel": {
+    "message": "Zrušit"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: na stránce nelze přeložit, otevře se Překladač Google",
     "placeholders": {
