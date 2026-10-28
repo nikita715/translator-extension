@@ -79,9 +79,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       });
       return true;
     }
-    let popup = showTranslationPopup("Translating…");
+    let popup = showTranslationPopup(chrome.i18n.getMessage("translating"));
     translateBuiltIn([request.text], request.sourceLanguage, request.targetLanguage, function(progress) {
-      popup.setText(`Downloading language model… ${Math.round(progress * 100)}%`);
+      popup.setText(chrome.i18n.getMessage("downloadingModel", [String(Math.round(progress * 100))]));
     }).then(function([translation]) {
       popup.setText(translation);
       sendResponse({ success: true });
@@ -184,7 +184,7 @@ async function replaceWithTranslation(segments, sourceLanguage, targetLanguage) 
       return node.data.trim();
     }), sourceLanguage, targetLanguage, function(progress) {
       popup = popup || showTranslationPopup("");
-      popup.setText(`Downloading language model… ${Math.round(progress * 100)}%`);
+      popup.setText(chrome.i18n.getMessage("downloadingModel", [String(Math.round(progress * 100))]));
     });
     segments.forEach(function(node, i) {
       // Keep surrounding whitespace so words don't stick to neighbouring nodes

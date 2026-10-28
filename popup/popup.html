@@ -25,46 +25,46 @@
 <body>
   <main class="popup loading">
     <section class="languages">
-      <select id="translator-source-language" aria-label="Source language"></select>
-      <button id="translator-swap-languages" class="swap" type="button" title="Swap languages" aria-label="Swap languages">
+      <select id="translator-source-language" data-i18n-aria-label="sourceLanguage"></select>
+      <button id="translator-swap-languages" class="swap" type="button" data-i18n-title="swapLanguages" data-i18n-aria-label="swapLanguages">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M2 5h11M10 2l3 3-3 3M14 11H3M6 8l-3 3 3 3" />
         </svg>
       </button>
-      <select id="translator-target-language" aria-label="Target language"></select>
+      <select id="translator-target-language" data-i18n-aria-label="targetLanguage"></select>
     </section>
 
     <section>
-      <h2>Controls</h2>
-      <div class="segmented" role="radiogroup" aria-label="Controls">
-        <label><input type="radio" name="trigger" value="none"><span>Off</span></label>
-        <label><input type="radio" name="trigger" value="dbclick"><span>Double click</span></label>
-        <label><input type="radio" name="trigger" value="tpclick"><span>Triple click</span></label>
+      <h2 data-i18n="controls"></h2>
+      <div class="segmented" role="radiogroup" data-i18n-aria-label="controls">
+        <label><input type="radio" name="trigger" value="none"><span data-i18n="modeOff"></span></label>
+        <label><input type="radio" name="trigger" value="dbclick"><span data-i18n="modeDoubleClick"></span></label>
+        <label><input type="radio" name="trigger" value="tpclick"><span data-i18n="modeTripleClick"></span></label>
       </div>
       <div id="translator-trigger-hint" class="hint" aria-live="polite"></div>
       <label class="option" id="translator-hold-alt-option">
-        <span>Require <span class="alt-key-name">Alt</span> key</span>
+        <span id="translator-hold-alt-label"></span>
         <input id="translator-hold-alt-to-translate" class="switch" type="checkbox">
       </label>
     </section>
 
     <section>
-      <h2>Show translation</h2>
-      <div class="segmented" role="radiogroup" aria-label="Show translation">
-        <label><input type="radio" name="display" value="page"><span>On page</span></label>
-        <label><input type="radio" name="display" value="google"><span>Google Translate</span></label>
+      <h2 data-i18n="showTranslation"></h2>
+      <div class="segmented" role="radiogroup" data-i18n-aria-label="showTranslation">
+        <label><input type="radio" name="display" value="page"><span data-i18n="displayOnPage"></span></label>
+        <label><input type="radio" name="display" value="google"><span data-i18n="displayGoogle"></span></label>
       </div>
       <div id="translator-page-options">
-        <p class="mode-caption">Chrome built-in translator, works offline</p>
+        <p class="mode-caption" data-i18n="onPageCaption"></p>
         <label class="option">
-          <span>Replace selected text<small>Show the translation in place of the original</small></span>
+          <span><span data-i18n="replaceText"></span><small data-i18n="replaceTextCaption"></small></span>
           <input id="translator-replace-text" class="switch" type="checkbox">
         </label>
       </div>
       <div id="translator-google-options">
-        <p class="mode-caption">Opens translate.google.com</p>
+        <p class="mode-caption" data-i18n="googleCaption"></p>
         <label class="option">
-          <span>Reuse Google Translate tab<small>Don't open a new tab for every translation</small></span>
+          <span><span data-i18n="reuseTab"></span><small data-i18n="reuseTabCaption"></small></span>
           <input id="translator-use-open-tab" class="switch" type="checkbox">
         </label>
       </div>

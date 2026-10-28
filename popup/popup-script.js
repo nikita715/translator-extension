@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
   let triggerElements = document.querySelectorAll('input[name="trigger"]');
   let displayElements = document.querySelectorAll('input[name="display"]');
 
-  createLanguageOpt(sourceLanguageElement, "Auto", "auto");
-  languages.forEach(function(value, key) {
-    createLanguageOpt(sourceLanguageElement, key, value);
-    createLanguageOpt(targetLanguageElement, key, value);
-  });
+  localizePage();
+  document.getElementById("translator-hold-alt-label").textContent =
+    chrome.i18n.getMessage("requireKey", [altKeyName]);
 
-  document.querySelectorAll(".alt-key-name").forEach(function(element) {
-    element.textContent = altKeyName;
+  createLanguageOpt(sourceLanguageElement, chrome.i18n.getMessage("autoLanguage"), "auto");
+  getLocalizedLanguages().forEach(function(language) {
+    createLanguageOpt(sourceLanguageElement, language.name, language.code);
+    createLanguageOpt(targetLanguageElement, language.name, language.code);
   });
 
   function updateDependentControls() {
@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("translator-google-options").hidden = useBuiltIn;
     let checkedTrigger = document.querySelector('input[name="trigger"]:checked');
     let action = checkedTrigger ? checkedTrigger.value : "dbclick";
-    document.getElementById("translator-hold-alt-option").hidden = action == "none";    renderTriggerHint(action, document.getElementById("translator-hold-alt-to-translate").checked);
+    document.getElementById("translator-hold-alt-option").hidden = action == "none";
+    renderTriggerHint(action, document.getElementById("translator-hold-alt-to-translate").checked);
   }
 
   chrome.storage.sync.get([
@@ -143,20 +144,22 @@ function renderTriggerHint(action, holdAlt) {
   let caption;
   if (action == "none") {
     combo = mouseIcon("right");
-    caption = "Right-click selected text → Translate";
+    caption = chrome.i18n.getMessage("hintOff");
   } else {
     let clicks = action == "tpclick" ? 3 : 2;
     combo = `${mouseIcon("left")}<span class="count">×${clicks}</span>`;
     if (holdAlt) {
       combo = `<span class="key">${altKeyName}</span><span class="plus">+</span>${combo}`;
     }
-    let click = clicks == 3 ? "Triple-click a paragraph" : "Double-click a word";
-    caption = holdAlt ? `Hold ${altKeyName} and ${click.charAt(0).toLowerCase()}${click.slice(1)}` : click;
+    let click = clicks == 3 ? "TripleClick" : "DoubleClick";
+    caption = holdAlt ?
+      chrome.i18n.getMessage(`hintHold${click}`, [altKeyName]) :
+      chrome.i18n.getMessage(`hint${click}`);
   }
   document.getElementById("translator-trigger-hint").innerHTML =
     `<div class="combo">${combo}</div><div class="hint-caption">${caption}</div>
     <div class="shortcut">
-      <span>Switch to this mode</span>
+      <span>${chrome.i18n.getMessage("switchToMode")}</span>
       <span class="keys"><span class="key">${altKeyName}</span><span class="plus">+</span><span class="key">${modeShortcutKeys[action]}</span></span>
     </div>`;
 }
@@ -170,6 +173,52 @@ function mouseIcon(pressedButton) {
       <rect x="1" y="1" width="20" height="30" rx="10" fill="none" stroke="currentColor" stroke-width="1.5" />
       <path d="M1 13H21M11 1V13" stroke="currentColor" stroke-width="1.5" />
     </svg>`;
+}
+
+// Fill elements marked with data-i18n attributes from _locales/*/messages.json
+function localizePage() {
+  document.documentElement.lang = chrome.i18n.getUILanguage();
+  document.querySelectorAll("[data-i18n]").forEach(function(element) {
+    element.textContent = chrome.i18n.getMessage(element.dataset.i18n);
+  });
+  document.querySelectorAll("[data-i18n-title]").forEach(function(element) {
+    element.title = chrome.i18n.getMessage(element.dataset.i18nTitle);
+  });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach(function(element) {
+    element.setAttribute("aria-label", chrome.i18n.getMessage(element.dataset.i18nAriaLabel));
+  });
+}
+
+// Google Translate codes whose name Intl.DisplayNames gets wrong or doesn't know
+let displayNameCodes = {
+  "zh-CN": "zh-Hans",
+  "zh-TW": "zh-Hant",
+  "pt": "pt-BR",
+  "jw": "jv"
+};
+
+// Language names in the browser UI language, sorted alphabetically in that language
+function getLocalizedLanguages() {
+  let uiLanguage = chrome.i18n.getUILanguage();
+  let displayNames = new Intl.DisplayNames([uiLanguage], { type: "language", fallback: "none" });
+  let result = [];
+  languages.forEach(function(code, englishName) {
+    // Chrome ships names for a limited set of languages, the rest come from lang_* messages
+    let name = chrome.i18n.getMessage("lang_" + code.replace(/-/g, "_"));
+    try {
+      name = name || displayNames.of(displayNameCodes[code] || code);
+    } catch (e) {
+      // Not a valid BCP 47 tag
+    }
+    result.push({ code, name: name ? capitalize(name, uiLanguage) : englishName });
+  });
+  return result.sort(function(a, b) {
+    return a.name.localeCompare(b.name, uiLanguage);
+  });
+}
+
+function capitalize(text, locale) {
+  return text.charAt(0).toLocaleUpperCase(locale) + text.slice(1);
 }
 
 function createLanguageOpt(parent, key, value) {

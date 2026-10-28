@@ -16,10 +16,14 @@
 
 let translateMenuItemId = "translate-selection";
 
-chrome.contextMenus.create({
-  id: translateMenuItemId,
-  title: "Translate",
-  contexts: ["selection"]
+// The service worker restarts often while menu items persist, so recreate the item instead of adding a duplicate.
+// Recreating also keeps the title in the current browser language.
+chrome.contextMenus.removeAll(function() {
+  chrome.contextMenus.create({
+    id: translateMenuItemId,
+    title: chrome.i18n.getMessage("contextMenuTranslate"),
+    contexts: ["selection"]
+  });
 });
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {

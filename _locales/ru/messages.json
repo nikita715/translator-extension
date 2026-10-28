@@ -1,0 +1,422 @@
+{
+  "extName": {
+    "message": "Translator – перевод в один клик"
+  },
+  "extDescription": {
+    "message": "Переводите слова и абзацы одним кликом прямо на странице: офлайн-переводчиком Chrome или в Google Переводчике."
+  },
+  "contextMenuTranslate": {
+    "message": "Перевести"
+  },
+  "translating": {
+    "message": "Перевод…"
+  },
+  "downloadingModel": {
+    "message": "Загрузка языковой модели… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "Исходный язык"
+  },
+  "targetLanguage": {
+    "message": "Язык перевода"
+  },
+  "swapLanguages": {
+    "message": "Поменять языки местами"
+  },
+  "autoLanguage": {
+    "message": "Авто"
+  },
+  "controls": {
+    "message": "Управление"
+  },
+  "modeOff": {
+    "message": "Выкл."
+  },
+  "modeDoubleClick": {
+    "message": "2 клика"
+  },
+  "modeTripleClick": {
+    "message": "3 клика"
+  },
+  "requireKey": {
+    "message": "Требовать клавишу $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "Правый клик по выделению → Перевести"
+  },
+  "hintDoubleClick": {
+    "message": "Дважды щёлкните по слову"
+  },
+  "hintTripleClick": {
+    "message": "Трижды щёлкните по абзацу"
+  },
+  "hintHoldDoubleClick": {
+    "message": "Удерживая $KEY$, дважды щёлкните по слову",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "Удерживая $KEY$, трижды щёлкните по абзацу",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "Включить режим"
+  },
+  "showTranslation": {
+    "message": "Показ перевода"
+  },
+  "displayOnPage": {
+    "message": "На странице"
+  },
+  "displayGoogle": {
+    "message": "Google Переводчик"
+  },
+  "onPageCaption": {
+    "message": "Встроенный переводчик Chrome, офлайн"
+  },
+  "replaceText": {
+    "message": "Заменять выделенный текст"
+  },
+  "replaceTextCaption": {
+    "message": "Перевод появится на месте оригинала"
+  },
+  "googleCaption": {
+    "message": "Открывает translate.google.com"
+  },
+  "reuseTab": {
+    "message": "Одна вкладка Google Переводчика"
+  },
+  "reuseTabCaption": {
+    "message": "Не открывать новые вкладки"
+  },
+  "lang_ab": {
+    "message": "Абхазский"
+  },
+  "lang_ace": {
+    "message": "Ачехский"
+  },
+  "lang_ach": {
+    "message": "Ачоли"
+  },
+  "lang_aa": {
+    "message": "Афарский"
+  },
+  "lang_alz": {
+    "message": "Алур"
+  },
+  "lang_av": {
+    "message": "Аварский"
+  },
+  "lang_awa": {
+    "message": "Авадхи"
+  },
+  "lang_ban": {
+    "message": "Балийский"
+  },
+  "lang_bal": {
+    "message": "Белуджский"
+  },
+  "lang_bci": {
+    "message": "Бауле"
+  },
+  "lang_ba": {
+    "message": "Башкирский"
+  },
+  "lang_btx": {
+    "message": "Батак каро"
+  },
+  "lang_bts": {
+    "message": "Батак сималунгун"
+  },
+  "lang_bbc": {
+    "message": "Батак тоба"
+  },
+  "lang_bem": {
+    "message": "Бемба"
+  },
+  "lang_bew": {
+    "message": "Бетави"
+  },
+  "lang_bik": {
+    "message": "Бикольский"
+  },
+  "lang_bua": {
+    "message": "Бурятский"
+  },
+  "lang_ch": {
+    "message": "Чаморро"
+  },
+  "lang_ce": {
+    "message": "Чеченский"
+  },
+  "lang_chk": {
+    "message": "Чуукский"
+  },
+  "lang_cv": {
+    "message": "Чувашский"
+  },
+  "lang_crh": {
+    "message": "Крымскотатарский (кириллица)"
+  },
+  "lang_crh_Latn": {
+    "message": "Крымскотатарский (латиница)"
+  },
+  "lang_din": {
+    "message": "Динка"
+  },
+  "lang_dov": {
+    "message": "Домбе"
+  },
+  "lang_dyu": {
+    "message": "Дьюла"
+  },
+  "lang_dz": {
+    "message": "Дзонг-кэ"
+  },
+  "lang_fj": {
+    "message": "Фиджийский"
+  },
+  "lang_fon": {
+    "message": "Фон"
+  },
+  "lang_fur": {
+    "message": "Фриульский"
+  },
+  "lang_ff": {
+    "message": "Фула"
+  },
+  "lang_gaa": {
+    "message": "Га"
+  },
+  "lang_cnh": {
+    "message": "Хакха-чин"
+  },
+  "lang_hil": {
+    "message": "Хилигайнон"
+  },
+  "lang_hrx": {
+    "message": "Хунсрик"
+  },
+  "lang_iba": {
+    "message": "Ибанский"
+  },
+  "lang_iu_Latn": {
+    "message": "Инуктитут (латиница)"
+  },
+  "lang_iu": {
+    "message": "Инуктитут (слоговое письмо)"
+  },
+  "lang_jam": {
+    "message": "Ямайский креольский"
+  },
+  "lang_kac": {
+    "message": "Качинский (цзинпо)"
+  },
+  "lang_kl": {
+    "message": "Гренландский"
+  },
+  "lang_kr": {
+    "message": "Канури"
+  },
+  "lang_pam": {
+    "message": "Пампанга"
+  },
+  "lang_kha": {
+    "message": "Кхаси"
+  },
+  "lang_cgg": {
+    "message": "Кига"
+  },
+  "lang_kg": {
+    "message": "Конго"
+  },
+  "lang_ktu": {
+    "message": "Китуба"
+  },
+  "lang_trp": {
+    "message": "Кокборок"
+  },
+  "lang_kv": {
+    "message": "Коми"
+  },
+  "lang_kri": {
+    "message": "Крио"
+  },
+  "lang_ltg": {
+    "message": "Латгальский"
+  },
+  "lang_lij": {
+    "message": "Лигурский"
+  },
+  "lang_li": {
+    "message": "Лимбургский"
+  },
+  "lang_lmo": {
+    "message": "Ломбардский"
+  },
+  "lang_luo": {
+    "message": "Луо"
+  },
+  "lang_mad": {
+    "message": "Мадурский"
+  },
+  "lang_mak": {
+    "message": "Макассарский"
+  },
+  "lang_mam": {
+    "message": "Мам"
+  },
+  "lang_gv": {
+    "message": "Мэнский"
+  },
+  "lang_mh": {
+    "message": "Маршалльский"
+  },
+  "lang_mwr": {
+    "message": "Марвари"
+  },
+  "lang_mfe": {
+    "message": "Маврикийский креольский"
+  },
+  "lang_chm": {
+    "message": "Марийский (луговой)"
+  },
+  "lang_min": {
+    "message": "Минангкабау"
+  },
+  "lang_nhe": {
+    "message": "Науатль (восточная Уастека)"
+  },
+  "lang_ndc_ZW": {
+    "message": "Ндау"
+  },
+  "lang_nr": {
+    "message": "Южный ндебеле"
+  },
+  "lang_new": {
+    "message": "Неварский"
+  },
+  "lang_nus": {
+    "message": "Нуэр"
+  },
+  "lang_os": {
+    "message": "Осетинский"
+  },
+  "lang_pag": {
+    "message": "Пангасинан"
+  },
+  "lang_pap": {
+    "message": "Папьяменто"
+  },
+  "lang_kek": {
+    "message": "Кекчи"
+  },
+  "lang_rom": {
+    "message": "Цыганский"
+  },
+  "lang_rn": {
+    "message": "Рунди"
+  },
+  "lang_se": {
+    "message": "Северносаамский"
+  },
+  "lang_sg": {
+    "message": "Санго"
+  },
+  "lang_sat_Latn": {
+    "message": "Сантальский (латиница)"
+  },
+  "lang_sat": {
+    "message": "Сантальский (ол-чики)"
+  },
+  "lang_crs": {
+    "message": "Сейшельский креольский"
+  },
+  "lang_shn": {
+    "message": "Шанский"
+  },
+  "lang_scn": {
+    "message": "Сицилийский"
+  },
+  "lang_szl": {
+    "message": "Силезский"
+  },
+  "lang_sus": {
+    "message": "Сусу"
+  },
+  "lang_ss": {
+    "message": "Свази"
+  },
+  "lang_ty": {
+    "message": "Таитянский"
+  },
+  "lang_ber_Latn": {
+    "message": "Тамазигхт"
+  },
+  "lang_ber": {
+    "message": "Тамазигхт (тифинаг)"
+  },
+  "lang_tet": {
+    "message": "Тетум"
+  },
+  "lang_bo": {
+    "message": "Тибетский"
+  },
+  "lang_tiv": {
+    "message": "Тив"
+  },
+  "lang_tpi": {
+    "message": "Ток-писин"
+  },
+  "lang_lua": {
+    "message": "Чилуба"
+  },
+  "lang_tcy": {
+    "message": "Тулу"
+  },
+  "lang_tum": {
+    "message": "Тумбука"
+  },
+  "lang_tyv": {
+    "message": "Тувинский"
+  },
+  "lang_udm": {
+    "message": "Удмуртский"
+  },
+  "lang_war": {
+    "message": "Варай"
+  },
+  "lang_sah": {
+    "message": "Якутский"
+  },
+  "lang_yua": {
+    "message": "Юкатекский майя"
+  },
+  "lang_zap": {
+    "message": "Сапотекский"
+  },
+  "lang_mni_Mtei": {
+    "message": "Манипури (мейтей-майек)"
+  }
+}

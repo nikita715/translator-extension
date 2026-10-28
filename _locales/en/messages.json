@@ -1,0 +1,113 @@
+{
+  "extName": {
+    "message": "Translator – Translate with a Click"
+  },
+  "extDescription": {
+    "message": "Translate words and paragraphs with a click, right on the page with Chrome's offline translator or in Google Translate."
+  },
+  "contextMenuTranslate": {
+    "message": "Translate"
+  },
+  "translating": {
+    "message": "Translating…"
+  },
+  "downloadingModel": {
+    "message": "Downloading language model… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "Source language"
+  },
+  "targetLanguage": {
+    "message": "Target language"
+  },
+  "swapLanguages": {
+    "message": "Swap languages"
+  },
+  "autoLanguage": {
+    "message": "Auto"
+  },
+  "controls": {
+    "message": "Controls"
+  },
+  "modeOff": {
+    "message": "Off"
+  },
+  "modeDoubleClick": {
+    "message": "Double click"
+  },
+  "modeTripleClick": {
+    "message": "Triple click"
+  },
+  "requireKey": {
+    "message": "Require $KEY$ key",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "Right-click selected text → Translate"
+  },
+  "hintDoubleClick": {
+    "message": "Double-click a word"
+  },
+  "hintTripleClick": {
+    "message": "Triple-click a paragraph"
+  },
+  "hintHoldDoubleClick": {
+    "message": "Hold $KEY$ and double-click a word",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "Hold $KEY$ and triple-click a paragraph",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "Switch to this mode"
+  },
+  "showTranslation": {
+    "message": "Show translation"
+  },
+  "displayOnPage": {
+    "message": "On page"
+  },
+  "displayGoogle": {
+    "message": "Google Translate"
+  },
+  "onPageCaption": {
+    "message": "Chrome built-in translator, works offline"
+  },
+  "replaceText": {
+    "message": "Replace selected text"
+  },
+  "replaceTextCaption": {
+    "message": "Show the translation in place of the original"
+  },
+  "googleCaption": {
+    "message": "Opens translate.google.com"
+  },
+  "reuseTab": {
+    "message": "Reuse Google Translate tab"
+  },
+  "reuseTabCaption": {
+    "message": "Don't open a new tab for every translation"
+  }
+}
