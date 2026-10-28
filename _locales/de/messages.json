@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Übersetzungsmodelle von Firefox, nach dem Download offline, ~20–60 MB pro Sprache"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot benötigt Zugriff auf Mozillas Modellspeicher, um Modelle herunterzuladen."
+  },
+  "allowAccess": {
+    "message": "Zulassen"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: auf der Seite nicht übersetzbar, Google Übersetzer wird geöffnet",
     "placeholders": {

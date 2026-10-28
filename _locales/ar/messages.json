@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "نماذج ترجمة Firefox، تعمل بلا إنترنت بعد التنزيل، ~20–60 ميغابايت لكل لغة"
   },
+  "statusBergamotAccess": {
+    "message": "يحتاج Bergamot إلى الوصول إلى مخزن نماذج Mozilla لتنزيل النماذج."
+  },
+  "allowAccess": {
+    "message": "سماح"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: لا يمكن الترجمة في الصفحة، سيتم فتح ترجمة Google",
     "placeholders": {

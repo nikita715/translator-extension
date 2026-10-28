@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Firefox översättningsmodeller, offline efter nedladdning, ~20–60 MB per språk"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot behöver åtkomst till Mozillas modellagring för att ladda ned modeller."
+  },
+  "allowAccess": {
+    "message": "Tillåt"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: kan inte översättas på sidan, Google Översätt öppnas i stället",
     "placeholders": {

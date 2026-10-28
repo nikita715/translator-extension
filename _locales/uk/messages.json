@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Моделі перекладу Firefox, офлайн після завантаження, ~20–60 МБ на мову"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot потрібен доступ до сховища моделей Mozilla, щоб завантажувати моделі."
+  },
+  "allowAccess": {
+    "message": "Дозволити"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: не можна перекласти на сторінці, відкриється Google Перекладач",
     "placeholders": {

@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Mô hình dịch của Firefox, ngoại tuyến sau khi tải, ~20–60 MB mỗi ngôn ngữ"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot cần quyền truy cập kho mô hình của Mozilla để tải mô hình."
+  },
+  "allowAccess": {
+    "message": "Cho phép"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: không thể dịch trên trang, Google Dịch sẽ được mở",
     "placeholders": {

@@ -133,24 +133,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  let selectedEngine = null;
-  engineElement.addEventListener('focus', function() {
-    selectedEngine = this.value;
-  });
-  engineElement.addEventListener('change', async function() {
+  engineElement.addEventListener('change', function() {
     let engine = this.value;
-    // Bergamot models come from a CDN without CORS headers, the extension needs access to it.
-    // An optional permission doesn't disable the extension on update until users accept it
-    if (engine == "bergamot" && !await chrome.permissions.request({ origins: [bergamotModelsOrigin] })) {
-      this.value = selectedEngine || "chrome";
-      return;
-    }
-    selectedEngine = engine;
+    // The permission prompt closes the popup, so the engine is saved before asking.
+    // Without access the status offers to ask again
     chrome.storage.sync.set({
       "translator_engine": engine
     });
     loadSupportedLanguages(engine);
     updateDependentControls();
+    if (engine == "bergamot") {
+      requestBergamotAccess().then(updateDependentControls);
+    }
   });
 
   displayElements.forEach(function(element) {
@@ -234,12 +228,31 @@ async function updatePageTranslationStatus(sourceLanguageElement, targetLanguage
   element.innerHTML = status.ok ? "" : warningIcon();
   let text = document.createElement("span");
   text.textContent = status.message;
+  if (status.action) {
+    let button = document.createElement("button");
+    button.type = "button";
+    button.className = "status-action";
+    button.textContent = status.action.label;
+    button.addEventListener("click", function() {
+      status.action.run().then(function() {
+        updatePageTranslationStatus(sourceLanguageElement, targetLanguageElement);
+      });
+    });
+    text.append(" ", button);
+  }
   element.appendChild(text);
 }
 
 async function getPageTranslationStatus(engine, sourceLanguage, targetLanguage, pair, googleFallback) {
   if (engine == "chrome" && !("Translator" in self)) {
     return { ok: false, message: chrome.i18n.getMessage(googleFallback ? "statusNoBuiltIn" : "statusNoBuiltInNoFallback") };
+  }
+  if (engine == "bergamot" && !await chrome.permissions.contains({ origins: [bergamotModelsOrigin] })) {
+    return {
+      ok: false,
+      message: chrome.i18n.getMessage("statusBergamotAccess"),
+      action: { label: chrome.i18n.getMessage("allowAccess"), run: requestBergamotAccess }
+    };
   }
   if (sourceLanguage == targetLanguage) {
     return { ok: false, message: chrome.i18n.getMessage("statusSameLanguage") };
@@ -251,6 +264,14 @@ async function getPageTranslationStatus(engine, sourceLanguage, targetLanguage, 
   return await isPairSupported(engine, sourceLanguage, targetLanguage) ?
     { ok: true, message: chrome.i18n.getMessage(engineCaptions[engine]) } :
     { ok: false, message: chrome.i18n.getMessage(googleFallback ? "statusUnsupported" : "statusUnsupportedNoFallback", [pair]) };
+}
+
+// Bergamot models come from storage without CORS headers, the extension needs access to it.
+// An optional permission doesn't disable the extension on update until users accept it
+function requestBergamotAccess() {
+  return chrome.permissions.request({ origins: [bergamotModelsOrigin] }).catch(function() {
+    return false;
+  });
 }
 
 let engineCaptions = {

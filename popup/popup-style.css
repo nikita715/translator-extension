@@ -280,6 +280,20 @@ section > .option:last-child {
   color: var(--warn);
 }
 
+.status-action {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.status-action:hover {
+  text-decoration: underline;
+}
+
 .option.disabled {
   opacity: 0.45;
   cursor: default;

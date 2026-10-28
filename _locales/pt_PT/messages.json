@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Modelos de tradução do Firefox, offline após a transferência, ~20–60 MB por idioma"
   },
+  "statusBergamotAccess": {
+    "message": "O Bergamot precisa de acesso ao armazenamento de modelos da Mozilla para os transferir."
+  },
+  "allowAccess": {
+    "message": "Permitir"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: não é possível traduzir na página, será aberto o Google Tradutor",
     "placeholders": {

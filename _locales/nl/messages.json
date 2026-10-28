@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Vertaalmodellen van Firefox, offline na downloaden, ~20–60 MB per taal"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot heeft toegang tot de modelopslag van Mozilla nodig om modellen te downloaden."
+  },
+  "allowAccess": {
+    "message": "Toestaan"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: kan niet op de pagina worden vertaald, Google Translate wordt geopend",
     "placeholders": {

@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Modele tłumaczenia Firefoksa, offline po pobraniu, ~20–60 MB na język"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot potrzebuje dostępu do magazynu modeli Mozilli, aby pobierać modele."
+  },
+  "allowAccess": {
+    "message": "Zezwól"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: nie można przetłumaczyć na stronie, otworzy się Tłumacz Google",
     "placeholders": {

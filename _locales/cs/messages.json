@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Překladové modely Firefoxu, po stažení offline, ~20–60 MB na jazyk"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot potřebuje přístup k úložišti modelů Mozilly, aby mohl stahovat modely."
+  },
+  "allowAccess": {
+    "message": "Povolit"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: na stránce nelze přeložit, otevře se Překladač Google",
     "placeholders": {

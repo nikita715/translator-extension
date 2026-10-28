@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Modele de traducere Firefox, offline după descărcare, ~20–60 MB per limbă"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot are nevoie de acces la stocarea de modele Mozilla pentru a descărca modele."
+  },
+  "allowAccess": {
+    "message": "Permite"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: nu se poate traduce pe pagină, se va deschide Google Traducere",
     "placeholders": {

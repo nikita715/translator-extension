@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Model terjemahan Firefox, offline setelah diunduh, ~20–60 MB per bahasa"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot memerlukan akses ke penyimpanan model Mozilla untuk mengunduh model."
+  },
+  "allowAccess": {
+    "message": "Izinkan"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: tidak dapat diterjemahkan di halaman, Google Terjemahan akan dibuka",
     "placeholders": {

@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Firefox translation models, offline after download, ~20–60 MB per language"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot needs access to Mozilla's model storage to download models."
+  },
+  "allowAccess": {
+    "message": "Allow"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: can't be translated on the page, Google Translate will open instead",
     "placeholders": {

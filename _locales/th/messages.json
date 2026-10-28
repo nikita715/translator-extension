@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "โมเดลแปลของ Firefox ใช้ออฟไลน์ได้หลังดาวน์โหลด ประมาณ 20–60 MB ต่อภาษา"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot ต้องเข้าถึงที่เก็บโมเดลของ Mozilla เพื่อดาวน์โหลดโมเดล"
+  },
+  "allowAccess": {
+    "message": "อนุญาต"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: แปลบนหน้าเว็บไม่ได้ จะเปิด Google แปลภาษาแทน",
     "placeholders": {

@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Firefox çeviri modelleri, indirdikten sonra çevrimdışı, dil başına ~20–60 MB"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot'un modelleri indirmek için Mozilla'nın model deposuna erişmesi gerekiyor."
+  },
+  "allowAccess": {
+    "message": "İzin ver"
+  },
   "statusUnsupported": {
     "message": "$PAIR$: sayfada çevrilemiyor, Google Çeviri açılacak",
     "placeholders": {

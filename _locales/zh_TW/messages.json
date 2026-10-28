@@ -104,6 +104,12 @@
   "engineCaptionBergamot": {
     "message": "Firefox 翻譯模型，下載後可離線使用，每種語言約 20–60 MB"
   },
+  "statusBergamotAccess": {
+    "message": "Bergamot 需要存取 Mozilla 的模型儲存空間才能下載模型。"
+  },
+  "allowAccess": {
+    "message": "允許"
+  },
   "statusUnsupported": {
     "message": "$PAIR$：無法在網頁上翻譯，將開啟 Google 翻譯",
     "placeholders": {
