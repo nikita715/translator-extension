@@ -74,7 +74,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       replaceWithTranslation(segments, request.sourceLanguage, request.targetLanguage).then(function() {
         sendResponse({ success: true });
       }).catch(function(error) {
-        console.debug("Translator: built-in translation failed, falling back to Google Translate", error);
+        logBuiltInFallback(error);
         sendResponse({ success: false });
       });
       return true;
@@ -86,13 +86,22 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       popup.setText(translation);
       sendResponse({ success: true });
     }).catch(function(error) {
-      console.debug("Translator: built-in translation failed, falling back to Google Translate", error);
+      logBuiltInFallback(error);
       popup.close();
       sendResponse({ success: false });
     });
     return true;
   }
 });
+
+// An unsupported language pair is an expected case, not an error
+function logBuiltInFallback(error) {
+  if (error.name == "NotSupportedError") {
+    console.debug("Translator: language pair isn't supported on the page, opening Google Translate");
+  } else {
+    console.debug("Translator: built-in translation failed, falling back to Google Translate", error);
+  }
+}
 
 let translators = new Map();
 
@@ -195,7 +204,7 @@ async function replaceWithTranslation(segments, sourceLanguage, targetLanguage) 
 async function createTranslator(sourceLanguage, targetLanguage, onDownloadProgress) {
   let availability = await Translator.availability({ sourceLanguage, targetLanguage });
   if (availability == "unavailable") {
-    throw new Error(`Language pair ${sourceLanguage} -> ${targetLanguage} is unavailable`);
+    throw new DOMException(`Language pair ${sourceLanguage} -> ${targetLanguage} is unavailable`, "NotSupportedError");
   }
   return Translator.create({
     sourceLanguage,
