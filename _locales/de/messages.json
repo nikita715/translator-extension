@@ -99,7 +99,16 @@
     "message": "In Chrome integrierter Übersetzer, offline"
   },
   "engineLabel": {
-    "message": "Modell"
+    "message": "Standard-Engine"
+  },
+  "supportedLanguages": {
+    "message": "Unterstützte Sprachen ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Übersetzungsmodelle von Firefox, nach dem Download offline, ~20–60 MB pro Sprache"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Öffnen, wenn auf der Seite nicht übersetzt werden kann"
   },
+  "askBeforeDownload": {
+    "message": "Vor dem Herunterladen von Modellen fragen"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Sprachpakete sind mehrere Dutzend Megabyte groß"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: auf der Seite nicht übersetzbar",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Die Standard-Engine unterstützt diese Sprachen nicht, $ENGINE$ übersetzt sie",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Dieser Browser hat keinen integrierten Übersetzer"
   },
   "translationFailed": {
     "message": "Übersetzung auf der Seite fehlgeschlagen"
+  },
+  "engineUnsupported": {
+    "message": "Die Engine $ENGINE$ unterstützt die gewählten Sprachen nicht",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Keine Engine unterstützt die gewählten Sprachen"
+  },
+  "languageNotDetected": {
+    "message": "Die Sprache des Textes wurde nicht erkannt. Wähle die Ausgangssprache in der Erweiterung"
+  },
+  "detectorUnavailable": {
+    "message": "Dieser Browser kann keine Sprachen erkennen. Wähle die Ausgangssprache in der Erweiterung"
+  },
+  "builtInUnavailable": {
+    "message": "Dieser Browser hat den integrierten Übersetzer von Chrome nicht"
+  },
+  "modelDownloadFailed": {
+    "message": "Das Sprachmodell konnte nicht heruntergeladen werden. Prüfe die Internetverbindung"
+  },
+  "sourceLanguageLabel": {
+    "message": "Ausgangssprache:"
+  },
+  "downloadNeeded": {
+    "message": "Ein Sprachpaket muss heruntergeladen werden: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Ein Sprachpaket muss heruntergeladen werden: $PAIR$, etwa $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Das Modell zur Spracherkennung muss heruntergeladen werden"
+  },
+  "download": {
+    "message": "Herunterladen"
   },
   "googleCaption": {
     "message": "Öffnet translate.google.com"

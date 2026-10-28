@@ -99,7 +99,16 @@
     "message": "Traducătorul integrat Chrome, funcționează offline"
   },
   "engineLabel": {
-    "message": "Model"
+    "message": "Motor implicit"
+  },
+  "supportedLanguages": {
+    "message": "Limbi acceptate ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Modele de traducere Firefox, offline după descărcare, ~20–60 MB per limbă"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Deschideți-l când nu se poate traduce pe pagină"
   },
+  "askBeforeDownload": {
+    "message": "Întreabă înainte de a descărca modele"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Pachetele de limbă au zeci de megabytes"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: nu se poate traduce pe pagină",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Motorul implicit nu acceptă aceste limbi, le va traduce $ENGINE$",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Acest browser nu are traducător integrat"
   },
   "translationFailed": {
     "message": "Traducerea pe pagină a eșuat"
+  },
+  "engineUnsupported": {
+    "message": "Motorul $ENGINE$ nu acceptă limbile selectate",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Niciun motor nu acceptă limbile selectate"
+  },
+  "languageNotDetected": {
+    "message": "Nu s-a putut detecta limba textului. Alege limba sursă în extensie"
+  },
+  "detectorUnavailable": {
+    "message": "Acest browser nu poate detecta limbi. Alege limba sursă în extensie"
+  },
+  "builtInUnavailable": {
+    "message": "Acest browser nu are traducătorul integrat Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "Nu s-a putut descărca modelul de limbă. Verifică conexiunea la internet"
+  },
+  "sourceLanguageLabel": {
+    "message": "Limba sursă:"
+  },
+  "downloadNeeded": {
+    "message": "Trebuie descărcat un pachet de limbă: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Trebuie descărcat un pachet de limbă: $PAIR$, aproximativ $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Trebuie descărcat modelul de detectare a limbii"
+  },
+  "download": {
+    "message": "Descarcă"
   },
   "googleCaption": {
     "message": "Deschide translate.google.com"

@@ -99,7 +99,16 @@
     "message": "Chrome'un yerleşik çevirmeni, çevrimdışı çalışır"
   },
   "engineLabel": {
-    "message": "Model"
+    "message": "Varsayılan motor"
+  },
+  "supportedLanguages": {
+    "message": "Desteklenen diller ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Firefox çeviri modelleri, indirdikten sonra çevrimdışı, dil başına ~20–60 MB"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Sayfada çevrilemezse Google Çeviri'yi aç"
   },
+  "askBeforeDownload": {
+    "message": "Modelleri indirmeden önce sor"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Dil paketleri onlarca megabayt yer kaplar"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: sayfada çevrilemiyor",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Varsayılan motor bu dilleri desteklemiyor, $ENGINE$ çevirecek",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Bu tarayıcıda yerleşik çevirmen yok"
   },
   "translationFailed": {
     "message": "Sayfada çevrilemedi"
+  },
+  "engineUnsupported": {
+    "message": "$ENGINE$ motoru seçilen dilleri desteklemiyor",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Seçilen dilleri hiçbir motor desteklemiyor"
+  },
+  "languageNotDetected": {
+    "message": "Metnin dili algılanamadı. Kaynak dili uzantıda seçin"
+  },
+  "detectorUnavailable": {
+    "message": "Bu tarayıcı dil algılayamıyor. Kaynak dili uzantıda seçin"
+  },
+  "builtInUnavailable": {
+    "message": "Bu tarayıcıda Chrome'un yerleşik çevirmeni yok"
+  },
+  "modelDownloadFailed": {
+    "message": "Dil modeli indirilemedi. İnternet bağlantınızı kontrol edin"
+  },
+  "sourceLanguageLabel": {
+    "message": "Kaynak dil:"
+  },
+  "downloadNeeded": {
+    "message": "Bir dil paketinin indirilmesi gerekiyor: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Bir dil paketinin indirilmesi gerekiyor: $PAIR$, yaklaşık $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Dil algılama modelinin indirilmesi gerekiyor"
+  },
+  "download": {
+    "message": "İndir"
   },
   "googleCaption": {
     "message": "translate.google.com'u açar"

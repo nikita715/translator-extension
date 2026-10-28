@@ -14,6 +14,9 @@
    limitations under the License.
 */
 
+// Bergamot settings: the models origin the extension asks access to
+importScripts("engines/languages.js");
+
 let translateMenuItemId = "translate-selection";
 
 // The service worker restarts often while menu items persist, so recreate the item instead of adding a duplicate.
@@ -41,6 +44,7 @@ let defaultPropertyValues = {
   "translator_useBuiltIn": true,
   "translator_replaceText": false,
   "translator_googleFallback": true,
+  "translator_askBeforeDownload": true,
   "translator_engine": "chrome"
 }
 
@@ -69,10 +73,18 @@ chrome.runtime.onMessage.addListener(
     } else if (request.type == "translateWithEngine") {
       forwardToOffscreen(request, sender.tab ? sender.tab.id : null).then(sendResponse);
       return true;
+    } else if (request.type == "checkEngineLanguages" || request.type == "checkEngineDownload") {
+      forwardToOffscreen(request, sender.tab ? sender.tab.id : null).then(sendResponse);
+      return true;
     } else if (request.type == "engineProgress") {
       if (request.tabId != null) {
         chrome.tabs.sendMessage(request.tabId, request).catch(function() {});
       }
+    } else if (request.type == "getEngineOrder") {
+      getEngineOrder(request.engine).then(function(order) {
+        sendResponse({ engines: order });
+      });
+      return true;
     } else if (request.type == "offscreenIdle") {
       chrome.offscreen.closeDocument().catch(function() {});
     } else if (request.type == "changeLanguage") {
@@ -88,6 +100,21 @@ chrome.runtime.onMessage.addListener(
     }
   }
 );
+
+async function hasEngineAccess(engine) {
+  return engine != "bergamot" || chrome.permissions.contains({ origins: [bergamotModelsOrigin] });
+}
+
+// The default engine goes first; the others follow when they can be used, Bergamot only with access to the models
+async function getEngineOrder(defaultEngine) {
+  let others = engines.filter(function(engine) {
+    return engine != defaultEngine;
+  });
+  let access = await Promise.all(others.map(hasEngineAccess));
+  return [defaultEngine].concat(others.filter(function(engine, i) {
+    return access[i];
+  }));
+}
 
 // Bergamot runs in an offscreen document: the service worker can't start workers
 let offscreenDocumentPromise = null;
@@ -160,6 +187,7 @@ function translate(text, action, altActive, force, tabId) {
     "translator_useBuiltIn",
     "translator_replaceText",
     "translator_googleFallback",
+    "translator_askBeforeDownload",
     "translator_engine"
   ], function(item) {
     let holdAltToTranslate = item["translator_holdAltToTranslate"];
@@ -186,6 +214,7 @@ function translate(text, action, altActive, force, tabId) {
             targetLanguage,
             replaceText: item["translator_replaceText"],
             engine: engines.includes(item["translator_engine"]) ? item["translator_engine"] : "chrome",
+            askBeforeDownload: item["translator_askBeforeDownload"] != false,
             googleFallback
           }, function(response) {
             let failed = chrome.runtime.lastError || !response || !response.success;

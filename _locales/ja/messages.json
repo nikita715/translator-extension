@@ -99,7 +99,16 @@
     "message": "Chrome の組み込み翻訳機能、オフラインで動作"
   },
   "engineLabel": {
-    "message": "モデル"
+    "message": "既定のエンジン"
+  },
+  "supportedLanguages": {
+    "message": "対応言語（$COUNT$）",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Firefox の翻訳モデル、ダウンロード後はオフラインで動作、1 言語あたり約 20〜60 MB"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "ページ上で翻訳できないときに Google 翻訳を開く"
   },
+  "askBeforeDownload": {
+    "message": "モデルをダウンロードする前に確認する"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "言語パックは数十 MB あります"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$：ページ上で翻訳できません",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "既定のエンジンはこれらの言語に対応していないため、$ENGINE$ で翻訳します",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "このブラウザには組み込み翻訳機能がありません"
   },
   "translationFailed": {
     "message": "ページ上で翻訳できませんでした"
+  },
+  "engineUnsupported": {
+    "message": "$ENGINE$ エンジンは選択した言語に対応していません",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "選択した言語に対応するエンジンがありません"
+  },
+  "languageNotDetected": {
+    "message": "テキストの言語を検出できませんでした。拡張機能で翻訳元の言語を選択してください"
+  },
+  "detectorUnavailable": {
+    "message": "このブラウザは言語を検出できません。拡張機能で翻訳元の言語を選択してください"
+  },
+  "builtInUnavailable": {
+    "message": "このブラウザには Chrome の組み込み翻訳機能がありません"
+  },
+  "modelDownloadFailed": {
+    "message": "言語モデルをダウンロードできませんでした。インターネット接続を確認してください"
+  },
+  "sourceLanguageLabel": {
+    "message": "翻訳元の言語:"
+  },
+  "downloadNeeded": {
+    "message": "言語パックのダウンロードが必要です: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "言語パックのダウンロードが必要です: $PAIR$、約 $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "言語検出モデルのダウンロードが必要です"
+  },
+  "download": {
+    "message": "ダウンロード"
   },
   "googleCaption": {
     "message": "translate.google.com を開きます"

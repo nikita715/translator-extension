@@ -99,7 +99,16 @@
     "message": "مترجم Chrome المدمج، يعمل بلا إنترنت"
   },
   "engineLabel": {
-    "message": "النموذج"
+    "message": "المحرك الافتراضي"
+  },
+  "supportedLanguages": {
+    "message": "اللغات المدعومة ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "نماذج ترجمة Firefox، تعمل بلا إنترنت بعد التنزيل، ~20–60 ميغابايت لكل لغة"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "فتحها عند تعذّر الترجمة في الصفحة"
   },
+  "askBeforeDownload": {
+    "message": "السؤال قبل تنزيل النماذج"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "تبلغ أحجام حزم اللغات عشرات الميغابايت"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: لا يمكن الترجمة في الصفحة",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "المحرك الافتراضي لا يدعم هذه اللغات، سيترجمها $ENGINE$",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "لا يحتوي هذا المتصفح على مترجم مدمج"
   },
   "translationFailed": {
     "message": "تعذّرت الترجمة في الصفحة"
+  },
+  "engineUnsupported": {
+    "message": "المحرك $ENGINE$ لا يدعم اللغات المحددة",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "لا يدعم أي محرك اللغات المحددة"
+  },
+  "languageNotDetected": {
+    "message": "تعذّر اكتشاف لغة النص. اختر اللغة المصدر في الإضافة"
+  },
+  "detectorUnavailable": {
+    "message": "لا يستطيع هذا المتصفح اكتشاف اللغات. اختر اللغة المصدر في الإضافة"
+  },
+  "builtInUnavailable": {
+    "message": "لا يحتوي هذا المتصفح على مترجم Chrome المدمج"
+  },
+  "modelDownloadFailed": {
+    "message": "تعذّر تنزيل نموذج اللغة. تحقّق من الاتصال بالإنترنت"
+  },
+  "sourceLanguageLabel": {
+    "message": "لغة المصدر:"
+  },
+  "downloadNeeded": {
+    "message": "يجب تنزيل حزمة لغة: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "يجب تنزيل حزمة لغة: $PAIR$، حوالي $SIZE$ ميغابايت",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "يجب تنزيل نموذج اكتشاف اللغة"
+  },
+  "download": {
+    "message": "تنزيل"
   },
   "googleCaption": {
     "message": "يفتح translate.google.com"

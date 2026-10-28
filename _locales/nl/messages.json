@@ -99,7 +99,16 @@
     "message": "Ingebouwde vertaler van Chrome, werkt offline"
   },
   "engineLabel": {
-    "message": "Model"
+    "message": "Standaardengine"
+  },
+  "supportedLanguages": {
+    "message": "Ondersteunde talen ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Vertaalmodellen van Firefox, offline na downloaden, ~20–60 MB per taal"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Openen als vertalen op de pagina niet lukt"
   },
+  "askBeforeDownload": {
+    "message": "Vragen voor het downloaden van modellen"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Taalpakketten zijn tientallen megabytes groot"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: kan niet op de pagina worden vertaald",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "De standaardengine ondersteunt deze talen niet, $ENGINE$ vertaalt ze",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Deze browser heeft geen ingebouwde vertaler"
   },
   "translationFailed": {
     "message": "Vertalen op de pagina is mislukt"
+  },
+  "engineUnsupported": {
+    "message": "De engine $ENGINE$ ondersteunt de gekozen talen niet",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Geen enkele engine ondersteunt de gekozen talen"
+  },
+  "languageNotDetected": {
+    "message": "De taal van de tekst is niet herkend. Kies de brontaal in de extensie"
+  },
+  "detectorUnavailable": {
+    "message": "Deze browser kan geen talen herkennen. Kies de brontaal in de extensie"
+  },
+  "builtInUnavailable": {
+    "message": "Deze browser heeft de ingebouwde vertaler van Chrome niet"
+  },
+  "modelDownloadFailed": {
+    "message": "Het taalmodel kon niet worden gedownload. Controleer je internetverbinding"
+  },
+  "sourceLanguageLabel": {
+    "message": "Brontaal:"
+  },
+  "downloadNeeded": {
+    "message": "Er moet een taalpakket worden gedownload: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Er moet een taalpakket worden gedownload: $PAIR$, ongeveer $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Het taaldetectiemodel moet worden gedownload"
+  },
+  "download": {
+    "message": "Downloaden"
   },
   "googleCaption": {
     "message": "Opent translate.google.com"

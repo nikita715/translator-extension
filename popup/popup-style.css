@@ -257,6 +257,21 @@ section > .option:last-child {
   font-size: 11px;
 }
 
+.engine-languages {
+  margin: 4px 0 2px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.engine-languages summary {
+  cursor: pointer;
+}
+
+.engine-languages p {
+  margin: 4px 0 0;
+  line-height: 1.4;
+}
+
 .mode-caption {
   margin: 8px 0 2px;
   color: var(--muted);

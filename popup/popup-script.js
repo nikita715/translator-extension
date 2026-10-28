@@ -47,6 +47,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Collapsed list of the languages the selected engine translates, in the order of the language lists
+  function renderEngineLanguages() {
+    let engine = engineElement.value;
+    let details = document.getElementById("translator-engine-languages");
+    loadSupportedLanguages(engine).then(function() {
+      if (engineElement.value != engine) {
+        return;
+      }
+      let supported = supportedLanguages.get(engine);
+      let names = Array.from(targetLanguageElement.options).filter(function(option) {
+        return supported.has(option.value);
+      }).map(function(option) {
+        return option.dataset.name;
+      });
+      details.hidden = !names.length;
+      details.querySelector("summary").textContent = chrome.i18n.getMessage("supportedLanguages", [String(names.length)]);
+      details.querySelector("p").textContent = names.join(", ");
+    });
+  }
+
   function updateDependentControls() {
     swapLanguagesElement.disabled = sourceLanguageElement.value == "auto";
     let useBuiltIn = document.querySelector('input[name="display"]:checked').value == "page";
@@ -78,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!engineElement.value) {
       engineElement.value = "chrome";
     }
-    loadSupportedLanguages(engineElement.value);
+    renderEngineLanguages();
     sourceLanguageElement.value = items["translator_sourceLanguage"] || "auto";
     targetLanguageElement.value = items["translator_targetLanguage"] || "en";
     let action = items["translator_translateInputAction"] || "dbclick";
@@ -140,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.storage.sync.set({
       "translator_engine": engine
     });
-    loadSupportedLanguages(engine);
+    renderEngineLanguages();
     updateDependentControls();
     if (engine == "bergamot") {
       requestBergamotAccess().then(updateDependentControls);
@@ -170,6 +190,7 @@ let switchSettings = {
   "translator_holdAltToTranslate": { id: "translator-hold-alt-to-translate", defaultValue: false },
   "translator_replaceText": { id: "translator-replace-text", defaultValue: false },
   "translator_googleFallback": { id: "translator-google-fallback", defaultValue: true },
+  "translator_askBeforeDownload": { id: "translator-ask-download", defaultValue: true },
   "translator_useOpenTab": { id: "translator-use-open-tab", defaultValue: true }
 };
 
@@ -261,9 +282,22 @@ async function getPageTranslationStatus(engine, sourceLanguage, targetLanguage, 
   if (sourceLanguage == "auto") {
     sourceLanguage = targetLanguage == "en" ? "es" : "en";
   }
-  return await isPairSupported(engine, sourceLanguage, targetLanguage) ?
-    { ok: true, message: chrome.i18n.getMessage(engineCaptions[engine]) } :
-    { ok: false, message: chrome.i18n.getMessage(googleFallback ? "statusUnsupported" : "statusUnsupportedNoFallback", [pair]) };
+  if (await isPairSupported(engine, sourceLanguage, targetLanguage)) {
+    return { ok: true, message: chrome.i18n.getMessage(engineCaptions[engine]) };
+  }
+  // The page translates the pair with the other engine
+  let alternative = await findAlternativeEngine(engine, sourceLanguage, targetLanguage);
+  if (alternative == "bergamot" && !await chrome.permissions.contains({ origins: [bergamotModelsOrigin] })) {
+    return {
+      ok: false,
+      message: chrome.i18n.getMessage("statusBergamotAccess"),
+      action: { label: chrome.i18n.getMessage("allowAccess"), run: requestBergamotAccess }
+    };
+  }
+  if (alternative) {
+    return { ok: true, message: chrome.i18n.getMessage("statusOtherEngine", [engineNames[alternative]]) };
+  }
+  return { ok: false, message: chrome.i18n.getMessage(googleFallback ? "statusUnsupported" : "statusUnsupportedNoFallback", [pair]) };
 }
 
 // Bergamot models come from storage without CORS headers, the extension needs access to it.
@@ -278,6 +312,24 @@ let engineCaptions = {
   chrome: "onPageCaption",
   bergamot: "engineCaptionBergamot"
 };
+
+let engineNames = {
+  chrome: "Chrome",
+  bergamot: "Bergamot"
+};
+
+// Another engine that translates the pair, null when there's none
+async function findAlternativeEngine(engine, sourceLanguage, targetLanguage) {
+  for (let other of Object.keys(engineNames)) {
+    if (other == engine || (other == "chrome" && !("Translator" in self))) {
+      continue;
+    }
+    if (await isPairSupported(other, sourceLanguage, targetLanguage, false)) {
+      return other;
+    }
+  }
+  return null;
+}
 
 // When support can't be checked, e.g. the Bergamot model list doesn't load offline, the answer is supportedIfUnknown
 async function isPairSupported(engine, source, target, supportedIfUnknown = true) {
@@ -354,21 +406,28 @@ function createLanguageOpt(parent, key, value) {
 
 // Engine -> codes of the languages it can translate on the page, filled when the engine is first selected
 let supportedLanguages = new Map();
+let supportedLanguagesLoading = new Map();
 
+// Resolves when supportedLanguages has the engine's languages
 function loadSupportedLanguages(engine) {
-  if (supportedLanguages.has(engine) || (engine == "chrome" && !("Translator" in self))) {
-    return;
+  if (supportedLanguagesLoading.has(engine)) {
+    return supportedLanguagesLoading.get(engine);
   }
   supportedLanguages.set(engine, new Set());
-  let codes = Array.from(languages.values());
-  Promise.all(codes.map(function(code) {
-    // Support is checked per pair, so pair the language with English (or English with Spanish)
-    return isPairSupported(engine, code == "en" ? "es" : "en", code, false);
-  })).then(function(results) {
-    supportedLanguages.set(engine, new Set(codes.filter(function(code, i) {
-      return results[i];
-    })));
-  });
+  let loading = Promise.resolve();
+  if (engine != "chrome" || "Translator" in self) {
+    let codes = Array.from(languages.values());
+    loading = Promise.all(codes.map(function(code) {
+      // Support is checked per pair, so pair the language with English (or English with Spanish)
+      return isPairSupported(engine, code == "en" ? "es" : "en", code, false);
+    })).then(function(results) {
+      supportedLanguages.set(engine, new Set(codes.filter(function(code, i) {
+        return results[i];
+      })));
+    });
+  }
+  supportedLanguagesLoading.set(engine, loading);
+  return loading;
 }
 
 // Marks are shown only while a list is open: a closed list is too narrow for "Japanese · on page"

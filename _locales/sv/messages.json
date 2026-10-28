@@ -99,7 +99,16 @@
     "message": "Chromes inbyggda översättare, fungerar offline"
   },
   "engineLabel": {
-    "message": "Modell"
+    "message": "Standardmotor"
+  },
+  "supportedLanguages": {
+    "message": "Språk som stöds ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Firefox översättningsmodeller, offline efter nedladdning, ~20–60 MB per språk"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Öppna det när sidan inte kan översättas här"
   },
+  "askBeforeDownload": {
+    "message": "Fråga innan modeller laddas ned"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Språkpaket är flera tiotals megabyte"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: kan inte översättas på sidan",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Standardmotorn stöder inte de här språken, $ENGINE$ översätter dem",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Den här webbläsaren har ingen inbyggd översättare"
   },
   "translationFailed": {
     "message": "Det gick inte att översätta på sidan"
+  },
+  "engineUnsupported": {
+    "message": "Motorn $ENGINE$ stöder inte de valda språken",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Ingen motor stöder de valda språken"
+  },
+  "languageNotDetected": {
+    "message": "Textens språk kunde inte identifieras. Välj källspråk i tillägget"
+  },
+  "detectorUnavailable": {
+    "message": "Den här webbläsaren kan inte identifiera språk. Välj källspråk i tillägget"
+  },
+  "builtInUnavailable": {
+    "message": "Den här webbläsaren har inte Chromes inbyggda översättare"
+  },
+  "modelDownloadFailed": {
+    "message": "Språkmodellen kunde inte laddas ned. Kontrollera internetanslutningen"
+  },
+  "sourceLanguageLabel": {
+    "message": "Källspråk:"
+  },
+  "downloadNeeded": {
+    "message": "Ett språkpaket behöver laddas ned: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Ett språkpaket behöver laddas ned: $PAIR$, cirka $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Modellen för språkidentifiering behöver laddas ned"
+  },
+  "download": {
+    "message": "Ladda ned"
   },
   "googleCaption": {
     "message": "Öppnar translate.google.com"

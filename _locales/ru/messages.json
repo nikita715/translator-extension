@@ -99,7 +99,16 @@
     "message": "Встроенный переводчик Chrome, офлайн"
   },
   "engineLabel": {
-    "message": "Модель"
+    "message": "Движок по умолчанию"
+  },
+  "supportedLanguages": {
+    "message": "Поддерживаемые языки ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Модели перевода Firefox, офлайн после скачивания, ~20–60 МБ на язык"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Открывать его, если перевести на странице не получилось"
   },
+  "askBeforeDownload": {
+    "message": "Спрашивать перед скачиванием моделей"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Языковые пакеты весят десятки мегабайт"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: нельзя перевести на странице",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Движок по умолчанию не поддерживает эти языки, переведёт $ENGINE$",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "В этом браузере нет встроенного переводчика"
   },
   "translationFailed": {
     "message": "Не удалось перевести на странице"
+  },
+  "engineUnsupported": {
+    "message": "Движок $ENGINE$ не поддерживает выбранные языки",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Ни один движок не поддерживает выбранные языки"
+  },
+  "languageNotDetected": {
+    "message": "Не удалось определить язык текста. Выберите исходный язык в расширении"
+  },
+  "detectorUnavailable": {
+    "message": "Браузер не умеет определять язык. Выберите исходный язык в расширении"
+  },
+  "builtInUnavailable": {
+    "message": "В этом браузере нет встроенного переводчика Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "Не удалось скачать языковую модель. Проверьте подключение к интернету"
+  },
+  "sourceLanguageLabel": {
+    "message": "Исходный язык:"
+  },
+  "downloadNeeded": {
+    "message": "Нужно скачать языковой пакет: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Нужно скачать языковой пакет: $PAIR$, около $SIZE$ МБ",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Нужно скачать модель определения языка"
+  },
+  "download": {
+    "message": "Скачать"
   },
   "googleCaption": {
     "message": "Открывает translate.google.com"

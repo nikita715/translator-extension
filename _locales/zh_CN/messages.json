@@ -99,7 +99,16 @@
     "message": "Chrome 内置翻译器，可离线使用"
   },
   "engineLabel": {
-    "message": "模型"
+    "message": "默认引擎"
+  },
+  "supportedLanguages": {
+    "message": "支持的语言（$COUNT$）",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Firefox 翻译模型，下载后可离线使用，每种语言约 20–60 MB"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "无法在页面上翻译时打开 Google 翻译"
   },
+  "askBeforeDownload": {
+    "message": "下载模型前询问"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "语言包大小为几十 MB"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$：无法在页面上翻译",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "默认引擎不支持这些语言，将由 $ENGINE$ 翻译",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "此浏览器没有内置翻译器"
   },
   "translationFailed": {
     "message": "无法在页面上翻译"
+  },
+  "engineUnsupported": {
+    "message": "$ENGINE$ 引擎不支持所选语言",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "没有引擎支持所选语言"
+  },
+  "languageNotDetected": {
+    "message": "无法检测文本语言。请在扩展程序中选择源语言"
+  },
+  "detectorUnavailable": {
+    "message": "此浏览器无法检测语言。请在扩展程序中选择源语言"
+  },
+  "builtInUnavailable": {
+    "message": "此浏览器没有 Chrome 内置翻译器"
+  },
+  "modelDownloadFailed": {
+    "message": "无法下载语言模型。请检查网络连接"
+  },
+  "sourceLanguageLabel": {
+    "message": "源语言："
+  },
+  "downloadNeeded": {
+    "message": "需要下载语言包：$PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "需要下载语言包：$PAIR$，约 $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "需要下载语言检测模型"
+  },
+  "download": {
+    "message": "下载"
   },
   "googleCaption": {
     "message": "打开 translate.google.com"

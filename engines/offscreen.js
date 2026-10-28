@@ -20,7 +20,28 @@
 import { BatchTranslator, TranslatorBacking } from "../vendor/bergamot/translator.js";
 
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-  if (message.target != "offscreen" || message.type != "translateWithEngine") {
+  if (message.target != "offscreen") {
+    return;
+  }
+  if (message.type == "checkEngineLanguages") {
+    Promise.all(message.sourceLanguages.map(function(language) {
+      return isEnginePairSupported(message.engine, language, message.targetLanguage);
+    })).then(function(supported) {
+      sendResponse({ supported });
+    }).catch(function(error) {
+      sendResponse({ error: { name: error.name, message: error.message } });
+    });
+    return true;
+  }
+  if (message.type == "checkEngineDownload") {
+    engines[message.engine].getDownloadSize(message.sourceLanguage, message.targetLanguage).then(function(size) {
+      sendResponse({ size });
+    }).catch(function(error) {
+      sendResponse({ error: { name: error.name, message: error.message } });
+    });
+    return true;
+  }
+  if (message.type != "translateWithEngine") {
     return;
   }
   resetIdleTimer();
@@ -108,9 +129,11 @@ class FirefoxModelsBacking extends TranslatorBacking {
     if (cached) {
       return cached.arrayBuffer();
     }
-    let response = await fetch(url, { credentials: "omit" });
+    let response = await fetch(url, { credentials: "omit" }).catch(function(error) {
+      throw new DOMException(`Downloading ${url} failed: ${error.message}`, "NetworkError");
+    });
     if (!response.ok) {
-      throw new Error(`Downloading ${url} failed: HTTP ${response.status}`);
+      throw new DOMException(`Downloading ${url} failed: HTTP ${response.status}`, "NetworkError");
     }
     // Progress counts the gzipped bytes being downloaded
     let total = Number(response.headers.get("Content-Length"));
@@ -183,6 +206,25 @@ async function translateWithBergamot(texts, from, to, route) {
 }
 
 let bergamot = {
+  // Bytes of the pair's models that aren't in Cache Storage yet, unpacked sizes of the model files
+  async getDownloadSize(source, target) {
+    let route = await getBergamotRoute(source, target);
+    if (!route) {
+      return 0;
+    }
+    let models = await loadBergamotModels();
+    let cache = await caches.open("bergamot-models");
+    let size = 0;
+    for (let { from, to } of route) {
+      for (let file of Object.values(models.get(`${from}-${to}`).files)) {
+        if (!await cache.match(file.url)) {
+          size += file.size;
+        }
+      }
+    }
+    return size;
+  },
+
   async translate(texts, source, target, onProgress) {
     let route = await getBergamotRoute(source, target);
     if (!route) {

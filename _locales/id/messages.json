@@ -99,7 +99,16 @@
     "message": "Penerjemah bawaan Chrome, berfungsi offline"
   },
   "engineLabel": {
-    "message": "Model"
+    "message": "Mesin default"
+  },
+  "supportedLanguages": {
+    "message": "Bahasa yang didukung ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Model terjemahan Firefox, offline setelah diunduh, ~20–60 MB per bahasa"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Buka jika tidak dapat diterjemahkan di halaman"
   },
+  "askBeforeDownload": {
+    "message": "Tanya sebelum mengunduh model"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Paket bahasa berukuran puluhan megabyte"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: tidak dapat diterjemahkan di halaman",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Mesin default tidak mendukung bahasa ini, $ENGINE$ yang akan menerjemahkan",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Browser ini tidak memiliki penerjemah bawaan"
   },
   "translationFailed": {
     "message": "Tidak dapat menerjemahkan di halaman"
+  },
+  "engineUnsupported": {
+    "message": "Mesin $ENGINE$ tidak mendukung bahasa yang dipilih",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Tidak ada mesin yang mendukung bahasa yang dipilih"
+  },
+  "languageNotDetected": {
+    "message": "Bahasa teks tidak terdeteksi. Pilih bahasa sumber di ekstensi"
+  },
+  "detectorUnavailable": {
+    "message": "Browser ini tidak dapat mendeteksi bahasa. Pilih bahasa sumber di ekstensi"
+  },
+  "builtInUnavailable": {
+    "message": "Browser ini tidak memiliki penerjemah bawaan Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "Model bahasa gagal diunduh. Periksa koneksi internet"
+  },
+  "sourceLanguageLabel": {
+    "message": "Bahasa sumber:"
+  },
+  "downloadNeeded": {
+    "message": "Paket bahasa perlu diunduh: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Paket bahasa perlu diunduh: $PAIR$, sekitar $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Model deteksi bahasa perlu diunduh"
+  },
+  "download": {
+    "message": "Unduh"
   },
   "googleCaption": {
     "message": "Membuka translate.google.com"

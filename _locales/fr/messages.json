@@ -99,7 +99,16 @@
     "message": "Traducteur intégré de Chrome, hors ligne"
   },
   "engineLabel": {
-    "message": "Modèle"
+    "message": "Moteur par défaut"
+  },
+  "supportedLanguages": {
+    "message": "Langues prises en charge ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Modèles de traduction de Firefox, hors ligne après téléchargement, ~20–60 Mo par langue"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "L'ouvrir si la traduction sur la page échoue"
   },
+  "askBeforeDownload": {
+    "message": "Demander avant de télécharger des modèles"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Les packs de langue pèsent des dizaines de mégaoctets"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$ : traduction impossible sur la page",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Le moteur par défaut ne prend pas en charge ces langues, $ENGINE$ les traduira",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Ce navigateur n'a pas de traducteur intégré"
   },
   "translationFailed": {
     "message": "Impossible de traduire sur la page"
+  },
+  "engineUnsupported": {
+    "message": "Le moteur $ENGINE$ ne prend pas en charge les langues sélectionnées",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Aucun moteur ne prend en charge les langues sélectionnées"
+  },
+  "languageNotDetected": {
+    "message": "Impossible de détecter la langue du texte. Choisissez la langue source dans l'extension"
+  },
+  "detectorUnavailable": {
+    "message": "Ce navigateur ne détecte pas les langues. Choisissez la langue source dans l'extension"
+  },
+  "builtInUnavailable": {
+    "message": "Ce navigateur n'a pas le traducteur intégré de Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "Impossible de télécharger le modèle de langue. Vérifiez votre connexion internet"
+  },
+  "sourceLanguageLabel": {
+    "message": "Langue source :"
+  },
+  "downloadNeeded": {
+    "message": "Un pack de langue doit être téléchargé : $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Un pack de langue doit être téléchargé : $PAIR$, environ $SIZE$ Mo",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Le modèle de détection de langue doit être téléchargé"
+  },
+  "download": {
+    "message": "Télécharger"
   },
   "googleCaption": {
     "message": "Ouvre translate.google.com"

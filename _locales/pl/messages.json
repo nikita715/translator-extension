@@ -99,7 +99,16 @@
     "message": "Wbudowany tłumacz Chrome, działa offline"
   },
   "engineLabel": {
-    "message": "Model"
+    "message": "Domyślny silnik"
+  },
+  "supportedLanguages": {
+    "message": "Obsługiwane języki ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Modele tłumaczenia Firefoksa, offline po pobraniu, ~20–60 MB na język"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Otwieraj go, gdy nie da się przetłumaczyć na stronie"
   },
+  "askBeforeDownload": {
+    "message": "Pytaj przed pobraniem modeli"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Pakiety językowe zajmują dziesiątki megabajtów"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: nie można przetłumaczyć na stronie",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Domyślny silnik nie obsługuje tych języków, przetłumaczy je $ENGINE$",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Ta przeglądarka nie ma wbudowanego tłumacza"
   },
   "translationFailed": {
     "message": "Nie udało się przetłumaczyć na stronie"
+  },
+  "engineUnsupported": {
+    "message": "Silnik $ENGINE$ nie obsługuje wybranych języków",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Żaden silnik nie obsługuje wybranych języków"
+  },
+  "languageNotDetected": {
+    "message": "Nie udało się wykryć języka tekstu. Wybierz język źródłowy w rozszerzeniu"
+  },
+  "detectorUnavailable": {
+    "message": "Ta przeglądarka nie wykrywa języków. Wybierz język źródłowy w rozszerzeniu"
+  },
+  "builtInUnavailable": {
+    "message": "Ta przeglądarka nie ma wbudowanego tłumacza Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "Nie udało się pobrać modelu językowego. Sprawdź połączenie z internetem"
+  },
+  "sourceLanguageLabel": {
+    "message": "Język źródłowy:"
+  },
+  "downloadNeeded": {
+    "message": "Trzeba pobrać pakiet językowy: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Trzeba pobrać pakiet językowy: $PAIR$, około $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Trzeba pobrać model wykrywania języka"
+  },
+  "download": {
+    "message": "Pobierz"
   },
   "googleCaption": {
     "message": "Otwiera translate.google.com"

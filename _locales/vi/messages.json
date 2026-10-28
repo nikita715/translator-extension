@@ -99,7 +99,16 @@
     "message": "Trình dịch tích hợp của Chrome, ngoại tuyến"
   },
   "engineLabel": {
-    "message": "Mô hình"
+    "message": "Công cụ mặc định"
+  },
+  "supportedLanguages": {
+    "message": "Ngôn ngữ được hỗ trợ ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Mô hình dịch của Firefox, ngoại tuyến sau khi tải, ~20–60 MB mỗi ngôn ngữ"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Mở Google Dịch nếu không dịch được trên trang"
   },
+  "askBeforeDownload": {
+    "message": "Hỏi trước khi tải mô hình"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Gói ngôn ngữ nặng hàng chục megabyte"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: không thể dịch trên trang",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Công cụ mặc định không hỗ trợ các ngôn ngữ này, $ENGINE$ sẽ dịch",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Trình duyệt này không có trình dịch tích hợp"
   },
   "translationFailed": {
     "message": "Không thể dịch trên trang"
+  },
+  "engineUnsupported": {
+    "message": "Công cụ $ENGINE$ không hỗ trợ các ngôn ngữ đã chọn",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Không công cụ nào hỗ trợ các ngôn ngữ đã chọn"
+  },
+  "languageNotDetected": {
+    "message": "Không phát hiện được ngôn ngữ của văn bản. Hãy chọn ngôn ngữ nguồn trong tiện ích"
+  },
+  "detectorUnavailable": {
+    "message": "Trình duyệt này không phát hiện được ngôn ngữ. Hãy chọn ngôn ngữ nguồn trong tiện ích"
+  },
+  "builtInUnavailable": {
+    "message": "Trình duyệt này không có trình dịch tích hợp của Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "Không tải được mô hình ngôn ngữ. Hãy kiểm tra kết nối internet"
+  },
+  "sourceLanguageLabel": {
+    "message": "Ngôn ngữ nguồn:"
+  },
+  "downloadNeeded": {
+    "message": "Cần tải gói ngôn ngữ: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Cần tải gói ngôn ngữ: $PAIR$, khoảng $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Cần tải mô hình phát hiện ngôn ngữ"
+  },
+  "download": {
+    "message": "Tải xuống"
   },
   "googleCaption": {
     "message": "Mở translate.google.com"

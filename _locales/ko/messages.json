@@ -99,7 +99,16 @@
     "message": "Chrome 내장 번역기, 오프라인으로 작동"
   },
   "engineLabel": {
-    "message": "모델"
+    "message": "기본 엔진"
+  },
+  "supportedLanguages": {
+    "message": "지원 언어 ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Firefox 번역 모델, 다운로드 후 오프라인 사용, 언어당 약 20–60MB"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "페이지에서 번역할 수 없을 때 Google 번역 열기"
   },
+  "askBeforeDownload": {
+    "message": "모델 다운로드 전에 묻기"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "언어 팩 크기는 수십 MB입니다"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: 페이지에서 번역할 수 없습니다",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "기본 엔진이 이 언어를 지원하지 않아 $ENGINE$에서 번역합니다",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "이 브라우저에는 내장 번역기가 없습니다"
   },
   "translationFailed": {
     "message": "페이지에서 번역하지 못했습니다"
+  },
+  "engineUnsupported": {
+    "message": "$ENGINE$ 엔진은 선택한 언어를 지원하지 않습니다",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "선택한 언어를 지원하는 엔진이 없습니다"
+  },
+  "languageNotDetected": {
+    "message": "텍스트 언어를 감지하지 못했습니다. 확장 프로그램에서 원본 언어를 선택하세요"
+  },
+  "detectorUnavailable": {
+    "message": "이 브라우저는 언어를 감지할 수 없습니다. 확장 프로그램에서 원본 언어를 선택하세요"
+  },
+  "builtInUnavailable": {
+    "message": "이 브라우저에는 Chrome 내장 번역기가 없습니다"
+  },
+  "modelDownloadFailed": {
+    "message": "언어 모델을 다운로드하지 못했습니다. 인터넷 연결을 확인하세요"
+  },
+  "sourceLanguageLabel": {
+    "message": "원본 언어:"
+  },
+  "downloadNeeded": {
+    "message": "언어 팩을 다운로드해야 합니다: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "언어 팩을 다운로드해야 합니다: $PAIR$, 약 $SIZE$MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "언어 감지 모델을 다운로드해야 합니다"
+  },
+  "download": {
+    "message": "다운로드"
   },
   "googleCaption": {
     "message": "translate.google.com을 엽니다"

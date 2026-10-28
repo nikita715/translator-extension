@@ -99,7 +99,16 @@
     "message": "Вбудований перекладач Chrome, працює офлайн"
   },
   "engineLabel": {
-    "message": "Модель"
+    "message": "Рушій за замовчуванням"
+  },
+  "supportedLanguages": {
+    "message": "Підтримувані мови ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Моделі перекладу Firefox, офлайн після завантаження, ~20–60 МБ на мову"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Відкривати його, якщо не вдалося перекласти на сторінці"
   },
+  "askBeforeDownload": {
+    "message": "Питати перед завантаженням моделей"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Мовні пакети займають десятки мегабайтів"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: не можна перекласти на сторінці",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Рушій за замовчуванням не підтримує ці мови, перекладе $ENGINE$",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "У цьому браузері немає вбудованого перекладача"
   },
   "translationFailed": {
     "message": "Не вдалося перекласти на сторінці"
+  },
+  "engineUnsupported": {
+    "message": "Рушій $ENGINE$ не підтримує вибрані мови",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Жоден рушій не підтримує вибрані мови"
+  },
+  "languageNotDetected": {
+    "message": "Не вдалося визначити мову тексту. Виберіть мову оригіналу в розширенні"
+  },
+  "detectorUnavailable": {
+    "message": "Браузер не вміє визначати мову. Виберіть мову оригіналу в розширенні"
+  },
+  "builtInUnavailable": {
+    "message": "У цьому браузері немає вбудованого перекладача Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "Не вдалося завантажити мовну модель. Перевірте підключення до інтернету"
+  },
+  "sourceLanguageLabel": {
+    "message": "Мова оригіналу:"
+  },
+  "downloadNeeded": {
+    "message": "Потрібно завантажити мовний пакет: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Потрібно завантажити мовний пакет: $PAIR$, близько $SIZE$ МБ",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Потрібно завантажити модель визначення мови"
+  },
+  "download": {
+    "message": "Завантажити"
   },
   "googleCaption": {
     "message": "Відкриває translate.google.com"

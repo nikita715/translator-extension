@@ -43,9 +43,11 @@ let bergamotModelsPromise = null;
 // { model, lex, vocab } or { model, lex, srcvocab, trgvocab }, each { url, size, sha256 } of the unpacked file
 function loadBergamotModels() {
   if (!bergamotModelsPromise) {
-    bergamotModelsPromise = fetch(bergamotRegistryUrl, { credentials: "omit" }).then(function(response) {
+    bergamotModelsPromise = fetch(bergamotRegistryUrl, { credentials: "omit" }).catch(function(error) {
+      throw new DOMException(`Loading Bergamot models failed: ${error.message}`, "NetworkError");
+    }).then(function(response) {
       if (!response.ok) {
-        throw new Error(`Loading Bergamot models failed: HTTP ${response.status}`);
+        throw new DOMException(`Loading Bergamot models failed: HTTP ${response.status}`, "NetworkError");
       }
       return response.json();
     }).then(function(json) {

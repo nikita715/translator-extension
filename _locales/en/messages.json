@@ -99,7 +99,16 @@
     "message": "Chrome built-in translator, works offline"
   },
   "engineLabel": {
-    "message": "Model"
+    "message": "Default engine"
+  },
+  "supportedLanguages": {
+    "message": "Supported languages ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Firefox translation models, offline after download, ~20–60 MB per language"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Open it when the page can't be translated"
   },
+  "askBeforeDownload": {
+    "message": "Ask before downloading models"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Language packs take tens of megabytes"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: can't be translated on the page",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "The default engine doesn't support these languages, $ENGINE$ will translate them",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "This browser has no built-in translator"
   },
   "translationFailed": {
     "message": "Couldn't translate on the page"
+  },
+  "engineUnsupported": {
+    "message": "The $ENGINE$ engine doesn't support the selected languages",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "None of the engines supports the selected languages"
+  },
+  "languageNotDetected": {
+    "message": "Couldn't detect the language of the text. Choose the source language in the extension"
+  },
+  "detectorUnavailable": {
+    "message": "This browser can't detect languages. Choose the source language in the extension"
+  },
+  "builtInUnavailable": {
+    "message": "This browser doesn't have Chrome's built-in translator"
+  },
+  "modelDownloadFailed": {
+    "message": "Couldn't download the language model. Check your internet connection"
+  },
+  "sourceLanguageLabel": {
+    "message": "Source language:"
+  },
+  "downloadNeeded": {
+    "message": "A language pack needs to be downloaded: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "A language pack needs to be downloaded: $PAIR$, about $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "The language detection model needs to be downloaded"
+  },
+  "download": {
+    "message": "Download"
   },
   "googleCaption": {
     "message": "Opens translate.google.com"

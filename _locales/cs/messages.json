@@ -99,7 +99,16 @@
     "message": "Vestavěný překladač Chrome, funguje offline"
   },
   "engineLabel": {
-    "message": "Model"
+    "message": "Výchozí engine"
+  },
+  "supportedLanguages": {
+    "message": "Podporované jazyky ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Překladové modely Firefoxu, po stažení offline, ~20–60 MB na jazyk"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Otevřít, když nelze přeložit na stránce"
   },
+  "askBeforeDownload": {
+    "message": "Ptát se před stažením modelů"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "Jazykové balíčky mají desítky megabajtů"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: na stránce nelze přeložit",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Výchozí engine tyto jazyky nepodporuje, přeloží je $ENGINE$",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Tento prohlížeč nemá vestavěný překladač"
   },
   "translationFailed": {
     "message": "Na stránce se nepodařilo přeložit"
+  },
+  "engineUnsupported": {
+    "message": "Engine $ENGINE$ nepodporuje vybrané jazyky",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Žádný engine nepodporuje vybrané jazyky"
+  },
+  "languageNotDetected": {
+    "message": "Jazyk textu se nepodařilo rozpoznat. Vyberte zdrojový jazyk v rozšíření"
+  },
+  "detectorUnavailable": {
+    "message": "Tento prohlížeč neumí rozpoznávat jazyky. Vyberte zdrojový jazyk v rozšíření"
+  },
+  "builtInUnavailable": {
+    "message": "Tento prohlížeč nemá vestavěný překladač Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "Jazykový model se nepodařilo stáhnout. Zkontrolujte připojení k internetu"
+  },
+  "sourceLanguageLabel": {
+    "message": "Zdrojový jazyk:"
+  },
+  "downloadNeeded": {
+    "message": "Je potřeba stáhnout jazykový balíček: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "Je potřeba stáhnout jazykový balíček: $PAIR$, asi $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "Je potřeba stáhnout model rozpoznávání jazyka"
+  },
+  "download": {
+    "message": "Stáhnout"
   },
   "googleCaption": {
     "message": "Otevře translate.google.com"

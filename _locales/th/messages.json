@@ -99,7 +99,16 @@
     "message": "ตัวแปลในตัวของ Chrome ใช้งานออฟไลน์ได้"
   },
   "engineLabel": {
-    "message": "โมเดล"
+    "message": "เอนจินเริ่มต้น"
+  },
+  "supportedLanguages": {
+    "message": "ภาษาที่รองรับ ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "โมเดลแปลของ Firefox ใช้ออฟไลน์ได้หลังดาวน์โหลด ประมาณ 20–60 MB ต่อภาษา"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "เปิดเมื่อแปลบนหน้าเว็บไม่ได้"
   },
+  "askBeforeDownload": {
+    "message": "ถามก่อนดาวน์โหลดโมเดล"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "แพ็กภาษามีขนาดหลายสิบเมกะไบต์"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: แปลบนหน้าเว็บไม่ได้",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "เอนจินเริ่มต้นไม่รองรับภาษาเหล่านี้ $ENGINE$ จะแปลแทน",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "เบราว์เซอร์นี้ไม่มีตัวแปลในตัว"
   },
   "translationFailed": {
     "message": "แปลบนหน้าเว็บไม่สำเร็จ"
+  },
+  "engineUnsupported": {
+    "message": "เอนจิน $ENGINE$ ไม่รองรับภาษาที่เลือก",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "ไม่มีเอนจินใดรองรับภาษาที่เลือก"
+  },
+  "languageNotDetected": {
+    "message": "ตรวจหาภาษาของข้อความไม่ได้ เลือกภาษาต้นฉบับในส่วนขยาย"
+  },
+  "detectorUnavailable": {
+    "message": "เบราว์เซอร์นี้ตรวจหาภาษาไม่ได้ เลือกภาษาต้นฉบับในส่วนขยาย"
+  },
+  "builtInUnavailable": {
+    "message": "เบราว์เซอร์นี้ไม่มีตัวแปลในตัวของ Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "ดาวน์โหลดโมเดลภาษาไม่ได้ ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต"
+  },
+  "sourceLanguageLabel": {
+    "message": "ภาษาต้นทาง:"
+  },
+  "downloadNeeded": {
+    "message": "ต้องดาวน์โหลดแพ็กภาษา: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "ต้องดาวน์โหลดแพ็กภาษา: $PAIR$ ประมาณ $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "ต้องดาวน์โหลดโมเดลตรวจหาภาษา"
+  },
+  "download": {
+    "message": "ดาวน์โหลด"
   },
   "googleCaption": {
     "message": "เปิด translate.google.com"

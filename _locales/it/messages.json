@@ -99,7 +99,16 @@
     "message": "Traduttore integrato di Chrome, funziona offline"
   },
   "engineLabel": {
-    "message": "Modello"
+    "message": "Motore predefinito"
+  },
+  "supportedLanguages": {
+    "message": "Lingue supportate ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "18"
+      }
+    }
   },
   "engineCaptionBergamot": {
     "message": "Modelli di traduzione di Firefox, offline dopo il download, ~20–60 MB per lingua"
@@ -140,6 +149,12 @@
   "googleFallbackCaption": {
     "message": "Aprirlo se non si riesce a tradurre nella pagina"
   },
+  "askBeforeDownload": {
+    "message": "Chiedi prima di scaricare i modelli"
+  },
+  "askBeforeDownloadCaption": {
+    "message": "I pacchetti di lingua occupano decine di megabyte"
+  },
   "statusUnsupportedNoFallback": {
     "message": "$PAIR$: impossibile tradurre nella pagina",
     "placeholders": {
@@ -149,11 +164,75 @@
       }
     }
   },
+  "statusOtherEngine": {
+    "message": "Il motore predefinito non supporta queste lingue, le tradurrà $ENGINE$",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Bergamot"
+      }
+    }
+  },
   "statusNoBuiltInNoFallback": {
     "message": "Questo browser non ha un traduttore integrato"
   },
   "translationFailed": {
     "message": "Impossibile tradurre nella pagina"
+  },
+  "engineUnsupported": {
+    "message": "Il motore $ENGINE$ non supporta le lingue selezionate",
+    "placeholders": {
+      "engine": {
+        "content": "$1",
+        "example": "Chrome"
+      }
+    }
+  },
+  "enginesUnsupported": {
+    "message": "Nessun motore supporta le lingue selezionate"
+  },
+  "languageNotDetected": {
+    "message": "Impossibile rilevare la lingua del testo. Scegli la lingua di origine nell'estensione"
+  },
+  "detectorUnavailable": {
+    "message": "Questo browser non rileva le lingue. Scegli la lingua di origine nell'estensione"
+  },
+  "builtInUnavailable": {
+    "message": "Questo browser non ha il traduttore integrato di Chrome"
+  },
+  "modelDownloadFailed": {
+    "message": "Impossibile scaricare il modello linguistico. Controlla la connessione a internet"
+  },
+  "sourceLanguageLabel": {
+    "message": "Lingua di origine:"
+  },
+  "downloadNeeded": {
+    "message": "È necessario scaricare un pacchetto di lingua: $PAIR$",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "downloadNeededSize": {
+    "message": "È necessario scaricare un pacchetto di lingua: $PAIR$, circa $SIZE$ MB",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      },
+      "size": {
+        "content": "$2",
+        "example": "45"
+      }
+    }
+  },
+  "detectorDownloadNeeded": {
+    "message": "È necessario scaricare il modello di rilevamento della lingua"
+  },
+  "download": {
+    "message": "Scarica"
   },
   "googleCaption": {
     "message": "Apre translate.google.com"
