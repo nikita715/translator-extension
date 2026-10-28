@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Translator – ワンクリック翻訳"
+  },
+  "extDescription": {
+    "message": "単語や段落をワンクリックで翻訳。Chrome のオフライン翻訳機能でページ上に直接表示、または Google 翻訳で開きます。"
+  },
+  "contextMenuTranslate": {
+    "message": "翻訳"
+  },
+  "translating": {
+    "message": "翻訳中…"
+  },
+  "downloadingModel": {
+    "message": "言語モデルをダウンロード中… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "翻訳元の言語"
+  },
+  "targetLanguage": {
+    "message": "翻訳先の言語"
+  },
+  "swapLanguages": {
+    "message": "言語を入れ替え"
+  },
+  "autoLanguage": {
+    "message": "自動"
+  },
+  "onPageMark": {
+    "message": "ページ内"
+  },
+  "controls": {
+    "message": "操作"
+  },
+  "modeOff": {
+    "message": "オフ"
+  },
+  "modeDoubleClick": {
+    "message": "2回クリック"
+  },
+  "modeTripleClick": {
+    "message": "3回クリック"
+  },
+  "requireKey": {
+    "message": "$KEY$ キーを押しながら",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "選択したテキストを右クリック → 翻訳"
+  },
+  "hintDoubleClick": {
+    "message": "単語をダブルクリック"
+  },
+  "hintTripleClick": {
+    "message": "段落をトリプルクリック"
+  },
+  "hintHoldDoubleClick": {
+    "message": "$KEY$ を押しながら単語をダブルクリック",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "$KEY$ を押しながら段落をトリプルクリック",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "このモードに切り替え"
+  },
+  "showTranslation": {
+    "message": "翻訳の表示"
+  },
+  "displayOnPage": {
+    "message": "ページ上"
+  },
+  "displayGoogle": {
+    "message": "Google 翻訳"
+  },
+  "onPageCaption": {
+    "message": "Chrome の組み込み翻訳機能、オフラインで動作"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$：ページ上で翻訳できないため、Google 翻訳が開きます",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "このブラウザには組み込み翻訳機能がないため、Google 翻訳が開きます"
+  },
+  "statusSameLanguage": {
+    "message": "翻訳元と翻訳先の言語が同じです"
+  },
+  "replaceText": {
+    "message": "選択したテキストを置き換え"
+  },
+  "replaceTextCaption": {
+    "message": "原文の代わりに翻訳を表示"
+  },
+  "googleCaption": {
+    "message": "translate.google.com を開きます"
+  },
+  "reuseTab": {
+    "message": "Google 翻訳のタブを再利用"
+  },
+  "reuseTabCaption": {
+    "message": "翻訳のたびに新しいタブを開かない"
+  },
+  "lang_ab": {
+    "message": "アブハズ語"
+  },
+  "lang_ace": {
+    "message": "アチェ語"
+  },
+  "lang_ach": {
+    "message": "アチョリ語"
+  },
+  "lang_aa": {
+    "message": "アファール語"
+  },
+  "lang_af": {
+    "message": "アフリカーンス語"
+  },
+  "lang_sq": {
+    "message": "アルバニア語"
+  },
+  "lang_alz": {
+    "message": "アルール語"
+  },
+  "lang_am": {
+    "message": "アムハラ語"
+  },
+  "lang_ar": {
+    "message": "アラビア語"
+  },
+  "lang_hy": {
+    "message": "アルメニア語"
+  },
+  "lang_as": {
+    "message": "アッサム語"
+  },
+  "lang_av": {
+    "message": "アヴァル語"
+  },
+  "lang_awa": {
+    "message": "アワディー語"
+  },
+  "lang_ay": {
+    "message": "アイマラ語"
+  },
+  "lang_az": {
+    "message": "アゼルバイジャン語"
+  },
+  "lang_ban": {
+    "message": "バリ語"
+  },
+  "lang_bal": {
+    "message": "バルーチー語"
+  },
+  "lang_bm": {
+    "message": "バンバラ語"
+  },
+  "lang_bci": {
+    "message": "バウレ語"
+  },
+  "lang_ba": {
+    "message": "バシキール語"
+  },
+  "lang_eu": {
+    "message": "バスク語"
+  },
+  "lang_btx": {
+    "message": "バタク カロ語"
+  },
+  "lang_bts": {
+    "message": "バタク シマルングン語"
+  },
+  "lang_bbc": {
+    "message": "バタクトバ語"
+  },
+  "lang_be": {
+    "message": "ベラルーシ語"
+  },
+  "lang_bem": {
+    "message": "ベンバ語"
+  },
+  "lang_bn": {
+    "message": "ベンガル語"
+  },
+  "lang_bew": {
+    "message": "ベタウィ語"
+  },
+  "lang_bho": {
+    "message": "ボージュプリー語"
+  },
+  "lang_bik": {
+    "message": "ビコール語"
+  },
+  "lang_bs": {
+    "message": "ボスニア語"
+  },
+  "lang_br": {
+    "message": "ブルトン語"
+  },
+  "lang_bg": {
+    "message": "ブルガリア語"
+  },
+  "lang_bua": {
+    "message": "ブリヤート語"
+  },
+  "lang_yue": {
+    "message": "広東語"
+  },
+  "lang_ca": {
+    "message": "カタルーニャ語"
+  },
+  "lang_ceb": {
+    "message": "セブアノ語"
+  },
+  "lang_ch": {
+    "message": "チャモロ語"
+  },
+  "lang_ce": {
+    "message": "チェチェン語"
+  },
+  "lang_ny": {
+    "message": "チェワ語"
+  },
+  "lang_zh_CN": {
+    "message": "中国語（簡体）"
+  },
+  "lang_zh_TW": {
+    "message": "中国語（繁体）"
+  },
+  "lang_chk": {
+    "message": "チューク語"
+  },
+  "lang_cv": {
+    "message": "チュヴァシ語"
+  },
+  "lang_co": {
+    "message": "コルシカ語"
+  },
+  "lang_crh": {
+    "message": "クリミア タタール語（キリル文字）"
+  },
+  "lang_crh_Latn": {
+    "message": "クリミア タタール語（ラテン文字）"
+  },
+  "lang_hr": {
+    "message": "クロアチア語"
+  },
+  "lang_cs": {
+    "message": "チェコ語"
+  },
+  "lang_da": {
+    "message": "デンマーク語"
+  },
+  "lang_fa_AF": {
+    "message": "ダリー語"
+  },
+  "lang_dv": {
+    "message": "ディベヒ語"
+  },
+  "lang_din": {
+    "message": "ディンカ語"
+  },
+  "lang_doi": {
+    "message": "ドグリ語"
+  },
+  "lang_dov": {
+    "message": "ドンベ語"
+  },
+  "lang_nl": {
+    "message": "オランダ語"
+  },
+  "lang_dyu": {
+    "message": "ジュラ語"
+  },
+  "lang_dz": {
+    "message": "ゾンカ語"
+  },
+  "lang_en": {
+    "message": "英語"
+  },
+  "lang_eo": {
+    "message": "エスペラント語"
+  },
+  "lang_et": {
+    "message": "エストニア語"
+  },
+  "lang_ee": {
+    "message": "エウェ語"
+  },
+  "lang_fo": {
+    "message": "フェロー語"
+  },
+  "lang_fj": {
+    "message": "フィジー語"
+  },
+  "lang_tl": {
+    "message": "タガログ語"
+  },
+  "lang_fi": {
+    "message": "フィンランド語"
+  },
+  "lang_fon": {
+    "message": "フォン語"
+  },
+  "lang_fr": {
+    "message": "フランス語"
+  },
+  "lang_fr_CA": {
+    "message": "フランス語（カナダ）"
+  },
+  "lang_fy": {
+    "message": "フリジア語"
+  },
+  "lang_fur": {
+    "message": "フリウリ語"
+  },
+  "lang_ff": {
+    "message": "フラニ語"
+  },
+  "lang_gaa": {
+    "message": "ガー語"
+  },
+  "lang_gl": {
+    "message": "ガリシア語"
+  },
+  "lang_ka": {
+    "message": "ジョージア語（グルジア語）"
+  },
+  "lang_de": {
+    "message": "ドイツ語"
+  },
+  "lang_el": {
+    "message": "ギリシャ語"
+  },
+  "lang_gn": {
+    "message": "グアラニ語"
+  },
+  "lang_gu": {
+    "message": "グジャラート語"
+  },
+  "lang_ht": {
+    "message": "ハイチ語"
+  },
+  "lang_cnh": {
+    "message": "ハカ チン語"
+  },
+  "lang_ha": {
+    "message": "ハウサ語"
+  },
+  "lang_haw": {
+    "message": "ハワイ語"
+  },
+  "lang_iw": {
+    "message": "ヘブライ語"
+  },
+  "lang_hil": {
+    "message": "ヒリガイノン語"
+  },
+  "lang_hi": {
+    "message": "ヒンディー語"
+  },
+  "lang_hmn": {
+    "message": "モン語"
+  },
+  "lang_hu": {
+    "message": "ハンガリー語"
+  },
+  "lang_hrx": {
+    "message": "フンスリュック語"
+  },
+  "lang_iba": {
+    "message": "イバン語"
+  },
+  "lang_is": {
+    "message": "アイスランド語"
+  },
+  "lang_ig": {
+    "message": "イボ語"
+  },
+  "lang_ilo": {
+    "message": "イロカノ語"
+  },
+  "lang_id": {
+    "message": "インドネシア語"
+  },
+  "lang_iu_Latn": {
+    "message": "イヌクトゥット語（ラテン文字）"
+  },
+  "lang_iu": {
+    "message": "イヌクトゥット語（音節文字）"
+  },
+  "lang_ga": {
+    "message": "アイルランド語"
+  },
+  "lang_it": {
+    "message": "イタリア語"
+  },
+  "lang_jam": {
+    "message": "ジャマイカ クレオール語"
+  },
+  "lang_ja": {
+    "message": "日本語"
+  },
+  "lang_jw": {
+    "message": "ジャワ語"
+  },
+  "lang_kac": {
+    "message": "ジンポー語"
+  },
+  "lang_kl": {
+    "message": "カラーリット語"
+  },
+  "lang_kn": {
+    "message": "カンナダ語"
+  },
+  "lang_kr": {
+    "message": "カヌリ語"
+  },
+  "lang_pam": {
+    "message": "パンパンガ語"
+  },
+  "lang_kk": {
+    "message": "カザフ語"
+  },
+  "lang_kha": {
+    "message": "カーシ語"
+  },
+  "lang_km": {
+    "message": "クメール語"
+  },
+  "lang_cgg": {
+    "message": "キガ語"
+  },
+  "lang_kg": {
+    "message": "キコンゴ語"
+  },
+  "lang_rw": {
+    "message": "キニヤルワンダ語"
+  },
+  "lang_ktu": {
+    "message": "キトゥバ語"
+  },
+  "lang_trp": {
+    "message": "コクバラ語"
+  },
+  "lang_kv": {
+    "message": "コミ語"
+  },
+  "lang_gom": {
+    "message": "コンカニ語"
+  },
+  "lang_ko": {
+    "message": "韓国語"
+  },
+  "lang_kri": {
+    "message": "クリオ語"
+  },
+  "lang_ku": {
+    "message": "クルド語（クルマンジー）"
+  },
+  "lang_ckb": {
+    "message": "クルド語（ソラニー）"
+  },
+  "lang_ky": {
+    "message": "キルギス語"
+  },
+  "lang_lo": {
+    "message": "ラオ語"
+  },
+  "lang_ltg": {
+    "message": "ラトガリア語"
+  },
+  "lang_la": {
+    "message": "ラテン語"
+  },
+  "lang_lv": {
+    "message": "ラトビア語"
+  },
+  "lang_lij": {
+    "message": "リグリア語"
+  },
+  "lang_li": {
+    "message": "リンブルフ語"
+  },
+  "lang_ln": {
+    "message": "リンガラ語"
+  },
+  "lang_lt": {
+    "message": "リトアニア語"
+  },
+  "lang_lmo": {
+    "message": "ロンバルド語"
+  },
+  "lang_lg": {
+    "message": "ルガンダ語"
+  },
+  "lang_luo": {
+    "message": "ルオ語"
+  },
+  "lang_lb": {
+    "message": "ルクセンブルク語"
+  },
+  "lang_mk": {
+    "message": "マケドニア語"
+  },
+  "lang_mad": {
+    "message": "マドゥラ語"
+  },
+  "lang_mai": {
+    "message": "マイティリー語"
+  },
+  "lang_mak": {
+    "message": "マカッサル語"
+  },
+  "lang_mg": {
+    "message": "マラガシ語"
+  },
+  "lang_ms": {
+    "message": "マレー語"
+  },
+  "lang_ms_Arab": {
+    "message": "マレー語（ジャウィ）"
+  },
+  "lang_ml": {
+    "message": "マラヤーラム語"
+  },
+  "lang_mt": {
+    "message": "マルタ語"
+  },
+  "lang_mam": {
+    "message": "マム語"
+  },
+  "lang_gv": {
+    "message": "マン島語"
+  },
+  "lang_mi": {
+    "message": "マオリ語"
+  },
+  "lang_mr": {
+    "message": "マラーティー語"
+  },
+  "lang_mh": {
+    "message": "マーシャル語"
+  },
+  "lang_mwr": {
+    "message": "マルワディー語"
+  },
+  "lang_mfe": {
+    "message": "クレオール語（モーリシャス）"
+  },
+  "lang_chm": {
+    "message": "牧地マリ語"
+  },
+  "lang_mni_Mtei": {
+    "message": "メイテイ語（マニプリ語）"
+  },
+  "lang_min": {
+    "message": "ミナン語"
+  },
+  "lang_lus": {
+    "message": "ミゾ語"
+  },
+  "lang_mn": {
+    "message": "モンゴル語"
+  },
+  "lang_my": {
+    "message": "ミャンマー語（ビルマ語）"
+  },
+  "lang_nhe": {
+    "message": "ナワトル語（東部ウアステカ）"
+  },
+  "lang_ndc_ZW": {
+    "message": "ンダウ語"
+  },
+  "lang_nr": {
+    "message": "ンデベレ語（南部）"
+  },
+  "lang_new": {
+    "message": "ネパールバサ語（ネワール語）"
+  },
+  "lang_ne": {
+    "message": "ネパール語"
+  },
+  "lang_bm_Nkoo": {
+    "message": "ンコ語"
+  },
+  "lang_no": {
+    "message": "ノルウェー語"
+  },
+  "lang_nus": {
+    "message": "ヌエル語"
+  },
+  "lang_oc": {
+    "message": "オック語"
+  },
+  "lang_or": {
+    "message": "オディア語（オリヤ語）"
+  },
+  "lang_om": {
+    "message": "オロモ語"
+  },
+  "lang_os": {
+    "message": "オセット語"
+  },
+  "lang_pag": {
+    "message": "パンガシナン語"
+  },
+  "lang_pap": {
+    "message": "パピアメント語"
+  },
+  "lang_ps": {
+    "message": "パシュト語"
+  },
+  "lang_fa": {
+    "message": "ペルシャ語"
+  },
+  "lang_pl": {
+    "message": "ポーランド語"
+  },
+  "lang_pt": {
+    "message": "ポルトガル語（ブラジル）"
+  },
+  "lang_pt_PT": {
+    "message": "ポルトガル語（ポルトガル）"
+  },
+  "lang_pa": {
+    "message": "パンジャブ語（グルムキー）"
+  },
+  "lang_pa_Arab": {
+    "message": "パンジャブ語（シャームキー）"
+  },
+  "lang_qu": {
+    "message": "ケチュア語"
+  },
+  "lang_kek": {
+    "message": "ケクチ語"
+  },
+  "lang_rom": {
+    "message": "ロマーニー語"
+  },
+  "lang_ro": {
+    "message": "ルーマニア語"
+  },
+  "lang_rn": {
+    "message": "ルンディ語"
+  },
+  "lang_ru": {
+    "message": "ロシア語"
+  },
+  "lang_se": {
+    "message": "サーミ語（北部）"
+  },
+  "lang_sm": {
+    "message": "サモア語"
+  },
+  "lang_sg": {
+    "message": "サンゴ語"
+  },
+  "lang_sa": {
+    "message": "サンスクリット語"
+  },
+  "lang_sat_Latn": {
+    "message": "サンタル語（ラテン文字）"
+  },
+  "lang_sat": {
+    "message": "サンタル語（オルチキ文字）"
+  },
+  "lang_gd": {
+    "message": "スコットランド ゲール語"
+  },
+  "lang_nso": {
+    "message": "セペディ語"
+  },
+  "lang_sr": {
+    "message": "セルビア語"
+  },
+  "lang_st": {
+    "message": "ソト語"
+  },
+  "lang_crs": {
+    "message": "クレオール語（セーシェル）"
+  },
+  "lang_shn": {
+    "message": "シャン語"
+  },
+  "lang_sn": {
+    "message": "ショナ語"
+  },
+  "lang_scn": {
+    "message": "シチリア語"
+  },
+  "lang_szl": {
+    "message": "シロンスク語"
+  },
+  "lang_sd": {
+    "message": "シンド語"
+  },
+  "lang_si": {
+    "message": "シンハラ語"
+  },
+  "lang_sk": {
+    "message": "スロバキア語"
+  },
+  "lang_sl": {
+    "message": "スロベニア語"
+  },
+  "lang_so": {
+    "message": "ソマリ語"
+  },
+  "lang_es": {
+    "message": "スペイン語"
+  },
+  "lang_su": {
+    "message": "スンダ語"
+  },
+  "lang_sus": {
+    "message": "スス語"
+  },
+  "lang_sw": {
+    "message": "スワヒリ語"
+  },
+  "lang_ss": {
+    "message": "スワート語"
+  },
+  "lang_sv": {
+    "message": "スウェーデン語"
+  },
+  "lang_ty": {
+    "message": "タヒチ語"
+  },
+  "lang_tg": {
+    "message": "タジク語"
+  },
+  "lang_ber_Latn": {
+    "message": "タマージク語"
+  },
+  "lang_ber": {
+    "message": "タマージク語（ティフィナグ）"
+  },
+  "lang_ta": {
+    "message": "タミル語"
+  },
+  "lang_tt": {
+    "message": "タタール語"
+  },
+  "lang_te": {
+    "message": "テルグ語"
+  },
+  "lang_tet": {
+    "message": "テトゥン語"
+  },
+  "lang_th": {
+    "message": "タイ語"
+  },
+  "lang_bo": {
+    "message": "チベット語"
+  },
+  "lang_ti": {
+    "message": "ティグリニャ語"
+  },
+  "lang_tiv": {
+    "message": "ティブ語"
+  },
+  "lang_tpi": {
+    "message": "トクピシン語"
+  },
+  "lang_to": {
+    "message": "トンガ語"
+  },
+  "lang_lua": {
+    "message": "ルバ語"
+  },
+  "lang_ts": {
+    "message": "ツォンガ語"
+  },
+  "lang_tn": {
+    "message": "ツワナ語"
+  },
+  "lang_tcy": {
+    "message": "トゥル語"
+  },
+  "lang_tum": {
+    "message": "トゥンブカ語"
+  },
+  "lang_tr": {
+    "message": "トルコ語"
+  },
+  "lang_tk": {
+    "message": "トルクメン語"
+  },
+  "lang_tyv": {
+    "message": "トゥバ語"
+  },
+  "lang_ak": {
+    "message": "トゥイ語"
+  },
+  "lang_udm": {
+    "message": "ウドムルト語"
+  },
+  "lang_uk": {
+    "message": "ウクライナ語"
+  },
+  "lang_ur": {
+    "message": "ウルドゥ語"
+  },
+  "lang_ug": {
+    "message": "ウイグル語"
+  },
+  "lang_uz": {
+    "message": "ウズベク語"
+  },
+  "lang_ve": {
+    "message": "ヴェンダ語"
+  },
+  "lang_vec": {
+    "message": "ヴェネト語"
+  },
+  "lang_vi": {
+    "message": "ベトナム語"
+  },
+  "lang_war": {
+    "message": "ワライ語"
+  },
+  "lang_cy": {
+    "message": "ウェールズ語"
+  },
+  "lang_wo": {
+    "message": "ウォロフ語"
+  },
+  "lang_xh": {
+    "message": "コーサ語"
+  },
+  "lang_sah": {
+    "message": "ヤクート語"
+  },
+  "lang_yi": {
+    "message": "イディッシュ語"
+  },
+  "lang_yo": {
+    "message": "ヨルバ語"
+  },
+  "lang_yua": {
+    "message": "ユカテコマヤ語"
+  },
+  "lang_zap": {
+    "message": "サポテク語"
+  },
+  "lang_zu": {
+    "message": "ズールー語"
+  }
+}

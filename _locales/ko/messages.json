@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Translator – 클릭 한 번으로 번역"
+  },
+  "extDescription": {
+    "message": "클릭 한 번으로 단어와 문단을 번역하세요. Chrome 오프라인 번역기로 페이지에서 바로, 또는 Google 번역에서 확인할 수 있습니다."
+  },
+  "contextMenuTranslate": {
+    "message": "번역"
+  },
+  "translating": {
+    "message": "번역 중…"
+  },
+  "downloadingModel": {
+    "message": "언어 모델 다운로드 중… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "원본 언어"
+  },
+  "targetLanguage": {
+    "message": "번역할 언어"
+  },
+  "swapLanguages": {
+    "message": "언어 바꾸기"
+  },
+  "autoLanguage": {
+    "message": "자동"
+  },
+  "onPageMark": {
+    "message": "페이지 내"
+  },
+  "controls": {
+    "message": "조작"
+  },
+  "modeOff": {
+    "message": "끄기"
+  },
+  "modeDoubleClick": {
+    "message": "더블클릭"
+  },
+  "modeTripleClick": {
+    "message": "트리플클릭"
+  },
+  "requireKey": {
+    "message": "$KEY$ 키 누른 상태에서만",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "선택한 텍스트를 마우스 오른쪽 클릭 → 번역"
+  },
+  "hintDoubleClick": {
+    "message": "단어를 더블클릭하세요"
+  },
+  "hintTripleClick": {
+    "message": "문단을 세 번 클릭하세요"
+  },
+  "hintHoldDoubleClick": {
+    "message": "$KEY$ 키를 누른 채 단어를 더블클릭하세요",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "$KEY$ 키를 누른 채 문단을 세 번 클릭하세요",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "이 모드로 전환"
+  },
+  "showTranslation": {
+    "message": "번역 표시"
+  },
+  "displayOnPage": {
+    "message": "페이지에서"
+  },
+  "displayGoogle": {
+    "message": "Google 번역"
+  },
+  "onPageCaption": {
+    "message": "Chrome 내장 번역기, 오프라인으로 작동"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$: 페이지에서 번역할 수 없어 Google 번역이 열립니다",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "이 브라우저에는 내장 번역기가 없어 Google 번역이 열립니다"
+  },
+  "statusSameLanguage": {
+    "message": "원본 언어와 번역할 언어가 같습니다"
+  },
+  "replaceText": {
+    "message": "선택한 텍스트 바꾸기"
+  },
+  "replaceTextCaption": {
+    "message": "원문 대신 번역문 표시"
+  },
+  "googleCaption": {
+    "message": "translate.google.com을 엽니다"
+  },
+  "reuseTab": {
+    "message": "Google 번역 탭 재사용"
+  },
+  "reuseTabCaption": {
+    "message": "번역할 때마다 새 탭을 열지 않음"
+  },
+  "lang_ab": {
+    "message": "압하지야어"
+  },
+  "lang_ace": {
+    "message": "아체어"
+  },
+  "lang_ach": {
+    "message": "아촐리어"
+  },
+  "lang_aa": {
+    "message": "아파르어"
+  },
+  "lang_af": {
+    "message": "아프리칸스어"
+  },
+  "lang_sq": {
+    "message": "알바니아어"
+  },
+  "lang_alz": {
+    "message": "알루르어"
+  },
+  "lang_am": {
+    "message": "암하라어"
+  },
+  "lang_ar": {
+    "message": "아랍어"
+  },
+  "lang_hy": {
+    "message": "아르메니아어"
+  },
+  "lang_as": {
+    "message": "아삼어"
+  },
+  "lang_av": {
+    "message": "아바르어"
+  },
+  "lang_awa": {
+    "message": "아와디어"
+  },
+  "lang_ay": {
+    "message": "아이마라어"
+  },
+  "lang_az": {
+    "message": "아제르바이잔어"
+  },
+  "lang_ban": {
+    "message": "발리어"
+  },
+  "lang_bal": {
+    "message": "발루치어"
+  },
+  "lang_bm": {
+    "message": "밤바라어"
+  },
+  "lang_bci": {
+    "message": "바울레어"
+  },
+  "lang_ba": {
+    "message": "바시키르어"
+  },
+  "lang_eu": {
+    "message": "바스크어"
+  },
+  "lang_btx": {
+    "message": "바탁 카로어"
+  },
+  "lang_bts": {
+    "message": "바탁 시말룽운어"
+  },
+  "lang_bbc": {
+    "message": "바탁 토바어"
+  },
+  "lang_be": {
+    "message": "벨라루스어"
+  },
+  "lang_bem": {
+    "message": "벰바어"
+  },
+  "lang_bn": {
+    "message": "벵골어"
+  },
+  "lang_bew": {
+    "message": "베타위어"
+  },
+  "lang_bho": {
+    "message": "보즈푸리어"
+  },
+  "lang_bik": {
+    "message": "비콜어"
+  },
+  "lang_bs": {
+    "message": "보스니아어"
+  },
+  "lang_br": {
+    "message": "브르타뉴어"
+  },
+  "lang_bg": {
+    "message": "불가리아어"
+  },
+  "lang_bua": {
+    "message": "부랴트어"
+  },
+  "lang_yue": {
+    "message": "광둥어"
+  },
+  "lang_ca": {
+    "message": "카탈로니아어"
+  },
+  "lang_ceb": {
+    "message": "세부아노어"
+  },
+  "lang_ch": {
+    "message": "차모로어"
+  },
+  "lang_ce": {
+    "message": "체첸어"
+  },
+  "lang_ny": {
+    "message": "체와어"
+  },
+  "lang_zh_CN": {
+    "message": "중국어(간체)"
+  },
+  "lang_zh_TW": {
+    "message": "중국어(번체)"
+  },
+  "lang_chk": {
+    "message": "추우케어"
+  },
+  "lang_cv": {
+    "message": "추바시어"
+  },
+  "lang_co": {
+    "message": "코르시카어"
+  },
+  "lang_crh": {
+    "message": "크림 타타르어(키릴 문자)"
+  },
+  "lang_crh_Latn": {
+    "message": "크림 타타르어(라틴 문자)"
+  },
+  "lang_hr": {
+    "message": "크로아티아어"
+  },
+  "lang_cs": {
+    "message": "체코어"
+  },
+  "lang_da": {
+    "message": "덴마크어"
+  },
+  "lang_fa_AF": {
+    "message": "다리어"
+  },
+  "lang_dv": {
+    "message": "디베히어"
+  },
+  "lang_din": {
+    "message": "딩카어"
+  },
+  "lang_doi": {
+    "message": "도그리어"
+  },
+  "lang_dov": {
+    "message": "돔베어"
+  },
+  "lang_nl": {
+    "message": "네덜란드어"
+  },
+  "lang_dyu": {
+    "message": "드율라어"
+  },
+  "lang_dz": {
+    "message": "종카어"
+  },
+  "lang_en": {
+    "message": "영어"
+  },
+  "lang_eo": {
+    "message": "에스페란토어"
+  },
+  "lang_et": {
+    "message": "에스토니아어"
+  },
+  "lang_ee": {
+    "message": "에웨어"
+  },
+  "lang_fo": {
+    "message": "페로어"
+  },
+  "lang_fj": {
+    "message": "피지어"
+  },
+  "lang_tl": {
+    "message": "필리핀어"
+  },
+  "lang_fi": {
+    "message": "핀란드어"
+  },
+  "lang_fon": {
+    "message": "폰어"
+  },
+  "lang_fr": {
+    "message": "프랑스어"
+  },
+  "lang_fr_CA": {
+    "message": "프랑스어(캐나다)"
+  },
+  "lang_fy": {
+    "message": "프리지아어"
+  },
+  "lang_fur": {
+    "message": "프리울리어"
+  },
+  "lang_ff": {
+    "message": "풀라니어"
+  },
+  "lang_gaa": {
+    "message": "가어"
+  },
+  "lang_gl": {
+    "message": "갈리시아어"
+  },
+  "lang_ka": {
+    "message": "조지아어"
+  },
+  "lang_de": {
+    "message": "독일어"
+  },
+  "lang_el": {
+    "message": "그리스어"
+  },
+  "lang_gn": {
+    "message": "과라니어"
+  },
+  "lang_gu": {
+    "message": "구자라트어"
+  },
+  "lang_ht": {
+    "message": "아이티 크리올어"
+  },
+  "lang_cnh": {
+    "message": "하카 친어"
+  },
+  "lang_ha": {
+    "message": "하우사어"
+  },
+  "lang_haw": {
+    "message": "하와이어"
+  },
+  "lang_iw": {
+    "message": "히브리어"
+  },
+  "lang_hil": {
+    "message": "힐리가이논어"
+  },
+  "lang_hi": {
+    "message": "힌디어"
+  },
+  "lang_hmn": {
+    "message": "몽어"
+  },
+  "lang_hu": {
+    "message": "헝가리어"
+  },
+  "lang_hrx": {
+    "message": "훈스뤼크어"
+  },
+  "lang_iba": {
+    "message": "이반어"
+  },
+  "lang_is": {
+    "message": "아이슬란드어"
+  },
+  "lang_ig": {
+    "message": "이그보어"
+  },
+  "lang_ilo": {
+    "message": "일로카노어"
+  },
+  "lang_id": {
+    "message": "인도네시아어"
+  },
+  "lang_iu_Latn": {
+    "message": "이누크티투트어(라틴 문자)"
+  },
+  "lang_iu": {
+    "message": "이누크티투트어(음절 문자)"
+  },
+  "lang_ga": {
+    "message": "아일랜드어"
+  },
+  "lang_it": {
+    "message": "이탈리아어"
+  },
+  "lang_jam": {
+    "message": "자메이카 파투아어"
+  },
+  "lang_ja": {
+    "message": "일본어"
+  },
+  "lang_jw": {
+    "message": "자바어"
+  },
+  "lang_kac": {
+    "message": "징포어"
+  },
+  "lang_kl": {
+    "message": "그린란드어"
+  },
+  "lang_kn": {
+    "message": "칸나다어"
+  },
+  "lang_kr": {
+    "message": "칸누리어"
+  },
+  "lang_pam": {
+    "message": "카팜팡안어"
+  },
+  "lang_kk": {
+    "message": "카자흐어"
+  },
+  "lang_kha": {
+    "message": "카시어"
+  },
+  "lang_km": {
+    "message": "크메르어"
+  },
+  "lang_cgg": {
+    "message": "키가어"
+  },
+  "lang_kg": {
+    "message": "콩고어"
+  },
+  "lang_rw": {
+    "message": "키냐르완다어"
+  },
+  "lang_ktu": {
+    "message": "키투바어"
+  },
+  "lang_trp": {
+    "message": "콕보록어"
+  },
+  "lang_kv": {
+    "message": "코미어"
+  },
+  "lang_gom": {
+    "message": "콘칸어"
+  },
+  "lang_ko": {
+    "message": "한국어"
+  },
+  "lang_kri": {
+    "message": "크리오어"
+  },
+  "lang_ku": {
+    "message": "쿠르드어(쿠르만지)"
+  },
+  "lang_ckb": {
+    "message": "쿠르드어(소라니)"
+  },
+  "lang_ky": {
+    "message": "키르기스어"
+  },
+  "lang_lo": {
+    "message": "라오어"
+  },
+  "lang_ltg": {
+    "message": "라트갈레어"
+  },
+  "lang_la": {
+    "message": "라틴어"
+  },
+  "lang_lv": {
+    "message": "라트비아어"
+  },
+  "lang_lij": {
+    "message": "리구리아어"
+  },
+  "lang_li": {
+    "message": "림뷔르흐어"
+  },
+  "lang_ln": {
+    "message": "링갈라어"
+  },
+  "lang_lt": {
+    "message": "리투아니아어"
+  },
+  "lang_lmo": {
+    "message": "롬바르디아어"
+  },
+  "lang_lg": {
+    "message": "루간다어"
+  },
+  "lang_luo": {
+    "message": "루오어"
+  },
+  "lang_lb": {
+    "message": "룩셈부르크어"
+  },
+  "lang_mk": {
+    "message": "마케도니아어"
+  },
+  "lang_mad": {
+    "message": "마두라어"
+  },
+  "lang_mai": {
+    "message": "마이틸어"
+  },
+  "lang_mak": {
+    "message": "마카사르어"
+  },
+  "lang_mg": {
+    "message": "말라가시어"
+  },
+  "lang_ms": {
+    "message": "말레이어"
+  },
+  "lang_ms_Arab": {
+    "message": "말레이어(자위)"
+  },
+  "lang_ml": {
+    "message": "말라얄람어"
+  },
+  "lang_mt": {
+    "message": "몰타어"
+  },
+  "lang_mam": {
+    "message": "맘어"
+  },
+  "lang_gv": {
+    "message": "맹크스어"
+  },
+  "lang_mi": {
+    "message": "마오리어"
+  },
+  "lang_mr": {
+    "message": "마라티어"
+  },
+  "lang_mh": {
+    "message": "마셜어"
+  },
+  "lang_mwr": {
+    "message": "마르와디어"
+  },
+  "lang_mfe": {
+    "message": "모리셔스 크리올어"
+  },
+  "lang_chm": {
+    "message": "메도우 마리어"
+  },
+  "lang_mni_Mtei": {
+    "message": "메이테이어(마니푸르어)"
+  },
+  "lang_min": {
+    "message": "미낭어"
+  },
+  "lang_lus": {
+    "message": "미조어"
+  },
+  "lang_mn": {
+    "message": "몽골어"
+  },
+  "lang_my": {
+    "message": "미얀마어(버마어)"
+  },
+  "lang_nhe": {
+    "message": "나우아틀어(동부 우아스테카)"
+  },
+  "lang_ndc_ZW": {
+    "message": "은다우어"
+  },
+  "lang_nr": {
+    "message": "은데벨레어(남부)"
+  },
+  "lang_new": {
+    "message": "네팔바사어(네와르어)"
+  },
+  "lang_ne": {
+    "message": "네팔어"
+  },
+  "lang_bm_Nkoo": {
+    "message": "응코어"
+  },
+  "lang_no": {
+    "message": "노르웨이어"
+  },
+  "lang_nus": {
+    "message": "누에르어"
+  },
+  "lang_oc": {
+    "message": "오크어"
+  },
+  "lang_or": {
+    "message": "오디아어 (오리야어)"
+  },
+  "lang_om": {
+    "message": "오로모어"
+  },
+  "lang_os": {
+    "message": "오세트어"
+  },
+  "lang_pag": {
+    "message": "팡가시난어"
+  },
+  "lang_pap": {
+    "message": "파피아멘토어"
+  },
+  "lang_ps": {
+    "message": "파슈토어"
+  },
+  "lang_fa": {
+    "message": "페르시아어"
+  },
+  "lang_pl": {
+    "message": "폴란드어"
+  },
+  "lang_pt": {
+    "message": "포르투갈어(브라질)"
+  },
+  "lang_pt_PT": {
+    "message": "포르투갈어(포르투갈)"
+  },
+  "lang_pa": {
+    "message": "펀자브어(구르무키)"
+  },
+  "lang_pa_Arab": {
+    "message": "펀자브어(샤무키)"
+  },
+  "lang_qu": {
+    "message": "케추아어"
+  },
+  "lang_kek": {
+    "message": "켁치어"
+  },
+  "lang_rom": {
+    "message": "롬어"
+  },
+  "lang_ro": {
+    "message": "루마니아어"
+  },
+  "lang_rn": {
+    "message": "룬디어"
+  },
+  "lang_ru": {
+    "message": "러시아어"
+  },
+  "lang_se": {
+    "message": "사미어(북부)"
+  },
+  "lang_sm": {
+    "message": "사모아어"
+  },
+  "lang_sg": {
+    "message": "상고어"
+  },
+  "lang_sa": {
+    "message": "산스크리트어"
+  },
+  "lang_sat_Latn": {
+    "message": "산탈어(라틴 문자)"
+  },
+  "lang_sat": {
+    "message": "산탈어(올 치키 문자)"
+  },
+  "lang_gd": {
+    "message": "스코틀랜드 게일어"
+  },
+  "lang_nso": {
+    "message": "세페디어"
+  },
+  "lang_sr": {
+    "message": "세르비아어"
+  },
+  "lang_st": {
+    "message": "세소토어"
+  },
+  "lang_crs": {
+    "message": "세이셸 크리올어"
+  },
+  "lang_shn": {
+    "message": "샨어"
+  },
+  "lang_sn": {
+    "message": "쇼나어"
+  },
+  "lang_scn": {
+    "message": "시칠리아어"
+  },
+  "lang_szl": {
+    "message": "실레지아어"
+  },
+  "lang_sd": {
+    "message": "신디어"
+  },
+  "lang_si": {
+    "message": "싱할라어"
+  },
+  "lang_sk": {
+    "message": "슬로바키아어"
+  },
+  "lang_sl": {
+    "message": "슬로베니아어"
+  },
+  "lang_so": {
+    "message": "소말리어"
+  },
+  "lang_es": {
+    "message": "스페인어"
+  },
+  "lang_su": {
+    "message": "순다어"
+  },
+  "lang_sus": {
+    "message": "수수어"
+  },
+  "lang_sw": {
+    "message": "스와힐리어"
+  },
+  "lang_ss": {
+    "message": "스와티어"
+  },
+  "lang_sv": {
+    "message": "스웨덴어"
+  },
+  "lang_ty": {
+    "message": "타히티어"
+  },
+  "lang_tg": {
+    "message": "타지크어"
+  },
+  "lang_ber_Latn": {
+    "message": "타마지트어"
+  },
+  "lang_ber": {
+    "message": "타마지트어(티피나그)"
+  },
+  "lang_ta": {
+    "message": "타밀어"
+  },
+  "lang_tt": {
+    "message": "타타르어"
+  },
+  "lang_te": {
+    "message": "텔루구어"
+  },
+  "lang_tet": {
+    "message": "테툼어"
+  },
+  "lang_th": {
+    "message": "태국어"
+  },
+  "lang_bo": {
+    "message": "티베트어"
+  },
+  "lang_ti": {
+    "message": "티그리냐어"
+  },
+  "lang_tiv": {
+    "message": "티브어"
+  },
+  "lang_tpi": {
+    "message": "톡 피신어"
+  },
+  "lang_to": {
+    "message": "통가어"
+  },
+  "lang_lua": {
+    "message": "루바어"
+  },
+  "lang_ts": {
+    "message": "총가어"
+  },
+  "lang_tn": {
+    "message": "츠와나어"
+  },
+  "lang_tcy": {
+    "message": "툴루어"
+  },
+  "lang_tum": {
+    "message": "툼부카어"
+  },
+  "lang_tr": {
+    "message": "튀르키예어"
+  },
+  "lang_tk": {
+    "message": "투르크멘어"
+  },
+  "lang_tyv": {
+    "message": "투바어"
+  },
+  "lang_ak": {
+    "message": "트위어"
+  },
+  "lang_udm": {
+    "message": "우드무르트어"
+  },
+  "lang_uk": {
+    "message": "우크라이나어"
+  },
+  "lang_ur": {
+    "message": "우르두어"
+  },
+  "lang_ug": {
+    "message": "위구르어"
+  },
+  "lang_uz": {
+    "message": "우즈베크어"
+  },
+  "lang_ve": {
+    "message": "벤다어"
+  },
+  "lang_vec": {
+    "message": "베네치아어"
+  },
+  "lang_vi": {
+    "message": "베트남어"
+  },
+  "lang_war": {
+    "message": "와라이어"
+  },
+  "lang_cy": {
+    "message": "웨일즈어"
+  },
+  "lang_wo": {
+    "message": "월로프어"
+  },
+  "lang_xh": {
+    "message": "코사어"
+  },
+  "lang_sah": {
+    "message": "야쿠트어"
+  },
+  "lang_yi": {
+    "message": "이디시어"
+  },
+  "lang_yo": {
+    "message": "요루바어"
+  },
+  "lang_yua": {
+    "message": "유카텍 마야어"
+  },
+  "lang_zap": {
+    "message": "사포텍어"
+  },
+  "lang_zu": {
+    "message": "줄루어"
+  }
+}

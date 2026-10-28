@@ -91,7 +91,7 @@ select {
   flex: 1;
   min-width: 0;
   height: 32px;
-  padding: 0 28px 0 10px;
+  padding-inline: 10px 28px;
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--bg) var(--chevron) no-repeat right 10px center;
@@ -100,6 +100,10 @@ select {
   text-overflow: ellipsis;
   appearance: none;
   cursor: pointer;
+}
+
+[dir="rtl"] select {
+  background-position: left 10px center;
 }
 
 .swap {
@@ -176,7 +180,9 @@ select {
   border-radius: 8px;
 }
 
+/* Key combinations read left to right in every language */
 .combo {
+  direction: ltr;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -287,7 +293,7 @@ section > .option:last-child {
   content: "";
   position: absolute;
   top: 2px;
-  left: 2px;
+  inset-inline-start: 2px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -302,6 +308,10 @@ section > .option:last-child {
 .switch:checked::after {
   background: var(--on-accent);
   transform: translateX(12px);
+}
+
+[dir="rtl"] .switch:checked::after {
+  transform: translateX(-12px);
 }
 
 /* Don't animate switches into their saved state when the popup opens */
@@ -339,6 +349,7 @@ section > .option:last-child {
 }
 
 .shortcut .keys {
+  direction: ltr;
   display: flex;
   flex: none;
   align-items: center;

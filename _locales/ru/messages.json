@@ -129,318 +129,750 @@
     "message": "Не открывать новые вкладки"
   },
   "lang_ab": {
-    "message": "Абхазский"
+    "message": "абхазский"
   },
   "lang_ace": {
-    "message": "Ачехский"
+    "message": "ачехский"
   },
   "lang_ach": {
-    "message": "Ачоли"
+    "message": "ачоли"
   },
   "lang_aa": {
-    "message": "Афарский"
+    "message": "афарский"
+  },
+  "lang_af": {
+    "message": "африкаанс"
+  },
+  "lang_sq": {
+    "message": "албанский"
   },
   "lang_alz": {
-    "message": "Алур"
+    "message": "алур"
+  },
+  "lang_am": {
+    "message": "амхарский"
+  },
+  "lang_ar": {
+    "message": "арабский"
+  },
+  "lang_hy": {
+    "message": "армянский"
+  },
+  "lang_as": {
+    "message": "ассамский"
   },
   "lang_av": {
-    "message": "Аварский"
+    "message": "аварский"
   },
   "lang_awa": {
-    "message": "Авадхи"
+    "message": "авадхи"
+  },
+  "lang_ay": {
+    "message": "аймара"
+  },
+  "lang_az": {
+    "message": "азербайджанский"
   },
   "lang_ban": {
-    "message": "Балийский"
+    "message": "балийский"
   },
   "lang_bal": {
-    "message": "Белуджский"
+    "message": "белуджский"
+  },
+  "lang_bm": {
+    "message": "бамбара"
   },
   "lang_bci": {
-    "message": "Бауле"
+    "message": "бауле"
   },
   "lang_ba": {
-    "message": "Башкирский"
+    "message": "башкирский"
+  },
+  "lang_eu": {
+    "message": "баскский"
   },
   "lang_btx": {
-    "message": "Батак каро"
+    "message": "батакский (каро)"
   },
   "lang_bts": {
-    "message": "Батак сималунгун"
+    "message": "батакский (сималунгун)"
   },
   "lang_bbc": {
-    "message": "Батак тоба"
+    "message": "батакский (тоба)"
+  },
+  "lang_be": {
+    "message": "белорусский"
   },
   "lang_bem": {
-    "message": "Бемба"
+    "message": "бемба"
+  },
+  "lang_bn": {
+    "message": "бенгальский"
   },
   "lang_bew": {
-    "message": "Бетави"
+    "message": "бетави"
+  },
+  "lang_bho": {
+    "message": "бходжпури"
   },
   "lang_bik": {
-    "message": "Бикольский"
+    "message": "бикольский"
+  },
+  "lang_bs": {
+    "message": "боснийский"
+  },
+  "lang_br": {
+    "message": "бретонский"
+  },
+  "lang_bg": {
+    "message": "болгарский"
   },
   "lang_bua": {
-    "message": "Бурятский"
+    "message": "бурятский"
+  },
+  "lang_yue": {
+    "message": "кантонский"
+  },
+  "lang_ca": {
+    "message": "каталанский"
+  },
+  "lang_ceb": {
+    "message": "себуанский"
   },
   "lang_ch": {
-    "message": "Чаморро"
+    "message": "чаморро"
   },
   "lang_ce": {
-    "message": "Чеченский"
+    "message": "чеченский"
+  },
+  "lang_ny": {
+    "message": "чева"
+  },
+  "lang_zh_CN": {
+    "message": "китайский (упрощенный)"
+  },
+  "lang_zh_TW": {
+    "message": "китайский (традиционный)"
   },
   "lang_chk": {
-    "message": "Чуукский"
+    "message": "чуукский"
   },
   "lang_cv": {
-    "message": "Чувашский"
+    "message": "чувашский"
+  },
+  "lang_co": {
+    "message": "корсиканский"
   },
   "lang_crh": {
-    "message": "Крымскотатарский (кириллица)"
+    "message": "крымскотатарский (кириллица)"
   },
   "lang_crh_Latn": {
-    "message": "Крымскотатарский (латиница)"
+    "message": "крымскотатарский (латиница)"
+  },
+  "lang_hr": {
+    "message": "хорватский"
+  },
+  "lang_cs": {
+    "message": "чешский"
+  },
+  "lang_da": {
+    "message": "датский"
+  },
+  "lang_fa_AF": {
+    "message": "дари"
+  },
+  "lang_dv": {
+    "message": "мальдивский"
   },
   "lang_din": {
-    "message": "Динка"
+    "message": "динка"
+  },
+  "lang_doi": {
+    "message": "догри"
   },
   "lang_dov": {
-    "message": "Домбе"
+    "message": "домбе"
+  },
+  "lang_nl": {
+    "message": "нидерландский"
   },
   "lang_dyu": {
-    "message": "Дьюла"
+    "message": "дьюла"
   },
   "lang_dz": {
-    "message": "Дзонг-кэ"
+    "message": "дзонг-кэ"
+  },
+  "lang_en": {
+    "message": "английский"
+  },
+  "lang_eo": {
+    "message": "эсперанто"
+  },
+  "lang_et": {
+    "message": "эстонский"
+  },
+  "lang_ee": {
+    "message": "эве"
+  },
+  "lang_fo": {
+    "message": "фарерский"
   },
   "lang_fj": {
-    "message": "Фиджийский"
+    "message": "фиджийский"
+  },
+  "lang_tl": {
+    "message": "филиппинский"
+  },
+  "lang_fi": {
+    "message": "финский"
   },
   "lang_fon": {
-    "message": "Фон"
+    "message": "фон"
+  },
+  "lang_fr": {
+    "message": "французский"
+  },
+  "lang_fr_CA": {
+    "message": "французский (Канада)"
+  },
+  "lang_fy": {
+    "message": "фризский"
   },
   "lang_fur": {
-    "message": "Фриульский"
+    "message": "фриульский"
   },
   "lang_ff": {
-    "message": "Фула"
+    "message": "фулани"
   },
   "lang_gaa": {
-    "message": "Га"
+    "message": "га"
+  },
+  "lang_gl": {
+    "message": "галисийский"
+  },
+  "lang_ka": {
+    "message": "грузинский"
+  },
+  "lang_de": {
+    "message": "немецкий"
+  },
+  "lang_el": {
+    "message": "греческий"
+  },
+  "lang_gn": {
+    "message": "гуарани"
+  },
+  "lang_gu": {
+    "message": "гуджарати"
+  },
+  "lang_ht": {
+    "message": "гаитянский креольский"
   },
   "lang_cnh": {
-    "message": "Хакха-чин"
+    "message": "чинский"
+  },
+  "lang_ha": {
+    "message": "хауса"
+  },
+  "lang_haw": {
+    "message": "гавайский"
+  },
+  "lang_iw": {
+    "message": "иврит"
   },
   "lang_hil": {
-    "message": "Хилигайнон"
+    "message": "хилигайнон"
+  },
+  "lang_hi": {
+    "message": "хинди"
+  },
+  "lang_hmn": {
+    "message": "хмонг"
+  },
+  "lang_hu": {
+    "message": "венгерский"
   },
   "lang_hrx": {
-    "message": "Хунсрик"
+    "message": "хунсрюкский"
   },
   "lang_iba": {
-    "message": "Ибанский"
+    "message": "ибанский"
+  },
+  "lang_is": {
+    "message": "исландский"
+  },
+  "lang_ig": {
+    "message": "игбо"
+  },
+  "lang_ilo": {
+    "message": "илоканский"
+  },
+  "lang_id": {
+    "message": "индонезийский"
   },
   "lang_iu_Latn": {
-    "message": "Инуктитут (латиница)"
+    "message": "инуктут (латиница)"
   },
   "lang_iu": {
-    "message": "Инуктитут (слоговое письмо)"
+    "message": "инуктут (слоговое письмо)"
+  },
+  "lang_ga": {
+    "message": "ирландский"
+  },
+  "lang_it": {
+    "message": "итальянский"
   },
   "lang_jam": {
-    "message": "Ямайский креольский"
+    "message": "ямайский креольский"
+  },
+  "lang_ja": {
+    "message": "японский"
+  },
+  "lang_jw": {
+    "message": "яванский"
   },
   "lang_kac": {
-    "message": "Качинский (цзинпо)"
+    "message": "цзинпо"
   },
   "lang_kl": {
-    "message": "Гренландский"
+    "message": "гренландский"
+  },
+  "lang_kn": {
+    "message": "каннада"
   },
   "lang_kr": {
-    "message": "Канури"
+    "message": "канури"
   },
   "lang_pam": {
-    "message": "Пампанга"
+    "message": "капампанганский"
+  },
+  "lang_kk": {
+    "message": "казахский"
   },
   "lang_kha": {
-    "message": "Кхаси"
+    "message": "кхаси"
+  },
+  "lang_km": {
+    "message": "кхмерский"
   },
   "lang_cgg": {
-    "message": "Кига"
+    "message": "кига"
   },
   "lang_kg": {
-    "message": "Конго"
+    "message": "киконго"
+  },
+  "lang_rw": {
+    "message": "киньяруанда"
   },
   "lang_ktu": {
-    "message": "Китуба"
+    "message": "китуба"
   },
   "lang_trp": {
-    "message": "Кокборок"
+    "message": "кокборок"
   },
   "lang_kv": {
-    "message": "Коми"
+    "message": "коми"
+  },
+  "lang_gom": {
+    "message": "конкани"
+  },
+  "lang_ko": {
+    "message": "корейский"
   },
   "lang_kri": {
-    "message": "Крио"
+    "message": "крио"
+  },
+  "lang_ku": {
+    "message": "курдский (курманджи)"
+  },
+  "lang_ckb": {
+    "message": "курдский (сорани)"
+  },
+  "lang_ky": {
+    "message": "киргизский"
+  },
+  "lang_lo": {
+    "message": "лаосский"
   },
   "lang_ltg": {
-    "message": "Латгальский"
+    "message": "латгальский"
+  },
+  "lang_la": {
+    "message": "латинский"
+  },
+  "lang_lv": {
+    "message": "латышский"
   },
   "lang_lij": {
-    "message": "Лигурский"
+    "message": "лигурский"
   },
   "lang_li": {
-    "message": "Лимбургский"
+    "message": "лимбургский"
+  },
+  "lang_ln": {
+    "message": "лингала"
+  },
+  "lang_lt": {
+    "message": "литовский"
   },
   "lang_lmo": {
-    "message": "Ломбардский"
+    "message": "ломбардский"
+  },
+  "lang_lg": {
+    "message": "луганда"
   },
   "lang_luo": {
-    "message": "Луо"
+    "message": "луо"
+  },
+  "lang_lb": {
+    "message": "люксембургский"
+  },
+  "lang_mk": {
+    "message": "македонский"
   },
   "lang_mad": {
-    "message": "Мадурский"
+    "message": "мадурский"
+  },
+  "lang_mai": {
+    "message": "майтхили"
   },
   "lang_mak": {
-    "message": "Макассарский"
+    "message": "макасар"
+  },
+  "lang_mg": {
+    "message": "малагасийский"
+  },
+  "lang_ms": {
+    "message": "малайский"
+  },
+  "lang_ms_Arab": {
+    "message": "малайский (джави)"
+  },
+  "lang_ml": {
+    "message": "малаялам"
+  },
+  "lang_mt": {
+    "message": "мальтийский"
   },
   "lang_mam": {
-    "message": "Мам"
+    "message": "мамский"
   },
   "lang_gv": {
-    "message": "Мэнский"
+    "message": "мэнский"
+  },
+  "lang_mi": {
+    "message": "маори"
+  },
+  "lang_mr": {
+    "message": "маратхи"
   },
   "lang_mh": {
-    "message": "Маршалльский"
+    "message": "маршалльский"
   },
   "lang_mwr": {
-    "message": "Марвари"
+    "message": "марвади"
   },
   "lang_mfe": {
-    "message": "Маврикийский креольский"
+    "message": "маврикийский креольский"
   },
   "lang_chm": {
-    "message": "Марийский (луговой)"
-  },
-  "lang_min": {
-    "message": "Минангкабау"
-  },
-  "lang_nhe": {
-    "message": "Науатль (восточная Уастека)"
-  },
-  "lang_ndc_ZW": {
-    "message": "Ндау"
-  },
-  "lang_nr": {
-    "message": "Южный ндебеле"
-  },
-  "lang_new": {
-    "message": "Неварский"
-  },
-  "lang_nus": {
-    "message": "Нуэр"
-  },
-  "lang_os": {
-    "message": "Осетинский"
-  },
-  "lang_pag": {
-    "message": "Пангасинан"
-  },
-  "lang_pap": {
-    "message": "Папьяменто"
-  },
-  "lang_kek": {
-    "message": "Кекчи"
-  },
-  "lang_rom": {
-    "message": "Цыганский"
-  },
-  "lang_rn": {
-    "message": "Рунди"
-  },
-  "lang_se": {
-    "message": "Северносаамский"
-  },
-  "lang_sg": {
-    "message": "Санго"
-  },
-  "lang_sat_Latn": {
-    "message": "Сантальский (латиница)"
-  },
-  "lang_sat": {
-    "message": "Сантальский (ол-чики)"
-  },
-  "lang_crs": {
-    "message": "Сейшельский креольский"
-  },
-  "lang_shn": {
-    "message": "Шанский"
-  },
-  "lang_scn": {
-    "message": "Сицилийский"
-  },
-  "lang_szl": {
-    "message": "Силезский"
-  },
-  "lang_sus": {
-    "message": "Сусу"
-  },
-  "lang_ss": {
-    "message": "Свази"
-  },
-  "lang_ty": {
-    "message": "Таитянский"
-  },
-  "lang_ber_Latn": {
-    "message": "Тамазигхт"
-  },
-  "lang_ber": {
-    "message": "Тамазигхт (тифинаг)"
-  },
-  "lang_tet": {
-    "message": "Тетум"
-  },
-  "lang_bo": {
-    "message": "Тибетский"
-  },
-  "lang_tiv": {
-    "message": "Тив"
-  },
-  "lang_tpi": {
-    "message": "Ток-писин"
-  },
-  "lang_lua": {
-    "message": "Чилуба"
-  },
-  "lang_tcy": {
-    "message": "Тулу"
-  },
-  "lang_tum": {
-    "message": "Тумбука"
-  },
-  "lang_tyv": {
-    "message": "Тувинский"
-  },
-  "lang_udm": {
-    "message": "Удмуртский"
-  },
-  "lang_ve": {
-    "message": "Венда"
-  },
-  "lang_vec": {
-    "message": "Венетский"
-  },
-  "lang_war": {
-    "message": "Варай"
-  },
-  "lang_sah": {
-    "message": "Якутский"
-  },
-  "lang_yua": {
-    "message": "Юкатекский майя"
-  },
-  "lang_zap": {
-    "message": "Сапотекский"
+    "message": "луговомарийский"
   },
   "lang_mni_Mtei": {
-    "message": "Манипури (мейтей-майек)"
+    "message": "мейтейлон (манипури)"
+  },
+  "lang_min": {
+    "message": "минангкабау"
+  },
+  "lang_lus": {
+    "message": "мизо"
+  },
+  "lang_mn": {
+    "message": "монгольский"
+  },
+  "lang_my": {
+    "message": "бирманский (Мьянма)"
+  },
+  "lang_nhe": {
+    "message": "науатль (восточно-уастекский)"
+  },
+  "lang_ndc_ZW": {
+    "message": "ндау"
+  },
+  "lang_nr": {
+    "message": "ндебеле (южный)"
+  },
+  "lang_new": {
+    "message": "непал-бхаса (неварский)"
+  },
+  "lang_ne": {
+    "message": "непальский"
+  },
+  "lang_bm_Nkoo": {
+    "message": "нко"
+  },
+  "lang_no": {
+    "message": "норвежский"
+  },
+  "lang_nus": {
+    "message": "нуэр"
+  },
+  "lang_oc": {
+    "message": "окситанский"
+  },
+  "lang_or": {
+    "message": "одиа (ория)"
+  },
+  "lang_om": {
+    "message": "оромо"
+  },
+  "lang_os": {
+    "message": "осетинский"
+  },
+  "lang_pag": {
+    "message": "пангасинанский"
+  },
+  "lang_pap": {
+    "message": "папьяменто"
+  },
+  "lang_ps": {
+    "message": "пушту"
+  },
+  "lang_fa": {
+    "message": "фарси"
+  },
+  "lang_pl": {
+    "message": "польский"
+  },
+  "lang_pt": {
+    "message": "португальский (Бразилия)"
+  },
+  "lang_pt_PT": {
+    "message": "португальский (Португалия)"
+  },
+  "lang_pa": {
+    "message": "панджаби (гурмукхи)"
+  },
+  "lang_pa_Arab": {
+    "message": "панджаби (шахмукхи)"
+  },
+  "lang_qu": {
+    "message": "кечуа"
+  },
+  "lang_kek": {
+    "message": "кекчи"
+  },
+  "lang_rom": {
+    "message": "цыганский"
+  },
+  "lang_ro": {
+    "message": "румынский"
+  },
+  "lang_rn": {
+    "message": "рунди"
+  },
+  "lang_ru": {
+    "message": "русский"
+  },
+  "lang_se": {
+    "message": "северносаамский"
+  },
+  "lang_sm": {
+    "message": "самоанский"
+  },
+  "lang_sg": {
+    "message": "санго"
+  },
+  "lang_sa": {
+    "message": "санскрит"
+  },
+  "lang_sat_Latn": {
+    "message": "сантали (латиница)"
+  },
+  "lang_sat": {
+    "message": "сантали (ол-чики)"
+  },
+  "lang_gd": {
+    "message": "шотландский (гэльский)"
+  },
+  "lang_nso": {
+    "message": "сепеди"
+  },
+  "lang_sr": {
+    "message": "сербский"
+  },
+  "lang_st": {
+    "message": "сесото"
+  },
+  "lang_crs": {
+    "message": "сейшельский креольский"
+  },
+  "lang_shn": {
+    "message": "шанский"
+  },
+  "lang_sn": {
+    "message": "шона"
+  },
+  "lang_scn": {
+    "message": "сицилийский"
+  },
+  "lang_szl": {
+    "message": "силезский"
+  },
+  "lang_sd": {
+    "message": "синдхи"
+  },
+  "lang_si": {
+    "message": "сингальский"
+  },
+  "lang_sk": {
+    "message": "словацкий"
+  },
+  "lang_sl": {
+    "message": "словенский"
+  },
+  "lang_so": {
+    "message": "сомалийский"
+  },
+  "lang_es": {
+    "message": "испанский"
+  },
+  "lang_su": {
+    "message": "сунданский"
+  },
+  "lang_sus": {
+    "message": "сусу"
+  },
+  "lang_sw": {
+    "message": "суахили"
+  },
+  "lang_ss": {
+    "message": "свати"
+  },
+  "lang_sv": {
+    "message": "шведский"
+  },
+  "lang_ty": {
+    "message": "таитянский"
+  },
+  "lang_tg": {
+    "message": "таджикский"
+  },
+  "lang_ber_Latn": {
+    "message": "тамазигхтский"
+  },
+  "lang_ber": {
+    "message": "тамазигхтский (тифинаг)"
+  },
+  "lang_ta": {
+    "message": "тамильский"
+  },
+  "lang_tt": {
+    "message": "татарский"
+  },
+  "lang_te": {
+    "message": "телугу"
+  },
+  "lang_tet": {
+    "message": "тетум"
+  },
+  "lang_th": {
+    "message": "тайский"
+  },
+  "lang_bo": {
+    "message": "тибетский"
+  },
+  "lang_ti": {
+    "message": "тигринья"
+  },
+  "lang_tiv": {
+    "message": "тив"
+  },
+  "lang_tpi": {
+    "message": "ток-писин"
+  },
+  "lang_to": {
+    "message": "тонганский"
+  },
+  "lang_lua": {
+    "message": "чилуба"
+  },
+  "lang_ts": {
+    "message": "тсонга"
+  },
+  "lang_tn": {
+    "message": "тсвана"
+  },
+  "lang_tcy": {
+    "message": "тулу"
+  },
+  "lang_tum": {
+    "message": "тумбука"
+  },
+  "lang_tr": {
+    "message": "турецкий"
+  },
+  "lang_tk": {
+    "message": "туркменский"
+  },
+  "lang_tyv": {
+    "message": "тувинский"
+  },
+  "lang_ak": {
+    "message": "чви"
+  },
+  "lang_udm": {
+    "message": "удмуртский"
+  },
+  "lang_uk": {
+    "message": "украинский"
+  },
+  "lang_ur": {
+    "message": "урду"
+  },
+  "lang_ug": {
+    "message": "уйгурский"
+  },
+  "lang_uz": {
+    "message": "узбекский"
+  },
+  "lang_ve": {
+    "message": "венда"
+  },
+  "lang_vec": {
+    "message": "венетский"
+  },
+  "lang_vi": {
+    "message": "вьетнамский"
+  },
+  "lang_war": {
+    "message": "варайский"
+  },
+  "lang_cy": {
+    "message": "валлийский"
+  },
+  "lang_wo": {
+    "message": "волоф"
+  },
+  "lang_xh": {
+    "message": "коса"
+  },
+  "lang_sah": {
+    "message": "якутский"
+  },
+  "lang_yi": {
+    "message": "идиш"
+  },
+  "lang_yo": {
+    "message": "йоруба"
+  },
+  "lang_yua": {
+    "message": "юкатекский"
+  },
+  "lang_zap": {
+    "message": "сапотекский"
+  },
+  "lang_zu": {
+    "message": "зулу"
   }
 }

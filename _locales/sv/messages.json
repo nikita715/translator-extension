@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Translator – Översätt med ett klick"
+  },
+  "extDescription": {
+    "message": "Översätt ord och stycken med ett klick, direkt på sidan med Chromes offlineöversättare eller i Google Översätt."
+  },
+  "contextMenuTranslate": {
+    "message": "Översätt"
+  },
+  "translating": {
+    "message": "Översätter…"
+  },
+  "downloadingModel": {
+    "message": "Laddar ned språkmodell… $PERCENT$ %",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "Källspråk"
+  },
+  "targetLanguage": {
+    "message": "Målspråk"
+  },
+  "swapLanguages": {
+    "message": "Byt språk"
+  },
+  "autoLanguage": {
+    "message": "Auto"
+  },
+  "onPageMark": {
+    "message": "på sidan"
+  },
+  "controls": {
+    "message": "Styrning"
+  },
+  "modeOff": {
+    "message": "Av"
+  },
+  "modeDoubleClick": {
+    "message": "Dubbelklick"
+  },
+  "modeTripleClick": {
+    "message": "Trippelklick"
+  },
+  "requireKey": {
+    "message": "Kräv $KEY$-tangenten",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "Högerklicka på markeringen → Översätt"
+  },
+  "hintDoubleClick": {
+    "message": "Dubbelklicka på ett ord"
+  },
+  "hintTripleClick": {
+    "message": "Trippelklicka på ett stycke"
+  },
+  "hintHoldDoubleClick": {
+    "message": "Håll ned $KEY$ och dubbelklicka på ett ord",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "Håll ned $KEY$ och trippelklicka på ett stycke",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "Byt till detta läge"
+  },
+  "showTranslation": {
+    "message": "Visa översättning"
+  },
+  "displayOnPage": {
+    "message": "På sidan"
+  },
+  "displayGoogle": {
+    "message": "Google Översätt"
+  },
+  "onPageCaption": {
+    "message": "Chromes inbyggda översättare, fungerar offline"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$: kan inte översättas på sidan, Google Översätt öppnas i stället",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "Den här webbläsaren har ingen inbyggd översättare, Google Översätt öppnas i stället"
+  },
+  "statusSameLanguage": {
+    "message": "Käll- och målspråket är samma"
+  },
+  "replaceText": {
+    "message": "Ersätt markerad text"
+  },
+  "replaceTextCaption": {
+    "message": "Visa översättningen i stället för originalet"
+  },
+  "googleCaption": {
+    "message": "Öppnar translate.google.com"
+  },
+  "reuseTab": {
+    "message": "Återanvänd fliken för Google Översätt"
+  },
+  "reuseTabCaption": {
+    "message": "Öppna inte en ny flik för varje översättning"
+  },
+  "lang_ab": {
+    "message": "abchaziska"
+  },
+  "lang_ace": {
+    "message": "acehnesiska"
+  },
+  "lang_ach": {
+    "message": "acholi"
+  },
+  "lang_aa": {
+    "message": "afariska"
+  },
+  "lang_af": {
+    "message": "afrikaans"
+  },
+  "lang_sq": {
+    "message": "albanska"
+  },
+  "lang_alz": {
+    "message": "alur"
+  },
+  "lang_am": {
+    "message": "amhariska"
+  },
+  "lang_ar": {
+    "message": "arabiska"
+  },
+  "lang_hy": {
+    "message": "armeniska"
+  },
+  "lang_as": {
+    "message": "assamesiska"
+  },
+  "lang_av": {
+    "message": "avariska"
+  },
+  "lang_awa": {
+    "message": "awadhi"
+  },
+  "lang_ay": {
+    "message": "aymara"
+  },
+  "lang_az": {
+    "message": "azerbajdzjanska"
+  },
+  "lang_ban": {
+    "message": "balinesiska"
+  },
+  "lang_bal": {
+    "message": "baluchiska"
+  },
+  "lang_bm": {
+    "message": "bambara"
+  },
+  "lang_bci": {
+    "message": "baoulé"
+  },
+  "lang_ba": {
+    "message": "basjkiriska"
+  },
+  "lang_eu": {
+    "message": "baskiska"
+  },
+  "lang_btx": {
+    "message": "batak karo"
+  },
+  "lang_bts": {
+    "message": "batak simalungun"
+  },
+  "lang_bbc": {
+    "message": "toba batak"
+  },
+  "lang_be": {
+    "message": "vitryska"
+  },
+  "lang_bem": {
+    "message": "bemba"
+  },
+  "lang_bn": {
+    "message": "bengali"
+  },
+  "lang_bew": {
+    "message": "betawiska"
+  },
+  "lang_bho": {
+    "message": "bhojpuri"
+  },
+  "lang_bik": {
+    "message": "bikol"
+  },
+  "lang_bs": {
+    "message": "bosniska"
+  },
+  "lang_br": {
+    "message": "bretonska"
+  },
+  "lang_bg": {
+    "message": "bulgariska"
+  },
+  "lang_bua": {
+    "message": "burjatiska"
+  },
+  "lang_yue": {
+    "message": "kantonesiska"
+  },
+  "lang_ca": {
+    "message": "katalanska"
+  },
+  "lang_ceb": {
+    "message": "cebuano"
+  },
+  "lang_ch": {
+    "message": "chamorro"
+  },
+  "lang_ce": {
+    "message": "tjetjenska"
+  },
+  "lang_ny": {
+    "message": "chichewa"
+  },
+  "lang_zh_CN": {
+    "message": "kinesiska (förenklad)"
+  },
+  "lang_zh_TW": {
+    "message": "kinesiska (traditionell)"
+  },
+  "lang_chk": {
+    "message": "chuukesiska"
+  },
+  "lang_cv": {
+    "message": "tjuvasjiska"
+  },
+  "lang_co": {
+    "message": "korsikanska"
+  },
+  "lang_crh": {
+    "message": "krimtatariska (kyrillisk skrift)"
+  },
+  "lang_crh_Latn": {
+    "message": "krimtatariska (latinsk skrift)"
+  },
+  "lang_hr": {
+    "message": "kroatiska"
+  },
+  "lang_cs": {
+    "message": "tjeckiska"
+  },
+  "lang_da": {
+    "message": "danska"
+  },
+  "lang_fa_AF": {
+    "message": "dari"
+  },
+  "lang_dv": {
+    "message": "divehi"
+  },
+  "lang_din": {
+    "message": "dinka"
+  },
+  "lang_doi": {
+    "message": "dogri"
+  },
+  "lang_dov": {
+    "message": "ndombe"
+  },
+  "lang_nl": {
+    "message": "nederländska"
+  },
+  "lang_dyu": {
+    "message": "dioula"
+  },
+  "lang_dz": {
+    "message": "dzongkha"
+  },
+  "lang_en": {
+    "message": "engelska"
+  },
+  "lang_eo": {
+    "message": "esperanto"
+  },
+  "lang_et": {
+    "message": "estniska"
+  },
+  "lang_ee": {
+    "message": "ewe"
+  },
+  "lang_fo": {
+    "message": "färöiska"
+  },
+  "lang_fj": {
+    "message": "fijianska"
+  },
+  "lang_tl": {
+    "message": "filippinska"
+  },
+  "lang_fi": {
+    "message": "finska"
+  },
+  "lang_fon": {
+    "message": "fon"
+  },
+  "lang_fr": {
+    "message": "franska"
+  },
+  "lang_fr_CA": {
+    "message": "franska (Kanada)"
+  },
+  "lang_fy": {
+    "message": "frisiska"
+  },
+  "lang_fur": {
+    "message": "friuliska"
+  },
+  "lang_ff": {
+    "message": "fulani"
+  },
+  "lang_gaa": {
+    "message": "gaa"
+  },
+  "lang_gl": {
+    "message": "galiciska"
+  },
+  "lang_ka": {
+    "message": "georgiska"
+  },
+  "lang_de": {
+    "message": "tyska"
+  },
+  "lang_el": {
+    "message": "grekiska"
+  },
+  "lang_gn": {
+    "message": "guarani"
+  },
+  "lang_gu": {
+    "message": "gujarati"
+  },
+  "lang_ht": {
+    "message": "haitiska"
+  },
+  "lang_cnh": {
+    "message": "hakha chin"
+  },
+  "lang_ha": {
+    "message": "hausa"
+  },
+  "lang_haw": {
+    "message": "hawaiianska"
+  },
+  "lang_iw": {
+    "message": "hebreiska"
+  },
+  "lang_hil": {
+    "message": "hiligaynon"
+  },
+  "lang_hi": {
+    "message": "hindi"
+  },
+  "lang_hmn": {
+    "message": "hmong"
+  },
+  "lang_hu": {
+    "message": "ungerska"
+  },
+  "lang_hrx": {
+    "message": "Hunsrück-tyska"
+  },
+  "lang_iba": {
+    "message": "iban"
+  },
+  "lang_is": {
+    "message": "isländska"
+  },
+  "lang_ig": {
+    "message": "igbo"
+  },
+  "lang_ilo": {
+    "message": "ilocano"
+  },
+  "lang_id": {
+    "message": "indonesiska"
+  },
+  "lang_iu_Latn": {
+    "message": "inuktut (latinsk skrift)"
+  },
+  "lang_iu": {
+    "message": "inuktut (stavelseskrift)"
+  },
+  "lang_ga": {
+    "message": "irländska"
+  },
+  "lang_it": {
+    "message": "italienska"
+  },
+  "lang_jam": {
+    "message": "patwa"
+  },
+  "lang_ja": {
+    "message": "japanska"
+  },
+  "lang_jw": {
+    "message": "javanesiska"
+  },
+  "lang_kac": {
+    "message": "jingpo"
+  },
+  "lang_kl": {
+    "message": "kalaallisut"
+  },
+  "lang_kn": {
+    "message": "kanaresiska"
+  },
+  "lang_kr": {
+    "message": "kanuri"
+  },
+  "lang_pam": {
+    "message": "pampango"
+  },
+  "lang_kk": {
+    "message": "kazakiska"
+  },
+  "lang_kha": {
+    "message": "khasi"
+  },
+  "lang_km": {
+    "message": "khmer"
+  },
+  "lang_cgg": {
+    "message": "chiga"
+  },
+  "lang_kg": {
+    "message": "kikongo"
+  },
+  "lang_rw": {
+    "message": "kinyarwanda"
+  },
+  "lang_ktu": {
+    "message": "kituba"
+  },
+  "lang_trp": {
+    "message": "kokborok"
+  },
+  "lang_kv": {
+    "message": "komi"
+  },
+  "lang_gom": {
+    "message": "konkani"
+  },
+  "lang_ko": {
+    "message": "koreanska"
+  },
+  "lang_kri": {
+    "message": "krio"
+  },
+  "lang_ku": {
+    "message": "kurdiska (kurmanji)"
+  },
+  "lang_ckb": {
+    "message": "kurdiska (sorani)"
+  },
+  "lang_ky": {
+    "message": "kirgiziska"
+  },
+  "lang_lo": {
+    "message": "laotiska"
+  },
+  "lang_ltg": {
+    "message": "latgalliska"
+  },
+  "lang_la": {
+    "message": "latin"
+  },
+  "lang_lv": {
+    "message": "lettiska"
+  },
+  "lang_lij": {
+    "message": "liguriska"
+  },
+  "lang_li": {
+    "message": "limburgska"
+  },
+  "lang_ln": {
+    "message": "lingala"
+  },
+  "lang_lt": {
+    "message": "litauiska"
+  },
+  "lang_lmo": {
+    "message": "lombard"
+  },
+  "lang_lg": {
+    "message": "luganda"
+  },
+  "lang_luo": {
+    "message": "luo"
+  },
+  "lang_lb": {
+    "message": "luxemburgska"
+  },
+  "lang_mk": {
+    "message": "makedonska"
+  },
+  "lang_mad": {
+    "message": "maduresiska"
+  },
+  "lang_mai": {
+    "message": "maithili"
+  },
+  "lang_mak": {
+    "message": "makassar"
+  },
+  "lang_mg": {
+    "message": "malagassiska"
+  },
+  "lang_ms": {
+    "message": "malaysiska"
+  },
+  "lang_ms_Arab": {
+    "message": "malajiska (jawi)"
+  },
+  "lang_ml": {
+    "message": "malayalam"
+  },
+  "lang_mt": {
+    "message": "maltesiska"
+  },
+  "lang_mam": {
+    "message": "mam"
+  },
+  "lang_gv": {
+    "message": "manx"
+  },
+  "lang_mi": {
+    "message": "maori"
+  },
+  "lang_mr": {
+    "message": "marathi"
+  },
+  "lang_mh": {
+    "message": "marshallesiska"
+  },
+  "lang_mwr": {
+    "message": "marvari"
+  },
+  "lang_mfe": {
+    "message": "mauritisk kreol"
+  },
+  "lang_chm": {
+    "message": "östmariska"
+  },
+  "lang_mni_Mtei": {
+    "message": "meitei (manipuri)"
+  },
+  "lang_min": {
+    "message": "minangkabau"
+  },
+  "lang_lus": {
+    "message": "mizo"
+  },
+  "lang_mn": {
+    "message": "mongoliska"
+  },
+  "lang_my": {
+    "message": "burmesiska"
+  },
+  "lang_nhe": {
+    "message": "nahuatl (östra La Huasteca)"
+  },
+  "lang_ndc_ZW": {
+    "message": "ndau"
+  },
+  "lang_nr": {
+    "message": "ndebele (syd)"
+  },
+  "lang_new": {
+    "message": "nepal bhasa (newari)"
+  },
+  "lang_ne": {
+    "message": "nepali"
+  },
+  "lang_bm_Nkoo": {
+    "message": "n'ko"
+  },
+  "lang_no": {
+    "message": "norska"
+  },
+  "lang_nus": {
+    "message": "nuer"
+  },
+  "lang_oc": {
+    "message": "occitanska"
+  },
+  "lang_or": {
+    "message": "odia (oriya)"
+  },
+  "lang_om": {
+    "message": "oromo"
+  },
+  "lang_os": {
+    "message": "ossetiska"
+  },
+  "lang_pag": {
+    "message": "pangasinan"
+  },
+  "lang_pap": {
+    "message": "papiamento"
+  },
+  "lang_ps": {
+    "message": "pashto"
+  },
+  "lang_fa": {
+    "message": "persiska"
+  },
+  "lang_pl": {
+    "message": "polska"
+  },
+  "lang_pt": {
+    "message": "portugisiska (Brasilien)"
+  },
+  "lang_pt_PT": {
+    "message": "portugisiska (Portugal)"
+  },
+  "lang_pa": {
+    "message": "punjabi (gurmukhi)"
+  },
+  "lang_pa_Arab": {
+    "message": "punjabi (shahmukhi)"
+  },
+  "lang_qu": {
+    "message": "quechua"
+  },
+  "lang_kek": {
+    "message": "kekchí"
+  },
+  "lang_rom": {
+    "message": "romani"
+  },
+  "lang_ro": {
+    "message": "rumänska"
+  },
+  "lang_rn": {
+    "message": "kirundi"
+  },
+  "lang_ru": {
+    "message": "ryska"
+  },
+  "lang_se": {
+    "message": "samiska (nord)"
+  },
+  "lang_sm": {
+    "message": "samoanska"
+  },
+  "lang_sg": {
+    "message": "sango"
+  },
+  "lang_sa": {
+    "message": "sanskrit"
+  },
+  "lang_sat_Latn": {
+    "message": "santali (latinsk skrift)"
+  },
+  "lang_sat": {
+    "message": "santali (ol chiki)"
+  },
+  "lang_gd": {
+    "message": "gaeliska"
+  },
+  "lang_nso": {
+    "message": "sepedi"
+  },
+  "lang_sr": {
+    "message": "serbiska"
+  },
+  "lang_st": {
+    "message": "sesotho"
+  },
+  "lang_crs": {
+    "message": "seychellisk kreol"
+  },
+  "lang_shn": {
+    "message": "shan"
+  },
+  "lang_sn": {
+    "message": "shona"
+  },
+  "lang_scn": {
+    "message": "sicilianska"
+  },
+  "lang_szl": {
+    "message": "schlesiska"
+  },
+  "lang_sd": {
+    "message": "sindhi"
+  },
+  "lang_si": {
+    "message": "singalesiska"
+  },
+  "lang_sk": {
+    "message": "slovakiska"
+  },
+  "lang_sl": {
+    "message": "slovenska"
+  },
+  "lang_so": {
+    "message": "somaliska"
+  },
+  "lang_es": {
+    "message": "spanska"
+  },
+  "lang_su": {
+    "message": "sundanesiska"
+  },
+  "lang_sus": {
+    "message": "susu"
+  },
+  "lang_sw": {
+    "message": "swahili"
+  },
+  "lang_ss": {
+    "message": "swati"
+  },
+  "lang_sv": {
+    "message": "svenska"
+  },
+  "lang_ty": {
+    "message": "tahitiska"
+  },
+  "lang_tg": {
+    "message": "tadzjikiska"
+  },
+  "lang_ber_Latn": {
+    "message": "tamazight"
+  },
+  "lang_ber": {
+    "message": "tamazight (tifinagh)"
+  },
+  "lang_ta": {
+    "message": "tamil"
+  },
+  "lang_tt": {
+    "message": "tatariska"
+  },
+  "lang_te": {
+    "message": "telugu"
+  },
+  "lang_tet": {
+    "message": "tetum"
+  },
+  "lang_th": {
+    "message": "thailändska"
+  },
+  "lang_bo": {
+    "message": "tibetanska"
+  },
+  "lang_ti": {
+    "message": "tigrinja"
+  },
+  "lang_tiv": {
+    "message": "tiv"
+  },
+  "lang_tpi": {
+    "message": "tok pisin"
+  },
+  "lang_to": {
+    "message": "tonga"
+  },
+  "lang_lua": {
+    "message": "tshiluba"
+  },
+  "lang_ts": {
+    "message": "tsonga"
+  },
+  "lang_tn": {
+    "message": "tswana"
+  },
+  "lang_tcy": {
+    "message": "tulu"
+  },
+  "lang_tum": {
+    "message": "tumbuka"
+  },
+  "lang_tr": {
+    "message": "turkiska"
+  },
+  "lang_tk": {
+    "message": "turkmeniska"
+  },
+  "lang_tyv": {
+    "message": "tuvinska"
+  },
+  "lang_ak": {
+    "message": "twi"
+  },
+  "lang_udm": {
+    "message": "udmurtiska"
+  },
+  "lang_uk": {
+    "message": "ukrainska"
+  },
+  "lang_ur": {
+    "message": "urdu"
+  },
+  "lang_ug": {
+    "message": "uiguriska"
+  },
+  "lang_uz": {
+    "message": "uzbekiska"
+  },
+  "lang_ve": {
+    "message": "venda"
+  },
+  "lang_vec": {
+    "message": "venetianska"
+  },
+  "lang_vi": {
+    "message": "vietnamesiska"
+  },
+  "lang_war": {
+    "message": "waray-waray"
+  },
+  "lang_cy": {
+    "message": "walesiska"
+  },
+  "lang_wo": {
+    "message": "wolof"
+  },
+  "lang_xh": {
+    "message": "xhosa"
+  },
+  "lang_sah": {
+    "message": "jakutiska"
+  },
+  "lang_yi": {
+    "message": "jiddisch"
+  },
+  "lang_yo": {
+    "message": "yoruba"
+  },
+  "lang_yua": {
+    "message": "yukatekiska"
+  },
+  "lang_zap": {
+    "message": "zapotekiska"
+  },
+  "lang_zu": {
+    "message": "zulu"
+  }
+}

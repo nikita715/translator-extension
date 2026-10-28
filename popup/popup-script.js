@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   localizePage();
   document.getElementById("translator-hold-alt-label").textContent =
-    chrome.i18n.getMessage("requireKey", [altKeyName]);
+    chrome.i18n.getMessage("requireKey", [altKeyNameInText]);
 
   createLanguageOpt(sourceLanguageElement, chrome.i18n.getMessage("autoLanguage"), "auto");
   getLocalizedLanguages().forEach(function(language) {
@@ -152,6 +152,8 @@ let switchSettings = {
 };
 
 let altKeyName = /Mac/.test(navigator.platform) ? "⌥ Option" : "Alt";
+// Key name inside a sentence, isolated so right-to-left text doesn't flip "⌥ Option"
+let altKeyNameInText = "\u2066" + altKeyName + "\u2069";
 
 // Mode switching shortcuts, handled in contentScript.js
 let modeShortcutKeys = {
@@ -174,7 +176,7 @@ function renderTriggerHint(action, holdAlt) {
     }
     let click = clicks == 3 ? "TripleClick" : "DoubleClick";
     caption = holdAlt ?
-      chrome.i18n.getMessage(`hintHold${click}`, [altKeyName]) :
+      chrome.i18n.getMessage(`hintHold${click}`, [altKeyNameInText]) :
       chrome.i18n.getMessage(`hint${click}`);
   }
   document.getElementById("translator-trigger-hint").innerHTML =
@@ -189,7 +191,8 @@ let pageTranslationStatusRequest = 0;
 
 async function updatePageTranslationStatus(sourceLanguageElement, targetLanguageElement) {
   let request = ++pageTranslationStatusRequest;
-  let pair = `${sourceLanguageElement.selectedOptions[0].dataset.name} → ${targetLanguageElement.selectedOptions[0].dataset.name}`;
+  let arrow = document.documentElement.dir == "rtl" ? "←" : "→";
+  let pair = `${sourceLanguageElement.selectedOptions[0].dataset.name} ${arrow} ${targetLanguageElement.selectedOptions[0].dataset.name}`;
   let status = await getPageTranslationStatus(sourceLanguageElement.value, targetLanguageElement.value, pair);
   // Languages may have changed while availability was being checked
   if (request != pageTranslationStatusRequest) {
@@ -247,6 +250,7 @@ function mouseIcon(pressedButton) {
 // Fill elements marked with data-i18n attributes from _locales/*/messages.json
 function localizePage() {
   document.documentElement.lang = chrome.i18n.getUILanguage();
+  document.documentElement.dir = chrome.i18n.getMessage("@@bidi_dir");
   document.querySelectorAll("[data-i18n]").forEach(function(element) {
     element.textContent = chrome.i18n.getMessage(element.dataset.i18n);
   });
@@ -258,36 +262,17 @@ function localizePage() {
   });
 }
 
-// Google Translate codes whose name Intl.DisplayNames gets wrong or doesn't know
-let displayNameCodes = {
-  "zh-CN": "zh-Hans",
-  "zh-TW": "zh-Hant",
-  "pt": "pt-BR",
-  "jw": "jv"
-};
-
-// Language names in the browser UI language, sorted alphabetically in that language
+// Language names exactly as translate.google.com shows them in the browser UI language, sorted alphabetically
 function getLocalizedLanguages() {
   let uiLanguage = chrome.i18n.getUILanguage();
-  let displayNames = new Intl.DisplayNames([uiLanguage], { type: "language", fallback: "none" });
   let result = [];
   languages.forEach(function(code, englishName) {
-    // Chrome ships names for a limited set of languages, the rest come from lang_* messages
     let name = chrome.i18n.getMessage("lang_" + code.replace(/-/g, "_"));
-    try {
-      name = name || displayNames.of(displayNameCodes[code] || code);
-    } catch (e) {
-      // Not a valid BCP 47 tag
-    }
-    result.push({ code, name: name ? capitalize(name, uiLanguage) : englishName });
+    result.push({ code, name: name || englishName });
   });
   return result.sort(function(a, b) {
     return a.name.localeCompare(b.name, uiLanguage);
   });
-}
-
-function capitalize(text, locale) {
-  return text.charAt(0).toLocaleUpperCase(locale) + text.slice(1);
 }
 
 function createLanguageOpt(parent, key, value) {

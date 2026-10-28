@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Translator – Traduceți cu un clic"
+  },
+  "extDescription": {
+    "message": "Traduceți cuvinte și paragrafe cu un clic, direct pe pagină cu traducătorul offline Chrome sau în Google Traducere."
+  },
+  "contextMenuTranslate": {
+    "message": "Traduceți"
+  },
+  "translating": {
+    "message": "Se traduce…"
+  },
+  "downloadingModel": {
+    "message": "Se descarcă modelul de limbă… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "Limba sursă"
+  },
+  "targetLanguage": {
+    "message": "Limba țintă"
+  },
+  "swapLanguages": {
+    "message": "Inversați limbile"
+  },
+  "autoLanguage": {
+    "message": "Auto"
+  },
+  "onPageMark": {
+    "message": "pe pagină"
+  },
+  "controls": {
+    "message": "Comenzi"
+  },
+  "modeOff": {
+    "message": "Dezactivat"
+  },
+  "modeDoubleClick": {
+    "message": "Dublu clic"
+  },
+  "modeTripleClick": {
+    "message": "Triplu clic"
+  },
+  "requireKey": {
+    "message": "Necesită tasta $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "Clic dreapta pe selecție → Traduceți"
+  },
+  "hintDoubleClick": {
+    "message": "Faceți dublu clic pe un cuvânt"
+  },
+  "hintTripleClick": {
+    "message": "Faceți triplu clic pe un paragraf"
+  },
+  "hintHoldDoubleClick": {
+    "message": "Țineți apăsat $KEY$ și faceți dublu clic pe un cuvânt",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "Țineți apăsat $KEY$ și faceți triplu clic pe un paragraf",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "Activați acest mod"
+  },
+  "showTranslation": {
+    "message": "Afișați traducerea"
+  },
+  "displayOnPage": {
+    "message": "Pe pagină"
+  },
+  "displayGoogle": {
+    "message": "Google Traducere"
+  },
+  "onPageCaption": {
+    "message": "Traducătorul integrat Chrome, funcționează offline"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$: nu se poate traduce pe pagină, se va deschide Google Traducere",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "Acest browser nu are traducător integrat, se va deschide Google Traducere"
+  },
+  "statusSameLanguage": {
+    "message": "Limba sursă și limba țintă sunt aceleași"
+  },
+  "replaceText": {
+    "message": "Înlocuiți textul selectat"
+  },
+  "replaceTextCaption": {
+    "message": "Afișați traducerea în locul originalului"
+  },
+  "googleCaption": {
+    "message": "Deschide translate.google.com"
+  },
+  "reuseTab": {
+    "message": "Refolosiți fila Google Traducere"
+  },
+  "reuseTabCaption": {
+    "message": "Nu deschideți o filă nouă pentru fiecare traducere"
+  },
+  "lang_ab": {
+    "message": "Abhază"
+  },
+  "lang_ace": {
+    "message": "Acehneză"
+  },
+  "lang_ach": {
+    "message": "Acholi"
+  },
+  "lang_aa": {
+    "message": "Afar"
+  },
+  "lang_af": {
+    "message": "Afrikaans"
+  },
+  "lang_sq": {
+    "message": "Albaneză"
+  },
+  "lang_alz": {
+    "message": "Alur"
+  },
+  "lang_am": {
+    "message": "Amharică"
+  },
+  "lang_ar": {
+    "message": "Arabă"
+  },
+  "lang_hy": {
+    "message": "Armeană"
+  },
+  "lang_as": {
+    "message": "Asameză"
+  },
+  "lang_av": {
+    "message": "Avar"
+  },
+  "lang_awa": {
+    "message": "Awadhi"
+  },
+  "lang_ay": {
+    "message": "Aymara"
+  },
+  "lang_az": {
+    "message": "Azerbaidjană"
+  },
+  "lang_ban": {
+    "message": "Balineză"
+  },
+  "lang_bal": {
+    "message": "Baluchi"
+  },
+  "lang_bm": {
+    "message": "Bambara"
+  },
+  "lang_bci": {
+    "message": "Baoulé"
+  },
+  "lang_ba": {
+    "message": "Bașchiră"
+  },
+  "lang_eu": {
+    "message": "Bască"
+  },
+  "lang_btx": {
+    "message": "Batak Karo"
+  },
+  "lang_bts": {
+    "message": "Batak Simalungun"
+  },
+  "lang_bbc": {
+    "message": "Batak Toba"
+  },
+  "lang_be": {
+    "message": "Bielorusă"
+  },
+  "lang_bem": {
+    "message": "Bemba"
+  },
+  "lang_bn": {
+    "message": "Bengali"
+  },
+  "lang_bew": {
+    "message": "Betawi"
+  },
+  "lang_bho": {
+    "message": "Bhojpuri"
+  },
+  "lang_bik": {
+    "message": "Bikol"
+  },
+  "lang_bs": {
+    "message": "Bosniacă"
+  },
+  "lang_br": {
+    "message": "Bretonă"
+  },
+  "lang_bg": {
+    "message": "Bulgară"
+  },
+  "lang_bua": {
+    "message": "Buriată"
+  },
+  "lang_yue": {
+    "message": "Cantoneză"
+  },
+  "lang_ca": {
+    "message": "Catalană"
+  },
+  "lang_ceb": {
+    "message": "Cebuană"
+  },
+  "lang_ch": {
+    "message": "Chamorro"
+  },
+  "lang_ce": {
+    "message": "Cecenă"
+  },
+  "lang_ny": {
+    "message": "Chichewa"
+  },
+  "lang_zh_CN": {
+    "message": "Chineză (Simplificată)"
+  },
+  "lang_zh_TW": {
+    "message": "Chineză (Tradițională)"
+  },
+  "lang_chk": {
+    "message": "Chuukeză"
+  },
+  "lang_cv": {
+    "message": "Chuvash"
+  },
+  "lang_co": {
+    "message": "Corsicană"
+  },
+  "lang_crh": {
+    "message": "Tătară crimeeană (scriere chirilică)"
+  },
+  "lang_crh_Latn": {
+    "message": "Tătară crimeeană (scriere latină)"
+  },
+  "lang_hr": {
+    "message": "Croată"
+  },
+  "lang_cs": {
+    "message": "Cehă"
+  },
+  "lang_da": {
+    "message": "Daneză"
+  },
+  "lang_fa_AF": {
+    "message": "Dari"
+  },
+  "lang_dv": {
+    "message": "Dhivehi"
+  },
+  "lang_din": {
+    "message": "Dinka"
+  },
+  "lang_doi": {
+    "message": "Dogri"
+  },
+  "lang_dov": {
+    "message": "Dombe"
+  },
+  "lang_nl": {
+    "message": "Neerlandeză"
+  },
+  "lang_dyu": {
+    "message": "Dyula"
+  },
+  "lang_dz": {
+    "message": "Dzongkha"
+  },
+  "lang_en": {
+    "message": "Engleză"
+  },
+  "lang_eo": {
+    "message": "Esperanto"
+  },
+  "lang_et": {
+    "message": "Estonă"
+  },
+  "lang_ee": {
+    "message": "Ewe"
+  },
+  "lang_fo": {
+    "message": "Feroeză"
+  },
+  "lang_fj": {
+    "message": "Fijiană"
+  },
+  "lang_tl": {
+    "message": "Filipineză"
+  },
+  "lang_fi": {
+    "message": "Finlandeză"
+  },
+  "lang_fon": {
+    "message": "Fon"
+  },
+  "lang_fr": {
+    "message": "Franceză"
+  },
+  "lang_fr_CA": {
+    "message": "Franceză (Canada)"
+  },
+  "lang_fy": {
+    "message": "Frizonă"
+  },
+  "lang_fur": {
+    "message": "Friulană"
+  },
+  "lang_ff": {
+    "message": "Fulani"
+  },
+  "lang_gaa": {
+    "message": "Ga"
+  },
+  "lang_gl": {
+    "message": "Galiciană"
+  },
+  "lang_ka": {
+    "message": "Gruzină"
+  },
+  "lang_de": {
+    "message": "Germană"
+  },
+  "lang_el": {
+    "message": "Greacă"
+  },
+  "lang_gn": {
+    "message": "Guarani"
+  },
+  "lang_gu": {
+    "message": "Gujarati"
+  },
+  "lang_ht": {
+    "message": "Creolă haitiană"
+  },
+  "lang_cnh": {
+    "message": "Hakha Chin"
+  },
+  "lang_ha": {
+    "message": "Hausa"
+  },
+  "lang_haw": {
+    "message": "Hawaiiană"
+  },
+  "lang_iw": {
+    "message": "Ebraică"
+  },
+  "lang_hil": {
+    "message": "Hiligaynon"
+  },
+  "lang_hi": {
+    "message": "Hindi"
+  },
+  "lang_hmn": {
+    "message": "Hmong"
+  },
+  "lang_hu": {
+    "message": "Maghiară"
+  },
+  "lang_hrx": {
+    "message": "Hunsrik"
+  },
+  "lang_iba": {
+    "message": "Iban"
+  },
+  "lang_is": {
+    "message": "Islandeză"
+  },
+  "lang_ig": {
+    "message": "Igbo"
+  },
+  "lang_ilo": {
+    "message": "Ilocano"
+  },
+  "lang_id": {
+    "message": "Indoneziană"
+  },
+  "lang_iu_Latn": {
+    "message": "Inuktut (scriere latină)"
+  },
+  "lang_iu": {
+    "message": "Inuktut (scriere silabică)"
+  },
+  "lang_ga": {
+    "message": "Irlandeză"
+  },
+  "lang_it": {
+    "message": "Italiană"
+  },
+  "lang_jam": {
+    "message": "Patois jamaicană"
+  },
+  "lang_ja": {
+    "message": "Japoneză"
+  },
+  "lang_jw": {
+    "message": "Javaneză"
+  },
+  "lang_kac": {
+    "message": "Jingpo"
+  },
+  "lang_kl": {
+    "message": "Kalaallisut"
+  },
+  "lang_kn": {
+    "message": "Kannada"
+  },
+  "lang_kr": {
+    "message": "Kanuri"
+  },
+  "lang_pam": {
+    "message": "Kapampangan"
+  },
+  "lang_kk": {
+    "message": "Kazahă"
+  },
+  "lang_kha": {
+    "message": "Khasi"
+  },
+  "lang_km": {
+    "message": "Khmeră"
+  },
+  "lang_cgg": {
+    "message": "Kiga"
+  },
+  "lang_kg": {
+    "message": "Kikongo"
+  },
+  "lang_rw": {
+    "message": "Kinyarwanda"
+  },
+  "lang_ktu": {
+    "message": "Kituba"
+  },
+  "lang_trp": {
+    "message": "Kok Borok"
+  },
+  "lang_kv": {
+    "message": "Komi"
+  },
+  "lang_gom": {
+    "message": "Konkană"
+  },
+  "lang_ko": {
+    "message": "Coreeană"
+  },
+  "lang_kri": {
+    "message": "Krio"
+  },
+  "lang_ku": {
+    "message": "Kurdă (Kurmanji)"
+  },
+  "lang_ckb": {
+    "message": "Kurdă (Sorani)"
+  },
+  "lang_ky": {
+    "message": "Kârgâză"
+  },
+  "lang_lo": {
+    "message": "Laoțiană"
+  },
+  "lang_ltg": {
+    "message": "Latgaliană"
+  },
+  "lang_la": {
+    "message": "Latină"
+  },
+  "lang_lv": {
+    "message": "Letonă"
+  },
+  "lang_lij": {
+    "message": "Ligurică"
+  },
+  "lang_li": {
+    "message": "Limburgheză"
+  },
+  "lang_ln": {
+    "message": "Lingala"
+  },
+  "lang_lt": {
+    "message": "Lituaniană"
+  },
+  "lang_lmo": {
+    "message": "Lombardă"
+  },
+  "lang_lg": {
+    "message": "Luganda"
+  },
+  "lang_luo": {
+    "message": "Luo"
+  },
+  "lang_lb": {
+    "message": "Luxemburgheză"
+  },
+  "lang_mk": {
+    "message": "Macedoneană"
+  },
+  "lang_mad": {
+    "message": "Madureză"
+  },
+  "lang_mai": {
+    "message": "Maithilă"
+  },
+  "lang_mak": {
+    "message": "Makassar"
+  },
+  "lang_mg": {
+    "message": "Malgașă"
+  },
+  "lang_ms": {
+    "message": "Malaeză"
+  },
+  "lang_ms_Arab": {
+    "message": "Malaeză (Jawi)"
+  },
+  "lang_ml": {
+    "message": "Malayalam"
+  },
+  "lang_mt": {
+    "message": "Malteză"
+  },
+  "lang_mam": {
+    "message": "Mam"
+  },
+  "lang_gv": {
+    "message": "Manx"
+  },
+  "lang_mi": {
+    "message": "Maori"
+  },
+  "lang_mr": {
+    "message": "Marathi"
+  },
+  "lang_mh": {
+    "message": "Marshaleză"
+  },
+  "lang_mwr": {
+    "message": "Marwadi"
+  },
+  "lang_mfe": {
+    "message": "Creola din Mauritius"
+  },
+  "lang_chm": {
+    "message": "Meadow Mari"
+  },
+  "lang_mni_Mtei": {
+    "message": "Meiteilon (Manipuri)"
+  },
+  "lang_min": {
+    "message": "Minang"
+  },
+  "lang_lus": {
+    "message": "Mizo"
+  },
+  "lang_mn": {
+    "message": "Mongolă"
+  },
+  "lang_my": {
+    "message": "Myanmar (Birmană)"
+  },
+  "lang_nhe": {
+    "message": "Nahuatl (Husteca de Est)"
+  },
+  "lang_ndc_ZW": {
+    "message": "Ndau"
+  },
+  "lang_nr": {
+    "message": "Ndebele (sud)"
+  },
+  "lang_new": {
+    "message": "Nepalbhasa (Newar)"
+  },
+  "lang_ne": {
+    "message": "Nepaleză"
+  },
+  "lang_bm_Nkoo": {
+    "message": "NKo"
+  },
+  "lang_no": {
+    "message": "Norvegiană"
+  },
+  "lang_nus": {
+    "message": "Nuer"
+  },
+  "lang_oc": {
+    "message": "Occitană"
+  },
+  "lang_or": {
+    "message": "Odia (Oriya)"
+  },
+  "lang_om": {
+    "message": "Oromo"
+  },
+  "lang_os": {
+    "message": "Osetă"
+  },
+  "lang_pag": {
+    "message": "Pangasinan"
+  },
+  "lang_pap": {
+    "message": "Papiamento"
+  },
+  "lang_ps": {
+    "message": "Pashto"
+  },
+  "lang_fa": {
+    "message": "Persană"
+  },
+  "lang_pl": {
+    "message": "Poloneză"
+  },
+  "lang_pt": {
+    "message": "Portugheză (Brazilia)"
+  },
+  "lang_pt_PT": {
+    "message": "Portugheză (Portugalia)"
+  },
+  "lang_pa": {
+    "message": "Punjabi (Gurmukhi)"
+  },
+  "lang_pa_Arab": {
+    "message": "Punjabi (Shahmukhi)"
+  },
+  "lang_qu": {
+    "message": "Quechua"
+  },
+  "lang_kek": {
+    "message": "Qʼeqchiʼ"
+  },
+  "lang_rom": {
+    "message": "Romani"
+  },
+  "lang_ro": {
+    "message": "Română"
+  },
+  "lang_rn": {
+    "message": "Rundi"
+  },
+  "lang_ru": {
+    "message": "Rusă"
+  },
+  "lang_se": {
+    "message": "Sami (nord)"
+  },
+  "lang_sm": {
+    "message": "Samoană"
+  },
+  "lang_sg": {
+    "message": "Sango"
+  },
+  "lang_sa": {
+    "message": "Sanscrită"
+  },
+  "lang_sat_Latn": {
+    "message": "Santali (scriere latină)"
+  },
+  "lang_sat": {
+    "message": "Santali (caractere Ol Chiki)"
+  },
+  "lang_gd": {
+    "message": "Galica scoțiană"
+  },
+  "lang_nso": {
+    "message": "Sepedi"
+  },
+  "lang_sr": {
+    "message": "Sârbă"
+  },
+  "lang_st": {
+    "message": "Sesotho"
+  },
+  "lang_crs": {
+    "message": "Creola din Seychelles"
+  },
+  "lang_shn": {
+    "message": "Shan"
+  },
+  "lang_sn": {
+    "message": "Shonă"
+  },
+  "lang_scn": {
+    "message": "Siciliană"
+  },
+  "lang_szl": {
+    "message": "Sileziană"
+  },
+  "lang_sd": {
+    "message": "Sindhi"
+  },
+  "lang_si": {
+    "message": "Singhaleză"
+  },
+  "lang_sk": {
+    "message": "Slovacă"
+  },
+  "lang_sl": {
+    "message": "Slovenă"
+  },
+  "lang_so": {
+    "message": "Somali"
+  },
+  "lang_es": {
+    "message": "Spaniolă"
+  },
+  "lang_su": {
+    "message": "Sundaneză"
+  },
+  "lang_sus": {
+    "message": "Susu"
+  },
+  "lang_sw": {
+    "message": "Swahili"
+  },
+  "lang_ss": {
+    "message": "Swati"
+  },
+  "lang_sv": {
+    "message": "Suedeză"
+  },
+  "lang_ty": {
+    "message": "Tahitiană"
+  },
+  "lang_tg": {
+    "message": "Tadjică"
+  },
+  "lang_ber_Latn": {
+    "message": "Tamazight"
+  },
+  "lang_ber": {
+    "message": "Tamazight (tifinagh)"
+  },
+  "lang_ta": {
+    "message": "Tamilă"
+  },
+  "lang_tt": {
+    "message": "Tătară"
+  },
+  "lang_te": {
+    "message": "Telugu"
+  },
+  "lang_tet": {
+    "message": "Tetum"
+  },
+  "lang_th": {
+    "message": "Thailandeză"
+  },
+  "lang_bo": {
+    "message": "Tibetană"
+  },
+  "lang_ti": {
+    "message": "Tigrină"
+  },
+  "lang_tiv": {
+    "message": "Tiv"
+  },
+  "lang_tpi": {
+    "message": "Tok Pisin"
+  },
+  "lang_to": {
+    "message": "Tongană"
+  },
+  "lang_lua": {
+    "message": "Tshiluba"
+  },
+  "lang_ts": {
+    "message": "Tsonga"
+  },
+  "lang_tn": {
+    "message": "Tswana"
+  },
+  "lang_tcy": {
+    "message": "Tulu"
+  },
+  "lang_tum": {
+    "message": "Tumbuka"
+  },
+  "lang_tr": {
+    "message": "Turcă"
+  },
+  "lang_tk": {
+    "message": "Turkmenă"
+  },
+  "lang_tyv": {
+    "message": "Tuvană"
+  },
+  "lang_ak": {
+    "message": "Twi"
+  },
+  "lang_udm": {
+    "message": "Udmurtă"
+  },
+  "lang_uk": {
+    "message": "Ucraineană"
+  },
+  "lang_ur": {
+    "message": "Urdu"
+  },
+  "lang_ug": {
+    "message": "Uigură"
+  },
+  "lang_uz": {
+    "message": "Uzbecă"
+  },
+  "lang_ve": {
+    "message": "Venda"
+  },
+  "lang_vec": {
+    "message": "Venețiană"
+  },
+  "lang_vi": {
+    "message": "Vietnameză"
+  },
+  "lang_war": {
+    "message": "Waray"
+  },
+  "lang_cy": {
+    "message": "Galeză"
+  },
+  "lang_wo": {
+    "message": "Wolof"
+  },
+  "lang_xh": {
+    "message": "Xhosa"
+  },
+  "lang_sah": {
+    "message": "Iakută"
+  },
+  "lang_yi": {
+    "message": "Idiș"
+  },
+  "lang_yo": {
+    "message": "Yoruba"
+  },
+  "lang_yua": {
+    "message": "Mayașă Yucatec"
+  },
+  "lang_zap": {
+    "message": "Zapotecă"
+  },
+  "lang_zu": {
+    "message": "Zulu"
+  }
+}

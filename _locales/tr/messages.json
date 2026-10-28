@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Translator – Tek tıkla çeviri"
+  },
+  "extDescription": {
+    "message": "Kelimeleri ve paragrafları tek tıkla çevirin: Chrome'un çevrimdışı çevirmeniyle doğrudan sayfada veya Google Çeviri'de."
+  },
+  "contextMenuTranslate": {
+    "message": "Çevir"
+  },
+  "translating": {
+    "message": "Çevriliyor…"
+  },
+  "downloadingModel": {
+    "message": "Dil modeli indiriliyor… %$PERCENT$",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "Kaynak dil"
+  },
+  "targetLanguage": {
+    "message": "Hedef dil"
+  },
+  "swapLanguages": {
+    "message": "Dilleri değiştir"
+  },
+  "autoLanguage": {
+    "message": "Otomatik"
+  },
+  "onPageMark": {
+    "message": "sayfada"
+  },
+  "controls": {
+    "message": "Kontroller"
+  },
+  "modeOff": {
+    "message": "Kapalı"
+  },
+  "modeDoubleClick": {
+    "message": "Çift tık"
+  },
+  "modeTripleClick": {
+    "message": "Üçlü tık"
+  },
+  "requireKey": {
+    "message": "$KEY$ tuşu gereksin",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "Seçili metne sağ tıklayın → Çevir"
+  },
+  "hintDoubleClick": {
+    "message": "Bir kelimeye çift tıklayın"
+  },
+  "hintTripleClick": {
+    "message": "Bir paragrafa üç kez tıklayın"
+  },
+  "hintHoldDoubleClick": {
+    "message": "$KEY$ tuşunu basılı tutup bir kelimeye çift tıklayın",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "$KEY$ tuşunu basılı tutup bir paragrafa üç kez tıklayın",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "Bu moda geç"
+  },
+  "showTranslation": {
+    "message": "Çeviriyi göster"
+  },
+  "displayOnPage": {
+    "message": "Sayfada"
+  },
+  "displayGoogle": {
+    "message": "Google Çeviri"
+  },
+  "onPageCaption": {
+    "message": "Chrome'un yerleşik çevirmeni, çevrimdışı çalışır"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$: sayfada çevrilemiyor, Google Çeviri açılacak",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "Bu tarayıcıda yerleşik çevirmen yok, Google Çeviri açılacak"
+  },
+  "statusSameLanguage": {
+    "message": "Kaynak ve hedef dil aynı"
+  },
+  "replaceText": {
+    "message": "Seçili metni değiştir"
+  },
+  "replaceTextCaption": {
+    "message": "Çeviriyi orijinal metnin yerine göster"
+  },
+  "googleCaption": {
+    "message": "translate.google.com'u açar"
+  },
+  "reuseTab": {
+    "message": "Google Çeviri sekmesini yeniden kullan"
+  },
+  "reuseTabCaption": {
+    "message": "Her çeviri için yeni sekme açma"
+  },
+  "lang_ab": {
+    "message": "Abhazca"
+  },
+  "lang_ace": {
+    "message": "Açece"
+  },
+  "lang_ach": {
+    "message": "Açolice"
+  },
+  "lang_aa": {
+    "message": "Afarca"
+  },
+  "lang_af": {
+    "message": "Afrikaanca"
+  },
+  "lang_sq": {
+    "message": "Arnavutça"
+  },
+  "lang_alz": {
+    "message": "Alurca"
+  },
+  "lang_am": {
+    "message": "Amharca"
+  },
+  "lang_ar": {
+    "message": "Arapça"
+  },
+  "lang_hy": {
+    "message": "Ermenice"
+  },
+  "lang_as": {
+    "message": "Assamca"
+  },
+  "lang_av": {
+    "message": "Avarca"
+  },
+  "lang_awa": {
+    "message": "Awadhice"
+  },
+  "lang_ay": {
+    "message": "Aymaraca"
+  },
+  "lang_az": {
+    "message": "Azerbaycan dili"
+  },
+  "lang_ban": {
+    "message": "Balice"
+  },
+  "lang_bal": {
+    "message": "Beluçça"
+  },
+  "lang_bm": {
+    "message": "Bambarca"
+  },
+  "lang_bci": {
+    "message": "Baouléce"
+  },
+  "lang_ba": {
+    "message": "Başkurtça"
+  },
+  "lang_eu": {
+    "message": "Baskça"
+  },
+  "lang_btx": {
+    "message": "Batak Karoca"
+  },
+  "lang_bts": {
+    "message": "Batak Simalungunca"
+  },
+  "lang_bbc": {
+    "message": "Batak Tobaca"
+  },
+  "lang_be": {
+    "message": "Belarusça"
+  },
+  "lang_bem": {
+    "message": "Bembaca"
+  },
+  "lang_bn": {
+    "message": "Bengalce"
+  },
+  "lang_bew": {
+    "message": "Batavice"
+  },
+  "lang_bho": {
+    "message": "Bhojpurice"
+  },
+  "lang_bik": {
+    "message": "Bikolce"
+  },
+  "lang_bs": {
+    "message": "Boşnakça"
+  },
+  "lang_br": {
+    "message": "Bretonca"
+  },
+  "lang_bg": {
+    "message": "Bulgarca"
+  },
+  "lang_bua": {
+    "message": "Buryatça"
+  },
+  "lang_yue": {
+    "message": "Kantonca"
+  },
+  "lang_ca": {
+    "message": "Katalanca"
+  },
+  "lang_ceb": {
+    "message": "Sabuanca"
+  },
+  "lang_ch": {
+    "message": "Chamorroce"
+  },
+  "lang_ce": {
+    "message": "Çeçence"
+  },
+  "lang_ny": {
+    "message": "Çevaca"
+  },
+  "lang_zh_CN": {
+    "message": "Çince (Basitleştirilmiş)"
+  },
+  "lang_zh_TW": {
+    "message": "Çince (Geleneksel)"
+  },
+  "lang_chk": {
+    "message": "Chuukece"
+  },
+  "lang_cv": {
+    "message": "Çuvaşça"
+  },
+  "lang_co": {
+    "message": "Korsikaca"
+  },
+  "lang_crh": {
+    "message": "Kırım Tatarcası (Kiril)"
+  },
+  "lang_crh_Latn": {
+    "message": "Kırım Tatarcası (Latin)"
+  },
+  "lang_hr": {
+    "message": "Hırvatça"
+  },
+  "lang_cs": {
+    "message": "Çekçe"
+  },
+  "lang_da": {
+    "message": "Danca"
+  },
+  "lang_fa_AF": {
+    "message": "Darice"
+  },
+  "lang_dv": {
+    "message": "Dhivehice"
+  },
+  "lang_din": {
+    "message": "Dinkaca"
+  },
+  "lang_doi": {
+    "message": "Dogrice"
+  },
+  "lang_dov": {
+    "message": "Dombaca"
+  },
+  "lang_nl": {
+    "message": "Felemenkçe"
+  },
+  "lang_dyu": {
+    "message": "Dyulaca"
+  },
+  "lang_dz": {
+    "message": "Dzongkaca"
+  },
+  "lang_en": {
+    "message": "İngilizce"
+  },
+  "lang_eo": {
+    "message": "Esperanto"
+  },
+  "lang_et": {
+    "message": "Estonyaca"
+  },
+  "lang_ee": {
+    "message": "Ewece"
+  },
+  "lang_fo": {
+    "message": "Faroece"
+  },
+  "lang_fj": {
+    "message": "Fijice"
+  },
+  "lang_tl": {
+    "message": "Filipince"
+  },
+  "lang_fi": {
+    "message": "Fince"
+  },
+  "lang_fon": {
+    "message": "Fonce"
+  },
+  "lang_fr": {
+    "message": "Fransızca"
+  },
+  "lang_fr_CA": {
+    "message": "Fransızca (Kanada)"
+  },
+  "lang_fy": {
+    "message": "Frizce"
+  },
+  "lang_fur": {
+    "message": "Furlanca"
+  },
+  "lang_ff": {
+    "message": "Fulanice"
+  },
+  "lang_gaa": {
+    "message": "Gaaca"
+  },
+  "lang_gl": {
+    "message": "Galiçyaca"
+  },
+  "lang_ka": {
+    "message": "Gürcüce"
+  },
+  "lang_de": {
+    "message": "Almanca"
+  },
+  "lang_el": {
+    "message": "Yunanca"
+  },
+  "lang_gn": {
+    "message": "Guarani"
+  },
+  "lang_gu": {
+    "message": "Güceratça"
+  },
+  "lang_ht": {
+    "message": "Haiti Kreyolu"
+  },
+  "lang_cnh": {
+    "message": "Hakha Chince"
+  },
+  "lang_ha": {
+    "message": "Hausaca"
+  },
+  "lang_haw": {
+    "message": "Hawaice"
+  },
+  "lang_iw": {
+    "message": "İbranice"
+  },
+  "lang_hil": {
+    "message": "Hiligaynonce"
+  },
+  "lang_hi": {
+    "message": "Hintçe"
+  },
+  "lang_hmn": {
+    "message": "Hmongca"
+  },
+  "lang_hu": {
+    "message": "Macarca"
+  },
+  "lang_hrx": {
+    "message": "Hunsrikçe"
+  },
+  "lang_iba": {
+    "message": "İbanca"
+  },
+  "lang_is": {
+    "message": "İzlandaca"
+  },
+  "lang_ig": {
+    "message": "İbo dili"
+  },
+  "lang_ilo": {
+    "message": "Ilocanoce"
+  },
+  "lang_id": {
+    "message": "Endonezce"
+  },
+  "lang_iu_Latn": {
+    "message": "İnuitçe (Latin)"
+  },
+  "lang_iu": {
+    "message": "İnuitçe (Hece yazısı)"
+  },
+  "lang_ga": {
+    "message": "İrlandaca"
+  },
+  "lang_it": {
+    "message": "İtalyanca"
+  },
+  "lang_jam": {
+    "message": "Jamaika lehçesi"
+  },
+  "lang_ja": {
+    "message": "Japonca"
+  },
+  "lang_jw": {
+    "message": "Cava dili"
+  },
+  "lang_kac": {
+    "message": "Jingpoca"
+  },
+  "lang_kl": {
+    "message": "Kalaallisutça"
+  },
+  "lang_kn": {
+    "message": "Kannada dili"
+  },
+  "lang_kr": {
+    "message": "Kanurice"
+  },
+  "lang_pam": {
+    "message": "Kapampanganca"
+  },
+  "lang_kk": {
+    "message": "Kazakça"
+  },
+  "lang_kha": {
+    "message": "Khasice"
+  },
+  "lang_km": {
+    "message": "Kamboçyaca"
+  },
+  "lang_cgg": {
+    "message": "Kigaca"
+  },
+  "lang_kg": {
+    "message": "Kongoca"
+  },
+  "lang_rw": {
+    "message": "Ruandaca"
+  },
+  "lang_ktu": {
+    "message": "Kitubaca"
+  },
+  "lang_trp": {
+    "message": "Kokborokça"
+  },
+  "lang_kv": {
+    "message": "Komice"
+  },
+  "lang_gom": {
+    "message": "Konkani dili"
+  },
+  "lang_ko": {
+    "message": "Korece"
+  },
+  "lang_kri": {
+    "message": "Krioce"
+  },
+  "lang_ku": {
+    "message": "Kürtçe (Kurmançça)"
+  },
+  "lang_ckb": {
+    "message": "Kürtçe (Sorani)"
+  },
+  "lang_ky": {
+    "message": "Kırgızca"
+  },
+  "lang_lo": {
+    "message": "Laoca"
+  },
+  "lang_ltg": {
+    "message": "Latgalyaca"
+  },
+  "lang_la": {
+    "message": "Latince"
+  },
+  "lang_lv": {
+    "message": "Letonca"
+  },
+  "lang_lij": {
+    "message": "Liguryaca"
+  },
+  "lang_li": {
+    "message": "Limburgca"
+  },
+  "lang_ln": {
+    "message": "Lingala"
+  },
+  "lang_lt": {
+    "message": "Litvanca"
+  },
+  "lang_lmo": {
+    "message": "Lombardça"
+  },
+  "lang_lg": {
+    "message": "Lugandaca"
+  },
+  "lang_luo": {
+    "message": "Luoca"
+  },
+  "lang_lb": {
+    "message": "Lüksemburgca"
+  },
+  "lang_mk": {
+    "message": "Makedonca"
+  },
+  "lang_mad": {
+    "message": "Maduresece"
+  },
+  "lang_mai": {
+    "message": "Maithilice"
+  },
+  "lang_mak": {
+    "message": "Makassarca"
+  },
+  "lang_mg": {
+    "message": "Malgaşça"
+  },
+  "lang_ms": {
+    "message": "Malayca"
+  },
+  "lang_ms_Arab": {
+    "message": "Malayca (Javi)"
+  },
+  "lang_ml": {
+    "message": "Malayalam dili"
+  },
+  "lang_mt": {
+    "message": "Maltaca"
+  },
+  "lang_mam": {
+    "message": "Mamca"
+  },
+  "lang_gv": {
+    "message": "Manksça"
+  },
+  "lang_mi": {
+    "message": "Maorice"
+  },
+  "lang_mr": {
+    "message": "Marathi"
+  },
+  "lang_mh": {
+    "message": "Marshallca"
+  },
+  "lang_mwr": {
+    "message": "Marwadice"
+  },
+  "lang_mfe": {
+    "message": "Morisyen Kreolü"
+  },
+  "lang_chm": {
+    "message": "Ova Marice"
+  },
+  "lang_mni_Mtei": {
+    "message": "Meiteilonca (Manipuri)"
+  },
+  "lang_min": {
+    "message": "Minangca"
+  },
+  "lang_lus": {
+    "message": "Mizoce"
+  },
+  "lang_mn": {
+    "message": "Moğolca"
+  },
+  "lang_my": {
+    "message": "Myanmar (Burmaca)"
+  },
+  "lang_nhe": {
+    "message": "Nahuatl (Doğu Huasteca)"
+  },
+  "lang_ndc_ZW": {
+    "message": "Ndauca"
+  },
+  "lang_nr": {
+    "message": "Ndebele (Güney)"
+  },
+  "lang_new": {
+    "message": "Nepalbhasaca (Newari)"
+  },
+  "lang_ne": {
+    "message": "Nepalce"
+  },
+  "lang_bm_Nkoo": {
+    "message": "NKoca"
+  },
+  "lang_no": {
+    "message": "Norveççe"
+  },
+  "lang_nus": {
+    "message": "Nuerca"
+  },
+  "lang_oc": {
+    "message": "Oksitanca"
+  },
+  "lang_or": {
+    "message": "Odiyaca (Oriya)"
+  },
+  "lang_om": {
+    "message": "Oromoca"
+  },
+  "lang_os": {
+    "message": "Osetçe"
+  },
+  "lang_pag": {
+    "message": "Pangasinanca"
+  },
+  "lang_pap": {
+    "message": "Papiamento"
+  },
+  "lang_ps": {
+    "message": "Peştuca"
+  },
+  "lang_fa": {
+    "message": "Farsça"
+  },
+  "lang_pl": {
+    "message": "Lehçe"
+  },
+  "lang_pt": {
+    "message": "Portekizce (Brezilya)"
+  },
+  "lang_pt_PT": {
+    "message": "Portekizce (Portekiz)"
+  },
+  "lang_pa": {
+    "message": "Pencapça (Gurmukhi)"
+  },
+  "lang_pa_Arab": {
+    "message": "Pencapça (Shahmukhi)"
+  },
+  "lang_qu": {
+    "message": "Quechuaca"
+  },
+  "lang_kek": {
+    "message": "Kekçice"
+  },
+  "lang_rom": {
+    "message": "Romanca"
+  },
+  "lang_ro": {
+    "message": "Romence"
+  },
+  "lang_rn": {
+    "message": "Rundice"
+  },
+  "lang_ru": {
+    "message": "Rusça"
+  },
+  "lang_se": {
+    "message": "Samice (Kuzey)"
+  },
+  "lang_sm": {
+    "message": "Samoaca"
+  },
+  "lang_sg": {
+    "message": "Sangoca"
+  },
+  "lang_sa": {
+    "message": "Sanskritçe"
+  },
+  "lang_sat_Latn": {
+    "message": "Santali (Latince)"
+  },
+  "lang_sat": {
+    "message": "Santali (Ol Chiki)"
+  },
+  "lang_gd": {
+    "message": "İskoç Gaelcesi"
+  },
+  "lang_nso": {
+    "message": "Sepedice"
+  },
+  "lang_sr": {
+    "message": "Sırpça"
+  },
+  "lang_st": {
+    "message": "Sesotho dili"
+  },
+  "lang_crs": {
+    "message": "Seyşeller Kreolü"
+  },
+  "lang_shn": {
+    "message": "Shanca"
+  },
+  "lang_sn": {
+    "message": "Şonaca"
+  },
+  "lang_scn": {
+    "message": "Sicilyaca"
+  },
+  "lang_szl": {
+    "message": "Silezya dili"
+  },
+  "lang_sd": {
+    "message": "Sint"
+  },
+  "lang_si": {
+    "message": "Sinhalaca"
+  },
+  "lang_sk": {
+    "message": "Slovakça"
+  },
+  "lang_sl": {
+    "message": "Slovence"
+  },
+  "lang_so": {
+    "message": "Somalice"
+  },
+  "lang_es": {
+    "message": "İspanyolca"
+  },
+  "lang_su": {
+    "message": "Sunda dili"
+  },
+  "lang_sus": {
+    "message": "Susuca"
+  },
+  "lang_sw": {
+    "message": "Svahili dili"
+  },
+  "lang_ss": {
+    "message": "Swazice"
+  },
+  "lang_sv": {
+    "message": "İsveççe"
+  },
+  "lang_ty": {
+    "message": "Tahitice"
+  },
+  "lang_tg": {
+    "message": "Tacikce"
+  },
+  "lang_ber_Latn": {
+    "message": "Tamazightçe"
+  },
+  "lang_ber": {
+    "message": "Tamazightçe (Tifinag)"
+  },
+  "lang_ta": {
+    "message": "Tamilce"
+  },
+  "lang_tt": {
+    "message": "Tatarca"
+  },
+  "lang_te": {
+    "message": "Telugu dili"
+  },
+  "lang_tet": {
+    "message": "Tetumca"
+  },
+  "lang_th": {
+    "message": "Tayca"
+  },
+  "lang_bo": {
+    "message": "Tibetçe"
+  },
+  "lang_ti": {
+    "message": "Tigrinya dili"
+  },
+  "lang_tiv": {
+    "message": "Tivce"
+  },
+  "lang_tpi": {
+    "message": "Tok Pisince"
+  },
+  "lang_to": {
+    "message": "Tongaca"
+  },
+  "lang_lua": {
+    "message": "Tshilubaca"
+  },
+  "lang_ts": {
+    "message": "Tsongaca"
+  },
+  "lang_tn": {
+    "message": "Tsvanaca"
+  },
+  "lang_tcy": {
+    "message": "Tuluca"
+  },
+  "lang_tum": {
+    "message": "Tumbukaca"
+  },
+  "lang_tr": {
+    "message": "Türkçe"
+  },
+  "lang_tk": {
+    "message": "Türkmence"
+  },
+  "lang_tyv": {
+    "message": "Tuvaca"
+  },
+  "lang_ak": {
+    "message": "Twi dili"
+  },
+  "lang_udm": {
+    "message": "Udmurtça"
+  },
+  "lang_uk": {
+    "message": "Ukraynaca"
+  },
+  "lang_ur": {
+    "message": "Urduca"
+  },
+  "lang_ug": {
+    "message": "Uygurca"
+  },
+  "lang_uz": {
+    "message": "Özbekçe"
+  },
+  "lang_ve": {
+    "message": "Vendaca"
+  },
+  "lang_vec": {
+    "message": "Venedikçe"
+  },
+  "lang_vi": {
+    "message": "Vietnamca"
+  },
+  "lang_war": {
+    "message": "Varayca"
+  },
+  "lang_cy": {
+    "message": "Galce"
+  },
+  "lang_wo": {
+    "message": "Wolofça"
+  },
+  "lang_xh": {
+    "message": "Hosa"
+  },
+  "lang_sah": {
+    "message": "Yakutça"
+  },
+  "lang_yi": {
+    "message": "Yidce"
+  },
+  "lang_yo": {
+    "message": "Yorubaca"
+  },
+  "lang_yua": {
+    "message": "Yucatec Mayaca"
+  },
+  "lang_zap": {
+    "message": "Zapotekçe"
+  },
+  "lang_zu": {
+    "message": "Zulu"
+  }
+}

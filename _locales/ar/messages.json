@@ -1,0 +1,878 @@
+{
+  "extName": {
+    "message": "Translator – ترجمة بنقرة واحدة"
+  },
+  "extDescription": {
+    "message": "ترجم الكلمات والفقرات بنقرة واحدة، مباشرةً في الصفحة باستخدام مترجم Chrome بلا إنترنت أو في ترجمة Google."
+  },
+  "contextMenuTranslate": {
+    "message": "ترجمة"
+  },
+  "translating": {
+    "message": "جارٍ الترجمة…"
+  },
+  "downloadingModel": {
+    "message": "جارٍ تنزيل نموذج اللغة… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "لغة المصدر"
+  },
+  "targetLanguage": {
+    "message": "اللغة الهدف"
+  },
+  "swapLanguages": {
+    "message": "تبديل اللغتين"
+  },
+  "autoLanguage": {
+    "message": "تلقائي"
+  },
+  "onPageMark": {
+    "message": "في الصفحة"
+  },
+  "controls": {
+    "message": "التحكم"
+  },
+  "modeOff": {
+    "message": "إيقاف"
+  },
+  "modeDoubleClick": {
+    "message": "نقرتان"
+  },
+  "modeTripleClick": {
+    "message": "ثلاث نقرات"
+  },
+  "requireKey": {
+    "message": "اشتراط الضغط على $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "انقر بزر الماوس الأيمن على النص المحدد ← ترجمة"
+  },
+  "hintDoubleClick": {
+    "message": "انقر مرتين على كلمة"
+  },
+  "hintTripleClick": {
+    "message": "انقر ثلاث مرات على فقرة"
+  },
+  "hintHoldDoubleClick": {
+    "message": "اضغط مع الاستمرار على $KEY$ وانقر مرتين على كلمة",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "اضغط مع الاستمرار على $KEY$ وانقر ثلاث مرات على فقرة",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "التبديل إلى هذا الوضع"
+  },
+  "showTranslation": {
+    "message": "عرض الترجمة"
+  },
+  "displayOnPage": {
+    "message": "في الصفحة"
+  },
+  "displayGoogle": {
+    "message": "ترجمة Google"
+  },
+  "onPageCaption": {
+    "message": "مترجم Chrome المدمج، يعمل بلا إنترنت"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$: لا يمكن الترجمة في الصفحة، سيتم فتح ترجمة Google",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "لا يحتوي هذا المتصفح على مترجم مدمج، سيتم فتح ترجمة Google"
+  },
+  "statusSameLanguage": {
+    "message": "لغة المصدر واللغة الهدف متطابقتان"
+  },
+  "replaceText": {
+    "message": "استبدال النص المحدد"
+  },
+  "replaceTextCaption": {
+    "message": "عرض الترجمة مكان النص الأصلي"
+  },
+  "googleCaption": {
+    "message": "يفتح translate.google.com"
+  },
+  "reuseTab": {
+    "message": "إعادة استخدام علامة تبويب ترجمة Google"
+  },
+  "reuseTabCaption": {
+    "message": "عدم فتح علامة تبويب جديدة لكل ترجمة"
+  },
+  "lang_ab": {
+    "message": "الأبخازية"
+  },
+  "lang_ace": {
+    "message": "الآتشية"
+  },
+  "lang_ach": {
+    "message": "الأشولية"
+  },
+  "lang_aa": {
+    "message": "الأفار"
+  },
+  "lang_af": {
+    "message": "الأفريقانية"
+  },
+  "lang_sq": {
+    "message": "الألبانية"
+  },
+  "lang_alz": {
+    "message": "الألور"
+  },
+  "lang_am": {
+    "message": "الأمهرية"
+  },
+  "lang_ar": {
+    "message": "العربية"
+  },
+  "lang_hy": {
+    "message": "الأرمنية"
+  },
+  "lang_as": {
+    "message": "الأسامية"
+  },
+  "lang_av": {
+    "message": "الأوارية"
+  },
+  "lang_awa": {
+    "message": "الأوادية"
+  },
+  "lang_ay": {
+    "message": "الأيمارا"
+  },
+  "lang_az": {
+    "message": "الأذرية"
+  },
+  "lang_ban": {
+    "message": "البالينية"
+  },
+  "lang_bal": {
+    "message": "البلوشية"
+  },
+  "lang_bm": {
+    "message": "البامبارا"
+  },
+  "lang_bci": {
+    "message": "الباولية"
+  },
+  "lang_ba": {
+    "message": "الباشكيرية"
+  },
+  "lang_eu": {
+    "message": "الباسكية"
+  },
+  "lang_btx": {
+    "message": "الباتاك كارو"
+  },
+  "lang_bts": {
+    "message": "الباتاك السيمالونغونية"
+  },
+  "lang_bbc": {
+    "message": "الباتاك توبا"
+  },
+  "lang_be": {
+    "message": "البيلاروسية"
+  },
+  "lang_bem": {
+    "message": "البيمبا"
+  },
+  "lang_bn": {
+    "message": "البنغالية"
+  },
+  "lang_bew": {
+    "message": "البتاوية"
+  },
+  "lang_bho": {
+    "message": "البوجبورية"
+  },
+  "lang_bik": {
+    "message": "البيكولية"
+  },
+  "lang_bs": {
+    "message": "البوسنية"
+  },
+  "lang_br": {
+    "message": "البريتانية"
+  },
+  "lang_bg": {
+    "message": "البلغارية"
+  },
+  "lang_bua": {
+    "message": "البوريات"
+  },
+  "lang_yue": {
+    "message": "الكانتوني"
+  },
+  "lang_ca": {
+    "message": "القطلونية"
+  },
+  "lang_ceb": {
+    "message": "السيبيوانية"
+  },
+  "lang_ch": {
+    "message": "التشاموروية"
+  },
+  "lang_ce": {
+    "message": "الشيشانية"
+  },
+  "lang_ny": {
+    "message": "الشيشيوا"
+  },
+  "lang_zh_CN": {
+    "message": "الصينية (المبسطة)"
+  },
+  "lang_zh_TW": {
+    "message": "الصينية (التقليدية)"
+  },
+  "lang_chk": {
+    "message": "التشوكية"
+  },
+  "lang_cv": {
+    "message": "التشوفاشي"
+  },
+  "lang_co": {
+    "message": "الكورسيكية"
+  },
+  "lang_crh": {
+    "message": "التتارية القرمية (السيريلية)"
+  },
+  "lang_crh_Latn": {
+    "message": "التتارية القرمية (اللاتينية)"
+  },
+  "lang_hr": {
+    "message": "الكرواتية"
+  },
+  "lang_cs": {
+    "message": "التشيكية"
+  },
+  "lang_da": {
+    "message": "الدانمركية"
+  },
+  "lang_fa_AF": {
+    "message": "الدَرية"
+  },
+  "lang_dv": {
+    "message": "الديفهية"
+  },
+  "lang_din": {
+    "message": "الدينكاوية"
+  },
+  "lang_doi": {
+    "message": "الدوغرية"
+  },
+  "lang_dov": {
+    "message": "الدومبي"
+  },
+  "lang_nl": {
+    "message": "الهولندية"
+  },
+  "lang_dyu": {
+    "message": "الديولية"
+  },
+  "lang_dz": {
+    "message": "الدزونغا"
+  },
+  "lang_en": {
+    "message": "الإنجليزية"
+  },
+  "lang_eo": {
+    "message": "الإسبرانتو"
+  },
+  "lang_et": {
+    "message": "الإستونية"
+  },
+  "lang_ee": {
+    "message": "الإيوي"
+  },
+  "lang_fo": {
+    "message": "الفياروسية"
+  },
+  "lang_fj": {
+    "message": "الفيجية"
+  },
+  "lang_tl": {
+    "message": "الفلبينية"
+  },
+  "lang_fi": {
+    "message": "الفنلندية"
+  },
+  "lang_fon": {
+    "message": "الفون"
+  },
+  "lang_fr": {
+    "message": "الفرنسية"
+  },
+  "lang_fr_CA": {
+    "message": "الفرنسية (كندا)"
+  },
+  "lang_fy": {
+    "message": "الفريزية"
+  },
+  "lang_fur": {
+    "message": "الفريولية"
+  },
+  "lang_ff": {
+    "message": "الفولانية"
+  },
+  "lang_gaa": {
+    "message": "الغا"
+  },
+  "lang_gl": {
+    "message": "الجاليكية"
+  },
+  "lang_ka": {
+    "message": "الجورجية"
+  },
+  "lang_de": {
+    "message": "الألمانية"
+  },
+  "lang_el": {
+    "message": "اليونانية"
+  },
+  "lang_gn": {
+    "message": "الجورانية"
+  },
+  "lang_gu": {
+    "message": "الغوجاراتية"
+  },
+  "lang_ht": {
+    "message": "الكريولية الهايتية"
+  },
+  "lang_cnh": {
+    "message": "الهاكا تشين"
+  },
+  "lang_ha": {
+    "message": "الهوسا"
+  },
+  "lang_haw": {
+    "message": "الهاوائية"
+  },
+  "lang_iw": {
+    "message": "العبرية"
+  },
+  "lang_hil": {
+    "message": "الهيليغاينونية"
+  },
+  "lang_hi": {
+    "message": "الهندية"
+  },
+  "lang_hmn": {
+    "message": "الهمونجية"
+  },
+  "lang_hu": {
+    "message": "الهنغارية"
+  },
+  "lang_hrx": {
+    "message": "الهانسريك"
+  },
+  "lang_iba": {
+    "message": "الإيبانية"
+  },
+  "lang_is": {
+    "message": "الآيسلندية"
+  },
+  "lang_ig": {
+    "message": "الإيغبو"
+  },
+  "lang_ilo": {
+    "message": "الإيلوكانو"
+  },
+  "lang_id": {
+    "message": "الإندونيسية"
+  },
+  "lang_iu_Latn": {
+    "message": "الإنكتيتوتية (اللاتينية)"
+  },
+  "lang_iu": {
+    "message": "الإنكتيتوتية (المقاطع)"
+  },
+  "lang_ga": {
+    "message": "الأيرلندية"
+  },
+  "lang_it": {
+    "message": "الإيطالية"
+  },
+  "lang_jam": {
+    "message": "الباتوا الجامايكية"
+  },
+  "lang_ja": {
+    "message": "اليابانية"
+  },
+  "lang_jw": {
+    "message": "الجاوية"
+  },
+  "lang_kac": {
+    "message": "الجينغفو"
+  },
+  "lang_kl": {
+    "message": "الكالاليست"
+  },
+  "lang_kn": {
+    "message": "الكنادية"
+  },
+  "lang_kr": {
+    "message": "الكانوري"
+  },
+  "lang_pam": {
+    "message": "الكابامبانغانية"
+  },
+  "lang_kk": {
+    "message": "الكازاخية"
+  },
+  "lang_kha": {
+    "message": "الخاسية"
+  },
+  "lang_km": {
+    "message": "الخميرية"
+  },
+  "lang_cgg": {
+    "message": "الكيغا"
+  },
+  "lang_kg": {
+    "message": "الكيكونغو"
+  },
+  "lang_rw": {
+    "message": "الكينيارواندية"
+  },
+  "lang_ktu": {
+    "message": "الكيتوبا"
+  },
+  "lang_trp": {
+    "message": "الكوك بوروك"
+  },
+  "lang_kv": {
+    "message": "الكومية"
+  },
+  "lang_gom": {
+    "message": "الكونكانية"
+  },
+  "lang_ko": {
+    "message": "الكورية"
+  },
+  "lang_kri": {
+    "message": "الكريو"
+  },
+  "lang_ku": {
+    "message": "الكردية (الكرمانجية)"
+  },
+  "lang_ckb": {
+    "message": "الكردية (السورانية)"
+  },
+  "lang_ky": {
+    "message": "القيرغيزية"
+  },
+  "lang_lo": {
+    "message": "اللاوو"
+  },
+  "lang_ltg": {
+    "message": "اللاتغالية"
+  },
+  "lang_la": {
+    "message": "اللاتينية"
+  },
+  "lang_lv": {
+    "message": "اللاتفية"
+  },
+  "lang_lij": {
+    "message": "الليغورية"
+  },
+  "lang_li": {
+    "message": "الليمبورغية"
+  },
+  "lang_ln": {
+    "message": "اللينغالا"
+  },
+  "lang_lt": {
+    "message": "الليتوانية"
+  },
+  "lang_lmo": {
+    "message": "اللومباردية"
+  },
+  "lang_lg": {
+    "message": "اللوغندية"
+  },
+  "lang_luo": {
+    "message": "الليو"
+  },
+  "lang_lb": {
+    "message": "اللوكسمبورغية"
+  },
+  "lang_mk": {
+    "message": "المقدونية"
+  },
+  "lang_mad": {
+    "message": "المادريز"
+  },
+  "lang_mai": {
+    "message": "المايثيلية"
+  },
+  "lang_mak": {
+    "message": "الماكاسار"
+  },
+  "lang_mg": {
+    "message": "المدغشقرية"
+  },
+  "lang_ms": {
+    "message": "الماليزية"
+  },
+  "lang_ms_Arab": {
+    "message": "الماليزية (جاوي)"
+  },
+  "lang_ml": {
+    "message": "المالايالامية"
+  },
+  "lang_mt": {
+    "message": "المالطيّة"
+  },
+  "lang_mam": {
+    "message": "المام"
+  },
+  "lang_gv": {
+    "message": "المانكس"
+  },
+  "lang_mi": {
+    "message": "الماورية"
+  },
+  "lang_mr": {
+    "message": "الماراثية"
+  },
+  "lang_mh": {
+    "message": "المارشالية"
+  },
+  "lang_mwr": {
+    "message": "المروادي"
+  },
+  "lang_mfe": {
+    "message": "اللغة الكرييولية (موريشيوس)"
+  },
+  "lang_chm": {
+    "message": "المارية الشرقية"
+  },
+  "lang_mni_Mtei": {
+    "message": "الميتية (المانيبورية)"
+  },
+  "lang_min": {
+    "message": "المينانغكابو"
+  },
+  "lang_lus": {
+    "message": "الميزو"
+  },
+  "lang_mn": {
+    "message": "المنغولية"
+  },
+  "lang_my": {
+    "message": "البورمية (ميانمار)"
+  },
+  "lang_nhe": {
+    "message": "الناواتل (هواستيكا الشرقية)"
+  },
+  "lang_ndc_ZW": {
+    "message": "النداو"
+  },
+  "lang_nr": {
+    "message": "النديبيل (الجنوبية)"
+  },
+  "lang_new": {
+    "message": "نيبالباسا (النوارية)"
+  },
+  "lang_ne": {
+    "message": "النيبالية"
+  },
+  "lang_bm_Nkoo": {
+    "message": "النكو"
+  },
+  "lang_no": {
+    "message": "النرويجية"
+  },
+  "lang_nus": {
+    "message": "النوير"
+  },
+  "lang_oc": {
+    "message": "الأوكسيتانية"
+  },
+  "lang_or": {
+    "message": "الأوديا (الأوريا)"
+  },
+  "lang_om": {
+    "message": "الأورومية"
+  },
+  "lang_os": {
+    "message": "الأوسيتية"
+  },
+  "lang_pag": {
+    "message": "البانغاسينية"
+  },
+  "lang_pap": {
+    "message": "البابيامنتو"
+  },
+  "lang_ps": {
+    "message": "الباشتوية"
+  },
+  "lang_fa": {
+    "message": "الفارسية"
+  },
+  "lang_pl": {
+    "message": "البولندية"
+  },
+  "lang_pt": {
+    "message": "البرتغالية (البرازيل)"
+  },
+  "lang_pt_PT": {
+    "message": "البرتغالية (البرتغال)"
+  },
+  "lang_pa": {
+    "message": "البنجابية (الغورموخية)"
+  },
+  "lang_pa_Arab": {
+    "message": "البنجابية (الشاموخية)"
+  },
+  "lang_qu": {
+    "message": "الكيتشوا"
+  },
+  "lang_kek": {
+    "message": "الكيكتشي"
+  },
+  "lang_rom": {
+    "message": "الرومنية"
+  },
+  "lang_ro": {
+    "message": "الرومانية"
+  },
+  "lang_rn": {
+    "message": "الروندية"
+  },
+  "lang_ru": {
+    "message": "الروسية"
+  },
+  "lang_se": {
+    "message": "السامي (الشمالية)"
+  },
+  "lang_sm": {
+    "message": "الساموانية"
+  },
+  "lang_sg": {
+    "message": "السانغو"
+  },
+  "lang_sa": {
+    "message": "السنسكريتية"
+  },
+  "lang_sat_Latn": {
+    "message": "السنتالية (اللاتينية)"
+  },
+  "lang_sat": {
+    "message": "السنتالية (أول تشيكي)"
+  },
+  "lang_gd": {
+    "message": "الغيلية الأسكتلندية"
+  },
+  "lang_nso": {
+    "message": "السبيدية"
+  },
+  "lang_sr": {
+    "message": "الصربية"
+  },
+  "lang_st": {
+    "message": "السيسوتو"
+  },
+  "lang_crs": {
+    "message": "الكريولية السيشيلية"
+  },
+  "lang_shn": {
+    "message": "الشان"
+  },
+  "lang_sn": {
+    "message": "الشونا"
+  },
+  "lang_scn": {
+    "message": "الصقلية"
+  },
+  "lang_szl": {
+    "message": "السيليزية"
+  },
+  "lang_sd": {
+    "message": "السندية"
+  },
+  "lang_si": {
+    "message": "السنهالية"
+  },
+  "lang_sk": {
+    "message": "السلوفاكية"
+  },
+  "lang_sl": {
+    "message": "السلوفينية"
+  },
+  "lang_so": {
+    "message": "الصومالية"
+  },
+  "lang_es": {
+    "message": "الإسبانية"
+  },
+  "lang_su": {
+    "message": "الساندينيزية"
+  },
+  "lang_sus": {
+    "message": "السوسو"
+  },
+  "lang_sw": {
+    "message": "السواحيلية"
+  },
+  "lang_ss": {
+    "message": "السواتية"
+  },
+  "lang_sv": {
+    "message": "السويدية"
+  },
+  "lang_ty": {
+    "message": "التاهيتية"
+  },
+  "lang_tg": {
+    "message": "الطاجيكية"
+  },
+  "lang_ber_Latn": {
+    "message": "الأمازيغية"
+  },
+  "lang_ber": {
+    "message": "الأمازيغية (التيفيناغ)"
+  },
+  "lang_ta": {
+    "message": "التاميلية"
+  },
+  "lang_tt": {
+    "message": "التتارية"
+  },
+  "lang_te": {
+    "message": "التيلوغوية"
+  },
+  "lang_tet": {
+    "message": "التيتومية"
+  },
+  "lang_th": {
+    "message": "التايلاندية"
+  },
+  "lang_bo": {
+    "message": "التيبتية"
+  },
+  "lang_ti": {
+    "message": "التيغرينية"
+  },
+  "lang_tiv": {
+    "message": "التيف"
+  },
+  "lang_tpi": {
+    "message": "التوك بيسين"
+  },
+  "lang_to": {
+    "message": "التونغية"
+  },
+  "lang_lua": {
+    "message": "التشيلوبا"
+  },
+  "lang_ts": {
+    "message": "التسونغا"
+  },
+  "lang_tn": {
+    "message": "التسوانية"
+  },
+  "lang_tcy": {
+    "message": "التولو"
+  },
+  "lang_tum": {
+    "message": "التومبوكا"
+  },
+  "lang_tr": {
+    "message": "التركية"
+  },
+  "lang_tk": {
+    "message": "التركمانية"
+  },
+  "lang_tyv": {
+    "message": "التوفان"
+  },
+  "lang_ak": {
+    "message": "التّوي"
+  },
+  "lang_udm": {
+    "message": "الأدمورتية"
+  },
+  "lang_uk": {
+    "message": "الأوكرانية"
+  },
+  "lang_ur": {
+    "message": "الأردية"
+  },
+  "lang_ug": {
+    "message": "الأويغورية"
+  },
+  "lang_uz": {
+    "message": "الأوزبكية"
+  },
+  "lang_ve": {
+    "message": "الفيندا"
+  },
+  "lang_vec": {
+    "message": "الفينيسية"
+  },
+  "lang_vi": {
+    "message": "الفيتنامية"
+  },
+  "lang_war": {
+    "message": "الواراي واراي"
+  },
+  "lang_cy": {
+    "message": "الويلزية"
+  },
+  "lang_wo": {
+    "message": "الوُلوفية"
+  },
+  "lang_xh": {
+    "message": "الخوسا"
+  },
+  "lang_sah": {
+    "message": "الياقوتية"
+  },
+  "lang_yi": {
+    "message": "الييدية"
+  },
+  "lang_yo": {
+    "message": "اليورباية"
+  },
+  "lang_yua": {
+    "message": "المايا اليوكاتية"
+  },
+  "lang_zap": {
+    "message": "الزابوتيكية"
+  },
+  "lang_zu": {
+    "message": "الزولو"
+  }
+}

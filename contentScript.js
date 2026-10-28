@@ -262,7 +262,7 @@ function showTranslationPopup(text) {
         word-wrap: break-word;
       }
     </style>
-    <div class="popup"></div>`;
+    <div class="popup" dir="auto"></div>`;
   let content = shadow.querySelector(".popup");
   content.textContent = text;
 

@@ -129,315 +129,750 @@
     "message": "Không mở thẻ mới cho mỗi lần dịch"
   },
   "lang_ab": {
-    "message": "Tiếng Abkhaz"
+    "message": "Abkhaz"
   },
   "lang_ace": {
-    "message": "Tiếng Aceh"
+    "message": "Aceh"
   },
   "lang_ach": {
-    "message": "Tiếng Acholi"
+    "message": "Acholi"
   },
   "lang_aa": {
-    "message": "Tiếng Afar"
+    "message": "Afar"
+  },
+  "lang_af": {
+    "message": "Hà Lan (Nam Phi)"
+  },
+  "lang_sq": {
+    "message": "Albania"
   },
   "lang_alz": {
-    "message": "Tiếng Alur"
+    "message": "Alur"
+  },
+  "lang_am": {
+    "message": "Amharic"
+  },
+  "lang_ar": {
+    "message": "Ả Rập"
+  },
+  "lang_hy": {
+    "message": "Armenia"
+  },
+  "lang_as": {
+    "message": "Assam"
   },
   "lang_av": {
-    "message": "Tiếng Avar"
+    "message": "Avar"
   },
   "lang_awa": {
-    "message": "Tiếng Awadhi"
+    "message": "Awadhi"
+  },
+  "lang_ay": {
+    "message": "Aymara"
+  },
+  "lang_az": {
+    "message": "Azerbaijan"
   },
   "lang_ban": {
-    "message": "Tiếng Bali"
+    "message": "Bali"
   },
   "lang_bal": {
-    "message": "Tiếng Baluchi"
+    "message": "Baluchi"
+  },
+  "lang_bm": {
+    "message": "Bambara"
   },
   "lang_bci": {
-    "message": "Tiếng Baoulé"
+    "message": "Baoulé"
   },
   "lang_ba": {
-    "message": "Tiếng Bashkir"
+    "message": "Bashkir"
+  },
+  "lang_eu": {
+    "message": "Basque"
   },
   "lang_btx": {
-    "message": "Tiếng Batak Karo"
+    "message": "Batak Karo"
   },
   "lang_bts": {
-    "message": "Tiếng Batak Simalungun"
+    "message": "Batak Simalungun"
   },
   "lang_bbc": {
-    "message": "Tiếng Batak Toba"
+    "message": "Batak Toba"
+  },
+  "lang_be": {
+    "message": "Belarus"
   },
   "lang_bem": {
-    "message": "Tiếng Bemba"
+    "message": "Bemba"
+  },
+  "lang_bn": {
+    "message": "Bengal"
   },
   "lang_bew": {
-    "message": "Tiếng Betawi"
+    "message": "Betawi"
+  },
+  "lang_bho": {
+    "message": "Bhojpuri"
   },
   "lang_bik": {
-    "message": "Tiếng Bikol"
+    "message": "Bikol"
+  },
+  "lang_bs": {
+    "message": "Bosnia"
+  },
+  "lang_br": {
+    "message": "Breton"
+  },
+  "lang_bg": {
+    "message": "Bulgaria"
   },
   "lang_bua": {
-    "message": "Tiếng Buryat"
+    "message": "Buryat"
+  },
+  "lang_yue": {
+    "message": "Quảng Đông"
+  },
+  "lang_ca": {
+    "message": "Catalan"
+  },
+  "lang_ceb": {
+    "message": "Cebuano"
   },
   "lang_ch": {
-    "message": "Tiếng Chamorro"
+    "message": "Chamorro"
   },
   "lang_ce": {
-    "message": "Tiếng Chechen"
+    "message": "Chechen"
+  },
+  "lang_ny": {
+    "message": "Chichewa"
+  },
+  "lang_zh_CN": {
+    "message": "Trung (Giản thể)"
+  },
+  "lang_zh_TW": {
+    "message": "Trung (Phồn thể)"
   },
   "lang_chk": {
-    "message": "Tiếng Chuuk"
+    "message": "Chuuk"
   },
   "lang_cv": {
-    "message": "Tiếng Chuvash"
+    "message": "Chuvash"
+  },
+  "lang_co": {
+    "message": "Corsi"
   },
   "lang_crh": {
-    "message": "Tiếng Tatar Krym (Kirin)"
+    "message": "Tatar Krym (Kirin)"
   },
   "lang_crh_Latn": {
-    "message": "Tiếng Tiếng Tatar Krym (Latinh)"
+    "message": "Tiếng Tatar Krym (Latinh)"
+  },
+  "lang_hr": {
+    "message": "Croatia"
+  },
+  "lang_cs": {
+    "message": "Séc"
+  },
+  "lang_da": {
+    "message": "Đan Mạch"
+  },
+  "lang_fa_AF": {
+    "message": "Dari"
+  },
+  "lang_dv": {
+    "message": "Dhivehi"
   },
   "lang_din": {
-    "message": "Tiếng Dinka"
+    "message": "Dinka"
+  },
+  "lang_doi": {
+    "message": "Dogri"
   },
   "lang_dov": {
-    "message": "Tiếng Dombe"
+    "message": "Dombe"
+  },
+  "lang_nl": {
+    "message": "Hà Lan"
   },
   "lang_dyu": {
-    "message": "Tiếng Dyula"
+    "message": "Dyula"
   },
   "lang_dz": {
-    "message": "Tiếng Dzongkha"
+    "message": "Dzongkha"
+  },
+  "lang_en": {
+    "message": "Anh"
+  },
+  "lang_eo": {
+    "message": "Quốc tế ngữ"
+  },
+  "lang_et": {
+    "message": "Estonia"
+  },
+  "lang_ee": {
+    "message": "Ewe"
+  },
+  "lang_fo": {
+    "message": "Faroese"
   },
   "lang_fj": {
-    "message": "Tiếng Fiji"
+    "message": "Fiji"
+  },
+  "lang_tl": {
+    "message": "Filipino"
+  },
+  "lang_fi": {
+    "message": "Phần Lan"
   },
   "lang_fon": {
-    "message": "Tiếng Fon"
+    "message": "Fon"
+  },
+  "lang_fr": {
+    "message": "Pháp"
+  },
+  "lang_fr_CA": {
+    "message": "Pháp (Canada)"
+  },
+  "lang_fy": {
+    "message": "Frisia"
   },
   "lang_fur": {
-    "message": "Tiếng Friuli"
+    "message": "Friuli"
   },
   "lang_ff": {
-    "message": "Tiếng Fulani"
+    "message": "Fulani"
   },
   "lang_gaa": {
-    "message": "Tiếng Gaa"
+    "message": "Gaa"
+  },
+  "lang_gl": {
+    "message": "Galicia"
+  },
+  "lang_ka": {
+    "message": "Tiếng Georgia"
+  },
+  "lang_de": {
+    "message": "Đức"
+  },
+  "lang_el": {
+    "message": "Hy Lạp"
+  },
+  "lang_gn": {
+    "message": "Guarani"
+  },
+  "lang_gu": {
+    "message": "Gujarat"
+  },
+  "lang_ht": {
+    "message": "Creole (Haiti)"
   },
   "lang_cnh": {
-    "message": "Tiếng Hakha Chin"
+    "message": "Hakha Chin"
+  },
+  "lang_ha": {
+    "message": "Hausa"
+  },
+  "lang_haw": {
+    "message": "Hawaii"
+  },
+  "lang_iw": {
+    "message": "Do Thái"
   },
   "lang_hil": {
-    "message": "Tiếng Hiligaynon"
+    "message": "Hiligaynon"
+  },
+  "lang_hi": {
+    "message": "Hindi"
+  },
+  "lang_hmn": {
+    "message": "Hmong"
+  },
+  "lang_hu": {
+    "message": "Hungary"
   },
   "lang_hrx": {
-    "message": "Tiếng Hunsrik"
+    "message": "Hunsrik"
   },
   "lang_iba": {
-    "message": "Tiếng Iban"
+    "message": "Iban"
+  },
+  "lang_is": {
+    "message": "Iceland"
+  },
+  "lang_ig": {
+    "message": "Igbo"
+  },
+  "lang_ilo": {
+    "message": "Ilocano"
+  },
+  "lang_id": {
+    "message": "Indonesia"
   },
   "lang_iu_Latn": {
-    "message": "Tiếng Tiếng Inuktut (Latinh)"
+    "message": "Tiếng Inuktut (Latinh)"
   },
   "lang_iu": {
-    "message": "Tiếng Tiếng Inuktut (Âm tiết)"
+    "message": "Tiếng Inuktut (Âm tiết)"
+  },
+  "lang_ga": {
+    "message": "Ireland"
+  },
+  "lang_it": {
+    "message": "Ý"
   },
   "lang_jam": {
-    "message": "Tiếng Patois Jamaica"
+    "message": "Patois Jamaica"
+  },
+  "lang_ja": {
+    "message": "Nhật"
+  },
+  "lang_jw": {
+    "message": "Java"
   },
   "lang_kac": {
-    "message": "Tiếng Jingpo"
+    "message": "Jingpo"
   },
   "lang_kl": {
-    "message": "Tiếng Kalaallisut"
+    "message": "Kalaallisut"
+  },
+  "lang_kn": {
+    "message": "Kannada"
   },
   "lang_kr": {
-    "message": "Tiếng Kanuri"
+    "message": "Kanuri"
   },
   "lang_pam": {
-    "message": "Tiếng Kapampangan"
+    "message": "Kapampangan"
+  },
+  "lang_kk": {
+    "message": "Kazakh"
   },
   "lang_kha": {
-    "message": "Tiếng Khasi"
+    "message": "Khasi"
+  },
+  "lang_km": {
+    "message": "Khmer"
   },
   "lang_cgg": {
-    "message": "Tiếng Kiga"
+    "message": "Kiga"
   },
   "lang_kg": {
-    "message": "Tiếng Kikongo"
+    "message": "Kikongo"
+  },
+  "lang_rw": {
+    "message": "Kinyarwanda"
   },
   "lang_ktu": {
-    "message": "Tiếng Kituba"
+    "message": "Kituba"
   },
   "lang_trp": {
-    "message": "Tiếng Kokborok"
+    "message": "Kokborok"
   },
   "lang_kv": {
-    "message": "Tiếng Komi"
+    "message": "Komi"
+  },
+  "lang_gom": {
+    "message": "Konkani"
+  },
+  "lang_ko": {
+    "message": "Hàn"
   },
   "lang_kri": {
-    "message": "Tiếng Krio"
+    "message": "Krio"
+  },
+  "lang_ku": {
+    "message": "Kurd (Kurmanji)"
+  },
+  "lang_ckb": {
+    "message": "Kurd (Sorani)"
+  },
+  "lang_ky": {
+    "message": "Kyrgyz"
+  },
+  "lang_lo": {
+    "message": "Lào"
   },
   "lang_ltg": {
-    "message": "Tiếng Latgale"
+    "message": "Latgale"
+  },
+  "lang_la": {
+    "message": "Latinh"
+  },
+  "lang_lv": {
+    "message": "Latvia"
   },
   "lang_lij": {
-    "message": "Tiếng Liguria"
+    "message": "Liguria"
   },
   "lang_li": {
-    "message": "Tiếng Limburg"
+    "message": "Limburg"
+  },
+  "lang_ln": {
+    "message": "Lingala"
+  },
+  "lang_lt": {
+    "message": "Litva"
   },
   "lang_lmo": {
-    "message": "Tiếng Lombard"
+    "message": "Lombard"
+  },
+  "lang_lg": {
+    "message": "Luganda"
   },
   "lang_luo": {
-    "message": "Tiếng Luo"
+    "message": "Luo"
+  },
+  "lang_lb": {
+    "message": "Luxembourg"
+  },
+  "lang_mk": {
+    "message": "Macedonia"
   },
   "lang_mad": {
-    "message": "Tiếng Madura"
+    "message": "Madura"
+  },
+  "lang_mai": {
+    "message": "Maithili"
   },
   "lang_mak": {
-    "message": "Tiếng Makassar"
+    "message": "Makassar"
+  },
+  "lang_mg": {
+    "message": "Malagasy"
+  },
+  "lang_ms": {
+    "message": "Mã Lai"
+  },
+  "lang_ms_Arab": {
+    "message": "Malay (Jawi)"
+  },
+  "lang_ml": {
+    "message": "Malayalam"
+  },
+  "lang_mt": {
+    "message": "Malta"
   },
   "lang_mam": {
-    "message": "Tiếng Mam"
+    "message": "Mam"
   },
   "lang_gv": {
-    "message": "Tiếng Manx"
+    "message": "Manx"
+  },
+  "lang_mi": {
+    "message": "Maori"
+  },
+  "lang_mr": {
+    "message": "Marathi"
   },
   "lang_mh": {
-    "message": "Tiếng Marshall"
+    "message": "Marshall"
   },
   "lang_mwr": {
-    "message": "Tiếng Marwadi"
+    "message": "Marwadi"
   },
   "lang_mfe": {
-    "message": "Tiếng Mauritian Creole"
+    "message": "Mauritian Creole"
   },
   "lang_chm": {
-    "message": "Tiếng Mari đồng cỏ"
+    "message": "Mari đồng cỏ"
+  },
+  "lang_mni_Mtei": {
+    "message": "Meiteilon (Manipuri)"
   },
   "lang_min": {
-    "message": "Tiếng Minang"
+    "message": "Minang"
+  },
+  "lang_lus": {
+    "message": "Mizo"
+  },
+  "lang_mn": {
+    "message": "Mông Cổ"
+  },
+  "lang_my": {
+    "message": "Myanmar (tiếng Miến Điện)"
   },
   "lang_nhe": {
-    "message": "Tiếng Nahuatl (Đông Huasteca)"
+    "message": "Nahuatl (Đông Huasteca)"
   },
   "lang_ndc_ZW": {
-    "message": "Tiếng Ndau"
+    "message": "Ndau"
   },
   "lang_nr": {
-    "message": "Tiếng Nam Ndebele"
+    "message": "Nam Ndebele"
   },
   "lang_new": {
-    "message": "Tiếng Nepal Bhasa (Newar)"
+    "message": "Nepal Bhasa (Newar)"
+  },
+  "lang_ne": {
+    "message": "Nepal"
+  },
+  "lang_bm_Nkoo": {
+    "message": "N'Ko"
+  },
+  "lang_no": {
+    "message": "Na Uy"
   },
   "lang_nus": {
-    "message": "Tiếng Nuer"
+    "message": "Nuer"
+  },
+  "lang_oc": {
+    "message": "Occitan"
+  },
+  "lang_or": {
+    "message": "Odia (Oriya)"
+  },
+  "lang_om": {
+    "message": "Oromo"
   },
   "lang_os": {
-    "message": "Tiếng Ossetia"
+    "message": "Ossetia"
   },
   "lang_pag": {
-    "message": "Tiếng Pangasinan"
+    "message": "Pangasinan"
   },
   "lang_pap": {
-    "message": "Tiếng Papiamento"
+    "message": "Papiamento"
+  },
+  "lang_ps": {
+    "message": "Pashto"
+  },
+  "lang_fa": {
+    "message": "Ba Tư"
+  },
+  "lang_pl": {
+    "message": "Ba Lan"
+  },
+  "lang_pt": {
+    "message": "Bồ Đào Nha (Brazil)"
+  },
+  "lang_pt_PT": {
+    "message": "Bồ Đào Nha (Bồ Đào Nha)"
+  },
+  "lang_pa": {
+    "message": "Punjab (Gurmukhi)"
+  },
+  "lang_pa_Arab": {
+    "message": "Punjab (Shahmukhi)"
+  },
+  "lang_qu": {
+    "message": "Quechua"
   },
   "lang_kek": {
-    "message": "Tiếng Q'eqchi'"
+    "message": "Q'eqchi'"
   },
   "lang_rom": {
-    "message": "Tiếng Romani"
+    "message": "Romani"
+  },
+  "lang_ro": {
+    "message": "Rumani"
   },
   "lang_rn": {
-    "message": "Tiếng Rundi"
+    "message": "Rundi"
+  },
+  "lang_ru": {
+    "message": "Nga"
   },
   "lang_se": {
-    "message": "Tiếng Bắc Sami"
+    "message": "Bắc Sami"
+  },
+  "lang_sm": {
+    "message": "Samoa"
   },
   "lang_sg": {
-    "message": "Tiếng Sango"
+    "message": "Sango"
+  },
+  "lang_sa": {
+    "message": "Phạn"
   },
   "lang_sat_Latn": {
-    "message": "Tiếng Tiếng Santal (Latinh)"
+    "message": "Tiếng Santal (Latinh)"
   },
   "lang_sat": {
-    "message": "Tiếng Tiếng Santal (Ol Chiki)"
+    "message": "Tiếng Santal (Ol Chiki)"
+  },
+  "lang_gd": {
+    "message": "Gael Scotland"
+  },
+  "lang_nso": {
+    "message": "Sepedi"
+  },
+  "lang_sr": {
+    "message": "Serbia"
+  },
+  "lang_st": {
+    "message": "Sesotho"
   },
   "lang_crs": {
-    "message": "Tiếng Creole Seychelles"
+    "message": "Creole Seychelles"
   },
   "lang_shn": {
-    "message": "Tiếng Shan"
+    "message": "Shan"
+  },
+  "lang_sn": {
+    "message": "Shona"
   },
   "lang_scn": {
-    "message": "Tiếng Sicily"
+    "message": "Sicily"
   },
   "lang_szl": {
-    "message": "Tiếng Silesia"
+    "message": "Silesia"
+  },
+  "lang_sd": {
+    "message": "Sindhi"
+  },
+  "lang_si": {
+    "message": "Sinhala"
+  },
+  "lang_sk": {
+    "message": "Slovak"
+  },
+  "lang_sl": {
+    "message": "Slovenia"
+  },
+  "lang_so": {
+    "message": "Somali"
+  },
+  "lang_es": {
+    "message": "Tây Ban Nha"
+  },
+  "lang_su": {
+    "message": "Sunda"
   },
   "lang_sus": {
-    "message": "Tiếng Susu"
+    "message": "Susu"
+  },
+  "lang_sw": {
+    "message": "Swahili"
   },
   "lang_ss": {
-    "message": "Tiếng Swati"
+    "message": "Swati"
+  },
+  "lang_sv": {
+    "message": "Thụy Điển"
   },
   "lang_ty": {
-    "message": "Tiếng Tahiti"
+    "message": "Tahiti"
+  },
+  "lang_tg": {
+    "message": "Tajik"
   },
   "lang_ber_Latn": {
-    "message": "Tiếng Tamazight"
+    "message": "Tamazight"
   },
   "lang_ber": {
-    "message": "Tiếng Tamazight (Tifinagh)"
+    "message": "Tamazight (Tifinagh)"
+  },
+  "lang_ta": {
+    "message": "Tamil"
+  },
+  "lang_tt": {
+    "message": "Tatar"
+  },
+  "lang_te": {
+    "message": "Telugu"
   },
   "lang_tet": {
-    "message": "Tiếng Tetum"
+    "message": "Tetum"
+  },
+  "lang_th": {
+    "message": "Thái"
   },
   "lang_bo": {
-    "message": "Tiếng Tây Tạng"
+    "message": "Tây Tạng"
+  },
+  "lang_ti": {
+    "message": "Tigrinya"
   },
   "lang_tiv": {
-    "message": "Tiếng Tiv"
+    "message": "Tiv"
   },
   "lang_tpi": {
-    "message": "Tiếng Tok Pisin"
+    "message": "Tok Pisin"
+  },
+  "lang_to": {
+    "message": "Tonga"
   },
   "lang_lua": {
-    "message": "Tiếng Tshiluba"
+    "message": "Tshiluba"
+  },
+  "lang_ts": {
+    "message": "Tsonga"
+  },
+  "lang_tn": {
+    "message": "Tswana"
   },
   "lang_tcy": {
-    "message": "Tiếng Tulu"
+    "message": "Tulu"
   },
   "lang_tum": {
-    "message": "Tiếng Tumbuka"
+    "message": "Tumbuka"
+  },
+  "lang_tr": {
+    "message": "Thổ Nhĩ Kỳ"
+  },
+  "lang_tk": {
+    "message": "Turkmen"
   },
   "lang_tyv": {
-    "message": "Tiếng Tuva"
+    "message": "Tuva"
+  },
+  "lang_ak": {
+    "message": "Twi"
   },
   "lang_udm": {
-    "message": "Tiếng Udmurt"
+    "message": "Udmurt"
+  },
+  "lang_uk": {
+    "message": "Ukraina"
+  },
+  "lang_ur": {
+    "message": "Urdu"
+  },
+  "lang_ug": {
+    "message": "Uyghur"
+  },
+  "lang_uz": {
+    "message": "Uzbek"
   },
   "lang_ve": {
-    "message": "Tiếng Venda"
+    "message": "Venda"
   },
   "lang_vec": {
-    "message": "Tiếng Venice"
+    "message": "Venice"
+  },
+  "lang_vi": {
+    "message": "Việt"
   },
   "lang_war": {
-    "message": "Tiếng Waray"
+    "message": "Waray"
+  },
+  "lang_cy": {
+    "message": "Xứ Wales"
+  },
+  "lang_wo": {
+    "message": "Wolof"
+  },
+  "lang_xh": {
+    "message": "Bantu"
   },
   "lang_sah": {
-    "message": "Tiếng Yakut"
+    "message": "Yakut"
+  },
+  "lang_yi": {
+    "message": "Yiddish"
+  },
+  "lang_yo": {
+    "message": "Yoruba"
   },
   "lang_yua": {
-    "message": "Tiếng Maya Yucatec"
+    "message": "Maya Yucatec"
   },
   "lang_zap": {
-    "message": "Tiếng Zapotec"
+    "message": "Zapotec"
+  },
+  "lang_zu": {
+    "message": "Zulu"
   }
 }
