@@ -1,8 +1,8 @@
 {
-  "name": "Translator Extension",
+  "name": "Translator – Translate with a Click",
   "short_name": "Translator",
-  "version": "2.0",
-  "description": "Translator Extension for Chrome. Translates any text by Google Translate with a mouse click",
+  "version": "3.0",
+  "description": "Translate words and paragraphs with a click, right on the page with Chrome's offline translator or in Google Translate.",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"

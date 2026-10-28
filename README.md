@@ -3,17 +3,42 @@
 
 # translator-extension
 
-This Chrome extension can instantly translate text on Chrome page by Google Translate.
+Translate words and paragraphs on any web page with a mouse click.
 
-You can translate a text in three ways:
+## How to translate
+
 - Double-click a word
 - Triple-click a paragraph
-- Select a text, right-click it and click on `Translate`
+- Select text, right-click it and choose `Translate`
 
-By clicking on extension icon you can set these configurations:
-- Source and target languages of translated text
-- Mode of translation by mouse clicks
-- Use or not use an open Google Translate tab
-- Translate text by clicks only when `alt` is clicked
+## Where the translation appears
 
-You can change mode of translation by `alt+1`, `+2`, `+3`. The active mode is labeled on the extension's icon.
+- **On page.** The translation shows up in a small popup next to the selected text. It uses the translator built into Chrome, so it works offline and the text never leaves your device. Turn on `Replace selected text` to swap the original text on the page for the translation.
+- **Google Translate.** The text opens in Google Translate, in a new tab or in one that is already open.
+
+If the built-in translator is not available (older Chrome, or a language pair it doesn't support), the text opens in Google Translate instead.
+
+## Settings
+
+Click the extension icon to choose:
+
+- Source and target languages, or `Auto` to detect the source language
+- How to translate: double click, triple click or off
+- Translate on click only while holding `Alt` (`Option` on Mac)
+- Where to show the translation
+
+## Shortcuts
+
+Switch modes on any page:
+
+| Shortcut | Mode |
+|---|---|
+| `Alt+1` | Off |
+| `Alt+2` | Double click |
+| `Alt+3` | Triple click |
+
+The active mode is shown on the extension icon.
+
+## Requirements
+
+The on-page translator requires desktop Chrome 138 or later. Language models are downloaded by Chrome the first time a language pair is used.
