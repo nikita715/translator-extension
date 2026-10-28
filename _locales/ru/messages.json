@@ -32,6 +32,9 @@
   "autoLanguage": {
     "message": "Авто"
   },
+  "onPageMark": {
+    "message": "на странице"
+  },
   "controls": {
     "message": "Управление"
   },
@@ -94,6 +97,21 @@
   },
   "onPageCaption": {
     "message": "Встроенный переводчик Chrome, офлайн"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$: не переводится на странице, откроется Google Переводчик",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "В этом браузере нет встроенного переводчика, откроется Google Переводчик"
+  },
+  "statusSameLanguage": {
+    "message": "Исходный язык и язык перевода совпадают"
   },
   "replaceText": {
     "message": "Заменять выделенный текст"

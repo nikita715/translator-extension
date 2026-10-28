@@ -32,6 +32,9 @@
   "autoLanguage": {
     "message": "Auto"
   },
+  "onPageMark": {
+    "message": "on page"
+  },
   "controls": {
     "message": "Controls"
   },
@@ -94,6 +97,21 @@
   },
   "onPageCaption": {
     "message": "Chrome built-in translator, works offline"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$: can't be translated on the page, Google Translate will open instead",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "This browser has no built-in translator, Google Translate will open instead"
+  },
+  "statusSameLanguage": {
+    "message": "Source and target languages are the same"
   },
   "replaceText": {
     "message": "Replace selected text"

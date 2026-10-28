@@ -23,6 +23,7 @@
   --control-hover: #e8e8e8;
   --accent: #1a73e8;
   --on-accent: #fff;
+  --warn: #b06000;
   --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%236b6b6b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   color-scheme: light;
 }
@@ -37,6 +38,7 @@
     --control-hover: #36373a;
     --accent: #8ab4f8;
     --on-accent: #202124;
+    --warn: #fdd663;
     --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%239aa0a6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     color-scheme: dark;
   }
@@ -244,6 +246,23 @@ section > .option:last-child {
   margin: 8px 0 2px;
   color: var(--muted);
   font-size: 12px;
+}
+
+/* Warning when the selected language pair can't be translated on the page */
+.status {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  min-height: 1.4em;
+}
+
+.status svg {
+  flex: none;
+  margin-top: 2px;
+}
+
+.status.warn {
+  color: var(--warn);
 }
 
 .option.disabled {

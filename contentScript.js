@@ -94,14 +94,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   }
 });
 
-// Google Translate codes that differ from the BCP 47 tags used by Chrome Translator API
-let builtInLanguageCodes = {
-  "iw": "he",
-  "jw": "jv",
-  "zh-CN": "zh",
-  "zh-TW": "zh-Hant"
-};
-
 let translators = new Map();
 
 async function translateBuiltIn(texts, sourceLanguage, targetLanguage, onDownloadProgress) {
@@ -237,10 +229,6 @@ async function detectLanguage(text) {
     throw new Error("Unable to detect language");
   }
   return language;
-}
-
-function toBuiltInLanguageCode(code) {
-  return builtInLanguageCodes[code] || code;
 }
 
 let translationPopupHost = null;

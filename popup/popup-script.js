@@ -31,11 +31,30 @@ document.addEventListener('DOMContentLoaded', function() {
     createLanguageOpt(targetLanguageElement, language.name, language.code);
   });
 
+  loadBuiltInSupportedLanguages();
+  [sourceLanguageElement, targetLanguageElement].forEach(function(select) {
+    // Both come before the list opens, keydown covers opening it from the keyboard
+    ["mousedown", "keydown"].forEach(function(type) {
+      select.addEventListener(type, function() {
+        let useBuiltIn = document.querySelector('input[name="display"]:checked').value == "page";
+        setLanguageMarks(select, useBuiltIn);
+      });
+    });
+    ["change", "blur"].forEach(function(type) {
+      select.addEventListener(type, function() {
+        setLanguageMarks(select, false);
+      });
+    });
+  });
+
   function updateDependentControls() {
     swapLanguagesElement.disabled = sourceLanguageElement.value == "auto";
     let useBuiltIn = document.querySelector('input[name="display"]:checked').value == "page";
     document.getElementById("translator-page-options").hidden = !useBuiltIn;
     document.getElementById("translator-google-options").hidden = useBuiltIn;
+    if (useBuiltIn) {
+      updatePageTranslationStatus(sourceLanguageElement, targetLanguageElement);
+    }
     let checkedTrigger = document.querySelector('input[name="trigger"]:checked');
     let action = checkedTrigger ? checkedTrigger.value : "dbclick";
     document.getElementById("translator-hold-alt-option").hidden = action == "none";
@@ -82,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
       type: "changeLanguage",
       targetLanguage: this.value
     });
+    updateDependentControls();
   });
 
   swapLanguagesElement.addEventListener('click', function() {
@@ -93,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
       sourceLanguage: sourceLanguageElement.value,
       targetLanguage: targetLanguageElement.value
     });
+    updateDependentControls();
   });
 
   triggerElements.forEach(function(element) {
@@ -164,6 +185,54 @@ function renderTriggerHint(action, holdAlt) {
     </div>`;
 }
 
+let pageTranslationStatusRequest = 0;
+
+async function updatePageTranslationStatus(sourceLanguageElement, targetLanguageElement) {
+  let request = ++pageTranslationStatusRequest;
+  let pair = `${sourceLanguageElement.selectedOptions[0].dataset.name} → ${targetLanguageElement.selectedOptions[0].dataset.name}`;
+  let status = await getPageTranslationStatus(sourceLanguageElement.value, targetLanguageElement.value, pair);
+  // Languages may have changed while availability was being checked
+  if (request != pageTranslationStatusRequest) {
+    return;
+  }
+  let element = document.getElementById("translator-page-status");
+  element.classList.toggle("warn", !status.ok);
+  // Supported pairs get the usual caption, only problems are highlighted
+  element.innerHTML = status.ok ? "" : warningIcon();
+  let text = document.createElement("span");
+  text.textContent = status.message;
+  element.appendChild(text);
+}
+
+async function getPageTranslationStatus(sourceLanguage, targetLanguage, pair) {
+  if (!("Translator" in self)) {
+    return { ok: false, message: chrome.i18n.getMessage("statusNoBuiltIn") };
+  }
+  if (sourceLanguage == targetLanguage) {
+    return { ok: false, message: chrome.i18n.getMessage("statusSameLanguage") };
+  }
+  let target = toBuiltInLanguageCode(targetLanguage);
+  // With auto-detection the source is only known after translation starts, so check just the target language
+  let source = sourceLanguage == "auto" ?
+    (target == "en" ? "es" : "en") :
+    toBuiltInLanguageCode(sourceLanguage);
+  let availability;
+  try {
+    availability = await Translator.availability({ sourceLanguage: source, targetLanguage: target });
+  } catch (e) {
+    availability = "unavailable";
+  }
+  return availability == "unavailable" ?
+    { ok: false, message: chrome.i18n.getMessage("statusUnsupported", [pair]) } :
+    { ok: true, message: chrome.i18n.getMessage("onPageCaption") };
+}
+
+function warningIcon() {
+  return `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M7 1.5l6 11H1zM7 6v3M7 10.8v.1" />
+    </svg>`;
+}
+
 function mouseIcon(pressedButton) {
   let pressedPath = pressedButton == "left" ?
     "M11 1A10 10 0 0 0 1 11V13H11Z" :
@@ -225,7 +294,45 @@ function createLanguageOpt(parent, key, value) {
   let option = document.createElement("option");
   option.value = value;
   option.innerHTML = key;
+  // Keep the plain name, the visible text may get an "on page" mark
+  option.dataset.name = option.textContent;
   parent.appendChild(option);
+}
+
+// Codes of the languages Chrome's built-in translator supports, filled once when the popup opens
+let builtInSupportedLanguages = new Set();
+
+function loadBuiltInSupportedLanguages() {
+  let codes = Array.from(languages.values());
+  Promise.all(codes.map(isBuiltInSupported)).then(function(results) {
+    builtInSupportedLanguages = new Set(codes.filter(function(code, i) {
+      return results[i];
+    }));
+  });
+}
+
+async function isBuiltInSupported(code) {
+  if (!("Translator" in self)) {
+    return false;
+  }
+  let target = toBuiltInLanguageCode(code);
+  // Availability is checked per pair, so pair the language with English (or English with Spanish)
+  let source = target == "en" ? "es" : "en";
+  try {
+    return await Translator.availability({ sourceLanguage: source, targetLanguage: target }) != "unavailable";
+  } catch (e) {
+    return false;
+  }
+}
+
+// Marks are shown only while a list is open: a closed list is too narrow for "Japanese · on page"
+function setLanguageMarks(select, show) {
+  let mark = chrome.i18n.getMessage("onPageMark");
+  Array.from(select.options).forEach(function(option) {
+    option.textContent = show && builtInSupportedLanguages.has(option.value) ?
+      `${option.dataset.name} · ${mark}` :
+      option.dataset.name;
+  });
 }
 
 let languages = new Map([

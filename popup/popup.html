@@ -55,7 +55,7 @@
         <label><input type="radio" name="display" value="google"><span data-i18n="displayGoogle"></span></label>
       </div>
       <div id="translator-page-options">
-        <p class="mode-caption" data-i18n="onPageCaption"></p>
+        <p id="translator-page-status" class="mode-caption status" aria-live="polite"></p>
         <label class="option">
           <span><span data-i18n="replaceText"></span><small data-i18n="replaceTextCaption"></small></span>
           <input id="translator-replace-text" class="switch" type="checkbox">
@@ -70,6 +70,7 @@
       </div>
     </section>
   </main>
+  <script src="../builtInLanguages.js" type="text/javascript"></script>
   <script src="popup-script.js" type="text/javascript"></script>
 </body>
 
