@@ -1,0 +1,41 @@
+<!DOCTYPE html><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 440px; height: 280px; overflow: hidden; }
+  body {
+    position: relative;
+    background: #1a73e8;
+    color: #fff;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .brand { position: absolute; left: 28px; top: 28px; display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 600; }
+  .brand img { width: 36px; height: 36px; border-radius: 8px; }
+  h1 { position: absolute; left: 28px; top: 92px; width: 190px; margin: 0; font-size: 27px; line-height: 1.15; font-weight: 700; letter-spacing: -0.02em; }
+  .sub { position: absolute; left: 28px; bottom: 28px; width: 180px; margin: 0; font-size: 13px; line-height: 1.35; opacity: 0.85; }
+
+  .page {
+    position: absolute; left: 236px; top: 40px; width: 230px; height: 200px; padding: 22px 20px;
+    background: #fff; border-radius: 10px 0 0 10px; color: #2b2b2b;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+    font-size: 15px; line-height: 1.8;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  }
+  .line { height: 8px; margin: 10px 0; border-radius: 4px; background: #e6e8eb; }
+  .selected { background: #b4d5fe; }
+  .tooltip {
+    position: absolute; left: 252px; top: 112px; padding: 9px 14px; white-space: nowrap;
+    background: #fff; color: #202124; border-radius: 6px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    font-size: 13px; line-height: 1.4;
+  }
+</style>
+<div class="brand"><img src="icons/icon-128.png" alt="">Translator</div>
+<h1>Translate any text with a click</h1>
+<p class="sub">On the page, offline, with Chrome's built-in translator</p>
+<div class="page" lang="ja">
+  <div class="line" style="width: 80%"></div>
+  <span class="selected">活版印刷の歴史</span>
+  <div class="line" style="width: 90%; margin-top: 64px"></div>
+  <div class="line" style="width: 70%"></div>
+</div>
+<div class="tooltip">History of printing</div>
