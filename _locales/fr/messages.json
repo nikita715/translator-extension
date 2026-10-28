@@ -1,0 +1,440 @@
+{
+  "extName": {
+    "message": "Translator – Traduire en un clic"
+  },
+  "extDescription": {
+    "message": "Traduisez mots et paragraphes en un clic, sur la page avec le traducteur hors ligne de Chrome ou dans Google Traduction."
+  },
+  "contextMenuTranslate": {
+    "message": "Traduire"
+  },
+  "translating": {
+    "message": "Traduction…"
+  },
+  "downloadingModel": {
+    "message": "Téléchargement du modèle de langue… $PERCENT$ %",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "Langue source"
+  },
+  "targetLanguage": {
+    "message": "Langue cible"
+  },
+  "swapLanguages": {
+    "message": "Inverser les langues"
+  },
+  "autoLanguage": {
+    "message": "Auto"
+  },
+  "onPageMark": {
+    "message": "sur la page"
+  },
+  "controls": {
+    "message": "Commandes"
+  },
+  "modeOff": {
+    "message": "Désactivé"
+  },
+  "modeDoubleClick": {
+    "message": "Double clic"
+  },
+  "modeTripleClick": {
+    "message": "Triple clic"
+  },
+  "requireKey": {
+    "message": "Exiger la touche $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "Clic droit sur la sélection → Traduire"
+  },
+  "hintDoubleClick": {
+    "message": "Double-cliquez sur un mot"
+  },
+  "hintTripleClick": {
+    "message": "Triple-cliquez sur un paragraphe"
+  },
+  "hintHoldDoubleClick": {
+    "message": "Maintenez $KEY$ et double-cliquez sur un mot",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "Maintenez $KEY$ et triple-cliquez sur un paragraphe",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "Activer ce mode"
+  },
+  "showTranslation": {
+    "message": "Afficher la traduction"
+  },
+  "displayOnPage": {
+    "message": "Sur la page"
+  },
+  "displayGoogle": {
+    "message": "Google Traduction"
+  },
+  "onPageCaption": {
+    "message": "Traducteur intégré de Chrome, hors ligne"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$ : traduction impossible sur la page, Google Traduction s'ouvrira",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "Ce navigateur n'a pas de traducteur intégré, Google Traduction s'ouvrira"
+  },
+  "statusSameLanguage": {
+    "message": "Les langues source et cible sont identiques"
+  },
+  "replaceText": {
+    "message": "Remplacer le texte sélectionné"
+  },
+  "replaceTextCaption": {
+    "message": "Afficher la traduction à la place de l'original"
+  },
+  "googleCaption": {
+    "message": "Ouvre translate.google.com"
+  },
+  "reuseTab": {
+    "message": "Réutiliser l'onglet Google Traduction"
+  },
+  "reuseTabCaption": {
+    "message": "Ne pas ouvrir un nouvel onglet à chaque traduction"
+  },
+  "lang_ab": {
+    "message": "Abkhaze"
+  },
+  "lang_ace": {
+    "message": "Aceh"
+  },
+  "lang_ach": {
+    "message": "Acholi"
+  },
+  "lang_aa": {
+    "message": "Afar"
+  },
+  "lang_alz": {
+    "message": "Alur"
+  },
+  "lang_av": {
+    "message": "Avar"
+  },
+  "lang_awa": {
+    "message": "Awadhi"
+  },
+  "lang_ban": {
+    "message": "Balinais"
+  },
+  "lang_bal": {
+    "message": "Baloutchi"
+  },
+  "lang_bci": {
+    "message": "Baoulé"
+  },
+  "lang_ba": {
+    "message": "Bachkir"
+  },
+  "lang_btx": {
+    "message": "Batak Karo"
+  },
+  "lang_bts": {
+    "message": "Batak Simalungun"
+  },
+  "lang_bbc": {
+    "message": "Batak Toba"
+  },
+  "lang_bem": {
+    "message": "Bemba"
+  },
+  "lang_bew": {
+    "message": "Betawi"
+  },
+  "lang_bik": {
+    "message": "Bicol"
+  },
+  "lang_bua": {
+    "message": "Bouriate"
+  },
+  "lang_ch": {
+    "message": "Chamorro"
+  },
+  "lang_ce": {
+    "message": "Tchétchène"
+  },
+  "lang_chk": {
+    "message": "Chuuk"
+  },
+  "lang_cv": {
+    "message": "Tchouvache"
+  },
+  "lang_crh": {
+    "message": "Tatar de Crimée (cyrillique)"
+  },
+  "lang_crh_Latn": {
+    "message": "Tatar de Crimée (latin)"
+  },
+  "lang_din": {
+    "message": "Dinka"
+  },
+  "lang_dov": {
+    "message": "Dombe"
+  },
+  "lang_dyu": {
+    "message": "Dioula"
+  },
+  "lang_dz": {
+    "message": "Dzongkha"
+  },
+  "lang_fj": {
+    "message": "Fidjien"
+  },
+  "lang_fon": {
+    "message": "Fon"
+  },
+  "lang_fur": {
+    "message": "Frioulan"
+  },
+  "lang_ff": {
+    "message": "Peul"
+  },
+  "lang_gaa": {
+    "message": "Ga"
+  },
+  "lang_cnh": {
+    "message": "Hakha Chin"
+  },
+  "lang_hil": {
+    "message": "Hiligaïnon"
+  },
+  "lang_hrx": {
+    "message": "Hunsrik"
+  },
+  "lang_iba": {
+    "message": "Iban"
+  },
+  "lang_iu_Latn": {
+    "message": "Inuktut (latin)"
+  },
+  "lang_iu": {
+    "message": "Inuktut (syllabique)"
+  },
+  "lang_jam": {
+    "message": "Patois jamaïcain"
+  },
+  "lang_kac": {
+    "message": "Jingpo"
+  },
+  "lang_kl": {
+    "message": "Kalaallisut"
+  },
+  "lang_kr": {
+    "message": "Kanuri"
+  },
+  "lang_pam": {
+    "message": "Pampangan"
+  },
+  "lang_kha": {
+    "message": "Khasi"
+  },
+  "lang_cgg": {
+    "message": "Kiga"
+  },
+  "lang_kg": {
+    "message": "Kikongo"
+  },
+  "lang_ktu": {
+    "message": "Kituba"
+  },
+  "lang_trp": {
+    "message": "Kok Borok"
+  },
+  "lang_kv": {
+    "message": "Komi"
+  },
+  "lang_ltg": {
+    "message": "Latgalien"
+  },
+  "lang_lij": {
+    "message": "Ligure"
+  },
+  "lang_li": {
+    "message": "Limbourgeois"
+  },
+  "lang_lmo": {
+    "message": "Lombard"
+  },
+  "lang_luo": {
+    "message": "Luo"
+  },
+  "lang_mad": {
+    "message": "Madurais"
+  },
+  "lang_mak": {
+    "message": "Macassar"
+  },
+  "lang_mam": {
+    "message": "Mam"
+  },
+  "lang_gv": {
+    "message": "Manx"
+  },
+  "lang_mh": {
+    "message": "Marshallais"
+  },
+  "lang_mwr": {
+    "message": "Marwari"
+  },
+  "lang_mfe": {
+    "message": "Créole mauricien"
+  },
+  "lang_chm": {
+    "message": "Mari des prairies"
+  },
+  "lang_min": {
+    "message": "Minangkabau"
+  },
+  "lang_nhe": {
+    "message": "Nahuatl (Huasteca oriental)"
+  },
+  "lang_ndc_ZW": {
+    "message": "Ndau"
+  },
+  "lang_nr": {
+    "message": "Ndébélé (Sud)"
+  },
+  "lang_new": {
+    "message": "Nepalbhasa (Newari)"
+  },
+  "lang_nus": {
+    "message": "Nuer"
+  },
+  "lang_os": {
+    "message": "Ossète"
+  },
+  "lang_pag": {
+    "message": "Pangasinan"
+  },
+  "lang_pap": {
+    "message": "Papiamento"
+  },
+  "lang_kek": {
+    "message": "Q'eqchi'"
+  },
+  "lang_rom": {
+    "message": "Romani"
+  },
+  "lang_rn": {
+    "message": "Roundi"
+  },
+  "lang_se": {
+    "message": "Same (Nord)"
+  },
+  "lang_sg": {
+    "message": "Sango"
+  },
+  "lang_sat_Latn": {
+    "message": "Santali (latin)"
+  },
+  "lang_sat": {
+    "message": "Santali (ol chiki)"
+  },
+  "lang_crs": {
+    "message": "Créole seychellois"
+  },
+  "lang_shn": {
+    "message": "Shan"
+  },
+  "lang_scn": {
+    "message": "Sicilien"
+  },
+  "lang_szl": {
+    "message": "Silésien"
+  },
+  "lang_sus": {
+    "message": "Soussou"
+  },
+  "lang_ss": {
+    "message": "Swati"
+  },
+  "lang_ty": {
+    "message": "Tahitien"
+  },
+  "lang_ber_Latn": {
+    "message": "Tamazight"
+  },
+  "lang_ber": {
+    "message": "Tamazight (Tifinagh)"
+  },
+  "lang_tet": {
+    "message": "Tétoum"
+  },
+  "lang_bo": {
+    "message": "Tibétain"
+  },
+  "lang_tiv": {
+    "message": "Tiv"
+  },
+  "lang_tpi": {
+    "message": "Tok pisin"
+  },
+  "lang_lua": {
+    "message": "Tshiluba"
+  },
+  "lang_tcy": {
+    "message": "Toulou"
+  },
+  "lang_tum": {
+    "message": "Tumbuka"
+  },
+  "lang_tyv": {
+    "message": "Touvain"
+  },
+  "lang_udm": {
+    "message": "Oudmourte"
+  },
+  "lang_ve": {
+    "message": "Venda"
+  },
+  "lang_vec": {
+    "message": "Vénitien"
+  },
+  "lang_war": {
+    "message": "Waray-waray"
+  },
+  "lang_sah": {
+    "message": "Yakoute"
+  },
+  "lang_yua": {
+    "message": "Maya yucatèque"
+  },
+  "lang_zap": {
+    "message": "Zapotèque"
+  }
+}

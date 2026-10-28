@@ -1,0 +1,446 @@
+{
+  "extName": {
+    "message": "Translator – Terjemahkan dengan Sekali Klik"
+  },
+  "extDescription": {
+    "message": "Terjemahkan kata dan paragraf dengan sekali klik, langsung di halaman dengan penerjemah offline Chrome atau di Google Terjemahan."
+  },
+  "contextMenuTranslate": {
+    "message": "Terjemahkan"
+  },
+  "translating": {
+    "message": "Menerjemahkan…"
+  },
+  "downloadingModel": {
+    "message": "Mengunduh model bahasa… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "Bahasa sumber"
+  },
+  "targetLanguage": {
+    "message": "Bahasa target"
+  },
+  "swapLanguages": {
+    "message": "Tukar bahasa"
+  },
+  "autoLanguage": {
+    "message": "Otomatis"
+  },
+  "onPageMark": {
+    "message": "di halaman"
+  },
+  "controls": {
+    "message": "Kontrol"
+  },
+  "modeOff": {
+    "message": "Mati"
+  },
+  "modeDoubleClick": {
+    "message": "Klik 2 kali"
+  },
+  "modeTripleClick": {
+    "message": "Klik 3 kali"
+  },
+  "requireKey": {
+    "message": "Harus menahan tombol $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "Klik kanan teks yang dipilih → Terjemahkan"
+  },
+  "hintDoubleClick": {
+    "message": "Klik dua kali pada kata"
+  },
+  "hintTripleClick": {
+    "message": "Klik tiga kali pada paragraf"
+  },
+  "hintHoldDoubleClick": {
+    "message": "Tahan $KEY$ dan klik dua kali pada kata",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "Tahan $KEY$ dan klik tiga kali pada paragraf",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "Aktifkan mode ini"
+  },
+  "showTranslation": {
+    "message": "Tampilkan terjemahan"
+  },
+  "displayOnPage": {
+    "message": "Di halaman"
+  },
+  "displayGoogle": {
+    "message": "Google Terjemahan"
+  },
+  "onPageCaption": {
+    "message": "Penerjemah bawaan Chrome, berfungsi offline"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$: tidak dapat diterjemahkan di halaman, Google Terjemahan akan dibuka",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "Browser ini tidak memiliki penerjemah bawaan, Google Terjemahan akan dibuka"
+  },
+  "statusSameLanguage": {
+    "message": "Bahasa sumber dan bahasa target sama"
+  },
+  "replaceText": {
+    "message": "Ganti teks yang dipilih"
+  },
+  "replaceTextCaption": {
+    "message": "Tampilkan terjemahan di tempat teks asli"
+  },
+  "googleCaption": {
+    "message": "Membuka translate.google.com"
+  },
+  "reuseTab": {
+    "message": "Gunakan ulang tab Google Terjemahan"
+  },
+  "reuseTabCaption": {
+    "message": "Jangan buka tab baru untuk setiap terjemahan"
+  },
+  "lang_ab": {
+    "message": "Abkhaz"
+  },
+  "lang_ace": {
+    "message": "Aceh"
+  },
+  "lang_ach": {
+    "message": "Acoli"
+  },
+  "lang_aa": {
+    "message": "Afar"
+  },
+  "lang_alz": {
+    "message": "Alur"
+  },
+  "lang_av": {
+    "message": "Avar"
+  },
+  "lang_awa": {
+    "message": "Awadhi"
+  },
+  "lang_ban": {
+    "message": "Bali"
+  },
+  "lang_bal": {
+    "message": "Baluchi"
+  },
+  "lang_bci": {
+    "message": "Baoulé"
+  },
+  "lang_ba": {
+    "message": "Bashkir"
+  },
+  "lang_btx": {
+    "message": "Batak Karo"
+  },
+  "lang_bts": {
+    "message": "Batak Simalungun"
+  },
+  "lang_bbc": {
+    "message": "Batak Toba"
+  },
+  "lang_bem": {
+    "message": "Bemba"
+  },
+  "lang_bew": {
+    "message": "Betawi"
+  },
+  "lang_bik": {
+    "message": "Bikol"
+  },
+  "lang_bua": {
+    "message": "Buriat"
+  },
+  "lang_ch": {
+    "message": "Chamorro"
+  },
+  "lang_ce": {
+    "message": "Chechen"
+  },
+  "lang_chk": {
+    "message": "Chuuke"
+  },
+  "lang_cv": {
+    "message": "Chuvash"
+  },
+  "lang_crh": {
+    "message": "Tatar Krimea (Sirilik)"
+  },
+  "lang_crh_Latn": {
+    "message": "Tatar Krimea (Latin)"
+  },
+  "lang_din": {
+    "message": "Dinka"
+  },
+  "lang_dov": {
+    "message": "Dombe"
+  },
+  "lang_dyu": {
+    "message": "Dyula"
+  },
+  "lang_dz": {
+    "message": "Dzongkha"
+  },
+  "lang_fj": {
+    "message": "Fiji"
+  },
+  "lang_fon": {
+    "message": "Fon"
+  },
+  "lang_fur": {
+    "message": "Friuli"
+  },
+  "lang_ff": {
+    "message": "Fulani"
+  },
+  "lang_gaa": {
+    "message": "Ga"
+  },
+  "lang_cnh": {
+    "message": "Hakha Chin"
+  },
+  "lang_hil": {
+    "message": "Hiligaynon"
+  },
+  "lang_hrx": {
+    "message": "Hunsrik"
+  },
+  "lang_iba": {
+    "message": "Iban"
+  },
+  "lang_iu_Latn": {
+    "message": "Inuktut (Latin)"
+  },
+  "lang_iu": {
+    "message": "Inuktut (Silabis)"
+  },
+  "lang_jam": {
+    "message": "Patois Jamaika"
+  },
+  "lang_kac": {
+    "message": "Jingpo"
+  },
+  "lang_kl": {
+    "message": "Kalaallisut"
+  },
+  "lang_kr": {
+    "message": "Kanuri"
+  },
+  "lang_pam": {
+    "message": "Pampanga"
+  },
+  "lang_kha": {
+    "message": "Khasi"
+  },
+  "lang_cgg": {
+    "message": "Kiga"
+  },
+  "lang_kg": {
+    "message": "Kongo"
+  },
+  "lang_ktu": {
+    "message": "Kituba"
+  },
+  "lang_trp": {
+    "message": "Kokborok"
+  },
+  "lang_kv": {
+    "message": "Komi"
+  },
+  "lang_ltg": {
+    "message": "Latgalia"
+  },
+  "lang_lij": {
+    "message": "Liguria"
+  },
+  "lang_li": {
+    "message": "Limburgia"
+  },
+  "lang_lmo": {
+    "message": "Lombard"
+  },
+  "lang_luo": {
+    "message": "Luo"
+  },
+  "lang_mad": {
+    "message": "Madura"
+  },
+  "lang_mak": {
+    "message": "Makassar"
+  },
+  "lang_ms_Arab": {
+    "message": "Melayu (Jawi)"
+  },
+  "lang_mam": {
+    "message": "Mam"
+  },
+  "lang_gv": {
+    "message": "Manx"
+  },
+  "lang_mh": {
+    "message": "Marshall"
+  },
+  "lang_mwr": {
+    "message": "Marwari"
+  },
+  "lang_mfe": {
+    "message": "Kreol Mauritius"
+  },
+  "lang_chm": {
+    "message": "Meadow Mari"
+  },
+  "lang_min": {
+    "message": "Minangkabau"
+  },
+  "lang_nhe": {
+    "message": "Nahuatl (Huasteca Timur)"
+  },
+  "lang_ndc_ZW": {
+    "message": "Ndau"
+  },
+  "lang_nr": {
+    "message": "Ndebele (Selatan)"
+  },
+  "lang_new": {
+    "message": "Nepal Bhasa (Newari)"
+  },
+  "lang_nus": {
+    "message": "Nuer"
+  },
+  "lang_os": {
+    "message": "Ossetia"
+  },
+  "lang_pag": {
+    "message": "Pangasina"
+  },
+  "lang_pap": {
+    "message": "Papiamento"
+  },
+  "lang_pa_Arab": {
+    "message": "Punjabi (Shahmukhi)"
+  },
+  "lang_kek": {
+    "message": "Kekchi"
+  },
+  "lang_rom": {
+    "message": "Romani"
+  },
+  "lang_rn": {
+    "message": "Rundi"
+  },
+  "lang_se": {
+    "message": "Sami (Utara)"
+  },
+  "lang_sg": {
+    "message": "Sango"
+  },
+  "lang_sat_Latn": {
+    "message": "Santali (Latin)"
+  },
+  "lang_sat": {
+    "message": "Santali (Chiki Lama)"
+  },
+  "lang_crs": {
+    "message": "Kreol Seselwa"
+  },
+  "lang_shn": {
+    "message": "Shan"
+  },
+  "lang_scn": {
+    "message": "Sisilia"
+  },
+  "lang_szl": {
+    "message": "Silesia"
+  },
+  "lang_sus": {
+    "message": "Susu"
+  },
+  "lang_ss": {
+    "message": "Swati"
+  },
+  "lang_ty": {
+    "message": "Tahiti"
+  },
+  "lang_ber_Latn": {
+    "message": "Tamazight"
+  },
+  "lang_ber": {
+    "message": "Tamazight (Tifinagh)"
+  },
+  "lang_tet": {
+    "message": "Tetun"
+  },
+  "lang_bo": {
+    "message": "Tibet"
+  },
+  "lang_tiv": {
+    "message": "Tiv"
+  },
+  "lang_tpi": {
+    "message": "Tok Pisin"
+  },
+  "lang_lua": {
+    "message": "Tshiluba"
+  },
+  "lang_tcy": {
+    "message": "Tulu"
+  },
+  "lang_tum": {
+    "message": "Tumbuka"
+  },
+  "lang_tyv": {
+    "message": "Tuvinia"
+  },
+  "lang_udm": {
+    "message": "Udmurt"
+  },
+  "lang_ve": {
+    "message": "Venda"
+  },
+  "lang_vec": {
+    "message": "Venesia"
+  },
+  "lang_war": {
+    "message": "Warai"
+  },
+  "lang_sah": {
+    "message": "Yakut"
+  },
+  "lang_yua": {
+    "message": "Maya Yukatek"
+  },
+  "lang_zap": {
+    "message": "Zapotek"
+  }
+}

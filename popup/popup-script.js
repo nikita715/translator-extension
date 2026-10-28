@@ -572,6 +572,8 @@ let languages = new Map([
   ["Urdu", "ur"],
   ["Uyghur", "ug"],
   ["Uzbek", "uz"],
+  ["Venda", "ve"],
+  ["Venetian", "vec"],
   ["Vietnamese", "vi"],
   ["Waray", "war"],
   ["Welsh", "cy"],

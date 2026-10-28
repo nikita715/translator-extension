@@ -1,0 +1,443 @@
+{
+  "extName": {
+    "message": "Translator – Dịch chỉ với một cú nhấp"
+  },
+  "extDescription": {
+    "message": "Dịch từ và đoạn văn chỉ với một cú nhấp, ngay trên trang bằng trình dịch ngoại tuyến của Chrome hoặc trong Google Dịch."
+  },
+  "contextMenuTranslate": {
+    "message": "Dịch"
+  },
+  "translating": {
+    "message": "Đang dịch…"
+  },
+  "downloadingModel": {
+    "message": "Đang tải mô hình ngôn ngữ… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "sourceLanguage": {
+    "message": "Ngôn ngữ nguồn"
+  },
+  "targetLanguage": {
+    "message": "Ngôn ngữ đích"
+  },
+  "swapLanguages": {
+    "message": "Hoán đổi ngôn ngữ"
+  },
+  "autoLanguage": {
+    "message": "Tự động"
+  },
+  "onPageMark": {
+    "message": "trên trang"
+  },
+  "controls": {
+    "message": "Điều khiển"
+  },
+  "modeOff": {
+    "message": "Tắt"
+  },
+  "modeDoubleClick": {
+    "message": "Nhấp đúp"
+  },
+  "modeTripleClick": {
+    "message": "Nhấp ba lần"
+  },
+  "requireKey": {
+    "message": "Yêu cầu giữ phím $KEY$",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintOff": {
+    "message": "Nhấp chuột phải vào phần đã chọn → Dịch"
+  },
+  "hintDoubleClick": {
+    "message": "Nhấp đúp vào một từ"
+  },
+  "hintTripleClick": {
+    "message": "Nhấp ba lần vào một đoạn văn"
+  },
+  "hintHoldDoubleClick": {
+    "message": "Giữ $KEY$ và nhấp đúp vào một từ",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "hintHoldTripleClick": {
+    "message": "Giữ $KEY$ và nhấp ba lần vào một đoạn văn",
+    "placeholders": {
+      "key": {
+        "content": "$1",
+        "example": "Alt"
+      }
+    }
+  },
+  "switchToMode": {
+    "message": "Bật chế độ này"
+  },
+  "showTranslation": {
+    "message": "Hiển thị bản dịch"
+  },
+  "displayOnPage": {
+    "message": "Trên trang"
+  },
+  "displayGoogle": {
+    "message": "Google Dịch"
+  },
+  "onPageCaption": {
+    "message": "Trình dịch tích hợp của Chrome, ngoại tuyến"
+  },
+  "statusUnsupported": {
+    "message": "$PAIR$: không thể dịch trên trang, Google Dịch sẽ được mở",
+    "placeholders": {
+      "pair": {
+        "content": "$1",
+        "example": "Japanese → English"
+      }
+    }
+  },
+  "statusNoBuiltIn": {
+    "message": "Trình duyệt này không có trình dịch tích hợp, Google Dịch sẽ được mở"
+  },
+  "statusSameLanguage": {
+    "message": "Ngôn ngữ nguồn và ngôn ngữ đích giống nhau"
+  },
+  "replaceText": {
+    "message": "Thay thế văn bản đã chọn"
+  },
+  "replaceTextCaption": {
+    "message": "Hiển thị bản dịch thay cho văn bản gốc"
+  },
+  "googleCaption": {
+    "message": "Mở translate.google.com"
+  },
+  "reuseTab": {
+    "message": "Dùng lại thẻ Google Dịch"
+  },
+  "reuseTabCaption": {
+    "message": "Không mở thẻ mới cho mỗi lần dịch"
+  },
+  "lang_ab": {
+    "message": "Tiếng Abkhaz"
+  },
+  "lang_ace": {
+    "message": "Tiếng Aceh"
+  },
+  "lang_ach": {
+    "message": "Tiếng Acholi"
+  },
+  "lang_aa": {
+    "message": "Tiếng Afar"
+  },
+  "lang_alz": {
+    "message": "Tiếng Alur"
+  },
+  "lang_av": {
+    "message": "Tiếng Avar"
+  },
+  "lang_awa": {
+    "message": "Tiếng Awadhi"
+  },
+  "lang_ban": {
+    "message": "Tiếng Bali"
+  },
+  "lang_bal": {
+    "message": "Tiếng Baluchi"
+  },
+  "lang_bci": {
+    "message": "Tiếng Baoulé"
+  },
+  "lang_ba": {
+    "message": "Tiếng Bashkir"
+  },
+  "lang_btx": {
+    "message": "Tiếng Batak Karo"
+  },
+  "lang_bts": {
+    "message": "Tiếng Batak Simalungun"
+  },
+  "lang_bbc": {
+    "message": "Tiếng Batak Toba"
+  },
+  "lang_bem": {
+    "message": "Tiếng Bemba"
+  },
+  "lang_bew": {
+    "message": "Tiếng Betawi"
+  },
+  "lang_bik": {
+    "message": "Tiếng Bikol"
+  },
+  "lang_bua": {
+    "message": "Tiếng Buryat"
+  },
+  "lang_ch": {
+    "message": "Tiếng Chamorro"
+  },
+  "lang_ce": {
+    "message": "Tiếng Chechen"
+  },
+  "lang_chk": {
+    "message": "Tiếng Chuuk"
+  },
+  "lang_cv": {
+    "message": "Tiếng Chuvash"
+  },
+  "lang_crh": {
+    "message": "Tiếng Tatar Krym (Kirin)"
+  },
+  "lang_crh_Latn": {
+    "message": "Tiếng Tiếng Tatar Krym (Latinh)"
+  },
+  "lang_din": {
+    "message": "Tiếng Dinka"
+  },
+  "lang_dov": {
+    "message": "Tiếng Dombe"
+  },
+  "lang_dyu": {
+    "message": "Tiếng Dyula"
+  },
+  "lang_dz": {
+    "message": "Tiếng Dzongkha"
+  },
+  "lang_fj": {
+    "message": "Tiếng Fiji"
+  },
+  "lang_fon": {
+    "message": "Tiếng Fon"
+  },
+  "lang_fur": {
+    "message": "Tiếng Friuli"
+  },
+  "lang_ff": {
+    "message": "Tiếng Fulani"
+  },
+  "lang_gaa": {
+    "message": "Tiếng Gaa"
+  },
+  "lang_cnh": {
+    "message": "Tiếng Hakha Chin"
+  },
+  "lang_hil": {
+    "message": "Tiếng Hiligaynon"
+  },
+  "lang_hrx": {
+    "message": "Tiếng Hunsrik"
+  },
+  "lang_iba": {
+    "message": "Tiếng Iban"
+  },
+  "lang_iu_Latn": {
+    "message": "Tiếng Tiếng Inuktut (Latinh)"
+  },
+  "lang_iu": {
+    "message": "Tiếng Tiếng Inuktut (Âm tiết)"
+  },
+  "lang_jam": {
+    "message": "Tiếng Patois Jamaica"
+  },
+  "lang_kac": {
+    "message": "Tiếng Jingpo"
+  },
+  "lang_kl": {
+    "message": "Tiếng Kalaallisut"
+  },
+  "lang_kr": {
+    "message": "Tiếng Kanuri"
+  },
+  "lang_pam": {
+    "message": "Tiếng Kapampangan"
+  },
+  "lang_kha": {
+    "message": "Tiếng Khasi"
+  },
+  "lang_cgg": {
+    "message": "Tiếng Kiga"
+  },
+  "lang_kg": {
+    "message": "Tiếng Kikongo"
+  },
+  "lang_ktu": {
+    "message": "Tiếng Kituba"
+  },
+  "lang_trp": {
+    "message": "Tiếng Kokborok"
+  },
+  "lang_kv": {
+    "message": "Tiếng Komi"
+  },
+  "lang_kri": {
+    "message": "Tiếng Krio"
+  },
+  "lang_ltg": {
+    "message": "Tiếng Latgale"
+  },
+  "lang_lij": {
+    "message": "Tiếng Liguria"
+  },
+  "lang_li": {
+    "message": "Tiếng Limburg"
+  },
+  "lang_lmo": {
+    "message": "Tiếng Lombard"
+  },
+  "lang_luo": {
+    "message": "Tiếng Luo"
+  },
+  "lang_mad": {
+    "message": "Tiếng Madura"
+  },
+  "lang_mak": {
+    "message": "Tiếng Makassar"
+  },
+  "lang_mam": {
+    "message": "Tiếng Mam"
+  },
+  "lang_gv": {
+    "message": "Tiếng Manx"
+  },
+  "lang_mh": {
+    "message": "Tiếng Marshall"
+  },
+  "lang_mwr": {
+    "message": "Tiếng Marwadi"
+  },
+  "lang_mfe": {
+    "message": "Tiếng Mauritian Creole"
+  },
+  "lang_chm": {
+    "message": "Tiếng Mari đồng cỏ"
+  },
+  "lang_min": {
+    "message": "Tiếng Minang"
+  },
+  "lang_nhe": {
+    "message": "Tiếng Nahuatl (Đông Huasteca)"
+  },
+  "lang_ndc_ZW": {
+    "message": "Tiếng Ndau"
+  },
+  "lang_nr": {
+    "message": "Tiếng Nam Ndebele"
+  },
+  "lang_new": {
+    "message": "Tiếng Nepal Bhasa (Newar)"
+  },
+  "lang_nus": {
+    "message": "Tiếng Nuer"
+  },
+  "lang_os": {
+    "message": "Tiếng Ossetia"
+  },
+  "lang_pag": {
+    "message": "Tiếng Pangasinan"
+  },
+  "lang_pap": {
+    "message": "Tiếng Papiamento"
+  },
+  "lang_kek": {
+    "message": "Tiếng Q'eqchi'"
+  },
+  "lang_rom": {
+    "message": "Tiếng Romani"
+  },
+  "lang_rn": {
+    "message": "Tiếng Rundi"
+  },
+  "lang_se": {
+    "message": "Tiếng Bắc Sami"
+  },
+  "lang_sg": {
+    "message": "Tiếng Sango"
+  },
+  "lang_sat_Latn": {
+    "message": "Tiếng Tiếng Santal (Latinh)"
+  },
+  "lang_sat": {
+    "message": "Tiếng Tiếng Santal (Ol Chiki)"
+  },
+  "lang_crs": {
+    "message": "Tiếng Creole Seychelles"
+  },
+  "lang_shn": {
+    "message": "Tiếng Shan"
+  },
+  "lang_scn": {
+    "message": "Tiếng Sicily"
+  },
+  "lang_szl": {
+    "message": "Tiếng Silesia"
+  },
+  "lang_sus": {
+    "message": "Tiếng Susu"
+  },
+  "lang_ss": {
+    "message": "Tiếng Swati"
+  },
+  "lang_ty": {
+    "message": "Tiếng Tahiti"
+  },
+  "lang_ber_Latn": {
+    "message": "Tiếng Tamazight"
+  },
+  "lang_ber": {
+    "message": "Tiếng Tamazight (Tifinagh)"
+  },
+  "lang_tet": {
+    "message": "Tiếng Tetum"
+  },
+  "lang_bo": {
+    "message": "Tiếng Tây Tạng"
+  },
+  "lang_tiv": {
+    "message": "Tiếng Tiv"
+  },
+  "lang_tpi": {
+    "message": "Tiếng Tok Pisin"
+  },
+  "lang_lua": {
+    "message": "Tiếng Tshiluba"
+  },
+  "lang_tcy": {
+    "message": "Tiếng Tulu"
+  },
+  "lang_tum": {
+    "message": "Tiếng Tumbuka"
+  },
+  "lang_tyv": {
+    "message": "Tiếng Tuva"
+  },
+  "lang_udm": {
+    "message": "Tiếng Udmurt"
+  },
+  "lang_ve": {
+    "message": "Tiếng Venda"
+  },
+  "lang_vec": {
+    "message": "Tiếng Venice"
+  },
+  "lang_war": {
+    "message": "Tiếng Waray"
+  },
+  "lang_sah": {
+    "message": "Tiếng Yakut"
+  },
+  "lang_yua": {
+    "message": "Tiếng Maya Yucatec"
+  },
+  "lang_zap": {
+    "message": "Tiếng Zapotec"
+  }
+}
