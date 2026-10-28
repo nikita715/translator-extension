@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Traducerea pe pagină a eșuat"
   },
-  "engineUnsupported": {
-    "message": "Motorul $ENGINE$ nu acceptă limbile selectate",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Niciun motor nu acceptă limbile selectate"
+  "languagesUnsupported": {
+    "message": "Traducerea între aceste limbi nu este acceptată"
   },
   "languageNotDetected": {
     "message": "Nu s-a putut detecta limba textului. Alege limba sursă în extensie"

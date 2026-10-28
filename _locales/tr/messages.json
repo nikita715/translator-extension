@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Sayfada çevrilemedi"
   },
-  "engineUnsupported": {
-    "message": "$ENGINE$ motoru seçilen dilleri desteklemiyor",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Seçilen dilleri hiçbir motor desteklemiyor"
+  "languagesUnsupported": {
+    "message": "Bu diller arasında çeviri desteklenmiyor"
   },
   "languageNotDetected": {
     "message": "Metnin dili algılanamadı. Kaynak dili uzantıda seçin"

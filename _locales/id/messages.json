@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Tidak dapat menerjemahkan di halaman"
   },
-  "engineUnsupported": {
-    "message": "Mesin $ENGINE$ tidak mendukung bahasa yang dipilih",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Tidak ada mesin yang mendukung bahasa yang dipilih"
+  "languagesUnsupported": {
+    "message": "Terjemahan antarbahasa ini tidak didukung"
   },
   "languageNotDetected": {
     "message": "Bahasa teks tidak terdeteksi. Pilih bahasa sumber di ekstensi"

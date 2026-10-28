@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "No se pudo traducir en la página"
   },
-  "engineUnsupported": {
-    "message": "El motor $ENGINE$ no admite los idiomas seleccionados",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Ningún motor admite los idiomas seleccionados"
+  "languagesUnsupported": {
+    "message": "No se admite la traducción entre estos idiomas"
   },
   "languageNotDetected": {
     "message": "No se pudo detectar el idioma del texto. Elige el idioma de origen en la extensión"

@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Couldn't translate on the page"
   },
-  "engineUnsupported": {
-    "message": "The $ENGINE$ engine doesn't support the selected languages",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "None of the engines supports the selected languages"
+  "languagesUnsupported": {
+    "message": "Translation between these languages isn't supported"
   },
   "languageNotDetected": {
     "message": "Couldn't detect the language of the text. Choose the source language in the extension"

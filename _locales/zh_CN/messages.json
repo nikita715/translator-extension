@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "无法在页面上翻译"
   },
-  "engineUnsupported": {
-    "message": "$ENGINE$ 引擎不支持所选语言",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "没有引擎支持所选语言"
+  "languagesUnsupported": {
+    "message": "不支持这些语言之间的翻译"
   },
   "languageNotDetected": {
     "message": "无法检测文本语言。请在扩展程序中选择源语言"

@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Не вдалося перекласти на сторінці"
   },
-  "engineUnsupported": {
-    "message": "Рушій $ENGINE$ не підтримує вибрані мови",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Жоден рушій не підтримує вибрані мови"
+  "languagesUnsupported": {
+    "message": "Переклад цих мов не підтримується"
   },
   "languageNotDetected": {
     "message": "Не вдалося визначити мову тексту. Виберіть мову оригіналу в розширенні"

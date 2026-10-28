@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Không thể dịch trên trang"
   },
-  "engineUnsupported": {
-    "message": "Công cụ $ENGINE$ không hỗ trợ các ngôn ngữ đã chọn",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Không công cụ nào hỗ trợ các ngôn ngữ đã chọn"
+  "languagesUnsupported": {
+    "message": "Không hỗ trợ dịch giữa các ngôn ngữ này"
   },
   "languageNotDetected": {
     "message": "Không phát hiện được ngôn ngữ của văn bản. Hãy chọn ngôn ngữ nguồn trong tiện ích"

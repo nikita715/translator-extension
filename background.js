@@ -43,7 +43,7 @@ let defaultPropertyValues = {
   "translator_useOpenTab": true,
   "translator_useBuiltIn": true,
   "translator_replaceText": false,
-  "translator_googleFallback": true,
+  "translator_googleFallback": false,
   "translator_askBeforeDownload": true,
   "translator_engine": "chrome"
 }
@@ -197,8 +197,7 @@ function translate(text, action, altActive, force, tabId) {
         let sourceLanguage = item["translator_sourceLanguage"];
         let targetLanguage = item["translator_targetLanguage"];
         let useOpenTab = item["translator_useOpenTab"];
-        // Older installs have no value saved, they keep falling back to Google Translate
-        let googleFallback = item["translator_googleFallback"] != false;
+        let googleFallback = item["translator_googleFallback"] == true;
         if (item["translator_useBuiltIn"]) {
           if (tabId == null) {
             if (googleFallback) {

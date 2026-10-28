@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "تعذّرت الترجمة في الصفحة"
   },
-  "engineUnsupported": {
-    "message": "المحرك $ENGINE$ لا يدعم اللغات المحددة",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "لا يدعم أي محرك اللغات المحددة"
+  "languagesUnsupported": {
+    "message": "الترجمة بين هذه اللغات غير مدعومة"
   },
   "languageNotDetected": {
     "message": "تعذّر اكتشاف لغة النص. اختر اللغة المصدر في الإضافة"

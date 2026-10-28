@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Det gick inte att översätta på sidan"
   },
-  "engineUnsupported": {
-    "message": "Motorn $ENGINE$ stöder inte de valda språken",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Ingen motor stöder de valda språken"
+  "languagesUnsupported": {
+    "message": "Översättning mellan de här språken stöds inte"
   },
   "languageNotDetected": {
     "message": "Textens språk kunde inte identifieras. Välj källspråk i tillägget"

@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "無法在網頁上翻譯"
   },
-  "engineUnsupported": {
-    "message": "$ENGINE$ 引擎不支援所選語言",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "沒有引擎支援所選語言"
+  "languagesUnsupported": {
+    "message": "不支援這些語言之間的翻譯"
   },
   "languageNotDetected": {
     "message": "無法偵測文字語言。請在擴充功能中選擇來源語言"

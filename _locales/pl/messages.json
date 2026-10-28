@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Nie udało się przetłumaczyć na stronie"
   },
-  "engineUnsupported": {
-    "message": "Silnik $ENGINE$ nie obsługuje wybranych języków",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Żaden silnik nie obsługuje wybranych języków"
+  "languagesUnsupported": {
+    "message": "Tłumaczenie między tymi językami nie jest obsługiwane"
   },
   "languageNotDetected": {
     "message": "Nie udało się wykryć języka tekstu. Wybierz język źródłowy w rozszerzeniu"

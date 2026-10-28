@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "ページ上で翻訳できませんでした"
   },
-  "engineUnsupported": {
-    "message": "$ENGINE$ エンジンは選択した言語に対応していません",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "選択した言語に対応するエンジンがありません"
+  "languagesUnsupported": {
+    "message": "これらの言語間の翻訳には対応していません"
   },
   "languageNotDetected": {
     "message": "テキストの言語を検出できませんでした。拡張機能で翻訳元の言語を選択してください"

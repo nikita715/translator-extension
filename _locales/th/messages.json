@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "แปลบนหน้าเว็บไม่สำเร็จ"
   },
-  "engineUnsupported": {
-    "message": "เอนจิน $ENGINE$ ไม่รองรับภาษาที่เลือก",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "ไม่มีเอนจินใดรองรับภาษาที่เลือก"
+  "languagesUnsupported": {
+    "message": "ไม่รองรับการแปลระหว่างภาษาเหล่านี้"
   },
   "languageNotDetected": {
     "message": "ตรวจหาภาษาของข้อความไม่ได้ เลือกภาษาต้นฉบับในส่วนขยาย"

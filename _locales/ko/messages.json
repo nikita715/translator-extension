@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "페이지에서 번역하지 못했습니다"
   },
-  "engineUnsupported": {
-    "message": "$ENGINE$ 엔진은 선택한 언어를 지원하지 않습니다",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "선택한 언어를 지원하는 엔진이 없습니다"
+  "languagesUnsupported": {
+    "message": "이 언어 간 번역은 지원되지 않습니다"
   },
   "languageNotDetected": {
     "message": "텍스트 언어를 감지하지 못했습니다. 확장 프로그램에서 원본 언어를 선택하세요"

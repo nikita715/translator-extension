@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Na stránce se nepodařilo přeložit"
   },
-  "engineUnsupported": {
-    "message": "Engine $ENGINE$ nepodporuje vybrané jazyky",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Žádný engine nepodporuje vybrané jazyky"
+  "languagesUnsupported": {
+    "message": "Překlad mezi těmito jazyky není podporován"
   },
   "languageNotDetected": {
     "message": "Jazyk textu se nepodařilo rozpoznat. Vyberte zdrojový jazyk v rozšíření"

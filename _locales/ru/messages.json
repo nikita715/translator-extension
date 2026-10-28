@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Не удалось перевести на странице"
   },
-  "engineUnsupported": {
-    "message": "Движок $ENGINE$ не поддерживает выбранные языки",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Ни один движок не поддерживает выбранные языки"
+  "languagesUnsupported": {
+    "message": "Перевод данных языков не поддерживается"
   },
   "languageNotDetected": {
     "message": "Не удалось определить язык текста. Выберите исходный язык в расширении"

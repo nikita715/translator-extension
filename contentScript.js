@@ -167,21 +167,13 @@ function getErrorMessage(error) {
   return chrome.i18n.getMessage(error.name == "NetworkError" ? "modelDownloadFailed" : "translationFailed");
 }
 
-let engineNames = {
-  chrome: "Chrome",
-  bergamot: "Bergamot"
-};
-
 function getPairName(sourceLanguage, targetLanguage) {
   return `${getLanguageName(sourceLanguage) || sourceLanguage} → ${getLanguageName(targetLanguage) || targetLanguage}`;
 }
 
 // Error for languages none of the engines translates
-function unsupportedError(message, engines) {
-  let userMessage = engines.length == 1 ?
-    chrome.i18n.getMessage("engineUnsupported", [engineNames[engines[0]]]) :
-    chrome.i18n.getMessage("enginesUnsupported");
-  return userError("NotSupportedError", message, userMessage);
+function unsupportedError(message) {
+  return userError("NotSupportedError", message, chrome.i18n.getMessage("languagesUnsupported"));
 }
 
 // An unsupported language pair is an expected case, not an error
@@ -231,7 +223,7 @@ async function translateOnPage(texts, sourceLanguage, targetLanguage, defaultEng
       languages.push(pageLanguage);
     }
     if (!languages.length) {
-      throw unsupportedError("None of the likely languages can be translated", engines);
+      throw unsupportedError("None of the likely languages can be translated");
     }
     let engineFor = function(language) {
       return engines[supportedBy.findIndex(function(languages) {
@@ -257,7 +249,7 @@ async function translateOnPage(texts, sourceLanguage, targetLanguage, defaultEng
   }
   engine = engine || await pickEngine(engines, sourceLanguage, targetLanguage);
   if (!engine) {
-    throw unsupportedError(`Language pair ${sourceLanguage} -> ${targetLanguage} is unavailable`, engines);
+    throw unsupportedError(`Language pair ${sourceLanguage} -> ${targetLanguage} is unavailable`);
   }
   if (confirmDownload) {
     let message = await getDownloadMessage(engine, sourceLanguage, targetLanguage);
@@ -269,7 +261,7 @@ async function translateOnPage(texts, sourceLanguage, targetLanguage, defaultEng
     return await translateWithEngine(texts, sourceLanguage, targetLanguage, engine, onDownloadProgress);
   } catch (error) {
     if (error.name == "NotSupportedError" && !error.userMessage) {
-      throw unsupportedError(error.message, [engine]);
+      throw unsupportedError(error.message);
     }
     throw error;
   }

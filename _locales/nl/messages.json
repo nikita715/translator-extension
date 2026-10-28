@@ -179,17 +179,8 @@
   "translationFailed": {
     "message": "Vertalen op de pagina is mislukt"
   },
-  "engineUnsupported": {
-    "message": "De engine $ENGINE$ ondersteunt de gekozen talen niet",
-    "placeholders": {
-      "engine": {
-        "content": "$1",
-        "example": "Chrome"
-      }
-    }
-  },
-  "enginesUnsupported": {
-    "message": "Geen enkele engine ondersteunt de gekozen talen"
+  "languagesUnsupported": {
+    "message": "Vertalen tussen deze talen wordt niet ondersteund"
   },
   "languageNotDetected": {
     "message": "De taal van de tekst is niet herkend. Kies de brontaal in de extensie"
