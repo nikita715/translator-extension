@@ -113,7 +113,7 @@ async function translateBuiltIn(texts, sourceLanguage, targetLanguage, onDownloa
   sourceLanguage = sourceLanguage == "auto" ?
     await detectLanguage(texts.join(" ")) :
     toBuiltInLanguageCode(sourceLanguage);
-  if (sourceLanguage == targetLanguage) {
+  if (isSameLanguage(sourceLanguage, targetLanguage)) {
     return texts;
   }
   let key = `${sourceLanguage}:${targetLanguage}`;
@@ -129,6 +129,14 @@ async function translateBuiltIn(texts, sourceLanguage, targetLanguage, onDownloa
     translators.delete(key);
     throw error;
   }
+}
+
+// The detector returns "fr" for Canadian French text, and Chrome has no "fr" -> "fr-CA" model: the text is already
+// in the target language. Chinese is the exception, Simplified -> Traditional is a real translation
+function isSameLanguage(sourceLanguage, targetLanguage) {
+  let sourceBase = sourceLanguage.split("-")[0];
+  let targetBase = targetLanguage.split("-")[0];
+  return sourceLanguage == targetLanguage || (sourceBase == targetBase && sourceBase != "zh");
 }
 
 // Text nodes covered by the current selection; null when the selection can't be replaced in place
