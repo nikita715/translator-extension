@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Vertaal elke tekst met één klik",
+  "onPageText": "Klik drie keer op een alinea en de vertaling verschijnt er direct naast. Verkeerde taal herkend? Kies een andere",
+  "tooltip": "De drukpers met losse letters die Johannes Gutenberg rond 1440 ontwikkelde, maakte het maken van boeken veel goedkoper. Binnen enkele decennia waren er drukkerijen in meer dan 200 steden in Europa.",
+  "replaced": "De drukpers met losse letters die Johannes Gutenberg rond 1440 ontwikkelde, maakte het maken van boeken <a>veel goedkoper</a>. Binnen enkele decennia waren er drukkerijen in meer dan 200 steden in Europa.",
+  "replaceTitle": "Of vervang de tekst direct op de pagina",
+  "replaceText": "Links en opmaak blijven behouden. Met de knoppen ernaast wijzig je de brontaal of zet je het origineel terug",
+  "settingsTitle": "Eenvoudige instellingen",
+  "settingsText": "Kies de talen, hoe vertalen start en de standaardengine. Vraagt eerst voordat een taalpakket wordt gedownload, Google Translate blijft een optionele reserve.",
+  "modesTitle": "Kies hoe je vertaalt",
+  "modesText": "Dubbelklik, driemaal klikken of het contextmenu. Wissel op elke pagina van modus met Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Vertaalt offline",
+  "offlineText": "Vertalen op de pagina gebeurt in je browser: taalpakketten worden één keer gedownload, daarna werkt alles zonder internet. Google Translate wordt alleen gebruikt als je het inschakelt.",
+  "marqueeSub": "Offline vertalen, direct op de pagina",
+  "marqueeTooltip": "De drukpers die Gutenberg rond 1440 ontwikkelde, maakte boeken veel goedkoper.",
+  "promoSub": "Offline, direct op de pagina",
+  "promoTooltip": "Geschiedenis van de boekdrukkunst"
+}

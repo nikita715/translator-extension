@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Her metni tek tıkla çevirin",
+  "onPageText": "Bir paragrafa üç kez tıklayın, çeviri hemen yanında görünsün. Dil yanlış mı algılandı? Başka birini seçin",
+  "tooltip": "Johannes Gutenberg’in 1440 civarında geliştirdiği hareketli harfli matbaa, kitap üretimini çok daha ucuz hâle getirdi. Birkaç on yıl içinde matbaalar Avrupa’da 200’den fazla şehre yayıldı.",
+  "replaced": "Johannes Gutenberg’in 1440 civarında geliştirdiği hareketli harfli matbaa, kitap üretimini <a>çok daha ucuz</a> hâle getirdi. Birkaç on yıl içinde matbaalar Avrupa’da 200’den fazla şehre yayıldı.",
+  "replaceTitle": "Ya da metni doğrudan sayfada değiştirin",
+  "replaceText": "Bağlantılar ve biçimlendirme korunur. Yanındaki düğmeler kaynak dili değiştirir veya orijinali geri getirir",
+  "settingsTitle": "Basit ayarlar",
+  "settingsText": "Dilleri, çevirinin nasıl başlatılacağını ve varsayılan motoru seçin. Dil paketi indirmeden önce sorar; Google Çeviri yalnızca isteğe bağlı bir yedektir.",
+  "modesTitle": "Nasıl çevireceğinizi seçin",
+  "modesText": "Çift tıklama, üç kez tıklama veya sağ tık menüsü. Modları her sayfada Alt+1, Alt+2, Alt+3 ile değiştirin",
+  "offlineTitle": "Çevrimdışı çevirir",
+  "offlineText": "Sayfada çeviri tarayıcınızda yapılır: dil paketleri bir kez indirilir, ardından her şey internet olmadan çalışır. Google Çeviri yalnızca siz açarsanız devreye girer.",
+  "marqueeSub": "Doğrudan sayfada çevrimdışı çeviri",
+  "marqueeTooltip": "Gutenberg’in 1440 civarında geliştirdiği matbaa, kitapları çok daha ucuz hâle getirdi.",
+  "promoSub": "Çevrimdışı, doğrudan sayfada",
+  "promoTooltip": "Matbaanın tarihi"
+}

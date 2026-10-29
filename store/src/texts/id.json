@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Terjemahkan teks apa pun dengan sekali klik",
+  "onPageText": "Klik tiga kali pada paragraf dan terjemahannya muncul tepat di sebelahnya. Bahasa salah terdeteksi? Pilih yang lain",
+  "tooltip": "Mesin cetak huruf lepas yang dikembangkan Johannes Gutenberg sekitar tahun 1440 membuat biaya pembuatan buku jauh lebih murah. Dalam beberapa dekade, percetakan telah menyebar ke lebih dari 200 kota di Eropa.",
+  "replaced": "Mesin cetak huruf lepas yang dikembangkan Johannes Gutenberg sekitar tahun 1440 membuat biaya pembuatan buku <a>jauh lebih murah</a>. Dalam beberapa dekade, percetakan telah menyebar ke lebih dari 200 kota di Eropa.",
+  "replaceTitle": "Atau ganti teks langsung di halaman",
+  "replaceText": "Tautan dan format tetap utuh. Tombol di sebelahnya mengganti bahasa sumber atau mengembalikan teks asli",
+  "settingsTitle": "Pengaturan sederhana",
+  "settingsText": "Pilih bahasa, cara memicu terjemahan, dan mesin default. Bertanya dulu sebelum mengunduh paket bahasa, Google Terjemahan hanya cadangan opsional.",
+  "modesTitle": "Pilih cara menerjemahkan",
+  "modesText": "Klik dua kali, klik tiga kali, atau menu klik kanan. Ganti mode di halaman mana pun dengan Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Menerjemahkan secara offline",
+  "offlineText": "Terjemahan di halaman berjalan di browser Anda: paket bahasa diunduh sekali, lalu semuanya berfungsi tanpa internet. Google Terjemahan hanya digunakan jika Anda mengaktifkannya.",
+  "marqueeSub": "Terjemahan offline langsung di halaman",
+  "marqueeTooltip": "Mesin cetak yang dikembangkan Gutenberg sekitar tahun 1440 membuat buku jauh lebih murah.",
+  "promoSub": "Offline, langsung di halaman",
+  "promoTooltip": "Sejarah percetakan"
+}

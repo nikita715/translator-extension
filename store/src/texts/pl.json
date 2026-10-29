@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Tłumacz dowolny tekst jednym kliknięciem",
+  "onPageText": "Kliknij trzy razy akapit, a tłumaczenie pojawi się tuż obok. Źle rozpoznany język? Wybierz inny",
+  "tooltip": "Prasa drukarska z ruchomą czcionką, opracowana przez Jana Gutenberga około 1440 roku, sprawiła, że produkcja książek stała się znacznie tańsza. W ciągu kilku dziesięcioleci drukarnie działały już w ponad 200 miastach Europy.",
+  "replaced": "Prasa drukarska z ruchomą czcionką, opracowana przez Jana Gutenberga około 1440 roku, sprawiła, że produkcja książek stała się <a>znacznie tańsza</a>. W ciągu kilku dziesięcioleci drukarnie działały już w ponad 200 miastach Europy.",
+  "replaceTitle": "Albo zastąp tekst bezpośrednio na stronie",
+  "replaceText": "Linki i formatowanie zostają na miejscu. Przyciski obok zmieniają język źródłowy lub przywracają oryginał",
+  "settingsTitle": "Proste ustawienia",
+  "settingsText": "Wybierz języki, sposób wywołania tłumaczenia i domyślny silnik. Przed pobraniem pakietu językowego rozszerzenie zapyta, a Tłumacz Google to tylko opcjonalny zapas.",
+  "modesTitle": "Wybierz, jak tłumaczyć",
+  "modesText": "Podwójne kliknięcie, potrójne kliknięcie lub menu kontekstowe. Przełączaj tryby na dowolnej stronie skrótami Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Tłumaczy offline",
+  "offlineText": "Tłumaczenie na stronie odbywa się w przeglądarce: pakiety językowe pobierasz raz, potem wszystko działa bez internetu. Tłumacz Google włącza się tylko wtedy, gdy go aktywujesz.",
+  "marqueeSub": "Tłumaczenie offline bezpośrednio na stronie",
+  "marqueeTooltip": "Prasa drukarska Gutenberga z około 1440 roku sprawiła, że książki stały się znacznie tańsze.",
+  "promoSub": "Offline, bezpośrednio na stronie",
+  "promoTooltip": "Historia druku"
+}

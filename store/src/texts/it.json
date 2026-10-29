@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Traduci qualsiasi testo con un clic",
+  "onPageText": "Fai triplo clic su un paragrafo e la traduzione appare proprio accanto. Lingua rilevata sbagliata? Scegline un’altra",
+  "tooltip": "La stampa a caratteri mobili sviluppata da Johannes Gutenberg intorno al 1440 rese la produzione dei libri molto più economica. Nel giro di pochi decenni, le tipografie si erano diffuse in oltre 200 città europee.",
+  "replaced": "La stampa a caratteri mobili sviluppata da Johannes Gutenberg intorno al 1440 rese la produzione dei libri <a>molto più economica</a>. Nel giro di pochi decenni, le tipografie si erano diffuse in oltre 200 città europee.",
+  "replaceTitle": "Oppure sostituisci il testo direttamente nella pagina",
+  "replaceText": "Link e formattazione restano al loro posto. I pulsanti accanto cambiano la lingua di origine o ripristinano l’originale",
+  "settingsTitle": "Impostazioni semplici",
+  "settingsText": "Scegli le lingue, come avviare la traduzione e il motore predefinito. Chiede conferma prima di scaricare un pacchetto lingua, Google Traduttore resta una riserva facoltativa.",
+  "modesTitle": "Scegli come tradurre",
+  "modesText": "Doppio clic, triplo clic o menu contestuale. Cambia modalità su qualsiasi pagina con Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Traduce offline",
+  "offlineText": "La traduzione nella pagina avviene nel browser: i pacchetti lingua si scaricano una volta, poi tutto funziona senza internet. Google Traduttore entra in gioco solo se lo attivi.",
+  "marqueeSub": "Traduzione offline direttamente nella pagina",
+  "marqueeTooltip": "La stampa sviluppata da Gutenberg intorno al 1440 rese i libri molto più economici.",
+  "promoSub": "Offline, direttamente nella pagina",
+  "promoTooltip": "Storia della stampa"
+}

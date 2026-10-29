@@ -1,11 +1,12 @@
 <!DOCTYPE html><meta charset="utf-8"><link rel="stylesheet" href="store.css">
-<div class="caption"><h1>Translate any text with a click</h1><p>Triple-click a paragraph and the translation appears right next to it. Detected the wrong language? Pick another one</p></div>
-<div class="window"><div class="toolbar"><div class="dots"><i></i><i></i><i></i></div><div class="address">example.com/ja/history/printing-press</div><div class="ext">T</div></div><div class="article" lang="ja"><h2>活版印刷はヨーロッパをどう変えたか</h2>
-<p>印刷技術が登場する前、本は手で書き写されており、聖書一冊を仕上げるのに写字生が一年以上かかることもあった。</p>
-<p><span class="selected" id="sel">1440年頃にヨハネス・グーテンベルクが開発した活版印刷機により、本の製作費は大幅に下がった。数十年のうちに、印刷所はヨーロッパの200以上の都市に広がった。</span></p>
-<p>本が安くなったことで、思想はかつてない速さで広まるようになった。</p>
+<div class="caption"><h1 data-text="onPageTitle"></h1><p data-text="onPageText"></p></div>
+<div class="window"><div class="toolbar"><div class="dots"><i></i><i></i><i></i></div><div class="address" data-article="path"></div><div class="ext">T</div></div><div class="article" data-article-lang><h2 data-article="heading"></h2>
+<p data-article="intro"></p>
+<p><span class="selected" id="sel" data-article="selected"></span></p>
+<p data-article="outro"></p>
 </div></div>
-<div class="tooltip" id="tip"><div class="languages">Source language: <b class="on">Japanese</b><b>Chinese (Simplified)</b></div>The movable-type printing press developed by Johannes Gutenberg around 1440 made books far cheaper to produce. Within a few decades, print shops had spread to more than 200 cities across Europe.</div>
+<div class="tooltip" id="tip"><div class="languages"></div><span data-text="tooltip"></span></div>
+<script src="store.js"></script>
 <script>window.addEventListener("load", () => {
   // Place the tooltip under the selection, like contentScript.js does
   let rect = document.getElementById("sel").getClientRects();

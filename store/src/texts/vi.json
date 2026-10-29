@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Dịch mọi văn bản chỉ với một cú nhấp",
+  "onPageText": "Nhấp ba lần vào một đoạn văn, bản dịch sẽ hiện ngay bên cạnh. Nhận diện sai ngôn ngữ? Hãy chọn ngôn ngữ khác",
+  "tooltip": "Máy in chữ rời do Johannes Gutenberg phát triển vào khoảng năm 1440 đã giúp việc làm sách rẻ hơn rất nhiều. Chỉ trong vài thập kỷ, các xưởng in đã lan rộng tới hơn 200 thành phố khắp châu Âu.",
+  "replaced": "Máy in chữ rời do Johannes Gutenberg phát triển vào khoảng năm 1440 đã giúp việc làm sách <a>rẻ hơn rất nhiều</a>. Chỉ trong vài thập kỷ, các xưởng in đã lan rộng tới hơn 200 thành phố khắp châu Âu.",
+  "replaceTitle": "Hoặc thay thế văn bản ngay trên trang",
+  "replaceText": "Liên kết và định dạng được giữ nguyên. Các nút bên cạnh giúp đổi ngôn ngữ nguồn hoặc khôi phục bản gốc",
+  "settingsTitle": "Cài đặt đơn giản",
+  "settingsText": "Chọn ngôn ngữ, cách kích hoạt bản dịch và công cụ mặc định. Tiện ích sẽ hỏi trước khi tải gói ngôn ngữ, Google Dịch chỉ là phương án dự phòng tùy chọn.",
+  "modesTitle": "Chọn cách dịch",
+  "modesText": "Nhấp đúp, nhấp ba lần hoặc menu chuột phải. Chuyển chế độ trên mọi trang bằng Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Dịch ngoại tuyến",
+  "offlineText": "Bản dịch trên trang được thực hiện trong trình duyệt: gói ngôn ngữ chỉ cần tải một lần, sau đó mọi thứ hoạt động không cần internet. Google Dịch chỉ được dùng khi bạn bật.",
+  "marqueeSub": "Dịch ngoại tuyến ngay trên trang",
+  "marqueeTooltip": "Máy in do Gutenberg phát triển vào khoảng năm 1440 đã giúp sách rẻ hơn rất nhiều.",
+  "promoSub": "Ngoại tuyến, ngay trên trang",
+  "promoTooltip": "Lịch sử ngành in"
+}

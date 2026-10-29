@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Översätt vilken text som helst med ett klick",
+  "onPageText": "Trippelklicka på ett stycke så visas översättningen direkt bredvid. Fel språk identifierat? Välj ett annat",
+  "tooltip": "Tryckpressen med lösa typer som Johannes Gutenberg utvecklade kring 1440 gjorde det mycket billigare att framställa böcker. Inom några decennier fanns det tryckerier i mer än 200 städer i Europa.",
+  "replaced": "Tryckpressen med lösa typer som Johannes Gutenberg utvecklade kring 1440 gjorde det <a>mycket billigare</a> att framställa böcker. Inom några decennier fanns det tryckerier i mer än 200 städer i Europa.",
+  "replaceTitle": "Eller ersätt texten direkt på sidan",
+  "replaceText": "Länkar och formatering behålls. Knapparna bredvid byter källspråk eller återställer originalet",
+  "settingsTitle": "Enkla inställningar",
+  "settingsText": "Välj språk, hur översättningen startas och standardmotor. Frågar innan ett språkpaket laddas ner, Google Översätt är bara en valfri reserv.",
+  "modesTitle": "Välj hur du översätter",
+  "modesText": "Dubbelklick, trippelklick eller snabbmenyn. Byt läge på vilken sida som helst med Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Översätter offline",
+  "offlineText": "Översättningen på sidan sker i webbläsaren: språkpaket laddas ner en gång, sedan fungerar allt utan internet. Google Översätt används bara om du slår på det.",
+  "marqueeSub": "Offlineöversättning direkt på sidan",
+  "marqueeTooltip": "Tryckpressen som Gutenberg utvecklade kring 1440 gjorde böcker mycket billigare.",
+  "promoSub": "Offline, direkt på sidan",
+  "promoTooltip": "Boktryckarkonstens historia"
+}

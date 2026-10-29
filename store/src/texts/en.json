@@ -1,0 +1,19 @@
+{
+  "onPageTitle": "Translate any text with a click",
+  "onPageText": "Triple-click a paragraph and the translation appears right next to it. Detected the wrong language? Pick another one",
+  "tooltip": "The movable-type printing press developed by Johannes Gutenberg around 1440 made books far cheaper to produce. Within a few decades, print shops had spread to more than 200 cities across Europe.",
+  "replaceTitle": "Or replace the text right on the page",
+  "replaceText": "Links and formatting stay in place. Buttons next to it change the source language or bring back the original",
+  "replaced": "The movable-type printing press developed by Johannes Gutenberg around 1440 made books <a>far cheaper</a> to produce. Within a few decades, print shops had spread to more than 200 cities across Europe.",
+  "settingsTitle": "Simple settings",
+  "settingsText": "Pick languages, how to trigger translation and the default engine. Asks before downloading a language pack, Google Translate stays an optional fallback.",
+  "modesTitle": "Choose how to translate",
+  "modesText": "Double click, triple click or right-click menu. Switch modes on any page with Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Translates offline",
+  "offlineText": "On-page translation runs in your browser: language packs download once, then it works without the internet. Google Translate is there only if you turn it on.",
+  "marqueeSub": "Offline translation right on the page",
+  "marqueeTooltip": "The printing press developed by Gutenberg around 1440 made books far cheaper to produce.",
+  "promoSub": "Offline, right on the page",
+  "promoTooltip": "History of printing",
+  "article": "ja"
+}

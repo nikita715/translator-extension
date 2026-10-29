@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Traduceți orice text cu un clic",
+  "onPageText": "Faceți triplu clic pe un paragraf și traducerea apare chiar alături. Limba a fost detectată greșit? Alegeți alta",
+  "tooltip": "Presa cu litere mobile dezvoltată de Johannes Gutenberg în jurul anului 1440 a făcut producția de cărți mult mai ieftină. În câteva decenii, tipografiile se răspândiseră în peste 200 de orașe din Europa.",
+  "replaced": "Presa cu litere mobile dezvoltată de Johannes Gutenberg în jurul anului 1440 a făcut producția de cărți <a>mult mai ieftină</a>. În câteva decenii, tipografiile se răspândiseră în peste 200 de orașe din Europa.",
+  "replaceTitle": "Sau înlocuiți textul direct pe pagină",
+  "replaceText": "Linkurile și formatarea rămân la locul lor. Butoanele de alături schimbă limba sursă sau readuc originalul",
+  "settingsTitle": "Setări simple",
+  "settingsText": "Alegeți limbile, cum se pornește traducerea și motorul implicit. Întreabă înainte de a descărca un pachet de limbă, iar Google Traducere rămâne o rezervă opțională.",
+  "modesTitle": "Alegeți cum traduceți",
+  "modesText": "Dublu clic, triplu clic sau meniul contextual. Schimbați modul pe orice pagină cu Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Traduce offline",
+  "offlineText": "Traducerea pe pagină se face în browser: pachetele de limbă se descarcă o singură dată, apoi totul funcționează fără internet. Google Traducere este folosit doar dacă îl activați.",
+  "marqueeSub": "Traducere offline direct pe pagină",
+  "marqueeTooltip": "Presa dezvoltată de Gutenberg în jurul anului 1440 a făcut cărțile mult mai ieftine.",
+  "promoSub": "Offline, direct pe pagină",
+  "promoTooltip": "Istoria tiparului"
+}

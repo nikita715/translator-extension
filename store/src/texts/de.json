@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Jeden Text mit einem Klick übersetzen",
+  "onPageText": "Klicken Sie dreimal auf einen Absatz, und die Übersetzung erscheint direkt daneben. Falsche Sprache erkannt? Wählen Sie eine andere",
+  "tooltip": "Die um 1440 von Johannes Gutenberg entwickelte Druckerpresse mit beweglichen Lettern machte die Herstellung von Büchern weitaus günstiger. Innerhalb weniger Jahrzehnte gab es Druckereien in mehr als 200 Städten Europas.",
+  "replaced": "Die um 1440 von Johannes Gutenberg entwickelte Druckerpresse mit beweglichen Lettern machte die Herstellung von Büchern <a>weitaus günstiger</a>. Innerhalb weniger Jahrzehnte gab es Druckereien in mehr als 200 Städten Europas.",
+  "replaceTitle": "Oder ersetzen Sie den Text direkt auf der Seite",
+  "replaceText": "Links und Formatierung bleiben erhalten. Die Schaltflächen daneben ändern die Ausgangssprache oder stellen das Original wieder her",
+  "settingsTitle": "Einfache Einstellungen",
+  "settingsText": "Wählen Sie Sprachen, wie die Übersetzung ausgelöst wird, und die Standard-Engine. Vor dem Herunterladen eines Sprachpakets wird nachgefragt, Google Übersetzer bleibt ein optionaler Ersatz.",
+  "modesTitle": "Wählen Sie, wie übersetzt wird",
+  "modesText": "Doppelklick, Dreifachklick oder Kontextmenü. Wechseln Sie den Modus auf jeder Seite mit Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Übersetzt offline",
+  "offlineText": "Die Übersetzung auf der Seite läuft in Ihrem Browser: Sprachpakete werden einmal heruntergeladen, danach funktioniert alles ohne Internet. Google Übersetzer kommt nur zum Einsatz, wenn Sie ihn aktivieren.",
+  "marqueeSub": "Offline-Übersetzung direkt auf der Seite",
+  "marqueeTooltip": "Die um 1440 von Gutenberg entwickelte Druckerpresse machte Bücher weitaus günstiger.",
+  "promoSub": "Offline, direkt auf der Seite",
+  "promoTooltip": "Geschichte des Buchdrucks"
+}

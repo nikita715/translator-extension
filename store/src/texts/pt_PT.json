@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Traduza qualquer texto com um clique",
+  "onPageText": "Clique três vezes num parágrafo e a tradução aparece mesmo ao lado. O idioma foi mal detetado? Escolha outro",
+  "tooltip": "A prensa de caracteres móveis desenvolvida por Johannes Gutenberg por volta de 1440 tornou a produção de livros muito mais barata. Em poucas décadas, as tipografias espalharam-se por mais de 200 cidades da Europa.",
+  "replaced": "A prensa de caracteres móveis desenvolvida por Johannes Gutenberg por volta de 1440 tornou a produção de livros <a>muito mais barata</a>. Em poucas décadas, as tipografias espalharam-se por mais de 200 cidades da Europa.",
+  "replaceTitle": "Ou substitua o texto diretamente na página",
+  "replaceText": "As ligações e a formatação mantêm-se. Os botões ao lado mudam o idioma de origem ou repõem o original",
+  "settingsTitle": "Definições simples",
+  "settingsText": "Escolha os idiomas, como ativar a tradução e o motor predefinido. Pergunta antes de transferir um pacote de idioma; o Google Tradutor é apenas uma alternativa opcional.",
+  "modesTitle": "Escolha como traduzir",
+  "modesText": "Duplo clique, triplo clique ou menu de contexto. Mude de modo em qualquer página com Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Traduz offline",
+  "offlineText": "A tradução na página é feita no seu navegador: os pacotes de idioma são transferidos uma vez e depois tudo funciona sem internet. O Google Tradutor só é usado se o ativar.",
+  "marqueeSub": "Tradução offline diretamente na página",
+  "marqueeTooltip": "A prensa desenvolvida por Gutenberg por volta de 1440 tornou os livros muito mais baratos.",
+  "promoSub": "Offline, diretamente na página",
+  "promoTooltip": "História da imprensa"
+}

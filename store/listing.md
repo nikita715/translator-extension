@@ -4,57 +4,27 @@ Texts to paste into the developer dashboard. The short description comes from `e
 
 ## Description (English)
 
-Translate words and paragraphs with a click, right on the page. On-page translation runs in your browser and works offline.
+Translate words and paragraphs with a click, right on the page.
 
-HOW IT WORKS
 • Double-click a word or triple-click a paragraph, the translation appears next to it
-• Or turn on "Replace selected text": the translation takes the place of the original, links and formatting stay. One click brings the original back
-• The right-click menu translates any selected text
-• Switch modes on any page with Alt+1, Alt+2, Alt+3. Hold Alt while clicking so the translator doesn't get in the way of normal clicks
+• Or replace the text with its translation, one click brings the original back
+• Works offline: language packs download once
+• The source language is detected automatically, pick another one with a click if needed
+• Google Translate is optional and off by default
 
-WORKS OFFLINE
-• Language packs download once, then translation works without the internet
-• Two offline translators cover dozens of languages: if one doesn't support your languages, the other one translates them automatically
-
-SMART LANGUAGE DETECTION
-• The source language is detected automatically, short words are checked against the whole paragraph
-• Not the right language? The likely languages are shown above the translation, pick another one with a click
-• Languages whose packs are already downloaded come first, so the translation shows up at once
-
-YOUR CONTROL
-• The extension asks before downloading a language pack (tens of megabytes)
-• Google Translate is an optional fallback, off by default
-• The interface is available in 23 languages
-
-PRIVACY
-On-page translation happens on your device: only language packs are downloaded, from Google and Mozilla servers. If you choose Google Translate or turn on the Google Translate fallback, the selected text is opened on translate.google.com. The extension doesn't collect any data.
+On-page translation happens on your device. The extension doesn't collect any data.
 
 ## Описание (русский)
 
-Переводите слова и абзацы одним кликом прямо на странице. Перевод на странице выполняется в браузере и работает офлайн.
+Переводите слова и абзацы одним кликом прямо на странице.
 
-КАК ЭТО РАБОТАЕТ
 • Дважды щёлкните по слову или трижды по абзацу — перевод появится рядом
-• Или включите «Заменять выделенный текст»: перевод встанет на место оригинала, ссылки и оформление сохранятся. Оригинал возвращается одним кликом
-• Пункт контекстного меню переводит любой выделенный текст
-• Режимы переключаются на любой странице сочетаниями Alt+1, Alt+2, Alt+3. Можно требовать зажатый Alt, чтобы переводчик не мешал обычным кликам
+• Или замените текст переводом, оригинал возвращается одним кликом
+• Работает офлайн: языковые пакеты скачиваются один раз
+• Исходный язык определяется автоматически, при необходимости выберите другой одним кликом
+• Google Переводчик — по желанию, по умолчанию выключен
 
-РАБОТАЕТ ОФЛАЙН
-• Языковые пакеты скачиваются один раз, дальше перевод работает без интернета
-• Два офлайн-переводчика покрывают десятки языков: если один не поддерживает ваши языки, автоматически переведёт другой
-
-УМНОЕ ОПРЕДЕЛЕНИЕ ЯЗЫКА
-• Исходный язык определяется автоматически, короткие слова проверяются по всему абзацу
-• Язык определился неверно? Над переводом показаны возможные языки — выберите другой одним кликом
-• Сначала предлагаются языки, пакеты которых уже скачаны, поэтому перевод появляется сразу
-
-ВСЁ ПОД КОНТРОЛЕМ
-• Перед скачиванием языкового пакета (десятки мегабайт) расширение спрашивает разрешение
-• Google Переводчик — необязательный запасной вариант, по умолчанию выключен
-• Интерфейс на 23 языках
-
-КОНФИДЕНЦИАЛЬНОСТЬ
-Перевод на странице выполняется на вашем устройстве: скачиваются только языковые пакеты, с серверов Google и Mozilla. Если вы выберете Google Переводчик или включите его как запасной вариант, выделенный текст откроется на translate.google.com. Расширение не собирает никаких данных.
+Перевод на странице выполняется на вашем устройстве. Расширение не собирает никаких данных.
 
 ## What's new in 3.0
 

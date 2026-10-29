@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Traduce cualquier texto con un clic",
+  "onPageText": "Haz triple clic en un párrafo y la traducción aparecerá justo al lado. ¿Se detectó mal el idioma? Elige otro",
+  "tooltip": "La imprenta de tipos móviles desarrollada por Johannes Gutenberg hacia 1440 abarató enormemente la producción de libros. En pocas décadas, las imprentas se extendieron a más de 200 ciudades de Europa.",
+  "replaced": "La imprenta de tipos móviles desarrollada por Johannes Gutenberg hacia 1440 <a>abarató enormemente</a> la producción de libros. En pocas décadas, las imprentas se extendieron a más de 200 ciudades de Europa.",
+  "replaceTitle": "O reemplaza el texto directamente en la página",
+  "replaceText": "Los enlaces y el formato se mantienen. Los botones de al lado cambian el idioma de origen o restauran el original",
+  "settingsTitle": "Ajustes sencillos",
+  "settingsText": "Elige los idiomas, cómo activar la traducción y el motor predeterminado. Pregunta antes de descargar un paquete de idioma; Google Traductor es solo una alternativa opcional.",
+  "modesTitle": "Elige cómo traducir",
+  "modesText": "Doble clic, triple clic o menú contextual. Cambia de modo en cualquier página con Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Traduce sin conexión",
+  "offlineText": "La traducción en la página se hace en tu navegador: los paquetes de idioma se descargan una vez y luego todo funciona sin internet. Google Traductor solo se usa si lo activas.",
+  "marqueeSub": "Traducción sin conexión en la propia página",
+  "marqueeTooltip": "La imprenta que desarrolló Gutenberg hacia 1440 abarató enormemente los libros.",
+  "promoSub": "Sin conexión, en la propia página",
+  "promoTooltip": "Historia de la imprenta"
+}

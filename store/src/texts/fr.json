@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Traduisez n’importe quel texte en un clic",
+  "onPageText": "Cliquez trois fois sur un paragraphe et la traduction apparaît juste à côté. Mauvaise langue détectée ? Choisissez-en une autre",
+  "tooltip": "La presse à caractères mobiles mise au point par Johannes Gutenberg vers 1440 a rendu la fabrication des livres bien moins chère. En quelques décennies, les imprimeries s’étaient répandues dans plus de 200 villes d’Europe.",
+  "replaced": "La presse à caractères mobiles mise au point par Johannes Gutenberg vers 1440 a rendu la fabrication des livres <a>bien moins chère</a>. En quelques décennies, les imprimeries s’étaient répandues dans plus de 200 villes d’Europe.",
+  "replaceTitle": "Ou remplacez le texte directement sur la page",
+  "replaceText": "Les liens et la mise en forme sont conservés. Les boutons à côté changent la langue source ou rétablissent l’original",
+  "settingsTitle": "Des réglages simples",
+  "settingsText": "Choisissez les langues, le déclenchement de la traduction et le moteur par défaut. Une confirmation est demandée avant de télécharger un pack de langue, Google Traduction reste un recours facultatif.",
+  "modesTitle": "Choisissez comment traduire",
+  "modesText": "Double clic, triple clic ou menu contextuel. Changez de mode sur n’importe quelle page avec Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Traduit hors ligne",
+  "offlineText": "La traduction sur la page se fait dans votre navigateur : les packs de langue se téléchargent une fois, puis tout fonctionne sans Internet. Google Traduction n’intervient que si vous l’activez.",
+  "marqueeSub": "La traduction hors ligne, directement sur la page",
+  "marqueeTooltip": "La presse à imprimer mise au point par Gutenberg vers 1440 a rendu les livres bien moins chers.",
+  "promoSub": "Hors ligne, directement sur la page",
+  "promoTooltip": "Histoire de l’imprimerie"
+}

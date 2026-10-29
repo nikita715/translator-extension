@@ -1,0 +1,34 @@
+{
+  "ja": {
+    "lang": "ja",
+    "languages": [
+      "ja",
+      "zh-CN"
+    ],
+    "path": "example.com/ja/history/printing-press",
+    "heading": "活版印刷はヨーロッパをどう変えたか",
+    "intro": "印刷技術が登場する前、本は手で書き写されており、聖書一冊を仕上げるのに写字生が一年以上かかることもあった。",
+    "selected": "1440年頃にヨハネス・グーテンベルクが開発した活版印刷機により、本の製作費は大幅に下がった。数十年のうちに、印刷所はヨーロッパの200以上の都市に広がった。",
+    "outro": "本が安くなったことで、思想はかつてない速さで広まるようになった。",
+    "marqueeIntro": "印刷技術が登場する前、本は手で書き写されていた。",
+    "marqueeSelected": "1440年頃にグーテンベルクが開発した活版印刷機により、本の製作費は大幅に下がった。",
+    "marqueeOutro": "本が安くなったことで、思想はかつてない速さで広まった。",
+    "promoTitle": "活版印刷の歴史"
+  },
+  "en": {
+    "lang": "en",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "path": "example.com/en/history/printing-press",
+    "heading": "How the printing press changed Europe",
+    "intro": "Before printing, books were copied by hand, and a scribe could spend more than a year finishing a single Bible.",
+    "selected": "The movable-type printing press developed by Johannes Gutenberg around 1440 made books far cheaper to produce. Within a few decades, print shops had spread to more than 200 cities across Europe.",
+    "outro": "As books became cheaper, ideas spread faster than ever before.",
+    "marqueeIntro": "Before printing, books were copied by hand.",
+    "marqueeSelected": "The printing press Gutenberg developed around 1440 made books far cheaper to produce.",
+    "marqueeOutro": "Cheaper books helped ideas spread faster than ever.",
+    "promoTitle": "History of printing"
+  }
+}

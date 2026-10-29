@@ -1,0 +1,18 @@
+{
+  "onPageTitle": "Přeložte libovolný text jedním kliknutím",
+  "onPageText": "Klikněte třikrát na odstavec a překlad se objeví hned vedle. Byl rozpoznán špatný jazyk? Vyberte jiný",
+  "tooltip": "Knihtisk s pohyblivými literami, který kolem roku 1440 vyvinul Johannes Gutenberg, výrazně zlevnil výrobu knih. Během několika desetiletí se tiskárny rozšířily do více než 200 evropských měst.",
+  "replaced": "Knihtisk s pohyblivými literami, který kolem roku 1440 vyvinul Johannes Gutenberg, <a>výrazně zlevnil</a> výrobu knih. Během několika desetiletí se tiskárny rozšířily do více než 200 evropských měst.",
+  "replaceTitle": "Nebo nahraďte text přímo na stránce",
+  "replaceText": "Odkazy a formátování zůstanou zachovány. Tlačítka vedle mění zdrojový jazyk nebo vracejí originál",
+  "settingsTitle": "Jednoduché nastavení",
+  "settingsText": "Vyberte jazyky, způsob spuštění překladu a výchozí modul. Před stažením jazykového balíčku se zeptá, Překladač Google je jen volitelná záloha.",
+  "modesTitle": "Vyberte, jak překládat",
+  "modesText": "Dvojklik, trojklik nebo kontextová nabídka. Režimy přepínáte na libovolné stránce zkratkami Alt+1, Alt+2, Alt+3",
+  "offlineTitle": "Překládá offline",
+  "offlineText": "Překlad na stránce probíhá v prohlížeči: jazykové balíčky se stáhnou jednou a pak vše funguje bez internetu. Překladač Google se použije, jen pokud ho zapnete.",
+  "marqueeSub": "Offline překlad přímo na stránce",
+  "marqueeTooltip": "Knihtisk, který kolem roku 1440 vyvinul Gutenberg, výrazně zlevnil knihy.",
+  "promoSub": "Offline, přímo na stránce",
+  "promoTooltip": "Dějiny knihtisku"
+}

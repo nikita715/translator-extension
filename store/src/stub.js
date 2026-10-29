@@ -1,6 +1,7 @@
 // Stands in for the chrome.* and Translator APIs when the popup is rendered for store images.
 // Query parameters: a = trigger mode, alt = require Alt, r = replace text, crop = hide the Alt switch,
-// e = default engine, languages = open the supported languages, scroll = element id to scroll to
+// e = default engine, languages = open the supported languages, scroll = element id to scroll to,
+// lang = interface language, src = source language
 let q = new URLSearchParams(location.search);
 // Show "Alt" instead of "⌥ Option"
 Object.defineProperty(navigator, "platform", { get: () => "Win32" });
@@ -10,12 +11,15 @@ function loadMessages(locale) {
   xhr.send();
   return JSON.parse(xhr.responseText);
 }
-let messages = loadMessages("en");
+let locale = q.get("lang") || "en";
+let messages = loadMessages(locale);
+// Interface languages whose codes in the language lists differ
+let popupLanguageCodes = { pt_BR: "pt", pt_PT: "pt-PT", zh_CN: "zh-CN", zh_TW: "zh-TW" };
 window.chrome = {
   i18n: {
-    getUILanguage: () => "en",
+    getUILanguage: () => locale.replace("_", "-"),
     getMessage(key, substitutions) {
-      if (key == "@@bidi_dir") return "ltr";
+      if (key == "@@bidi_dir") return locale == "ar" ? "rtl" : "ltr";
       let entry = messages[key];
       if (!entry) return "";
       let text = entry.message;
@@ -29,8 +33,8 @@ window.chrome = {
   storage: {
     sync: {
       get: (keys, callback) => callback({
-        translator_sourceLanguage: "ja",
-        translator_targetLanguage: "en",
+        translator_sourceLanguage: q.get("src") || "ja",
+        translator_targetLanguage: popupLanguageCodes[locale] || locale,
         translator_translateInputAction: q.get("a") || "dbclick",
         translator_holdAltToTranslate: q.get("alt") == "1",
         translator_useBuiltIn: true,
