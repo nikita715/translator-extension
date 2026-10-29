@@ -1,0 +1,9 @@
+Översätt ord och stycken med ett klick, direkt på sidan.
+
+• Dubbelklicka på ett ord eller trippelklicka på ett stycke så visas översättningen bredvid
+• Eller ersätt texten med översättningen, ett klick återställer originalet
+• Fungerar offline: språkpaket laddas ner en gång
+• Källspråket identifieras automatiskt, välj vid behov ett annat med ett klick
+• Google Översätt är valfritt och avstängt som standard
+
+Översättningen på sidan sker på din enhet. Tillägget samlar inte in några data.

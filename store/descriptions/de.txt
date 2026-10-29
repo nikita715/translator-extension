@@ -1,0 +1,9 @@
+Übersetzen Sie Wörter und Absätze mit einem Klick, direkt auf der Seite.
+
+• Doppelklick auf ein Wort oder Dreifachklick auf einen Absatz – die Übersetzung erscheint daneben
+• Oder ersetzen Sie den Text durch die Übersetzung, ein Klick stellt das Original wieder her
+• Funktioniert offline: Sprachpakete werden nur einmal heruntergeladen
+• Die Ausgangssprache wird automatisch erkannt, bei Bedarf wählen Sie mit einem Klick eine andere
+• Google Übersetzer ist optional und standardmäßig deaktiviert
+
+Die Übersetzung auf der Seite erfolgt auf Ihrem Gerät. Die Erweiterung erfasst keinerlei Daten.

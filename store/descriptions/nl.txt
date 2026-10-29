@@ -1,0 +1,9 @@
+Vertaal woorden en alinea's met één klik, direct op de pagina.
+
+• Dubbelklik op een woord of klik drie keer op een alinea en de vertaling verschijnt ernaast
+• Of vervang de tekst door de vertaling, één klik zet het origineel terug
+• Werkt offline: taalpakketten worden maar één keer gedownload
+• De brontaal wordt automatisch herkend, kies zo nodig met één klik een andere
+• Google Translate is optioneel en staat standaard uit
+
+Vertalen op de pagina gebeurt op je apparaat. De extensie verzamelt geen gegevens.

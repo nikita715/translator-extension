@@ -1,0 +1,9 @@
+Traduce palabras y párrafos con un clic, directamente en la página.
+
+• Haz doble clic en una palabra o triple clic en un párrafo y la traducción aparece al lado
+• O reemplaza el texto por su traducción; un clic devuelve el original
+• Funciona sin conexión: los paquetes de idioma se descargan una sola vez
+• El idioma de origen se detecta automáticamente; si hace falta, elige otro con un clic
+• Google Traductor es opcional y está desactivado de forma predeterminada
+
+La traducción en la página se realiza en tu dispositivo. La extensión no recopila ningún dato.

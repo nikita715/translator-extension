@@ -1,0 +1,9 @@
+Terjemahkan kata dan paragraf dengan sekali klik, langsung di halaman.
+
+• Klik dua kali pada kata atau tiga kali pada paragraf, terjemahannya muncul di sebelahnya
+• Atau ganti teks dengan terjemahannya, sekali klik mengembalikan teks asli
+• Berfungsi offline: paket bahasa cukup diunduh sekali
+• Bahasa sumber terdeteksi otomatis, pilih bahasa lain dengan sekali klik jika perlu
+• Google Terjemahan bersifat opsional dan nonaktif secara default
+
+Terjemahan di halaman dilakukan di perangkat Anda. Ekstensi ini tidak mengumpulkan data apa pun.

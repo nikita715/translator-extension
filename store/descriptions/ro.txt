@@ -1,0 +1,9 @@
+Traduceți cuvinte și paragrafe cu un clic, direct pe pagină.
+
+• Dublu clic pe un cuvânt sau triplu clic pe un paragraf, iar traducerea apare alături
+• Sau înlocuiți textul cu traducerea, un clic readuce originalul
+• Funcționează offline: pachetele de limbă se descarcă o singură dată
+• Limba sursă este detectată automat, iar dacă e nevoie alegeți alta cu un clic
+• Google Traducere este opțional și dezactivat implicit
+
+Traducerea pe pagină se face pe dispozitivul dvs. Extensia nu colectează niciun fel de date.

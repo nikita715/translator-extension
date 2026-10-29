@@ -1,0 +1,9 @@
+Dịch từ và đoạn văn chỉ với một cú nhấp, ngay trên trang.
+
+• Nhấp đúp vào một từ hoặc nhấp ba lần vào một đoạn văn, bản dịch hiện ngay bên cạnh
+• Hoặc thay văn bản bằng bản dịch, một cú nhấp là khôi phục bản gốc
+• Hoạt động ngoại tuyến: gói ngôn ngữ chỉ cần tải một lần
+• Ngôn ngữ nguồn được tự động nhận diện, khi cần có thể chọn ngôn ngữ khác bằng một cú nhấp
+• Google Dịch là tùy chọn và mặc định bị tắt
+
+Bản dịch trên trang được thực hiện trên thiết bị của bạn. Tiện ích không thu thập bất kỳ dữ liệu nào.

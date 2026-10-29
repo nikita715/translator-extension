@@ -1,0 +1,9 @@
+Překládejte slova a odstavce jedním kliknutím přímo na stránce.
+
+• Dvakrát klikněte na slovo nebo třikrát na odstavec a překlad se objeví vedle
+• Nebo nahraďte text překladem, jedním kliknutím vrátíte originál
+• Funguje offline: jazykové balíčky se stahují jen jednou
+• Zdrojový jazyk se rozpozná automaticky, v případě potřeby vyberte jiný jedním kliknutím
+• Překladač Google je volitelný a ve výchozím nastavení vypnutý
+
+Překlad na stránce probíhá ve vašem zařízení. Rozšíření neshromažďuje žádná data.

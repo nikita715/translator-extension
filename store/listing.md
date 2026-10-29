@@ -2,29 +2,9 @@
 
 Texts to paste into the developer dashboard. The short description comes from `extDescription` in `_locales`.
 
-## Description (English)
+## Description
 
-Translate words and paragraphs with a click, right on the page.
-
-• Double-click a word or triple-click a paragraph, the translation appears next to it
-• Or replace the text with its translation, one click brings the original back
-• Works offline: language packs download once
-• The source language is detected automatically, pick another one with a click if needed
-• Google Translate is optional and off by default
-
-On-page translation happens on your device. The extension doesn't collect any data.
-
-## Описание (русский)
-
-Переводите слова и абзацы одним кликом прямо на странице.
-
-• Дважды щёлкните по слову или трижды по абзацу — перевод появится рядом
-• Или замените текст переводом, оригинал возвращается одним кликом
-• Работает офлайн: языковые пакеты скачиваются один раз
-• Исходный язык определяется автоматически, при необходимости выберите другой одним кликом
-• Google Переводчик — по желанию, по умолчанию выключен
-
-Перевод на странице выполняется на вашем устройстве. Расширение не собирает никаких данных.
+One file per store language in `descriptions/<locale>.txt`, the same languages as `_locales`. Images for each language are made by `render.sh` into `images/<locale>/`.
 
 ## What's new in 3.0
 

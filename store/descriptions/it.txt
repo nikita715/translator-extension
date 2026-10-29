@@ -1,0 +1,9 @@
+Traduci parole e paragrafi con un clic, direttamente nella pagina.
+
+• Doppio clic su una parola o triplo clic su un paragrafo: la traduzione appare accanto
+• Oppure sostituisci il testo con la traduzione, un clic ripristina l’originale
+• Funziona offline: i pacchetti lingua si scaricano una sola volta
+• La lingua di origine viene rilevata automaticamente, se serve scegline un’altra con un clic
+• Google Traduttore è facoltativo e disattivato per impostazione predefinita
+
+La traduzione nella pagina avviene sul tuo dispositivo. L’estensione non raccoglie alcun dato.

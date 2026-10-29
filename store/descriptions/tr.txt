@@ -1,0 +1,9 @@
+Kelimeleri ve paragrafları tek tıkla, doğrudan sayfada çevirin.
+
+• Bir kelimeye çift, bir paragrafa üç kez tıklayın; çeviri hemen yanında görünür
+• Ya da metni çevirisiyle değiştirin, tek tıkla orijinale dönün
+• Çevrimdışı çalışır: dil paketleri yalnızca bir kez indirilir
+• Kaynak dil otomatik algılanır, gerekirse tek tıkla başka birini seçin
+• Google Çeviri isteğe bağlıdır ve varsayılan olarak kapalıdır
+
+Sayfadaki çeviri cihazınızda yapılır. Uzantı hiçbir veri toplamaz.

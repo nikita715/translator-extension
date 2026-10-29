@@ -1,0 +1,9 @@
+Traduza palavras e parágrafos com um clique, diretamente na página.
+
+• Faça duplo clique numa palavra ou triplo clique num parágrafo e a tradução aparece ao lado
+• Ou substitua o texto pela tradução; um clique repõe o original
+• Funciona offline: os pacotes de idioma são transferidos uma única vez
+• O idioma de origem é detetado automaticamente; se necessário, escolha outro com um clique
+• O Google Tradutor é opcional e está desativado por predefinição
+
+A tradução na página é feita no seu dispositivo. A extensão não recolhe quaisquer dados.

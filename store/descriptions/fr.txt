@@ -1,0 +1,9 @@
+Traduisez des mots et des paragraphes en un clic, directement sur la page.
+
+• Double-cliquez sur un mot ou triple-cliquez sur un paragraphe : la traduction apparaît juste à côté
+• Ou remplacez le texte par sa traduction, un clic rétablit l’original
+• Fonctionne hors ligne : les packs de langue se téléchargent une seule fois
+• La langue source est détectée automatiquement, choisissez-en une autre en un clic si besoin
+• Google Traduction est facultatif et désactivé par défaut
+
+La traduction sur la page se fait sur votre appareil. L’extension ne collecte aucune donnée.

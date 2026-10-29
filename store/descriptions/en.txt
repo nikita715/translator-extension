@@ -1,0 +1,9 @@
+Translate words and paragraphs with a click, right on the page.
+
+• Double-click a word or triple-click a paragraph, the translation appears next to it
+• Or replace the text with its translation, one click brings the original back
+• Works offline: language packs download once
+• The source language is detected automatically, pick another one with a click if needed
+• Google Translate is optional and off by default
+
+On-page translation happens on your device. The extension doesn't collect any data.

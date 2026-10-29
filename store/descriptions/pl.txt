@@ -1,0 +1,9 @@
+Tłumacz słowa i akapity jednym kliknięciem, bezpośrednio na stronie.
+
+• Kliknij dwukrotnie słowo lub trzykrotnie akapit, a tłumaczenie pojawi się obok
+• Albo zastąp tekst tłumaczeniem, jedno kliknięcie przywraca oryginał
+• Działa offline: pakiety językowe pobierasz tylko raz
+• Język źródłowy jest wykrywany automatycznie, w razie potrzeby wybierz inny jednym kliknięciem
+• Tłumacz Google jest opcjonalny i domyślnie wyłączony
+
+Tłumaczenie na stronie odbywa się na Twoim urządzeniu. Rozszerzenie nie zbiera żadnych danych.
