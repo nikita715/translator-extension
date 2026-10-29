@@ -983,5 +983,8 @@
   },
   "lang_zu": {
     "message": "줄루어"
+  },
+  "rateExtension": {
+    "message": "번역기가 마음에 드시나요? Chrome 웹 스토어에서 평가해 주세요"
   }
 }

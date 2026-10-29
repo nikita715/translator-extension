@@ -983,5 +983,8 @@
   },
   "lang_zu": {
     "message": "Zulu"
+  },
+  "rateExtension": {
+    "message": "Çevirmeni beğendiniz mi? Chrome Web Mağazası'nda puan verin"
   }
 }

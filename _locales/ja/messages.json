@@ -983,5 +983,8 @@
   },
   "lang_zu": {
     "message": "ズールー語"
+  },
+  "rateExtension": {
+    "message": "翻訳ツールを気に入っていただけましたか？Chrome ウェブストアで評価してください"
   }
 }

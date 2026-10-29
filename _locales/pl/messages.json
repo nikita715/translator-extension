@@ -983,5 +983,8 @@
   },
   "lang_zu": {
     "message": "zulu"
+  },
+  "rateExtension": {
+    "message": "Podoba Ci się tłumacz? Oceń go w Chrome Web Store"
   }
 }

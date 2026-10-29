@@ -983,5 +983,8 @@
   },
   "lang_zu": {
     "message": "ซูลู"
+  },
+  "rateExtension": {
+    "message": "ชอบตัวแปลนี้ไหม ให้คะแนนใน Chrome เว็บสโตร์"
   }
 }

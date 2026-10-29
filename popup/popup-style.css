@@ -309,6 +309,51 @@ section > .option:last-child {
   text-decoration: underline;
 }
 
+.rate {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Narrower than the popup, so a long line breaks into two of similar length */
+.rate a {
+  display: inline-block;
+  max-width: 230px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.rate a:hover span {
+  text-decoration: underline;
+}
+
+.rate .heart {
+  margin-inline-end: 3px;
+  vertical-align: -1px;
+  fill: #e8456b;
+  transition: transform 0.2s;
+}
+
+.rate a:hover .heart {
+  animation: heartbeat 0.9s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  20% { transform: scale(1.25); }
+  40% { transform: scale(1); }
+  60% { transform: scale(1.15); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rate a:hover .heart {
+    animation: none;
+  }
+}
+
 .option.disabled {
   opacity: 0.45;
   cursor: default;

@@ -15,6 +15,8 @@
 */
 
 document.addEventListener('DOMContentLoaded', function() {
+  // The store page of the installed extension, unpacked copies have another id
+  document.getElementById("translator-rate").href = `https://chromewebstore.google.com/detail/${chrome.runtime.id}/reviews`;
   let sourceLanguageElement = document.getElementById("translator-source-language");
   let targetLanguageElement = document.getElementById("translator-target-language");
   let swapLanguagesElement = document.getElementById("translator-swap-languages");
