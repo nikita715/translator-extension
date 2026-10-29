@@ -14,16 +14,16 @@ sed 's#<script src="../builtInLanguages.js"#<script src="../stub.js"></script>\n
 
 render() { # page, output, width, height; screenshots always use the light theme
   "$chrome" --headless=new --disable-gpu --hide-scrollbars --allow-file-access-from-files \
-    --user-data-dir="$build/profile" --blink-settings=preferredColorScheme=1 --window-size="$3,$4" --virtual-time-budget=2000 \
+    --user-data-dir="$build/profile" --blink-settings=preferredColorScheme=1 --window-size="$3,$4" --virtual-time-budget=5000 \
     --screenshot="$2" "file://$build/$1" >/dev/null 2>&1 &
   pid=$!
   # Headless Chrome sometimes hangs after taking the screenshot
-  (sleep 15; kill $pid 2>/dev/null) &
+  (sleep 25; kill $pid 2>/dev/null) &
   wait $pid || true
   echo "$2"
 }
 
-for page in 1-on-page 2-replace 3-settings 4-modes; do
+for page in 1-on-page 2-replace 3-settings 4-modes 5-engines; do
   render "$page.html" "$PWD/screenshots/$page.png" 1280 800
 done
 render promo-small.html "$PWD/promo-small-440x280.png" 440 280

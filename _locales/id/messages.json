@@ -3,7 +3,7 @@
     "message": "Translator – Terjemahkan dengan Sekali Klik"
   },
   "extDescription": {
-    "message": "Terjemahkan kata dan paragraf dengan sekali klik, langsung di halaman dengan penerjemah offline Chrome atau di Google Terjemahan."
+    "message": "Terjemahkan kata dan paragraf sekali klik langsung di halaman. Bisa offline."
   },
   "contextMenuTranslate": {
     "message": "Terjemahkan"
@@ -12,7 +12,7 @@
     "message": "Menerjemahkan…"
   },
   "downloadingModel": {
-    "message": "Mengunduh model bahasa… $PERCENT$%",
+    "message": "Mengunduh paket bahasa… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Model terjemahan Firefox, offline setelah diunduh, ~20–60 MB per bahasa"
+    "message": "Penerjemah Firefox, offline setelah diunduh, ~20–60 MB per bahasa"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot memerlukan akses ke penyimpanan model Mozilla untuk mengunduh model."
+    "message": "Bergamot memerlukan akses ke penyimpanan Mozilla untuk mengunduh paket bahasa."
   },
   "allowAccess": {
     "message": "Izinkan"
@@ -153,7 +153,7 @@
     "message": "Buka jika tidak dapat diterjemahkan di halaman"
   },
   "askBeforeDownload": {
-    "message": "Tanya sebelum mengunduh model"
+    "message": "Tanya sebelum mengunduh"
   },
   "askBeforeDownloadCaption": {
     "message": "Paket bahasa berukuran puluhan megabyte"
@@ -195,7 +195,7 @@
     "message": "Browser ini tidak memiliki penerjemah bawaan Chrome"
   },
   "modelDownloadFailed": {
-    "message": "Model bahasa gagal diunduh. Periksa koneksi internet"
+    "message": "Paket bahasa gagal diunduh. Periksa koneksi internet"
   },
   "sourceLanguageLabel": {
     "message": "Bahasa sumber:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Model deteksi bahasa perlu diunduh"
+    "message": "Deteksi bahasa perlu diunduh"
   },
   "download": {
     "message": "Unduh"

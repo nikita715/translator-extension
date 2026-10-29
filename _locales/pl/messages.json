@@ -3,7 +3,7 @@
     "message": "Translator – Tłumacz jednym kliknięciem"
   },
   "extDescription": {
-    "message": "Tłumacz słowa i akapity jednym kliknięciem, bezpośrednio na stronie tłumaczem offline Chrome lub w Tłumaczu Google."
+    "message": "Tłumacz słowa i akapity jednym kliknięciem wprost na stronie. Działa offline."
   },
   "contextMenuTranslate": {
     "message": "Przetłumacz"
@@ -12,7 +12,7 @@
     "message": "Tłumaczenie…"
   },
   "downloadingModel": {
-    "message": "Pobieranie modelu językowego… $PERCENT$%",
+    "message": "Pobieranie pakietu językowego… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Modele tłumaczenia Firefoksa, offline po pobraniu, ~20–60 MB na język"
+    "message": "Tłumacz z Firefoksa, offline po pobraniu, ~20–60 MB na język"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot potrzebuje dostępu do magazynu modeli Mozilli, aby pobierać modele."
+    "message": "Bergamot potrzebuje dostępu do magazynu Mozilli, aby pobierać pakiety językowe."
   },
   "allowAccess": {
     "message": "Zezwól"
@@ -153,7 +153,7 @@
     "message": "Otwieraj go, gdy nie da się przetłumaczyć na stronie"
   },
   "askBeforeDownload": {
-    "message": "Pytaj przed pobraniem modeli"
+    "message": "Pytaj przed pobraniem"
   },
   "askBeforeDownloadCaption": {
     "message": "Pakiety językowe zajmują dziesiątki megabajtów"
@@ -195,7 +195,7 @@
     "message": "Ta przeglądarka nie ma wbudowanego tłumacza Chrome"
   },
   "modelDownloadFailed": {
-    "message": "Nie udało się pobrać modelu językowego. Sprawdź połączenie z internetem"
+    "message": "Nie udało się pobrać pakietu językowego. Sprawdź połączenie z internetem"
   },
   "sourceLanguageLabel": {
     "message": "Język źródłowy:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Trzeba pobrać model wykrywania języka"
+    "message": "Trzeba pobrać wykrywanie języka"
   },
   "download": {
     "message": "Pobierz"

@@ -3,7 +3,7 @@
     "message": "Translator – Traduceți cu un clic"
   },
   "extDescription": {
-    "message": "Traduceți cuvinte și paragrafe cu un clic, direct pe pagină cu traducătorul offline Chrome sau în Google Traducere."
+    "message": "Tradu cuvinte și paragrafe cu un clic direct pe pagină. Funcționează offline."
   },
   "contextMenuTranslate": {
     "message": "Traduceți"
@@ -12,7 +12,7 @@
     "message": "Se traduce…"
   },
   "downloadingModel": {
-    "message": "Se descarcă modelul de limbă… $PERCENT$%",
+    "message": "Se descarcă pachetul de limbă… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Modele de traducere Firefox, offline după descărcare, ~20–60 MB per limbă"
+    "message": "Traducătorul din Firefox, offline după descărcare, ~20–60 MB pe limbă"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot are nevoie de acces la stocarea de modele Mozilla pentru a descărca modele."
+    "message": "Bergamot are nevoie de acces la spațiul de stocare Mozilla pentru a descărca pachete de limbă."
   },
   "allowAccess": {
     "message": "Permite"
@@ -153,7 +153,7 @@
     "message": "Deschideți-l când nu se poate traduce pe pagină"
   },
   "askBeforeDownload": {
-    "message": "Întreabă înainte de a descărca modele"
+    "message": "Întreabă înainte de descărcare"
   },
   "askBeforeDownloadCaption": {
     "message": "Pachetele de limbă au zeci de megabytes"
@@ -195,7 +195,7 @@
     "message": "Acest browser nu are traducătorul integrat Chrome"
   },
   "modelDownloadFailed": {
-    "message": "Nu s-a putut descărca modelul de limbă. Verifică conexiunea la internet"
+    "message": "Nu s-a putut descărca pachetul de limbă. Verifică conexiunea la internet"
   },
   "sourceLanguageLabel": {
     "message": "Limba sursă:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Trebuie descărcat modelul de detectare a limbii"
+    "message": "Trebuie descărcată detectarea limbii"
   },
   "download": {
     "message": "Descarcă"

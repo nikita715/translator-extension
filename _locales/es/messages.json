@@ -3,7 +3,7 @@
     "message": "Translator – Traduce con un clic"
   },
   "extDescription": {
-    "message": "Traduce palabras y párrafos con un clic, en la misma página con el traductor sin conexión de Chrome o en Google Traductor."
+    "message": "Traduce palabras y párrafos con un clic, en la propia página. Funciona sin conexión."
   },
   "contextMenuTranslate": {
     "message": "Traducir"
@@ -12,7 +12,7 @@
     "message": "Traduciendo…"
   },
   "downloadingModel": {
-    "message": "Descargando modelo de idioma… $PERCENT$ %",
+    "message": "Descargando el paquete de idioma… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Modelos de traducción de Firefox, sin conexión tras la descarga, ~20–60 MB por idioma"
+    "message": "El traductor de Firefox, sin conexión tras la descarga, ~20–60 MB por idioma"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot necesita acceso al almacenamiento de modelos de Mozilla para descargarlos."
+    "message": "Bergamot necesita acceso al almacenamiento de Mozilla para descargar paquetes de idioma."
   },
   "allowAccess": {
     "message": "Permitir"
@@ -153,7 +153,7 @@
     "message": "Abrirlo si no se puede traducir en la página"
   },
   "askBeforeDownload": {
-    "message": "Preguntar antes de descargar modelos"
+    "message": "Preguntar antes de descargar"
   },
   "askBeforeDownloadCaption": {
     "message": "Los paquetes de idioma ocupan decenas de megabytes"
@@ -195,7 +195,7 @@
     "message": "Este navegador no tiene el traductor integrado de Chrome"
   },
   "modelDownloadFailed": {
-    "message": "No se pudo descargar el modelo de idioma. Comprueba la conexión a internet"
+    "message": "No se pudo descargar el paquete de idioma. Comprueba la conexión a internet"
   },
   "sourceLanguageLabel": {
     "message": "Idioma de origen:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Hay que descargar el modelo de detección de idioma"
+    "message": "Hay que descargar la detección de idioma"
   },
   "download": {
     "message": "Descargar"

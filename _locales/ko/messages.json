@@ -3,7 +3,7 @@
     "message": "Translator – 클릭 한 번으로 번역"
   },
   "extDescription": {
-    "message": "클릭 한 번으로 단어와 문단을 번역하세요. Chrome 오프라인 번역기로 페이지에서 바로, 또는 Google 번역에서 확인할 수 있습니다."
+    "message": "단어와 문단을 클릭 한 번으로 페이지에서 바로 번역하세요. 오프라인에서도 작동합니다."
   },
   "contextMenuTranslate": {
     "message": "번역"
@@ -12,7 +12,7 @@
     "message": "번역 중…"
   },
   "downloadingModel": {
-    "message": "언어 모델 다운로드 중… $PERCENT$%",
+    "message": "언어 팩 다운로드 중… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Firefox 번역 모델, 다운로드 후 오프라인 사용, 언어당 약 20–60MB"
+    "message": "Firefox의 번역기, 다운로드 후 오프라인 사용, 언어당 약 20–60MB"
   },
   "statusBergamotAccess": {
-    "message": "모델을 다운로드하려면 Bergamot이 Mozilla 모델 저장소에 액세스해야 합니다."
+    "message": "Bergamot이 언어 팩을 다운로드하려면 Mozilla 저장소에 접근해야 합니다."
   },
   "allowAccess": {
     "message": "허용"
@@ -153,7 +153,7 @@
     "message": "페이지에서 번역할 수 없을 때 Google 번역 열기"
   },
   "askBeforeDownload": {
-    "message": "모델 다운로드 전에 묻기"
+    "message": "다운로드 전에 묻기"
   },
   "askBeforeDownloadCaption": {
     "message": "언어 팩 크기는 수십 MB입니다"
@@ -195,7 +195,7 @@
     "message": "이 브라우저에는 Chrome 내장 번역기가 없습니다"
   },
   "modelDownloadFailed": {
-    "message": "언어 모델을 다운로드하지 못했습니다. 인터넷 연결을 확인하세요"
+    "message": "언어 팩을 다운로드하지 못했습니다. 인터넷 연결을 확인하세요"
   },
   "sourceLanguageLabel": {
     "message": "원본 언어:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "언어 감지 모델을 다운로드해야 합니다"
+    "message": "언어 감지 기능을 다운로드해야 합니다"
   },
   "download": {
     "message": "다운로드"

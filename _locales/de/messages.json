@@ -3,7 +3,7 @@
     "message": "Translator – Übersetzen mit einem Klick"
   },
   "extDescription": {
-    "message": "Wörter und Absätze mit einem Klick übersetzen, direkt auf der Seite mit dem Offline-Übersetzer von Chrome oder in Google Übersetzer."
+    "message": "Wörter und Absätze per Klick direkt auf der Seite übersetzen. Funktioniert offline."
   },
   "contextMenuTranslate": {
     "message": "Übersetzen"
@@ -12,7 +12,7 @@
     "message": "Wird übersetzt…"
   },
   "downloadingModel": {
-    "message": "Sprachmodell wird heruntergeladen… $PERCENT$ %",
+    "message": "Sprachpaket wird heruntergeladen… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Übersetzungsmodelle von Firefox, nach dem Download offline, ~20–60 MB pro Sprache"
+    "message": "Der Übersetzer von Firefox, nach dem Download offline, ~20–60 MB pro Sprache"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot benötigt Zugriff auf Mozillas Modellspeicher, um Modelle herunterzuladen."
+    "message": "Bergamot braucht Zugriff auf den Speicher von Mozilla, um Sprachpakete herunterzuladen."
   },
   "allowAccess": {
     "message": "Zulassen"
@@ -153,7 +153,7 @@
     "message": "Öffnen, wenn auf der Seite nicht übersetzt werden kann"
   },
   "askBeforeDownload": {
-    "message": "Vor dem Herunterladen von Modellen fragen"
+    "message": "Vor dem Herunterladen fragen"
   },
   "askBeforeDownloadCaption": {
     "message": "Sprachpakete sind mehrere Dutzend Megabyte groß"
@@ -195,7 +195,7 @@
     "message": "Dieser Browser hat den integrierten Übersetzer von Chrome nicht"
   },
   "modelDownloadFailed": {
-    "message": "Das Sprachmodell konnte nicht heruntergeladen werden. Prüfe die Internetverbindung"
+    "message": "Das Sprachpaket konnte nicht heruntergeladen werden. Prüfe die Internetverbindung"
   },
   "sourceLanguageLabel": {
     "message": "Ausgangssprache:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Das Modell zur Spracherkennung muss heruntergeladen werden"
+    "message": "Die Spracherkennung muss heruntergeladen werden"
   },
   "download": {
     "message": "Herunterladen"

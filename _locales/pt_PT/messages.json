@@ -3,7 +3,7 @@
     "message": "Translator – Traduza com um clique"
   },
   "extDescription": {
-    "message": "Traduza palavras e parágrafos com um clique, na própria página com o tradutor offline do Chrome ou no Google Tradutor."
+    "message": "Traduza palavras e parágrafos com um clique, na própria página. Funciona offline."
   },
   "contextMenuTranslate": {
     "message": "Traduzir"
@@ -12,7 +12,7 @@
     "message": "A traduzir…"
   },
   "downloadingModel": {
-    "message": "A transferir o modelo de idioma… $PERCENT$%",
+    "message": "A transferir o pacote de idioma… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Modelos de tradução do Firefox, offline após a transferência, ~20–60 MB por idioma"
+    "message": "O tradutor do Firefox, offline após a transferência, ~20–60 MB por idioma"
   },
   "statusBergamotAccess": {
-    "message": "O Bergamot precisa de acesso ao armazenamento de modelos da Mozilla para os transferir."
+    "message": "O Bergamot precisa de acesso ao armazenamento da Mozilla para transferir pacotes de idioma."
   },
   "allowAccess": {
     "message": "Permitir"
@@ -153,7 +153,7 @@
     "message": "Abrir quando não for possível traduzir na página"
   },
   "askBeforeDownload": {
-    "message": "Perguntar antes de transferir modelos"
+    "message": "Perguntar antes de transferir"
   },
   "askBeforeDownloadCaption": {
     "message": "Os pacotes de idioma ocupam dezenas de megabytes"
@@ -195,7 +195,7 @@
     "message": "Este navegador não tem o tradutor integrado do Chrome"
   },
   "modelDownloadFailed": {
-    "message": "Não foi possível transferir o modelo de idioma. Verifique a ligação à internet"
+    "message": "Não foi possível transferir o pacote de idioma. Verifique a ligação à internet"
   },
   "sourceLanguageLabel": {
     "message": "Idioma de origem:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "É preciso transferir o modelo de deteção de idioma"
+    "message": "É preciso transferir a deteção de idioma"
   },
   "download": {
     "message": "Transferir"

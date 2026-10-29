@@ -3,7 +3,7 @@
     "message": "Translator – 一键翻译"
   },
   "extDescription": {
-    "message": "一键翻译单词和段落：使用 Chrome 离线翻译器直接在网页上翻译，或在 Google 翻译中打开。"
+    "message": "一键在网页上直接翻译单词和段落，可离线使用。"
   },
   "contextMenuTranslate": {
     "message": "翻译"
@@ -12,7 +12,7 @@
     "message": "正在翻译…"
   },
   "downloadingModel": {
-    "message": "正在下载语言模型… $PERCENT$%",
+    "message": "正在下载语言包… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Firefox 翻译模型，下载后可离线使用，每种语言约 20–60 MB"
+    "message": "Firefox 的翻译器，下载后可离线使用，每种语言约 20–60 MB"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot 需要访问 Mozilla 的模型存储才能下载模型。"
+    "message": "Bergamot 需要访问 Mozilla 的存储空间才能下载语言包。"
   },
   "allowAccess": {
     "message": "允许"
@@ -153,7 +153,7 @@
     "message": "无法在页面上翻译时打开 Google 翻译"
   },
   "askBeforeDownload": {
-    "message": "下载模型前询问"
+    "message": "下载前询问"
   },
   "askBeforeDownloadCaption": {
     "message": "语言包大小为几十 MB"
@@ -195,7 +195,7 @@
     "message": "此浏览器没有 Chrome 内置翻译器"
   },
   "modelDownloadFailed": {
-    "message": "无法下载语言模型。请检查网络连接"
+    "message": "无法下载语言包。请检查网络连接"
   },
   "sourceLanguageLabel": {
     "message": "源语言："
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "需要下载语言检测模型"
+    "message": "需要下载语言检测功能"
   },
   "download": {
     "message": "下载"

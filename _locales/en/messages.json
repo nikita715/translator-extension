@@ -3,7 +3,7 @@
     "message": "Translator – Translate with a Click"
   },
   "extDescription": {
-    "message": "Translate words and paragraphs with a click, right on the page with Chrome's offline translator or in Google Translate."
+    "message": "Translate words and paragraphs with a click, right on the page. Works offline."
   },
   "contextMenuTranslate": {
     "message": "Translate"
@@ -12,7 +12,7 @@
     "message": "Translating…"
   },
   "downloadingModel": {
-    "message": "Downloading language model… $PERCENT$%",
+    "message": "Downloading the language pack… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Firefox translation models, offline after download, ~20–60 MB per language"
+    "message": "Firefox's translator, offline after download, ~20–60 MB per language"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot needs access to Mozilla's model storage to download models."
+    "message": "Bergamot needs access to Mozilla's storage to download language packs."
   },
   "allowAccess": {
     "message": "Allow"
@@ -153,7 +153,7 @@
     "message": "Open it when the page can't be translated"
   },
   "askBeforeDownload": {
-    "message": "Ask before downloading models"
+    "message": "Ask before downloading"
   },
   "askBeforeDownloadCaption": {
     "message": "Language packs take tens of megabytes"
@@ -195,7 +195,7 @@
     "message": "This browser doesn't have Chrome's built-in translator"
   },
   "modelDownloadFailed": {
-    "message": "Couldn't download the language model. Check your internet connection"
+    "message": "Couldn't download the language pack. Check your internet connection"
   },
   "sourceLanguageLabel": {
     "message": "Source language:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "The language detection model needs to be downloaded"
+    "message": "Language detection needs to be downloaded"
   },
   "download": {
     "message": "Download"

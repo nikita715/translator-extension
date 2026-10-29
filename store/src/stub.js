@@ -1,5 +1,6 @@
 // Stands in for the chrome.* and Translator APIs when the popup is rendered for store images.
-// Query parameters: a = trigger mode, alt = require Alt, r = replace text, crop = hide the Alt switch
+// Query parameters: a = trigger mode, alt = require Alt, r = replace text, crop = hide the Alt switch,
+// e = default engine, languages = open the supported languages, scroll = element id to scroll to
 let q = new URLSearchParams(location.search);
 // Show "Alt" instead of "⌥ Option"
 Object.defineProperty(navigator, "platform", { get: () => "Win32" });
@@ -34,13 +35,28 @@ window.chrome = {
         translator_holdAltToTranslate: q.get("alt") == "1",
         translator_useBuiltIn: true,
         translator_replaceText: q.get("r") == "1",
-        translator_useOpenTab: true
+        translator_useOpenTab: true,
+        translator_engine: q.get("e") || "chrome",
+        translator_googleFallback: false,
+        translator_askBeforeDownload: true
       }),
       set() {}
     }
   },
-  runtime: { sendMessage() {} }
+  permissions: { contains: async () => true, request: async () => true },
+  runtime: { id: "store", sendMessage() {} }
 };
+document.addEventListener("DOMContentLoaded", () => {
+  // The supported languages are filled after the engine checks them
+  setTimeout(() => {
+    if (q.get("languages") == "1") {
+      document.getElementById("translator-engine-languages").open = true;
+    }
+    if (q.get("scroll")) {
+      document.getElementById(q.get("scroll")).scrollIntoView();
+    }
+  }, 1000);
+});
 // Languages Chrome's built-in translator supports
 const builtIn = "ar bg bn cs da de el en es fi fr he hi hr hu id it ja kn ko lt mr nl no pl pt ro ru sk sl sv ta te th tr uk vi zh zh-Hant".split(" ");
 window.Translator = {

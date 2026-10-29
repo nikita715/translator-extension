@@ -3,7 +3,7 @@
     "message": "Translator – ワンクリック翻訳"
   },
   "extDescription": {
-    "message": "単語や段落をワンクリックで翻訳。Chrome のオフライン翻訳機能でページ上に直接表示、または Google 翻訳で開きます。"
+    "message": "単語や段落をワンクリックでページ上でそのまま翻訳。オフラインでも使えます。"
   },
   "contextMenuTranslate": {
     "message": "翻訳"
@@ -12,7 +12,7 @@
     "message": "翻訳中…"
   },
   "downloadingModel": {
-    "message": "言語モデルをダウンロード中… $PERCENT$%",
+    "message": "言語パックをダウンロード中… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Firefox の翻訳モデル、ダウンロード後はオフラインで動作、1 言語あたり約 20〜60 MB"
+    "message": "Firefox の翻訳機能、ダウンロード後はオフラインで動作、1 言語あたり約 20〜60 MB"
   },
   "statusBergamotAccess": {
-    "message": "モデルをダウンロードするには、Bergamot が Mozilla のモデル保存場所にアクセスする必要があります。"
+    "message": "Bergamot で言語パックをダウンロードするには Mozilla のストレージへのアクセスが必要です。"
   },
   "allowAccess": {
     "message": "許可"
@@ -153,7 +153,7 @@
     "message": "ページ上で翻訳できないときに Google 翻訳を開く"
   },
   "askBeforeDownload": {
-    "message": "モデルをダウンロードする前に確認する"
+    "message": "ダウンロード前に確認する"
   },
   "askBeforeDownloadCaption": {
     "message": "言語パックは数十 MB あります"
@@ -195,7 +195,7 @@
     "message": "このブラウザには Chrome の組み込み翻訳機能がありません"
   },
   "modelDownloadFailed": {
-    "message": "言語モデルをダウンロードできませんでした。インターネット接続を確認してください"
+    "message": "言語パックをダウンロードできませんでした。インターネット接続を確認してください"
   },
   "sourceLanguageLabel": {
     "message": "翻訳元の言語:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "言語検出モデルのダウンロードが必要です"
+    "message": "言語検出機能のダウンロードが必要です"
   },
   "download": {
     "message": "ダウンロード"

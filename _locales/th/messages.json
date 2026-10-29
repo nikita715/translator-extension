@@ -3,7 +3,7 @@
     "message": "Translator – แปลได้ในคลิกเดียว"
   },
   "extDescription": {
-    "message": "แปลคำและย่อหน้าได้ในคลิกเดียว บนหน้าเว็บด้วยตัวแปลออฟไลน์ของ Chrome หรือใน Google แปลภาษา"
+    "message": "แปลคำและย่อหน้าได้ในคลิกเดียวบนหน้าเว็บ ใช้งานแบบออฟไลน์ได้"
   },
   "contextMenuTranslate": {
     "message": "แปล"
@@ -12,7 +12,7 @@
     "message": "กำลังแปล…"
   },
   "downloadingModel": {
-    "message": "กำลังดาวน์โหลดโมเดลภาษา… $PERCENT$%",
+    "message": "กำลังดาวน์โหลดแพ็กภาษา… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "โมเดลแปลของ Firefox ใช้ออฟไลน์ได้หลังดาวน์โหลด ประมาณ 20–60 MB ต่อภาษา"
+    "message": "ตัวแปลของ Firefox ใช้งานออฟไลน์ได้หลังดาวน์โหลด ~20–60 MB ต่อภาษา"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot ต้องเข้าถึงที่เก็บโมเดลของ Mozilla เพื่อดาวน์โหลดโมเดล"
+    "message": "Bergamot ต้องเข้าถึงพื้นที่เก็บข้อมูลของ Mozilla เพื่อดาวน์โหลดแพ็กภาษา"
   },
   "allowAccess": {
     "message": "อนุญาต"
@@ -153,7 +153,7 @@
     "message": "เปิดเมื่อแปลบนหน้าเว็บไม่ได้"
   },
   "askBeforeDownload": {
-    "message": "ถามก่อนดาวน์โหลดโมเดล"
+    "message": "ถามก่อนดาวน์โหลด"
   },
   "askBeforeDownloadCaption": {
     "message": "แพ็กภาษามีขนาดหลายสิบเมกะไบต์"
@@ -195,7 +195,7 @@
     "message": "เบราว์เซอร์นี้ไม่มีตัวแปลในตัวของ Chrome"
   },
   "modelDownloadFailed": {
-    "message": "ดาวน์โหลดโมเดลภาษาไม่ได้ ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต"
+    "message": "ดาวน์โหลดแพ็กภาษาไม่ได้ ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต"
   },
   "sourceLanguageLabel": {
     "message": "ภาษาต้นทาง:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "ต้องดาวน์โหลดโมเดลตรวจหาภาษา"
+    "message": "ต้องดาวน์โหลดการตรวจหาภาษา"
   },
   "download": {
     "message": "ดาวน์โหลด"

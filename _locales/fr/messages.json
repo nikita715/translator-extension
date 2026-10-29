@@ -3,7 +3,7 @@
     "message": "Translator – Traduire en un clic"
   },
   "extDescription": {
-    "message": "Traduisez mots et paragraphes en un clic, sur la page avec le traducteur hors ligne de Chrome ou dans Google Traduction."
+    "message": "Traduisez mots et paragraphes d'un clic, directement sur la page. Fonctionne hors ligne."
   },
   "contextMenuTranslate": {
     "message": "Traduire"
@@ -12,7 +12,7 @@
     "message": "Traduction…"
   },
   "downloadingModel": {
-    "message": "Téléchargement du modèle de langue… $PERCENT$ %",
+    "message": "Téléchargement du pack de langue… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Modèles de traduction de Firefox, hors ligne après téléchargement, ~20–60 Mo par langue"
+    "message": "Le traducteur de Firefox, hors ligne après téléchargement, ~20–60 Mo par langue"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot a besoin d'accéder au stockage de modèles de Mozilla pour les télécharger."
+    "message": "Bergamot a besoin d'accéder au stockage de Mozilla pour télécharger les packs de langue."
   },
   "allowAccess": {
     "message": "Autoriser"
@@ -153,7 +153,7 @@
     "message": "L'ouvrir si la traduction sur la page échoue"
   },
   "askBeforeDownload": {
-    "message": "Demander avant de télécharger des modèles"
+    "message": "Demander avant de télécharger"
   },
   "askBeforeDownloadCaption": {
     "message": "Les packs de langue pèsent des dizaines de mégaoctets"
@@ -195,7 +195,7 @@
     "message": "Ce navigateur n'a pas le traducteur intégré de Chrome"
   },
   "modelDownloadFailed": {
-    "message": "Impossible de télécharger le modèle de langue. Vérifiez votre connexion internet"
+    "message": "Impossible de télécharger le pack de langue. Vérifiez votre connexion internet"
   },
   "sourceLanguageLabel": {
     "message": "Langue source :"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Le modèle de détection de langue doit être téléchargé"
+    "message": "La détection de langue doit être téléchargée"
   },
   "download": {
     "message": "Télécharger"

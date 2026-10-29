@@ -3,7 +3,7 @@
     "message": "Translator – Tek tıkla çeviri"
   },
   "extDescription": {
-    "message": "Kelimeleri ve paragrafları tek tıkla çevirin: Chrome'un çevrimdışı çevirmeniyle doğrudan sayfada veya Google Çeviri'de."
+    "message": "Kelimeleri ve paragrafları tek tıkla doğrudan sayfada çevirin. Çevrimdışı çalışır."
   },
   "contextMenuTranslate": {
     "message": "Çevir"
@@ -12,7 +12,7 @@
     "message": "Çevriliyor…"
   },
   "downloadingModel": {
-    "message": "Dil modeli indiriliyor… %$PERCENT$",
+    "message": "Dil paketi indiriliyor… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Firefox çeviri modelleri, indirdikten sonra çevrimdışı, dil başına ~20–60 MB"
+    "message": "Firefox'un çevirmeni, indirdikten sonra çevrimdışı, dil başına ~20–60 MB"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot'un modelleri indirmek için Mozilla'nın model deposuna erişmesi gerekiyor."
+    "message": "Bergamot'un dil paketlerini indirmek için Mozilla deposuna erişmesi gerekiyor."
   },
   "allowAccess": {
     "message": "İzin ver"
@@ -153,7 +153,7 @@
     "message": "Sayfada çevrilemezse Google Çeviri'yi aç"
   },
   "askBeforeDownload": {
-    "message": "Modelleri indirmeden önce sor"
+    "message": "İndirmeden önce sor"
   },
   "askBeforeDownloadCaption": {
     "message": "Dil paketleri onlarca megabayt yer kaplar"
@@ -195,7 +195,7 @@
     "message": "Bu tarayıcıda Chrome'un yerleşik çevirmeni yok"
   },
   "modelDownloadFailed": {
-    "message": "Dil modeli indirilemedi. İnternet bağlantınızı kontrol edin"
+    "message": "Dil paketi indirilemedi. İnternet bağlantınızı kontrol edin"
   },
   "sourceLanguageLabel": {
     "message": "Kaynak dil:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Dil algılama modelinin indirilmesi gerekiyor"
+    "message": "Dil algılamanın indirilmesi gerekiyor"
   },
   "download": {
     "message": "İndir"

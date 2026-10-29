@@ -3,7 +3,7 @@
     "message": "Translator – Vertalen met één klik"
   },
   "extDescription": {
-    "message": "Vertaal woorden en alinea's met één klik, direct op de pagina met de offline vertaler van Chrome of in Google Translate."
+    "message": "Vertaal woorden en alinea's met één klik op de pagina zelf. Werkt offline."
   },
   "contextMenuTranslate": {
     "message": "Vertalen"
@@ -12,7 +12,7 @@
     "message": "Vertalen…"
   },
   "downloadingModel": {
-    "message": "Taalmodel downloaden… $PERCENT$%",
+    "message": "Taalpakket downloaden… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Vertaalmodellen van Firefox, offline na downloaden, ~20–60 MB per taal"
+    "message": "De vertaler van Firefox, offline na het downloaden, ~20–60 MB per taal"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot heeft toegang tot de modelopslag van Mozilla nodig om modellen te downloaden."
+    "message": "Bergamot heeft toegang tot de opslag van Mozilla nodig om taalpakketten te downloaden."
   },
   "allowAccess": {
     "message": "Toestaan"
@@ -153,7 +153,7 @@
     "message": "Openen als vertalen op de pagina niet lukt"
   },
   "askBeforeDownload": {
-    "message": "Vragen voor het downloaden van modellen"
+    "message": "Vragen voor het downloaden"
   },
   "askBeforeDownloadCaption": {
     "message": "Taalpakketten zijn tientallen megabytes groot"
@@ -195,7 +195,7 @@
     "message": "Deze browser heeft de ingebouwde vertaler van Chrome niet"
   },
   "modelDownloadFailed": {
-    "message": "Het taalmodel kon niet worden gedownload. Controleer je internetverbinding"
+    "message": "Het taalpakket kon niet worden gedownload. Controleer je internetverbinding"
   },
   "sourceLanguageLabel": {
     "message": "Brontaal:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Het taaldetectiemodel moet worden gedownload"
+    "message": "Taaldetectie moet worden gedownload"
   },
   "download": {
     "message": "Downloaden"

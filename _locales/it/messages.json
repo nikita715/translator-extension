@@ -3,7 +3,7 @@
     "message": "Translator – Traduci con un clic"
   },
   "extDescription": {
-    "message": "Traduci parole e paragrafi con un clic, direttamente nella pagina con il traduttore offline di Chrome o in Google Traduttore."
+    "message": "Traduci parole e paragrafi con un clic direttamente nella pagina. Funziona offline."
   },
   "contextMenuTranslate": {
     "message": "Traduci"
@@ -12,7 +12,7 @@
     "message": "Traduzione…"
   },
   "downloadingModel": {
-    "message": "Download del modello linguistico… $PERCENT$%",
+    "message": "Download del pacchetto di lingua… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Modelli di traduzione di Firefox, offline dopo il download, ~20–60 MB per lingua"
+    "message": "Il traduttore di Firefox, offline dopo il download, ~20–60 MB per lingua"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot ha bisogno di accedere all'archivio dei modelli di Mozilla per scaricarli."
+    "message": "Bergamot ha bisogno di accedere all'archivio di Mozilla per scaricare i pacchetti di lingua."
   },
   "allowAccess": {
     "message": "Consenti"
@@ -153,7 +153,7 @@
     "message": "Aprirlo se non si riesce a tradurre nella pagina"
   },
   "askBeforeDownload": {
-    "message": "Chiedi prima di scaricare i modelli"
+    "message": "Chiedi prima di scaricare"
   },
   "askBeforeDownloadCaption": {
     "message": "I pacchetti di lingua occupano decine di megabyte"
@@ -195,7 +195,7 @@
     "message": "Questo browser non ha il traduttore integrato di Chrome"
   },
   "modelDownloadFailed": {
-    "message": "Impossibile scaricare il modello linguistico. Controlla la connessione a internet"
+    "message": "Impossibile scaricare il pacchetto di lingua. Controlla la connessione a internet"
   },
   "sourceLanguageLabel": {
     "message": "Lingua di origine:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "È necessario scaricare il modello di rilevamento della lingua"
+    "message": "È necessario scaricare il rilevamento della lingua"
   },
   "download": {
     "message": "Scarica"

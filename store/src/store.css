@@ -32,6 +32,17 @@ body {
   font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
+/* Source language choices of the translation popup */
+.languages { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-bottom: 8px; color: #5f6368; font-size: 13px; }
+.languages b { padding: 1px 9px; border: 1px solid #dadce0; border-radius: 11px; color: #3c4043; font-weight: 400; }
+.languages b.on { border-color: #1a73e8; background: #e8f0fe; color: #1967d2; }
+
+/* Replaced text: dashed frame, source language and restore buttons */
+.replaced { border: 1px dashed rgba(26, 115, 232, 0.7); border-radius: 3px; padding: 0 1px; }
+.inplace { display: inline-flex; gap: 4px; margin-inline-start: 6px; vertical-align: 2px; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.inplace b { display: grid; place-items: center; min-width: 22px; height: 22px; padding: 0 6px; border: 1px solid rgba(26, 115, 232, 0.5); border-radius: 11px; background: #fff; color: #1a73e8; font-size: 11px; font-weight: 600; line-height: 1; text-transform: uppercase; }
+.inplace b.restore { width: 22px; padding: 0; font-size: 14px; }
+
 .popup-frame {
   position: absolute; border: 0; width: 300px; border-radius: 8px; background: #fff;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.06);

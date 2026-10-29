@@ -41,6 +41,8 @@ let bergamotModelsPromise = null;
 // Firefox's settings service lists the same models and, unlike the storage, can be read without access to it
 let bergamotRemoteSettingsUrl = "https://firefox.settings.services.mozilla.com/v1/buckets/main/collections/translations-models/records?_fields=fromLang,toLang";
 let bergamotRemotePairsPromise = null;
+// The settings service names Chinese differently from the storage
+let bergamotRemoteLanguageCodes = { "zh-Hans": "zh", "zh-Hant": "zh_hant" };
 
 // "from-to" (Firefox codes) -> { from, to, files } of the release model, files are
 // { model, lex, vocab } or { model, lex, srcvocab, trgvocab }, each { url, size, sha256 } of the unpacked file
@@ -108,8 +110,11 @@ async function loadBergamotPairs() {
         }
         return response.json();
       }).then(function(json) {
+        let toStorageCode = function(code) {
+          return bergamotRemoteLanguageCodes[code] || code;
+        };
         let pairs = new Set(json.data.map(function(record) {
-          return `${record.fromLang}-${record.toLang}`;
+          return `${toStorageCode(record.fromLang)}-${toStorageCode(record.toLang)}`;
         }));
         if (pairs.has("hbs-en")) {
           bergamotSerboCroatian.forEach(function(language) {

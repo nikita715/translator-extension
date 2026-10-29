@@ -3,7 +3,7 @@
     "message": "Translator – Dịch chỉ với một cú nhấp"
   },
   "extDescription": {
-    "message": "Dịch từ và đoạn văn chỉ với một cú nhấp, ngay trên trang bằng trình dịch ngoại tuyến của Chrome hoặc trong Google Dịch."
+    "message": "Dịch từ và đoạn văn bằng một cú nhấp ngay trên trang. Hoạt động ngoại tuyến."
   },
   "contextMenuTranslate": {
     "message": "Dịch"
@@ -12,7 +12,7 @@
     "message": "Đang dịch…"
   },
   "downloadingModel": {
-    "message": "Đang tải mô hình ngôn ngữ… $PERCENT$%",
+    "message": "Đang tải gói ngôn ngữ… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Mô hình dịch của Firefox, ngoại tuyến sau khi tải, ~20–60 MB mỗi ngôn ngữ"
+    "message": "Trình dịch của Firefox, ngoại tuyến sau khi tải, ~20–60 MB mỗi ngôn ngữ"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot cần quyền truy cập kho mô hình của Mozilla để tải mô hình."
+    "message": "Bergamot cần quyền truy cập kho lưu trữ của Mozilla để tải gói ngôn ngữ."
   },
   "allowAccess": {
     "message": "Cho phép"
@@ -153,7 +153,7 @@
     "message": "Mở Google Dịch nếu không dịch được trên trang"
   },
   "askBeforeDownload": {
-    "message": "Hỏi trước khi tải mô hình"
+    "message": "Hỏi trước khi tải xuống"
   },
   "askBeforeDownloadCaption": {
     "message": "Gói ngôn ngữ nặng hàng chục megabyte"
@@ -195,7 +195,7 @@
     "message": "Trình duyệt này không có trình dịch tích hợp của Chrome"
   },
   "modelDownloadFailed": {
-    "message": "Không tải được mô hình ngôn ngữ. Hãy kiểm tra kết nối internet"
+    "message": "Không tải được gói ngôn ngữ. Hãy kiểm tra kết nối internet"
   },
   "sourceLanguageLabel": {
     "message": "Ngôn ngữ nguồn:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Cần tải mô hình phát hiện ngôn ngữ"
+    "message": "Cần tải tính năng phát hiện ngôn ngữ"
   },
   "download": {
     "message": "Tải xuống"

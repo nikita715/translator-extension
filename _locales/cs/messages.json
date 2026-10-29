@@ -3,7 +3,7 @@
     "message": "Translator – Překlad jedním kliknutím"
   },
   "extDescription": {
-    "message": "Překládejte slova a odstavce jedním kliknutím, přímo na stránce offline překladačem Chrome nebo v Překladači Google."
+    "message": "Překládejte slova a odstavce jedním kliknutím přímo na stránce. Funguje offline."
   },
   "contextMenuTranslate": {
     "message": "Přeložit"
@@ -12,7 +12,7 @@
     "message": "Překládání…"
   },
   "downloadingModel": {
-    "message": "Stahování jazykového modelu… $PERCENT$ %",
+    "message": "Stahování jazykového balíčku… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Překladové modely Firefoxu, po stažení offline, ~20–60 MB na jazyk"
+    "message": "Překladač z Firefoxu, po stažení offline, ~20–60 MB na jazyk"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot potřebuje přístup k úložišti modelů Mozilly, aby mohl stahovat modely."
+    "message": "Bergamot potřebuje přístup k úložišti Mozilly, aby mohl stahovat jazykové balíčky."
   },
   "allowAccess": {
     "message": "Povolit"
@@ -153,7 +153,7 @@
     "message": "Otevřít, když nelze přeložit na stránce"
   },
   "askBeforeDownload": {
-    "message": "Ptát se před stažením modelů"
+    "message": "Ptát se před stažením"
   },
   "askBeforeDownloadCaption": {
     "message": "Jazykové balíčky mají desítky megabajtů"
@@ -195,7 +195,7 @@
     "message": "Tento prohlížeč nemá vestavěný překladač Chrome"
   },
   "modelDownloadFailed": {
-    "message": "Jazykový model se nepodařilo stáhnout. Zkontrolujte připojení k internetu"
+    "message": "Jazykový balíček se nepodařilo stáhnout. Zkontrolujte připojení k internetu"
   },
   "sourceLanguageLabel": {
     "message": "Zdrojový jazyk:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Je potřeba stáhnout model rozpoznávání jazyka"
+    "message": "Je potřeba stáhnout rozpoznávání jazyka"
   },
   "download": {
     "message": "Stáhnout"

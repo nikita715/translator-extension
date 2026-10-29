@@ -3,7 +3,7 @@
     "message": "Translator – ترجمة بنقرة واحدة"
   },
   "extDescription": {
-    "message": "ترجم الكلمات والفقرات بنقرة واحدة، مباشرةً في الصفحة باستخدام مترجم Chrome بلا إنترنت أو في ترجمة Google."
+    "message": "ترجم الكلمات والفقرات بنقرة واحدة على الصفحة نفسها. يعمل دون اتصال."
   },
   "contextMenuTranslate": {
     "message": "ترجمة"
@@ -12,7 +12,7 @@
     "message": "جارٍ الترجمة…"
   },
   "downloadingModel": {
-    "message": "جارٍ تنزيل نموذج اللغة… $PERCENT$%",
+    "message": "جارٍ تنزيل حزمة اللغة… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "نماذج ترجمة Firefox، تعمل بلا إنترنت بعد التنزيل، ~20–60 ميغابايت لكل لغة"
+    "message": "مترجم Firefox، يعمل دون اتصال بعد التنزيل، ~20–60 ميغابايت لكل لغة"
   },
   "statusBergamotAccess": {
-    "message": "يحتاج Bergamot إلى الوصول إلى مخزن نماذج Mozilla لتنزيل النماذج."
+    "message": "يحتاج Bergamot إلى الوصول إلى مساحة تخزين Mozilla لتنزيل حزم اللغات."
   },
   "allowAccess": {
     "message": "سماح"
@@ -153,7 +153,7 @@
     "message": "فتحها عند تعذّر الترجمة في الصفحة"
   },
   "askBeforeDownload": {
-    "message": "السؤال قبل تنزيل النماذج"
+    "message": "السؤال قبل التنزيل"
   },
   "askBeforeDownloadCaption": {
     "message": "تبلغ أحجام حزم اللغات عشرات الميغابايت"
@@ -195,7 +195,7 @@
     "message": "لا يحتوي هذا المتصفح على مترجم Chrome المدمج"
   },
   "modelDownloadFailed": {
-    "message": "تعذّر تنزيل نموذج اللغة. تحقّق من الاتصال بالإنترنت"
+    "message": "تعذّر تنزيل حزمة اللغة. تحقّق من الاتصال بالإنترنت"
   },
   "sourceLanguageLabel": {
     "message": "لغة المصدر:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "يجب تنزيل نموذج اكتشاف اللغة"
+    "message": "يجب تنزيل ميزة اكتشاف اللغة"
   },
   "download": {
     "message": "تنزيل"

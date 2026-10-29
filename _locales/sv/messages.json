@@ -3,7 +3,7 @@
     "message": "Translator – Översätt med ett klick"
   },
   "extDescription": {
-    "message": "Översätt ord och stycken med ett klick, direkt på sidan med Chromes offlineöversättare eller i Google Översätt."
+    "message": "Översätt ord och stycken med ett klick direkt på sidan. Fungerar offline."
   },
   "contextMenuTranslate": {
     "message": "Översätt"
@@ -12,7 +12,7 @@
     "message": "Översätter…"
   },
   "downloadingModel": {
-    "message": "Laddar ned språkmodell… $PERCENT$ %",
+    "message": "Laddar ned språkpaketet… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1",
@@ -111,10 +111,10 @@
     }
   },
   "engineCaptionBergamot": {
-    "message": "Firefox översättningsmodeller, offline efter nedladdning, ~20–60 MB per språk"
+    "message": "Firefox översättare, offline efter nedladdning, ~20–60 MB per språk"
   },
   "statusBergamotAccess": {
-    "message": "Bergamot behöver åtkomst till Mozillas modellagring för att ladda ned modeller."
+    "message": "Bergamot behöver åtkomst till Mozillas lagring för att ladda ned språkpaket."
   },
   "allowAccess": {
     "message": "Tillåt"
@@ -153,7 +153,7 @@
     "message": "Öppna det när sidan inte kan översättas här"
   },
   "askBeforeDownload": {
-    "message": "Fråga innan modeller laddas ned"
+    "message": "Fråga före nedladdning"
   },
   "askBeforeDownloadCaption": {
     "message": "Språkpaket är flera tiotals megabyte"
@@ -195,7 +195,7 @@
     "message": "Den här webbläsaren har inte Chromes inbyggda översättare"
   },
   "modelDownloadFailed": {
-    "message": "Språkmodellen kunde inte laddas ned. Kontrollera internetanslutningen"
+    "message": "Språkpaketet kunde inte laddas ned. Kontrollera internetanslutningen"
   },
   "sourceLanguageLabel": {
     "message": "Källspråk:"
@@ -223,7 +223,7 @@
     }
   },
   "detectorDownloadNeeded": {
-    "message": "Modellen för språkidentifiering behöver laddas ned"
+    "message": "Språkidentifiering behöver laddas ned"
   },
   "download": {
     "message": "Ladda ned"
