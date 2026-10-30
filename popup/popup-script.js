@@ -17,6 +17,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // The store page of the installed extension, unpacked copies have another id
   document.getElementById("translator-rate").href = `https://chromewebstore.google.com/detail/${chrome.runtime.id}/reviews`;
+  showWhatsNew();
   let sourceLanguageElement = document.getElementById("translator-source-language");
   let targetLanguageElement = document.getElementById("translator-target-language");
   let swapLanguagesElement = document.getElementById("translator-swap-languages");
@@ -78,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
       updatePageTranslationStatus(sourceLanguageElement, targetLanguageElement);
     }
     let checkedTrigger = document.querySelector('input[name="trigger"]:checked');
-    let action = checkedTrigger ? checkedTrigger.value : "dbclick";
+    let action = checkedTrigger ? checkedTrigger.value : "tpclick";
     document.getElementById("translator-hold-alt-option").hidden = action == "none";
     renderTriggerHint(action, document.getElementById("translator-hold-alt-to-translate").checked);
   }
@@ -95,15 +96,15 @@ document.addEventListener('DOMContentLoaded', function() {
     displayElements.forEach(function(element) {
       element.checked = element.value == display;
     });
-    engineElement.value = items["translator_engine"] || "chrome";
+    engineElement.value = items["translator_engine"] || "bergamot";
     // A saved engine this version doesn't have leaves nothing selected
     if (!engineElement.value) {
-      engineElement.value = "chrome";
+      engineElement.value = "bergamot";
     }
     renderEngineLanguages();
     sourceLanguageElement.value = items["translator_sourceLanguage"] || "auto";
-    targetLanguageElement.value = items["translator_targetLanguage"] || "en";
-    let action = items["translator_translateInputAction"] || "dbclick";
+    targetLanguageElement.value = items["translator_targetLanguage"] || getBrowserLanguageCode();
+    let action = items["translator_translateInputAction"] || "tpclick";
     triggerElements.forEach(function(element) {
       element.checked = element.value == action;
     });
@@ -367,6 +368,26 @@ function mouseIcon(pressedButton) {
       <rect x="1" y="1" width="20" height="30" rx="10" fill="none" stroke="currentColor" stroke-width="1.5" />
       <path d="M1 13H21M11 1V13" stroke="currentColor" stroke-width="1.5" />
     </svg>`;
+}
+
+// News of the last update stay until closed, the badge mark goes away once the popup is opened
+function showWhatsNew() {
+  chrome.storage.local.get(["translator_whatsNew", "translator_whatsNewBadge"], function(items) {
+    if (items["translator_whatsNewBadge"]) {
+      chrome.runtime.sendMessage({ type: "whatsNewSeen" });
+    }
+    let version = items["translator_whatsNew"];
+    if (!version || !chrome.i18n.getMessage("whatsNew")) {
+      return;
+    }
+    let element = document.getElementById("translator-whats-new");
+    document.getElementById("translator-whats-new-title").textContent = chrome.i18n.getMessage("whatsNewTitle", [version]);
+    element.hidden = false;
+    document.getElementById("translator-whats-new-close").addEventListener("click", function() {
+      element.hidden = true;
+      chrome.storage.local.remove("translator_whatsNew");
+    });
+  });
 }
 
 // Fill elements marked with data-i18n attributes from _locales/*/messages.json

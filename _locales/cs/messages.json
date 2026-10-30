@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Líbí se vám překladač? Ohodnoťte ho v Internetovém obchodě Chrome"
+  },
+  "whatsNewTitle": {
+    "message": "Co je nového ve verzi $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Offline překlad v téměř 60 jazycích. Překlad se zobrazí v okénku nebo přímo místo textu."
+  },
+  "whatsNewClose": {
+    "message": "Zavřít"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

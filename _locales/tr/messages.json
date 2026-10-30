@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Çevirmeni beğendiniz mi? Chrome Web Mağazası'nda puan verin"
+  },
+  "whatsNewTitle": {
+    "message": "$VERSION$ sürümündeki yenilikler",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Yaklaşık 60 dilde çevrimdışı çeviri. Çeviri açılır pencerede ya da doğrudan metnin yerinde görünür."
+  },
+  "whatsNewClose": {
+    "message": "Kapat"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

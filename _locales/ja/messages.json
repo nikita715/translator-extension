@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "翻訳ツールを気に入っていただけましたか？Chrome ウェブストアで評価してください"
+  },
+  "whatsNewTitle": {
+    "message": "バージョン $VERSION$ の新機能",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "約60言語をオフラインで翻訳。翻訳はポップアップで表示するか、テキストをその場で置き換えます。"
+  },
+  "whatsNewClose": {
+    "message": "閉じる"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

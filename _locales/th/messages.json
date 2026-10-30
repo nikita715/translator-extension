@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "ชอบตัวแปลนี้ไหม ให้คะแนนใน Chrome เว็บสโตร์"
+  },
+  "whatsNewTitle": {
+    "message": "มีอะไรใหม่ในเวอร์ชัน $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "แปลแบบออฟไลน์ได้เกือบ 60 ภาษา คำแปลจะแสดงในหน้าต่างป๊อปอัปหรือแทนที่ข้อความตรงนั้นเลย"
+  },
+  "whatsNewClose": {
+    "message": "ปิด"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

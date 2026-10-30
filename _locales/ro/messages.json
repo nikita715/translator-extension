@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Îți place traducătorul? Evaluează-l în Magazinul Chrome Web"
+  },
+  "whatsNewTitle": {
+    "message": "Noutăți în versiunea $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Traducere offline în aproape 60 de limbi. Traducerea apare într-o fereastră sau direct în locul textului."
+  },
+  "whatsNewClose": {
+    "message": "Închide"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

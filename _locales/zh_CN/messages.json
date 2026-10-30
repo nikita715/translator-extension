@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "喜欢这个翻译工具？请在 Chrome 应用商店评分"
+  },
+  "whatsNewTitle": {
+    "message": "$VERSION$ 版新功能",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "支持近 60 种语言的离线翻译。译文可显示在弹出窗口中，或直接替换原文。"
+  },
+  "whatsNewClose": {
+    "message": "关闭"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

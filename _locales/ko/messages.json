@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "번역기가 마음에 드시나요? Chrome 웹 스토어에서 평가해 주세요"
+  },
+  "whatsNewTitle": {
+    "message": "버전 $VERSION$의 새로운 기능",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "약 60개 언어를 오프라인으로 번역합니다. 번역은 팝업으로 표시되거나 텍스트 자리에 바로 나타납니다."
+  },
+  "whatsNewClose": {
+    "message": "닫기"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Gefällt dir der Übersetzer? Bewerte ihn im Chrome Web Store"
+  },
+  "whatsNewTitle": {
+    "message": "Neu in Version $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Offline-Übersetzung in fast 60 Sprachen. Die Übersetzung erscheint in einem Fenster oder direkt anstelle des Textes."
+  },
+  "whatsNewClose": {
+    "message": "Schließen"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

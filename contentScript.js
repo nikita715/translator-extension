@@ -203,7 +203,7 @@ function logBuiltInFallback(error, googleFallback) {
 async function translateOnPage(texts, sourceLanguage, targetLanguage, defaultEngine, options = {}) {
   let { onDownloadProgress, onDetected, preferDownloaded, confirmDownload, askBeforeDownload = true } = options;
   let ask = Boolean(confirmDownload && askBeforeDownload);
-  let { engines, missingAccess } = await getEngineOrder(defaultEngine || "chrome");
+  let { engines, missingAccess } = await getEngineOrder(defaultEngine || "bergamot");
   if (!engines.length) {
     throw userError("NotSupportedError", "Translator API is not supported", chrome.i18n.getMessage("builtInUnavailable"));
   }

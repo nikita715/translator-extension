@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Gillar du översättaren? Betygsätt den i Chrome Web Store"
+  },
+  "whatsNewTitle": {
+    "message": "Nytt i version $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Offlineöversättning på nästan 60 språk. Översättningen visas i ett fönster eller direkt i stället för texten."
+  },
+  "whatsNewClose": {
+    "message": "Stäng"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

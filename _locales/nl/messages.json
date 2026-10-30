@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Vind je de vertaler handig? Beoordeel hem in de Chrome Web Store"
+  },
+  "whatsNewTitle": {
+    "message": "Nieuw in versie $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Offline vertalen in bijna 60 talen. De vertaling verschijnt in een venster of direct op de plaats van de tekst."
+  },
+  "whatsNewClose": {
+    "message": "Sluiten"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "¿Te gusta el traductor? Valóralo en Chrome Web Store"
+  },
+  "whatsNewTitle": {
+    "message": "Novedades de la versión $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Traducción sin conexión en casi 60 idiomas. La traducción aparece en una ventana emergente o directamente en lugar del texto."
+  },
+  "whatsNewClose": {
+    "message": "Cerrar"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

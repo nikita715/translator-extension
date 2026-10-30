@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Like the translator? Rate it in the Chrome Web Store"
+  },
+  "whatsNewTitle": {
+    "message": "What's new in version $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Offline translation in almost 60 languages. The translation appears in a popup or right in place of the text."
+  },
+  "whatsNewClose": {
+    "message": "Close"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

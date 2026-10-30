@@ -45,7 +45,9 @@ window.chrome = {
         translator_askBeforeDownload: true
       }),
       set() {}
-    }
+    },
+    // No update news on the store images
+    local: { get: (keys, callback) => callback({}), remove() {} }
   },
   permissions: { contains: async () => true, request: async () => true },
   runtime: { id: "store", sendMessage() {} }

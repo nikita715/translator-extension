@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Bạn thích trình dịch này? Hãy đánh giá trên Chrome Web Store"
+  },
+  "whatsNewTitle": {
+    "message": "Có gì mới trong phiên bản $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Dịch ngoại tuyến gần 60 ngôn ngữ. Bản dịch hiện trong cửa sổ bật lên hoặc ngay tại chỗ văn bản."
+  },
+  "whatsNewClose": {
+    "message": "Đóng"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

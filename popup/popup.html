@@ -24,6 +24,15 @@
 
 <body>
   <main class="popup loading">
+    <aside id="translator-whats-new" class="whats-new" hidden>
+      <div>
+        <strong id="translator-whats-new-title"></strong>
+        <p data-i18n="whatsNew"></p>
+      </div>
+      <button id="translator-whats-new-close" class="close" type="button" data-i18n-title="whatsNewClose" data-i18n-aria-label="whatsNewClose">
+        <svg width="12" height="12" viewBox="0 0 12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 2l8 8M10 2l-8 8"/></svg>
+      </button>
+    </aside>
     <section class="languages">
       <select id="translator-source-language" data-i18n-aria-label="sourceLanguage"></select>
       <button id="translator-swap-languages" class="swap" type="button" data-i18n-title="swapLanguages" data-i18n-aria-label="swapLanguages">

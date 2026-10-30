@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Suka penerjemah ini? Beri nilai di Chrome Web Store"
+  },
+  "whatsNewTitle": {
+    "message": "Yang baru di versi $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Terjemahan offline dalam hampir 60 bahasa. Terjemahan muncul di jendela pop-up atau langsung menggantikan teks."
+  },
+  "whatsNewClose": {
+    "message": "Tutup"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

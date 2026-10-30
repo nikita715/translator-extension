@@ -14,8 +14,8 @@
    limitations under the License.
 */
 
-// Bergamot settings: the models origin the extension asks access to
-importScripts("engines/languages.js");
+// Bergamot settings: the models origin the extension asks access to; the browser language code
+importScripts("engines/languages.js", "builtInLanguages.js");
 
 let translateMenuItemId = "translate-selection";
 
@@ -37,15 +37,15 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 
 let defaultPropertyValues = {
   "translator_holdAltToTranslate": true,
-  "translator_translateInputAction": "dbclick",
+  "translator_translateInputAction": "tpclick",
   "translator_sourceLanguage": "auto",
-  "translator_targetLanguage": "en",
+  "translator_targetLanguage": getBrowserLanguageCode(),
   "translator_useOpenTab": true,
   "translator_useBuiltIn": true,
   "translator_replaceText": false,
   "translator_googleFallback": false,
   "translator_askBeforeDownload": true,
-  "translator_engine": "chrome"
+  "translator_engine": "bergamot"
 }
 
 chrome.storage.sync.get(Object.keys(defaultPropertyValues), function(items) {
@@ -66,10 +66,9 @@ chrome.runtime.onMessage.addListener(
     } else if (request.type == "changeAction") {
       chrome.storage.sync.set({
         "translator_translateInputAction": request.value
-      });
-      chrome.action.setBadgeText({
-        text: request.value.charAt(0).toUpperCase()
-      });
+      }, updateBadge);
+    } else if (request.type == "whatsNewSeen") {
+      chrome.storage.local.remove("translator_whatsNewBadge", updateBadge);
     } else if (request.type == "translateWithEngine") {
       forwardToOffscreen(request, sender.tab ? sender.tab.id : null).then(sendResponse);
       return true;
@@ -198,12 +197,29 @@ function changeLanguageOnPage(source, target) {
   });
 }
 
-chrome.storage.sync.get("translator_translateInputAction", function(item) {
-  let translateInputAction = item["translator_translateInputAction"];
-  let text = translateInputAction ? translateInputAction.charAt(0).toUpperCase() : "D";
-  chrome.action.setBadgeText({
-    text
+// The badge shows the trigger mode, or a mark after an update until the popup is opened
+function updateBadge() {
+  chrome.storage.local.get("translator_whatsNewBadge", function(local) {
+    chrome.storage.sync.get("translator_translateInputAction", function(item) {
+      let translateInputAction = item["translator_translateInputAction"];
+      let text = translateInputAction ? translateInputAction.charAt(0).toUpperCase() : "T";
+      chrome.action.setBadgeText({
+        text: local["translator_whatsNewBadge"] ? chrome.i18n.getMessage("whatsNewBadge") : text
+      });
+    });
   });
+}
+
+updateBadge();
+
+// Tell about the update in the popup, only in languages that have the text
+chrome.runtime.onInstalled.addListener(function(details) {
+  if (details.reason == "update" && chrome.i18n.getMessage("whatsNew")) {
+    chrome.storage.local.set({
+      "translator_whatsNew": chrome.runtime.getManifest().version,
+      "translator_whatsNewBadge": true
+    }, updateBadge);
+  }
 });
 
 function translate(text, action, altActive, force, tabId) {
@@ -241,7 +257,7 @@ function translate(text, action, altActive, force, tabId) {
             sourceLanguage,
             targetLanguage,
             replaceText: item["translator_replaceText"],
-            engine: engines.includes(item["translator_engine"]) ? item["translator_engine"] : "chrome",
+            engine: engines.includes(item["translator_engine"]) ? item["translator_engine"] : "bergamot",
             askBeforeDownload: item["translator_askBeforeDownload"] != false,
             googleFallback
           }, function(response) {

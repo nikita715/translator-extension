@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "Подобається перекладач? Оцініть його в Chrome Web Store"
+  },
+  "whatsNewTitle": {
+    "message": "Що нового у версії $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "Переклад без інтернету майже 60 мовами. Переклад з'являється у спливному віконці або просто на місці тексту."
+  },
+  "whatsNewClose": {
+    "message": "Закрити"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }

@@ -986,5 +986,22 @@
   },
   "rateExtension": {
     "message": "هل أعجبك المترجم؟ قيّمه في سوق Chrome الإلكتروني"
+  },
+  "whatsNewTitle": {
+    "message": "ما الجديد في الإصدار $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "whatsNew": {
+    "message": "ترجمة بلا إنترنت لنحو 60 لغة. تظهر الترجمة في نافذة منبثقة أو مكان النص مباشرة."
+  },
+  "whatsNewClose": {
+    "message": "إغلاق"
+  },
+  "whatsNewBadge": {
+    "message": "NEW"
   }
 }
